@@ -1,0 +1,798 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WIN_PARAMETERS
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : WIN_PARAMETERS
+ identifier : 0x28f73cbf711b2958
+ internal_properties : CAAAAAgAAADd/f5xqVDBWU0mi6DWk0Fy5KC0dfbEk+8RSR5lJMFCA+91OH7gbG0h+U4Vx0evAd16kX5kpWsK9L//p/oWTq4usijNQp7GfTBChx1z7qfo3appwUfF5Z9OTGetWPkdkCwGGorf32XnrfOhg4Gaz9DDuCGh75nmq/KKGfeujRB/KuWdyZeZ8dM9P8C5cB1F2EO+LwZwDY9BJC1fSxESR5vnOnp0ahIlG1ChxKw4VNV1h7o9vFM5LokbtIPqL9DUme5ncukBC+lKDLUwi0+uUffC7pEKfE1CpKe6P30NxPws0dyNmwFhgo56GEfFCKKYRbunouYUBFEWx/Q3IQrZJM8EwOs5I0ddoOiqBNBbGvywB4QAIEhB+Cxo+LX0bBdEeue2i5SphcJFv5Hjw4VGG0z8suM2TZSNi+PPfSq8pmViSwPCKPUmFzNGF9HcJp2cYMU8izDt7I+RNF7ob5ZtqHyzrifQJjqG41BRcVuUE5jMumQekpRTJxMqH6ZttVtQuB/OArSOtV56h3NHEAN4iUmm5vyaA/ekjhMcyB/m5WNaHQHAFDvzPNygef/O4soOQjp3YBUH2jYrmMBIj0hfbaRm+ljhh2v18pOp+Fq20lOUoueeZZnQ2IDyO/U6Ii5R8Sx3RiSZJ3Th9P365xUgoMMuJxZCAug3lSDvpm6yaJOjhV2B/F9r3ke7wrySMajpQEZDGAt5YnoFK+B5p8BRXo3HdCedF3dNYt0SdA7PPq9F5k/Z3KeCVabVGwysaIbDJdF1IOBVcqz4ONH4u/APv2HuXz/CewfqoZ6xGojUQdQDqg9n/Z1V1xJpLPI/2AXLBqFtHIeURG/2LyBiweNQG7mMtRmmLOuU+9JaWB9VqTRkLX9SWo3E0QLPhtQE86Gul+a8VRr1xH59zDH2IePek7iyUcdUP7m0w7owFBEyxevLjRfVPqXOQlZu3YzuAF6XAsU3M0axfDCHarygb5dw+jMknCzUO6wpUTPMBrq21/6TfmLQiWCOu6k2x4YTkgPAi272/G81uLpZCExkZeeCK52MRJixWvMjbv0AOhUP1mfwrWn1vmI/p/zuW6DJfOERpG2ZJtOOD+Hd0rzm6gIdA0dznyBoEORgFH5vS9a4Nd2578tnOmzoAJB73MxB7EFF1g5prKRQs643sZjUNSylKw4ScsjDRqmMWVdM1RDfSCDF/ml8Bn+d3sBZ0Gb0UL7mD3Jx00KIvrgY/twCqVtm7HxRb5YGMJProbvZW3OG1GExB/iH1r5wD2At3AVlZdWUXg6/5FCuunzzBbBqRZyl3vJx2UcEyvn+qkSd+6TQkDzH4NOrvNiELl9rN/YBBViXYd62ZUknBAKICttYrGzWD7vuu5b4WrEd3CZXvGnD3Il9XqmZgK1Fw3Kinn6g+KSVRcUehPUCgNbOdB2ryxB5hD6FSM3ESxiqpr7uKpfG77MgcNEAE7lDKbb0w2OrZ7uguSW58OPoTsSblN6/j1ITiciq7opP+nmBxg==
+ properties :
+  width : 320
+  height : 360
+  heightMin : 424
+ controls :
+  -
+    name : MZ_PARAMETERS
+    identifier : 0x28f73cbf711c2958
+    internal_properties : CAAAAAgAAACeIwZK7clb8w3mutLt4W88QAivtDwVA8HkttNZwdodxuFDnNm4aoNt/wmQyH22JJI9LVzU9uPGo1lwqVVjCbifA/jzAnbBNJVer8HzIEZs5WgR6UnNKLKtiW6Txo52NS099mE4ihHeUP7MYy2e4t6+uS9QKVDwqtzvjDBKIsXap3JlxpknGfIgLnWE3wupDbaIKkqWtPPLe7muJ5p1NMRRImTGM8+xSyAJLbzFwCeVs5Qw91W5Ew/SK0G1QXKmpnS8kE8/ObIr3bXknsWf7UjyICmcQQrWbzX0W3srxvNwiZF776qX62vxMmfAoLC0oOMKcCYGY/W4nwTomI3rV2LuqYyWnbzbRfEWSGQVW/UdbB++p1OFRzuNPL47lDxLT1cSSiKLAnnhHobQLliFf78ECBRv+O0jg2BTB/heUHHsIM/5u7bGhiylR5Ota2YadqMCQzncaUlMKFC0PI3e/oizf2ODtbBo2PNhhzaOa8bxnxhy6gbxq0L0BXm5QtHQArsUksmYNEXPXC2nkORutmgsXesSuonLzF6ArVRm4sNOoAeOltiGcNuRtTSJQ274wPi0i2fFi5o3mvTFX9lW9mGID0LqefCUNoyF4ZtXVuBw/t4pcU9WurQIe/OCgoRSScvil7LZmMzCzIVn7mGCLW5h+h4gsecSWNkyVVA+zWp6ZNnoL154wa6lWoF0ZZJ5acmwLfBISLG2CEVf1is8F5uRZyZ16z8kyc8TuPAFAxt7MI8i6WurophT2TszYJ7x3xzpMIg4hnUcJUDbGvpTiNu2m0GLoGZItC/bl1rTqMK9Ayxnwsw4gb+KDpDaGS+Gh1PF/kbK8rZKcYZjmiTBdSCVZ8IF4/U3t3Y=
+    properties :
+     width : 320
+     height : 168
+    rows :
+     -
+       internal_properties : CAAAAAgAAAAAxJa9bvkp2zNGOxxGMe4rly5Zx9zACEAj1LLzYHgBO3PUYpzoDEL93bzs5rVaEWS4Qf4wLsBdQVzkRL7gF9D24g19ifGtBtzTwtyIndh9CTpRzFbuDGaBUBmXdp7PQug9n2rbDA3LL/lN3Z3yVA/ZOlqiPECaqIS8aA==
+       controls :
+        -
+          name : STC_Preferences
+          identifier : 0x28f73cbf711e2958
+          internal_properties : CAAAAAgAAACglOmbKVIsFqYVITw4L02yqpgXCoMBU/03FkKwvNie5tPgO7Z2rV0GAROqBRTr5IEGJVKG8yVKJ3bn8DGWc86/5KeiF+VyD0l6ilRJCC0uLr2gMQDsRfw8oylCyhqyqEs8Uk40FthqWwvrUVac60mm59U4joKZ4k1MkA7qiEUfwTJlKtYXSkVX9vgwitoAuYbuP0UWH7tzRMz/AdWqksdjAH7dyZtpnwHQ1TPxpLcF680z3i5XOrpYw9Gw9qAi/06FTyaHH4Y/M+Lg0KVoIreTOZdDKtPMfxqSEa6psQzsfZi5ypgpyhcxNRNktYzP7c5IzmcfIxYr1XDal4lDw7A8IMJQ/RXuoVeWfqWF7wso8A4d/rAsCY6HUrpJt6C7kEZZiXxlLa5vzQDI2C6PA4E/1AgiujqYtZG2VbEr/auxJfAKBLFjWmu07ZAK8o0gD1CCUvVwaqss4amZfkpgEAFs0y0H9z/tJEzUsxXnywTmgXLKKKJzkXh2Qqo=
+          properties :
+           x : 16
+           width : 302
+           height : 24
+          type : 3
+          code_elements :
+           type_code : 2
+           p_codes : []
+     -
+       internal_properties : CAAAAAgAAAD48XUQ37OA8bunLkwNamVU/H/2is7Wja7KzWDNvE57mIyS4IUs51xl2s8oF3qakFp6mD1XbXuDcnhgaZGe80js727euYRt47qvpMMs9xDRC2Hsl0x9EpvX0GQa0vfxDMTsAifpDT9EISmWqgcl2HdDFXG3wA+Y555a1W0=
+       controls :
+        -
+          name : STC_NAME_PARAM1
+          identifier : 0x28f73cbf71202958
+          internal_properties : CAAAAAgAAAD6bVNEy3DzXFFXuCK0AdEbbTCNGl+enne2EzjYKaImRfJOYINC1rUYX+5ZuFPNo5qj4E19YA/wEOSXU5mwFEoVC1DcHnUstQaHUVOhyZgOVDkFC9Y7Rydk7NuUNHrEXFq9Y8kkfvvLyZ8bDkZMX1CBX+CwoNI+HWGeVep6Mg9pL8C3GpCuOufPAuRHPV5qHyIBAvfsk3V71HJjPv0cCMOcIy/IKEwQ9uL3alU51AUh5HuCibRYjpSqjlW/GSyOH+As5HCgNGvbnzAW4iH02JNglOhomj81SAhufROOWZj3wVD3lHyakfeM4chZAgZ7qDSJ2SCNHujcjLSrWaosL3O2ELlsIhz8T+Ki7buey90q60SzQJQiwwb159PMsZo6LNu9K1E3fGQI/4inBSalzvG05pqXg6FJKnn6wwPH70ZcrP5xQEEB/FPsrtQ3hfHqFb1EhahvHoGTDZglluEbQj+x6qvWKJ2HuQyN35NJzxj3oBfdagDQdbNoXH1p1gQLHmeXTZqQVvG/RH2j+J+Ux/3a4PwxB2GmYvFJSOlW7X5sIcenh8Qm29wiFnN8p1RHbAEkcosJBxGgSuGn7K9tabFsET6BSb0=
+          properties :
+           x : 16
+           y : 31
+           width : 220
+           height : 30
+          type : 3
+          layout :
+           -
+             width : 232
+             height : 30
+           -
+             width : 220
+             height : 30
+          code_elements :
+           type_code : 2
+           p_codes : []
+        -
+          name : CBOX_CHECKMARK_REVERSED
+          identifier : 0x28f73cbf71212958
+          internal_properties : CAAAAAgAAACa/Mi/GqJYkt/wkfzJUPmxVKjLmJJH0xx4JGsoj3kAIXwj4qy7AXyvCbDEVX0UDJB77HUOiKOz//yT7GUkyH+0CvrAXUvfwJtRIuN+c6+jpswuebnLGcVvkS8NqwcohZ0emf2lDDOVywq9q9be0jw3L9UxGf8R4iK6R2gUVVfo/yks2vLkglrpomcsQpGvTz42c6oJGn4T+jlBBpcNZ3gcQnOAyjVFETLEhS0FnUNNwFvkxiONgXU2DPMrZNEMf58TKNeZu+LPQPAm4tSTuGw/MBQ1tpHpPXGs3G1W5ES040g5YwdrPDFgz/gLB8l7UR/NqytLDx7Xoyrp04j/03qWYhlfKWMLxn9E0h77UQ/hFVglo26s3B4XZj3yzKqmd3+E0d7v9uxcXPMmxKcW6k+exoecle3A0YnxkNaA4YIa0lHfD96gnR0dlSgh4RkHtxIHtQpyirIryfC73IvAtla8nNMMYC+FJjpCQKy+KoE43UtCqk6EOh/BgCVa7dNAMTMwQbkVLoM5ryqdM/vbNCO5aSKy5uqwidOF3ZeWJF3ieN2lEz8jcRUzUacqsSgr0nflWNnPZKb8owVzBsJWMQe9CZvCZ37gV+xQZKgqgwL/4B0fD5Dsj87dZJ1K/BQv4C+2w1bL/K7hBrPRlAIry/+Olg2qC6q+QJFm/94vms3ud3EfRnLtgEHSnBn5BlzcWGzWkpLVyoTVfeJBvCBNGiQbLYsDhuj6oVGobyDUbtS8/ZRzY0UfZ8vkxTUu9J2ia9PzrdqyD4bcqo6+ro6j6EifqClYrNmp4429z2QiMjSwXBuMQ5uHa2/0DaEKh0WZaMBxOnRkvpQTd8hGEv2jRqROdkpROI2eFdKOipij6XWLtCQltQY9XNc51L5L525GcN5ELq+GpP71IDA4X/Kgty2vOJ4UO6oCF1g3Avc1zsNzuX/BqtPn+6VLiu9wrULk0DtBYyySoGgvUAjJYCO1uQk5hSKM8p/DfD/lFk0KT7PMZN4K+Wn7bmndJc5ag0XNdC6qM9EBmU50ognRwc4iJ4QwvbVfNnLyQ17D4lDQyRcGXz4sbufmrvk=
+          properties :
+           x : 227
+           y : 36
+           width : 100
+           height : 48
+          options :
+           -
+             internal_properties : CAAAAAgAAAAWdFwjVaNg8krCvomzma41I7n5RkBA6xHTgTXSHc32lb8eXW291luJUXb3+vedC+Dx7EXk7RTbvP7jSpNKSKUBXbfVwIvW5sJDBwDHokIpaPxGqx6oMZf350dwv7azhAM7U4ZjvBdqSDI=
+          type : 5
+          layout :
+           -
+             x : 256
+             y : 36
+             width : 58
+             height : 48
+           -
+             x : 227
+             y : 36
+             width : 100
+             height : 48
+          controls : []
+          code_elements :
+           type_code : 5
+           p_codes :
+            -
+              internal_properties : CAAAAAgAAABDndC37qU9EiSWgjDyvbdTMmBHSFaX8xEDDd1T9hmrN7zgZ3bPd4H/pYV52Xggn5Hv9OatPqdxMkBTfxapksV6mEzfEtK4+CQZgSyie68NS06+CJy1XE8gGZfS1TuHc9+SX9ekdRx/5r5n9QnQZElLNRZTPeW+eb8l/WBpuxxvGVmUCbw3Nv9aaNn6/Zc+pA==
+              code : |1+
+               
+               STC_NAME_PARAM3 = <§$0001§>
+               
+               //if MySelf THEN
+               //	STC_NAME_PARAM3 = "The checkmark will be positioned on the left of the screen"
+               //sinon	
+               //	STC_NAME_PARAM3 = "The checkmark will be positioned on the right of the screen"
+               //END
+              type : 17
+        -
+          name : STC_NAME_PARAM3
+          identifier : 0x28f73cbf71232958
+          internal_properties : CAAAAAgAAAAjyTXxQSdG1xDcp6Sf1YyajZrew1dgcY6xmwaQOcx3zDwzlUyY4REusoweT6EobB3sJZkqlFmaAiOLe2TIsMY8EevZOWzudMoehljV/9XT7Q6TylPXJhs2y1f4KG2GJwCQR4cppM9QLiKgqTxcbi/kfSVNH6xtdkC5pas1jlYGzIl6ZLvPH5GTvZMlEbAvWT4CjeXSj2IMgkYmNqgDT3xYCr/fxmq9iJQV70QygjrWXvUgysWn8UyDkhtmPU9DvS7vlTM4Nrb46+Rri3zKx2CiLHMefXZolLi29E+2kcX/zwhNf1lzq5QmadZM21pRFSsG3vs9uw5G3tsvf+10Y8X4dM81YItboSz/44W1cNDN12RXS177Ie0Zf0Q+JxA/e30LgGNQ3fdAAAcvd4uBPeJX4/03eZ9fhITXrSc0eCQEnkzuOGuXqTnQqiL40X0Vs5X7uZfxLOaK+LJsOIOZzauND+ob51zbwxuAN61hvJfxYlETC63jUTEyc94qtlrpm06OiFXKa2/pvK5UjPxbW1+V94irmCLmy+eBQeVULhi0XB8PGLcHaxA67MoPfajWfdEbYe1L1t/iMBDg/7VdT0y0n1SWbVCvh60ugYaVTetXKzVnAd29u++yiDgaXowokbYeKg==
+          properties :
+           x : 16
+           y : 46
+           width : 220
+           height : 52
+          type : 3
+          layout :
+           -
+             width : 232
+             height : 48
+             x : 16
+             y : 45
+           -
+             width : 220
+             height : 52
+             x : 16
+             y : 46
+          code_elements :
+           type_code : 2
+           p_codes : []
+     -
+       internal_properties : CAAAAAgAAABoYeWAryMQAUvXPnxdGpXkbO9mOp4G3f6afalDgWJnDMhGlHkAQ+AJdkO8xe4FH3RDjy23DXMD4ggAmamOf8xwG3raZaAJl/azo4P4emKvI9E0V1R9Ygu/wJxSuo9JvIS80ncZ3W900ZkGGpe1KKdzJQHHMJ8IVw7KRd0=
+       controls :
+        -
+          name : STC_NAME_PARAM2
+          identifier : 0x28f73cbf71252958
+          internal_properties : CAAAAAgAAACzF58uhCKlZtgrvZj8hTuD+dF9LeCcR/0TjWy+SJfiZbRfUaCyln+8cZ2MalPCa+/l7JI6Ncj3sd6mRGA4C9Lk9ZNY7eVP53DhZx0l7gzzUp72Lclh3tGBfg51Ip9d9qI1iuN+w6zJ5AiCP913SqQE5+Wth/RslkKE+O+GEyOqv+ClmWEt9lr7COJi71MaeJwVAttyqi0+tm+Jvw91BMlPxCiQbjNNlK7fMu1hSpsEldMNNXDZxrvvcEi9dKCOy1FP8Jrw2IxJGeckihQHKLWzQLdm7NrSrRXP64UgH0QWRDu1ws+Xz6wauL8ER1iCiVU2WfjaDXZD9O8e2n18P7PZuT0Lad5PLXDXCtEl/GOsb01+EttZueCKWkF/nVp8Trra0NyeQ8LDm3pfBA9fnIMMw7CHz1Ovvw85MwxTY/5jodqhgA4V39bdNkparCmGNyP8YqTxx8Y8o88xgZqphovpa9Rb+ueOFHtzacqEwbxHK95cQy38UtrilyGVCSKrvAU9y7+SQRebvSb16tP88QxyriydoDeANXn3Q3anYRlXrq8=
+          properties :
+           x : 16
+           y : 103
+           width : 220
+           height : 30
+          type : 3
+          layout :
+           -
+             width : 232
+             height : 30
+           -
+             width : 220
+             height : 30
+          code_elements :
+           type_code : 2
+           p_codes : []
+        -
+          name : STC_NAME_PARAM8
+          identifier : 0x28f73cbf71262958
+          internal_properties : CAAAAAgAAADyycx+7/mqmmCTxjBcLlGJXzaO77hfmNa+OwUFLPmem6cXP8wq12pkdJPBJjGV0nxQFGgwddh6VnHj1yduG5m3kQm+/L/YFVpDM2KN2g/U/0yHRqigE7HWxMusBMA6yLVG/hi/2knfxNkcOaNKHemMUeS298x1IiCp0y3Y7gls5hAuvxiSPcvD5RUVTcWPCgaFURQSXByg0byVIh3G17FzoICNEuHlVqhfquyU2BKZK2F5NxvA9T2eHdf0TfyA0LDD0pkAXUd7LXlaJkF5itoxyIzAZL69x4XgGtb3TELg8xUOlgjPCZ8g/GIUPxlGcM1pgW439TVqLynbFTOwsnLNKgZXSBCgG8YfwBKd2eipMu5S6zu0vZ8sMXkm6hOgNoeRK5VQDqC996cSDEy/7mZuma4KEMiJwoUgX3Qfja4uXO/AI0SmuVhHqPMFLiu1p30FlhkFU07KOkqeVYo7eG9gDakOX/w+JCR8CH4MqfY5obzZjJQsu3CijZjhFRZgVrWtWbGixmvSiYVj+794t18b1pV2mW9FYz/iqOpQytBB1559qdiknGi51/NnIoS5YbNiJo+aZZDJvxaFu+RfRA==
+          properties :
+           x : 16
+           y : 118
+           width : 220
+           height : 52
+          type : 3
+          layout :
+           -
+             width : 232
+             height : 48
+             x : 16
+             y : 116
+           -
+             width : 220
+             height : 52
+             x : 16
+             y : 118
+          code_elements :
+           type_code : 2
+           p_codes : []
+        -
+          name : CBOX_ERASE_AUTO
+          identifier : 0x28f73cbf71272958
+          internal_properties : CAAAAAgAAACEu1d9wNLnGsYAhc+jtsOmYtXOn/i+UHlJciDxrYcGeDEKLA4QK1AtAOD8uPNWrrt5u+OSOntPHtS7/tYaAh2vYUlo/bAJik+A7wKYOHIbn21oOWvG5Rg0bRezSBCVM9XMoBwbalwp4CHdjO6ldcOyyQubSHXTRevpgdzDcKqooWPGHPsOGyI4SdYc/jgROlt/8AToKIqN92EG33kVWQ3PweBfaM+1v2FgNXYqIiAk60zfigQJ1kExrV4x5thHUH8eAMZ7pPbBVq+dojRoJQXQzFys7koETknJctMKVpO+uWu2A5t024hjHAOpRHon/Cuj1X4YsEns6x2ZPm0ZyrVqXOMJXmvn+6Kll+pwghqZ5zPFlb6Qve8rMfnSHsROtoZUnpY/3UDncNcXaHyhEujzEkHg9BKK5G+xJIzrt0Yr1GGpzIFZJsLx9Okw/HVBkch+KMYLfbJ2ZfdpyfFiiLU1w094EGsbydV2b1Tcg0gfWVpR0JzaV0Cmat9jduCkMZ+gcNZ5/Vugpcol/pRPMKckZrWtFGe1+E7tFrlgys2WfjJCU7mfjvugBlUWtknmX8+DCEEOBGnxXpTtWdmvhdgNct0pA0nZjjrLNlaJJVVDmAtxAQTPMqgk3NvffQYDEDoZGgCMEYxx8fAF9BB2IIjguWOj5RtsiT0FFbjr67bzCXrRlUovP6TSU2o4BLxCXM79gr8Rz2z50U8C+WsrEMws0Xwb/0yDip+yCVr7Xi2L+t9wEVcm9Z171mfaKqDVttYDeOrgaRliiQXmJPKG7+kDoY1DBrAJHGD4ym2HFvCWprGFkcMzZwGaf/yo3AABbp+3+DLRgB+XSdWi0QnGabKGH2lmJyPKikiq4Z6MPHoAkHY1ieP0LOOvPePV+9qYxspJ6axRk1E9BW6ZqkbUwc+j33dFkZoDvmz0bm0HMh/RyCe6lpRVsn7nHu2SS0H0pT4/eC6vi+s65JmJdWe14gs3KIkP4a2k4w/6kEuuFNrNv2hSC26y6htGfy3mmdpQvcBtT2B5ATNnWOYZhUrlJo+XK6iOpP1hDLXh48mAYAe+1M+Cw85BXg==
+          properties :
+           x : 227
+           y : 108
+           width : 100
+           height : 48
+          options :
+           -
+             internal_properties : CAAAAAgAAADXNZ3sDmKntYOF8U7wbp3WABpe6+UvTuTQBEQm3s/L5LU9VtM3XC+z6cJPCJublWTxxj38FCM8Ty/2XYJBIXryUuJIW7ShAo10oxv+mVseY/m7ELkDnvpYBCRdinnwwT70lEci89gpiXM=
+          type : 5
+          layout :
+           -
+             x : 256
+             y : 108
+             width : 58
+             height : 48
+           -
+             x : 227
+             y : 108
+             width : 100
+             height : 48
+          controls : []
+          code_elements :
+           type_code : 5
+           p_codes :
+            -
+              code : |1+
+               
+               STC_NAME_PARAM8 = <§$0005§>
+               
+               //if MySelf THEN
+               //	STC_NAME_PARAM8 = "Automatically remove the products bought from the list"
+               //sinon	
+               //	STC_NAME_PARAM8 = "Leave the products bought in the list"
+               //END
+              type : 17
+     -
+       internal_properties : CAAAAAgAAAA+G8v6BVkubz09nML7cANqmtmUJOQ8o5Scc5laDUbH8Cy+2JUUZ5AhShvka9qBqKTdAQEpQ4F7/GIci/+2GPVfLBUfhomGKokm+NovskpfRff6qeYXZNmNUiKUhNELqoayyH0D52Vuy4c0yCE/vgnRg+c9SnF+wfjgKzM=
+       controls :
+        -
+          name : STC_NAME_PARAM4
+          identifier : 0x28f73cbf712a2958
+          internal_properties : CAAAAAgAAABeDm2kB3H2w9pXYmfmahvvPCXXX3ggBYAb3tOUlKpCgD1h/V1VARg0tO0PDPALaPdhjr2LQP+RgLBRM4SJgyjFmpKVG+RwnhSKXK74/gPSRMi69ySrRgax7Z6+D1qm5W8tfOjndgaU0Fox3pcmz4sHCquLwx0dewGdD7VycBU1pJYvYvy67gofa2x+h4L6spfZT3laOLByfFwwvKeW+1NWJFDdM9B0P2Venf4HigN7pQ0fah7pPZqZiBcasjVRroU3bTOA41U+KAlxiIr2S05CqGkk0WBoST85GGXwoMJDu9rVopH7ebda8rgW+RVKQU889MsbvNTPRKnP+bQzu/TlxQSC+ul0X9UBObN8/+cVxEQHEw0DiDHQGQqgkeAJHh1NocLDycXRb6yTRzygFNjPDYlVU1ugLkVimIf6/iGTWIa/IhjRVhrljwsX39CSyn3reRHHnTEOhciS+TT5tkDhuvCHgyMSjAPpDiOBMJqILIj4R/f5bqy3c7Pri2YziQ==
+          properties :
+           x : 16
+           y : 175
+           width : 220
+           height : 30
+          type : 3
+          layout :
+           -
+             width : 232
+             height : 30
+           -
+             width : 220
+             height : 30
+          code_elements :
+           type_code : 2
+           p_codes : []
+        -
+          name : STC_NAME_PARAM5
+          identifier : 0x28f73cbf712b2958
+          internal_properties : CAAAAAgAAAD2Uha4XqtCyZxTUTbhBFLBLUY1bIxI+IkDGEtrbWhld8Sk5sA/Z25XxckIO7onXxj7WIX45FH0P9L9milMCQCOdZWIr/wVjfO0d+2u410bYJtjzjlBUeueHsAn0Xwfz8vjeTqhkB+WCOBrW4sD99QGRh0bEuzDjTw2tRXs8i7MNQSGCMZr7E6cvNeKVsmGx6gFHnBnWZEn+XYkjwbon+4FG6j+In0nLPCTk41908V1EfCkvT8VStp+O0GYWewdbxm/ubqbukTP5ZArIpcz3F1u/UU+gSa1JmoZqtut4yeVkq96DYOM2TAlExbqmdgIhFXM+UM0LlttsojjeQ/HKAgLj6IgzVXMlM9oOMKN/DRXuCHysPyndxQRommw2LRcLhtmlWadf+5K6LCU2u4c1MhAKowjDecThXincQhThBhSZP5Sqs9fDQsmrznXnBxHZaNB/xTazrVJqyVL8Ca3a91uXP//QdygRoVzqnTOnHTxVObAcrHDt4Xb86xgSmJxQSr0fAuByCIe7aOeTO9YNOQushJQzyNtM0oAqnulIFJsCF6Zjq9wgDylB5RczqR09IziLh/7tsCGVnwLsDFJ6+id42c=
+          properties :
+           x : 16
+           y : 190
+           width : 220
+           height : 52
+          type : 3
+          layout :
+           -
+             width : 232
+             height : 48
+             x : 16
+             y : 188
+           -
+             width : 220
+             height : 52
+             x : 16
+             y : 190
+          code_elements :
+           type_code : 2
+           p_codes : []
+        -
+          name : CBOX_LOCK
+          identifier : 0x28f73cbf712c2958
+          internal_properties : CAAAAAgAAAAUigr949SST5PcTJO6LbMpWSHV37qddIJ0EHQuiFNTiBuPjUF6cFRZ/k/U6VM/saYBdb7EtIBhzAaWHggbJ3k5AqBVwrsqo+9yIR44BwY0jJN/3Fbe0iHnGVIol67SzN/cBjOeI3Uki+wwTyRSSXa7+/gGanxQ/JfLjUCTBcqztfJ8MImNQNOKh7gQav9a5YKtraOGTyozaYj/Gd47LUCP7u6PjtgALvZYG4SDVQN7a4xNnhG10RmMhzKXb3enCQyRzcZfKcNbA0sB0KRARzoXHyxAnM797CnLAL4MV2OdOv98xn06MERVXOGkxDQ53Mb7aGyG0gTRzF6R9zGbCXYQZFjEhc+j5O49QqlkrgJH+Okk84o7eOaB0hmQruZDWityR9/++dZHHJTZm1Vg42SsvUHJvP69KjcUWcYpv9dznjDzT1B8Pl8ILum0eUvc3yVgk6DQ+9sTZXYkzNV4mEkjSyQ3kkod+Fc5fR6hufLnc8MoQXTLjzeprlkr+pJ+7Vu5r88iV+A/fyQzMJNgyJwpj/aZLG6bW3N/rxpS1Pi9Tz+iyG1+129d0R2ckq501HNtq1ykDSSqyJP7Ml6yGskDHkwXqMPHrUFl16V6DZU1LHgQVGt7UX0P96kkV20Tnic9lIM679oE0vLSuTat3KdyVRqLkm1U88zeU0ZEfERU0XoBoBQbcfpOT3JWVjL5UJMHF3NI2J4YLyEzgqtKSGUwEz25QnCTaaB+0X6nW6JQ+yeSr2qyo/zk9NwpYAeDCfM8nAYIORWqV95Y5BVHX87DhxxXGfpZOkt23J/WNK86Bg55bERso562pvA1+XXu9ZM/moDsgeZQ3d1xJXNPb+y0j93YTR62thzNPyndMNAdfGnFZRrooXhUcNsjNJiBhuKnjCTuebmKH7Sl5mI9M1a/Noac9Sj5KvOzWBmJc9J1NvyvSim/1cTBVCCgVqDG3ftPyJiwPrjxw3z1N16Eka0Zwu0TEpdw+/J33w/ARO2uWeDToMHsrW5MOg==
+          properties :
+           x : 227
+           y : 180
+           width : 100
+           height : 48
+          options :
+           -
+             internal_properties : CAAAAAgAAAAEZiJRozHyYNjwjL+h/wxHcYsvZHa+3RfZH7Tf1sF1Y18iYFaliB8zSeovkFOrNdTh3kVswMfAq+sSaa5tJTYWrl40mybqD9+qenJZROBLDgJMoSiSD2nJtZXOGciBtjHJ4RTVToXcOiA=
+          type : 5
+          layout :
+           -
+             x : 256
+             y : 180
+             width : 58
+             height : 48
+           -
+             x : 227
+             y : 180
+             width : 100
+             height : 48
+          controls : []
+          code_elements :
+           type_code : 5
+           p_codes :
+            -
+              code : |1+
+               
+               STC_NAME_PARAM5 = <§$0003§>
+               
+               //if MySelf THEN
+               //	STC_NAME_PARAM5 = "Prevents the standby mode during the execution"
+               //sinon
+               //	STC_NAME_PARAM5 = "The screen can switch to standby mode during the execution"
+               //END
+              type : 17
+     -
+       internal_properties : CAAAAAgAAAB1ybsNJK8IcT5hZmSU5iszbf4AN1MWExb2Oxac/aUaQQA6MUt882j/xRYPlYvPf2efILsjZUZmkHZ+M75i0iP6bpj1dWDE6aXiJ9Wf+T+kxh02N5+0IsVhFrwwnt+SJSm85IKXvXhj21LrpmSJviTATRWq4iE6e4mxnQ==
+       controls : []
+     -
+       internal_properties : CAAAAAgAAAA2tkRPSKPL+a3Q5e7wo7CVHbivKfZq+jaNJrrfyMiBu4cssoDwBEqZwfyckoWCHbLSoZYcLuh9NVDUlCrIoX7kcI/DO6fntLKpVtoWb/5HQxRf3kTgYigjIi/5VLDVBPqvCdxpcuehBYPHR2uApr0LzPTEGma81rLuWg==
+       controls :
+        -
+          name : STC_Advanced_parameters
+          identifier : 0x28f73cbf71302958
+          internal_properties : CAAAAAgAAADjFakm4FaxzakDqXoepxPRfLARrWLwTD44y7rEncba+llpaSMd9Qv0T3Kh09YZut/NS3/vK76tIO73UdFfMVN8Vj0qRobcgK+I1SwHNT5OB6se0ZsivG7vnn8EF7+C40qFRMC3kJJ+a3V+DtozDuishleNnEyMjkzZQqKQOZJoHktPCz1iDK6d2zjn4yCkAy/5bMgCedbMF/+tt7eYFxqeyDuYnRNJ7lVuwu26aajoDJ77Gg9IPhLCiGp8e/5ji2YHkO9Y8xi1lK01KM2D6BBhrLDJS7eGTVP5ZoAfEJwP6T1Gjr355JPcgoBENXkhBu6RZV0KsSJH5jvX283qO2cwzb3iDCVon0RpoRWlzpujWuNKdBG6PSh66xmjHQPpYcji1piyG9YfZLUNShy+5YzxuYdswTZCt2C1kc6+fF6kazcc0+L9FT/i2Prt4w7B909MIjFsg//Y2G+04VDIdZEvIyCeOxF9OslUuJ24U9vu1t7CG4hfMnjT4FwzdQ733hzAPv3OG632
+          properties :
+           x : 16
+           y : 248
+           width : 302
+           height : 24
+          type : 3
+          code_elements :
+           type_code : 2
+           p_codes : []
+     -
+       internal_properties : CAAAAAgAAADp4GQDLrKXhsRUvf3GkSzLff51CU1VDC9LSl6soWQJ5M5mvItS/XhTyDt2+TqPPSjdp1FZE4l7HBIcCxcWPIErUEkz2n2KJn1Crph1Q7covKAhQhukZeggSSWJobY0i9VrgaZqjr7FoKgVKYBeny70pIBGsRiX2JFJxFw=
+       controls :
+        -
+          name : STC_NAME_PARAM6
+          identifier : 0x28f73cbf71322958
+          internal_properties : CAAAAAgAAABo8RPTEhX+9Xkl7wdhtgeKQOdqc65x5jB3HpX1+5VDSCDr9s0EZ9hrejJXulv27vz+8ow+L3oIJdjCFMfSo75Vje1G0eaCMxIs4x9CXYK/atXVi0y+idHBzGy3Qa7F6gO0HrYAq9tJICv578CZERdo78ggnSNHMbERE42FjpL8r/jFw4LOwH9fJ6XWbgsF71XOkEubm3O9otb4Zd0rmh43T5WO1Jt0vPoCFTBa+FCOMZBkpxgw98DYeaWTmaFiz5aOzbVVeO7PJOI1HJsQMinwGVX/ml21nPM0qFWV5qMGLau1Kf6sLlro0d4MXBGbzomXyP5sOada+OCjbcNzQgNFoNxD3RAX0jUYEz2DH6qAADPRzl7Im2RSfqj+fsQyu2WyjZX8wpjMM8ELT+cambXRIAmMMLA1z2TitBe7gO55KRAvqk+y3Xv1nyoO29DKxkVhCOXZYidKMHJCs8xaKaVs1eMe+qrXl01p7MW2orxNyhlWYjqn3yGffomcdjATms5h4B22lww=
+          properties :
+           x : 16
+           y : 279
+           width : 290
+           height : 30
+          type : 3
+          code_elements :
+           type_code : 2
+           p_codes : []
+        -
+          name : STC_NAME_PARAM7
+          identifier : 0x28f73cbf71332958
+          internal_properties : CAAAAAgAAADHpU13GzCr35wadikOo8yU4v7BCSwJwptlnSVlpvuJMOduECmEvWN02IEYBHl7//iGXLYn2tE6HKzYDXa/jCYd3Voi5IRRRTkPwp7uWN1k0WHq1U9bAvyfMKDKMPmoe+jvJ8QoO1Ddue+rgO9O7c8A4iqaD+ZvK13jRzyNo1N9NS56pBMNGEov2IVAwL8hJPBdqt/OaLeltO6IUA0ed/ncTMeRjTO/gcnrYNELF1ta2L3vOYewmE0lmmc7VgX497DcCY3EPL7e0gUMfayXeRaF2M/BreF8dhVZVBa1nYaRnp+SchYo4OWi8dxD1Lj5virpx6k51GbuawoBHTZ1OaJ6DiiSsDVFf/7sQNzsLiENIeLc0MW7uF/AIMbDEg2giYllgZ+7hj4uov1rHRbDkElGlmEW0e6vNUqeonGlkVhJ9Bwni+V0iwHqlIRGKpqKz7KjuJ51LeILqc6IokXLdFmZn55ERy9uJ7G0kxfupSDc33maqzqBOzzCfqppT8tPcEyc0RnKhdZ27AbW2O4NDZh5OVRPC+GTAc8kRHXqwnliAfVUmAw93U1v7uzlLw3MxWxjyEQ=
+          properties :
+           x : 16
+           y : 295
+           width : 290
+           height : 48
+          type : 3
+          layout :
+           -
+             x : 16
+             y : 292
+           -
+             x : 16
+             y : 295
+          code_elements :
+           type_code : 2
+           p_codes : []
+    type : 97
+    controls : []
+    code_elements :
+     type_code : 126
+     p_codes :
+      -
+        internal_properties : CAAAAAgAAAAdwyi0ciBj5oY16+N5+p6YqcrL5tlJ1bfR6+TPu9dHb4WZY9x7x9cPWimY5qZg1gs7+QLwB1sJFoxti6vb0mSnA+f1cpvQPN21DbGK8mwBK4HSkLOT/BXjSxwcJJC3ixrsUlZrp44P/aeMNuOBjcw32BKjo9uvkFnKPwX1SXns01Rg8YqeKcwaF2UvNYrB2vVC60m0PGJoMhuNA+58Jw==
+        code : |1-
+         
+         // According to the parameter clicked
+         SWITCH MZ_PARAMETERS
+         			
+         	// Reversed checkmark
+         	CASE 2
+         		
+         		CBOX_CHECKMARK_REVERSED = NOT CBOX_CHECKMARK_REVERSED
+         		ExecuteProcess(CBOX_CHECKMARK_REVERSED, trtChange)
+         			
+         	// Reversed checkmark
+         	CASE 3
+         		
+         		CBOX_ERASE_AUTO = NOT CBOX_ERASE_AUTO
+         		ExecuteProcess(CBOX_ERASE_AUTO, trtChange)
+         		
+         	// Locking
+         	CASE 4
+         		CBOX_LOCK = NOT CBOX_LOCK
+         		ExecuteProcess(CBOX_LOCK, trtChange)
+         		
+         	/////////
+         	
+         	// Reinitialize
+         	CASE 7
+         		
+         		//1: &Reinitialize
+         		//2: C&ancel
+         		SWITCH Dialog(<§?160B94B01E573F42§>)
+         			// &Reinitialize
+         			CASE 1
+         				
+         				HourGlass(True)
+         				
+         				//
+         				// --- Deletion of HFSQL data				
+         				//
+         				
+         				// Frees the queries
+         				HFreeQuery(QRY_CONTENT_HISTORY)
+         				HFreeQuery(QRY_LIST_CONTENT)
+         				HFreeQuery(QRY_LISTS)
+         				HFreeQuery(QRY_LISTS_NBELEMENTS)
+         				HFreeQuery(QRY_SECTIONS_LISTING)
+         				HFreeQuery(QRY_SEARCH)
+         				HFreeQuery(QRY_SEARCH_SECTION)
+         				HFreeQuery(QRY_UNITS)
+         				HFreeQuery(QRY_SOURCES_LIST)
+         				HFreeQuery(QRY_SECTIONS)
+         				HFreeQuery(QRY_PRODUCTS)
+         				HFreeQuery(QRY_SOURCE_CONTENTLIST)
+         				
+         				// Closes the user files
+         				HCancelAlias(PersonalData)
+         				HClose("*")
+         
+         				// Reset the favorites
+         				DeleteAll(MyFavoriteProducts)
+         				SaveParameter(PARAM_USER_FAVORITES, "")
+         				
+         				//
+         				// --- Deletion of "appendix" files
+         				//
+         				
+         				IF NOT InSimulatorMode THEN
+         				
+         					// Deletes the images of products
+         					fDelete(DATA_IMAGE_PRODUCTS + [fSep] + "*.*")
+         					
+         					// Deletes the images of stores
+         					fDelete(DATA_IMAGE_SUPPLIER + [fSep] + "*.*")
+         				
+         					// Deletes the folders
+         					fRemoveDir(DATA_IMAGE_PRODUCTS)
+         					fRemoveDir(DATA_IMAGE_SUPPLIER)
+         				END
+         				
+         				// Reinitializes the storage
+         				InitializeStorage()
+         				
+         				// Initial parameters
+         				SaveParameter(PARAM_FIRSTHELP_LIST, "")
+         				
+         				//
+         				// --- Restart
+         				//
+         				
+         				// Update the content sources
+         				NextTitle(<§$0000§>)
+         				
+         				IF NOT InSimulatorMode THEN
+         										
+         					// Extracts the data files of the application locally
+         					HFExtractResource(Data)
+         					HFExtractResource(Supplier)
+         					HFExtractResource(Unit)					
+         				END
+         				
+         				// Reset the user files
+         				HCreation(History)
+         				HCreation(List)
+         				HCreation(ListContent)
+         				HCreation(Personal)
+         				HCreation(Note)
+         												
+         				// Re-opens the files
+         				HOpen(Data)
+         				HOpen(Supplier)
+         				HOpen(Unit)
+         				
+         				// Creates alias an for managing the sections
+         				HAlias(Personal, PersonalData)
+         				HChangeName(PersonalData, Personal..Name)
+         				HChangeDir(PersonalData, DATA_PATH)
+         				
+         				// Update the data sources
+         				SourceRefresh()
+         				
+         				// Closes the opened lists
+         				ListManager.CloseAll()
+         				
+         				// Refreshes
+         				ListManager.TriggerListsUpdated()				
+         				
+         				NextTitle("")
+         				HourGlass(False)
+         				
+         				// Closes
+         				Close
+         		END
+         		
+         END
+        type : 33
+      -
+        type : 222
+        enabled : false
+      -
+        type : 223
+        enabled : false
+  -
+    name : BTN_Abandon
+    identifier : 0x28f73cbf71342958
+    internal_properties : CAAAAAgAAAAqII4b47EwNK8eRb/CvYdMn/opEVC0HXtc4S3UTLawI5R76d7PHz8xMjuVmfy9JFIQH0Eyq+sFznxB4x/abxpGnhbbOqLQgG0Hb41nXpYFYNHn3u4rIoFGRkxTF7qBymYU2vJ9hvchw5DPTTBMvobJwOVeMcKissRXQqtvaaWyJv46K5NDeFcniLbycjCQVsZY6vkXCgAc00lzR916QB45/JvZpjlGjasvcBbHgJgppu3ikAjx7Q7brQClm8qm/ghLHUzq5BDw3KmPj7KDLlIdvM3KzphXWBcjs8rMhMx1IZf6aIvEGTR2tzTv7M+mSFUZBRk9tD0jvT7RZ0hf/qImfnVxRWzQ6lQ69sjr+7Ui4I99fNYmGBFoC2hoj8IJ+I8/iMNZpCeNN8IxiTOG7kf+xDNPmsThmw2DXUbC6IXnUbo8nMDASK4tbDBZMvlRfIjYjjz8YjGTymGdqj2nHQxHHoX+LE40TfMirX9kOn0hhbhF8lT8tjwNmSK5dn5dzrwqlryDBAkBW+riqaTs3R0YKrih9xv0EsiAk7jHb+WkFxwLaVPD15eZWoGfFHjHOAyncVpYKTQyj9BMTaBmOeNNHJbFM8aTtaxuwFUeRC6roe0sf3dbYKL0AJJ1Op5YYSn8wCmKJ/SKQjeCtf3i0xZ3TLPFa4VyM2WOXN0t0waeRPpj+LsU59hj2SoWqSvU5LhA5mlf1ZH3YpzBfpIT6n2JNPIj8u3NP3aFxEUvD4fWKeoYhV038F/6kaJfvvizH/QSC8N7zUP1EP8Gpaou18BXl+7BlQy3vCxk7rrOA3Uy8VkjxYXYJuN3IEC10rZU39jo0AHJmAxGLzQ416y1J7O+colYDqaNBR6FNv1WfFJXnlNGNQylID7TAtdHMoHIkTDOrSBayErgrQIvyTc3CmmFPfYZLB6nHn8tb/y4urJFkZ/dS2vJXV8jk5wOlYrDlqz+G6pubs3mn/oHAGrW6pt0O7W1n9V5y06wSsy0ljar8tjvyKGF
+    properties :
+     x : 2
+     y : -123
+     width : 90
+     height : 48
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+         Close
+        type : 18
+      -
+        type : 161
+        enabled : false
+ actionbar :
+  name : ACTB_MAIN
+  identifier : 0x28f73cbf71352958
+  internal_properties : CAAAAAgAAABNuzXOnrkWJxXDzoFgTAZnMHxoNkoL9dh6VDJTfTaZbDs99RG6h9t/qUyerxw8r0ql24H+gVBGaWmL0rJbUmlwR1MljoOn3tBEFdi1DsNY2005L25WjmfODhT7fplz3A5QXvOaV7SISegTd3Fig2Hr2ahLYAqgx0sAOpJXOWNZiSM1lW4Qq6QeXUNCH1GulIRxhBiAIf83PKs3EgPVnjFyYd877GLghzQ1JtDaV4vnxw0d1CbVjUO+qYYkhv2AqWWMrUlvw4EolWYKkCDrztuLqX4DxTrQBZ4iNiXgK+XXH1ejkcVoY75mlrcH/2wZevMOvOhdfhc9elYh6TB7LeKgFBkjZ81CGHLrhLEKrf1+nt9PeEqXc2pXEujFvckXLY7BccapuftMft9WaQYfyUwpGUm7dxjVq6ugdLr9gh4zV7nMGNlIh1zQTJ9tZwaQe4mC7HZ5NM5YuKvgX/cKb6Wu2E4q75x31wrYZKw=
+  controls : []
+  code_elements :
+   type_code : 125
+   p_codes :
+    -
+      code : |1-
+       
+       ExecuteProcess(BTN_Abandon, trtClick)
+      type : 18
+    -
+      type : 229
+      enabled : false
+    -
+      type : 239
+      enabled : false
+    -
+      type : 240
+      enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x258827b604814537
+  internal_properties : CAAAAAgAAACnKKRohqV3mTN3DBGmCM6XsUbqVEyxqjuOLlYtqrlfE+eVx53LQAhBZRknu4T8PUv8OICz/euwLVPDwfmY9AMSmgI4rispXhYc3yjxJBUdoNSn10KtQ9jhPUftlifEeJHCIMxynIWVGQpQ8IxT9lAfRY9QkDA78j8qvtzlbWw714eQ9ZK3cK/pfKs/AukN/APHRBaQtVs1bxQZDAq6jxdPXMb3D2TjTdSyEHUiSp58fOT+Ugd+nvM790uT7tDW8GbkhRvSQtIBYPLjNK7p81qiDbv14aJqQdI4fPb24UycUoM=
+  options : []
+ layout :
+  -
+    widthClient : 320
+    heightClient : 360
+  -
+    widthClient : 320
+    heightClient : 360
+ languages :
+  - en-GB
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAACMszBiuX1LzbcK2jQzIREkEES73tYwRGYwUD5NZMlLq5eyZ6MIcocR15EkL+iI2ifX5S/Ws6FmXj7hodYRdTABWFz3BcRNQ9m16QGxeqXtcvaf59pU11o/FEXN
+ code_elements :
+  internal_properties : CAAAAAgAAAB8ZVvr6z6B0k9gVzFKrmkmm9n50xPNtYNQc3zPjIK3AOcrNsCnkcPWFIAceuLeXmDzKUgKTIsVlOH4Vev5hpT1SNvrpzgZyssmwGj2zNcvFyxlDKUINtEb6h5ymx6j2D+FyoVQJvQOL9p6WB+iul2bm6IjiTrtPJ9SPNtctuoxAXXEdaacybtWFCjeeahdrfExGUeLPI3/lmtr1X+TFo5mF4J9BYwE+N6y0Vt5yAffbew=
+  type_code : 1
+  p_codes :
+   -
+     code : |1-
+      PROCEDURE MyWindow()
+      
+      gbOriginalInversionLeftRight is boolean = USER_PARAMS.InvertLeftRight
+      gbOriginalEraseProductsBoughtAuto is boolean = USER_PARAMS.AutoDeleteBoughtProducts
+      gbOriginalLockScreen is boolean = USER_PARAMS.LockScreen
+      
+      CBOX_CHECKMARK_REVERSED = USER_PARAMS.InvertLeftRight
+      CBOX_ERASE_AUTO = USER_PARAMS.AutoDeleteBoughtProducts
+      CBOX_LOCK = USER_PARAMS.LockScreen
+      
+      ExecuteProcess(CBOX_CHECKMARK_REVERSED, trtChange)
+      ExecuteProcess(CBOX_ERASE_AUTO, trtChange)
+      ExecuteProcess(CBOX_LOCK, trtChange)
+   -
+     code : |1+
+      
+      
+     type : 234
+   -
+     code : |1+
+      
+      
+     type : 165
+   -
+     code : |1+
+      
+      
+     type : 177
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      
+      // Save the settings
+      USER_PARAMS.InvertLeftRight = CBOX_CHECKMARK_REVERSED
+      USER_PARAMS.AutoDeleteBoughtProducts = CBOX_ERASE_AUTO
+      USER_PARAMS.LockScreen = CBOX_LOCK
+      
+      // Defines whether the parameters have been modified
+      bModify is boolean = gbOriginalInversionLeftRight <> USER_PARAMS.InvertLeftRight _OR_ ...
+      						  gbOriginalEraseProductsBoughtAuto <> USER_PARAMS.AutoDeleteBoughtProducts _OR_ 
+      						  gbOriginalLockScreen <> USER_PARAMS.LockScreen
+      
+      // If the parameters have been modified
+      IF bModify THEN
+      	
+      	// In real
+      	IF InSimulatorMode = False THEN
+      	
+      		// Case of modified lock
+      		IF gbOriginalLockScreen <> USER_PARAMS.LockScreen THEN
+      			
+      			// If the screen must be locked
+      			IF USER_PARAMS.LockScreen THEN
+      				
+      				// Disables the standby mode
+      				SysStandby(sysBattery, sysStandbyInactive)
+      				
+      			// If the screen must not be locked
+      			ELSE
+      				
+      				// Enables the standby mode
+      				SysStandby(sysBattery, sysStandbyActive)
+      			END		
+      		END
+      	END
+      	
+      	// Actual backup
+      	SaveParameter(PARAM_INVERTED_CHECKBOX, USER_PARAMS.InvertLeftRight)
+      	SaveParameter(PARAM_AUTO_DELETE, USER_PARAMS.AutoDeleteBoughtProducts)
+      	SaveParameter(PARAM_SCREEN_LOCK, USER_PARAMS.LockScreen)
+      
+      	// Informs the application that the parameters have been modified
+      	ListManager.TriggerParametersUpdated()
+      END
+     type : 2
+  procedures :
+   -
+     name : WinForceOrientation
+     internal_properties : CAAAAAgAAABRQp9xr58d1wmhJVthC0x15l9/LZZ9rWKU+sx8nxOsDjRf0sQUYdAOW49d4y6lzqIHzXycrOYAs59fxsUEwzBBkEzcSWw6SpI1XGxdWG8bBCDSyRiDsPlwGbq+7VJapA==
+     procedure_id : 1798973367435864408
+     type_code : 14
+     code : |1-
+      // Summary: Forces the orientation according to the device
+      // Syntax:
+      //WinForceOriention ([<bInitial> is boolean])
+      //
+      // Parameters:
+      //	bInitial (boolean - default value=0): True if it is the initial loading, False otherwise
+      // Return value:
+      // 	None
+      //
+      PROCEDURE WinForceOrientation(bInitial is boolean <useful> = False)
+      
+      	<COMPILE IF ANDROID_MODE>
+      
+      	// In phone mode, forces the portrait orientation
+      	// In tablet, forces the landscape orientation
+      	IF NOT TABLET_MODE THEN
+      		WinOrientation(winOrientationPortrait)	
+      	END	
+      	
+      	<END>
+     type : 458752
+  templates :
+   -
+     name : WIN_PARAMETERS
+     identifier : 0x1557a453078974f3
+     code_elements :
+      internal_properties : CAAAAAgAAAALs2r8WhEnUPfxG7ClZxAy1DDL5ZmcdserQKcSKmE+2xtJGdcwFMIpH6/a6nIa2Qw5Rq0lVWTrO5k8DfOEPdu84Wly7TjDHDV3L160OTd+Y4WIS9hma+uXilw6X5c+
+      type_code : 1
+      p_codes :
+       -
+         code : |1-
+          
+          <COMPILE IF ANDROID_MODE>
+          
+          // Forces the orientation according to the device
+          WinForceOrientation(True)
+          
+          <END>
+       -
+         code : |1-
+          
+         type : 34
+       -
+         code : |1-
+          
+          <COMPILE IF ANDROID_MODE>
+          	
+          	// Forces the orientation according to the device
+          	WinForceOrientation()
+          	
+          <END>
+         type : 165
+       -
+         type : 180
+         enabled : false
+       -
+         type : 230
+         enabled : false
+      templates :
+       -
+         name : WIN_PARAMETERS
+         identifier : 0x1557a453078a74f3
+         code_elements :
+          internal_properties : CAAAAAgAAAAdlDhBcHsxSm+RwTDgCPqpKRPyp+gZVWExNq8cDI6+JIScd5BaKQDEt1y4jddtNAMA9gIMagXEv9MOGg==
+          type_code : 1
+          p_codes :
+           -
+             type : 180
+             enabled : false
+           -
+             type : 230
+             enabled : false
+           -
+             type : 11
+           -
+             type : 12
+           -
+             type : 17
+           -
+             type : 13
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACzaYSNHinRsuoB6JBsrn+AjSN2Y5E3I9oXoveHo9NV+ByxG96O74WGGNtbV3CmmHv1rr2faVZ4t3yYswBTMecb/CvH4LrdaHWvBB87Ub3I2v3ID63tIrvyXCW0aP/lMDtfskdzAOG0U/wnj1O9jEdtK8LlRzqmhOaPbH7cGA==
+resources :
+ string_res :
+  identifier : 0x158d1c34002851d4
+  internal_properties : CAAAAAgAAADKK4J/oieVyEFJuCj/+BB9Sfd99nNItIHb3Dq288YGO3u/WsOCvxQKLRs2B8O2LUgCxgER+dYR
+  strings :
+   -
+     text :
+      en-GB : Load the data...
+     index : 0
+   -
+     text :
+      en-GB : The checkmark will be positioned on the left of the screen
+     index : 1
+   -
+     text :
+      en-GB : The checkmark will be positioned on the right of the screen
+     index : 2
+   -
+     text :
+      en-GB : Prevents from going into standby during the execution
+     index : 3
+   -
+     text :
+      en-GB : The screen can go into standby during the execution
+     index : 4
+   -
+     text :
+      en-GB : "Automatically remove the products bought from the list "
+     index : 5
+   -
+     text :
+      en-GB : Leave the products bought in the list
+     index : 6
+ dialogs :
+  -
+    identifier : 0x160b94b01e573f42
+    internal_properties : CAAAAAgAAACJCFiGSsQY19leqTzMUSw1F4zrL0JFvyQ/gy7WE4F4K2MJXYz1xH8qtFaF7rlrrKV6XXYZZJe/Tzlyzh+8194PXsOwtg2e94uyITv1VbPWdQ==
+    label :
+     fr-FR : "Attention ! Tous vos produits et toutes vos listes seront effacées.\r\nÊtes-vous certain de vouloir réinitialiser les données ?"
+     en-GB : "Caution! All your products and all your lists will be erased.\r\nDo you want to reinitialize the data?"
+    image : {}
+    cancel_button : 1
+    buttons :
+     -
+       label :
+        fr-FR : "&Réinitialiser"
+        en-GB : "&Reinitialize"
+       image : {}
+       value : 1
+     -
+       label :
+        fr-FR : "&Annuler"
+        en-GB : "&Cancel"
+       image : {}
+       value : 2
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

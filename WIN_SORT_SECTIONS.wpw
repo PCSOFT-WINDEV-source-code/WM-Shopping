@@ -1,0 +1,432 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WIN_SORT_SECTIONS
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : WIN_SORT_SECTIONS
+ identifier : 0x28f73cb36ddffc3d
+ internal_properties : CAAAAAgAAACKbZYlafdwGarGYkCngHsknr2kLHeTeI2XSHPvd8I3oHR6ty029fBWiWkTjQhksnBnjEdAI9sSXJH1LcXnCswZazXgrBjxeSGgPdOBmAUY4mitGbc1uBl9Nu1zi0R0cVjgclsWAKdkV5HzY2Ih7mugEwTbXXijwWlN/zhDwVtIj220UwfuZBnmcYRYGFCv+pOpzeufpsuy+S/JETFvGMY++RLaRslKYWE9Nqg47+QpAdQdp94rG2VmedDoUW5RfybVPK8RC0C/W1p+tTXpwiVcWH3ugIdF/5m5gEpp4O6PBE5Ae4pr0KRxZdxH0hJLbOAvx26lJGxIyoHovkdL7O8OhPBv7zSnflvFWM3HkXpNR2mFR5B3C7Dq7CgXZmIl2G+u56Ym8WkI1h4qZ538tGI37QE7pnzo1fYBm/Su9qla6llFZTrjsO7Hcp2YMaw0sKFn/gsd/IDDpPnjyCa9HauQ+oG4Q58dYY8UfQ/qiJxI0l/0WSK0sGN6+3AXiFCahuGodOkphUvUoC8PQkhyoGrq12MJrT3hEyvys0V3jab4Tu89jW6p41rXjKc+9JXTlgb7//QE3gXwOrcQkT7/H29cRxQe4CLyr9P2jUoRCYWb4aKhf8xQdvV2X/4qAYcBbxcTtyyIPpLopPHw4Pym1Mkw9Fv0IDDOGl+FjAuN1OPBaFgTya4fmCDC5/U1/Ixbg1i1u+qYg/RfxJmPphlmsxhddPfw6GG+uGc8lyEzHgCWKMldinRgLue/ziHtyQoUWBdtc4wcJ8JjF6ub3cAl9ydElYgJZxjWG3KXuwdNkiXqFHYrZEr6VCX5pAd8haW/Pav4ChchFVD3iG7JSqfiW1bjg8I5vZpE51p3sBmjVIJ2AVxrOM4Y88w5EVXRPUU6xZRRdpVu
+ properties :
+  width : 320
+  height : 407
+  heightMin : 471
+ controls :
+  -
+    name : BTN_Abandon
+    identifier : 0x28f73cb36de2fc3d
+    internal_properties : CAAAAAgAAADu5MrfNyVEqANCkcvuSbNIm/YdfUxAiffonYGDMC5pfAdaauE6uGacXSzEVKdqSS9LVq6RlqQ0ISfqUu4hMHdz1W0QmcUJH6S+nNz2NU+uyfBCq62ST3QcPaskpNe9pgJg9gbp8kPND6zrISRAsrot1NlqRZY29ni7tveL5aG+0iqGX5/vdIMT5LLWtnTEmtpM3vYxuIrY6YM/X2v8cB6JVjd7stvUZSXp/CbJznjZJr9WVhCLZ4pFj2y9IeyK7uj1cZ7e6p6QIvtz2zwBBpZZlmkccsbNwCmps0Ymoii55R1q2t+us2DEaSBbVj2GvBnzice1unNLy1TBTyZB9noO/IVvFZJm0lqUUmD1ib0CiEFJ/pKUFpk+OTgk7Vyx8AfJbDFJjuVNmehZacEo9icevv9x5qLfO9sJRQ6UrkHDZYzQJvwSVu43gpA94KtZBMDe/i7IEAezCAMhUstxTawvtHVkHHhGmRWoxR96dE3NYaYlzLiixLyP294Y2Zt+b2l5WznChcrAgo2FcPMtco7dIa1mSsBp/TcLnqeqNHbVRCsYNkIc8K6wbdQik/l8xXUe6gPXynWBTpOfGPuD4riu//9eYmdcfOetf4Ch+cdYwqxZ1JasMQFX7+E8pRuxltIHUVLpkKW5dXrVYHRj8KuIf2gqrlJHjsAdayhwAI8XITmsUd5ZhHvu7H2lMLQZ0fkTK0Zezpp+7asgwclUf56GA0eofbJi2oXsK/D63BAP9tkNMmB87VLxUCEaRakI+NkZCHCChqxsi6KpEAl3pLVIlu/ahB3gU0cLFa1d5LK/MjgOaVH8+k/z7IyRPjrwu2QEdA1ttIjKo3hM6/DR20eipkVMCqqhASqRMokiIH6jWp+KgaBhrNJXhvsP9GWoeSLgPQh6tgKIw1ypd0fdrsUTu36ZlJTXPhWPAXJkFFId23kxL7uH/f9B/ZZYreBPykIEJ66ieDlKc84bFB6CXi+IL6Gpq9l911qMlpjg+tIXXqQzhGXB
+    properties :
+     x : 2
+     y : -123
+     width : 90
+     height : 48
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+         MyWindow..ReturnedValue = False
+         Close(WIN_SORT_SECTIONS)
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : LOOP_RESULTS
+    identifier : 0x28f73cb36de3fc3d
+    internal_properties : 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
+    properties :
+     width : 320
+     height : 407
+    controls :
+     -
+       name : IMG_CAT
+       identifier : 0x28f73cb36de7fc3d
+       internal_properties : CAAAAAgAAABGiB/9LKrc1O74Hx13W35aKhP99bpFLrfO1w71TuH27k5L8WG0dv25QTcvPwy9O1bUCXg8izvt7z+kvEgpEjskD++wwPu8zCs+9muUpOS4/sALduqGV5NW6+cVVtVuHqY/JrPDwOXOIZa6S0jnDbch7fBK//OWPKS+K+SITFLpSfYnUj8FZpT2asOZmjcMHdfrxcKJFd0h+qRG+q2Le3GKeiMJ6aOtxIbqx9MuUYNZACRWX7HCrganAfL5FUGnU3Mxe5Smkfd2A5JWZ/K2TeqnApIdfe/y0XpIcEWT42QRac6Xc7HR9t7GkzdwoH5oH8VaH30C/Vh0dmyvw8Mycsz8D0tJ0hLuXZ3H9ULiJvoN4xE+1ozNWXDU8MGklpBIRFcpHyZcZAFGgIiaZFgGfwOsrC0q7Ql0asKznJkte04p5mToyVJ0hBHmNyuqoAQfGssmfVcB6N0ewSC4+8uHRIVrW0dD49dlnMHGkb/0Ch25Ms26TeFxeuG/rCutc8WmeqhCsfv1Bq6C6WaDDCXqcJu+Vtj2gejH/cWTgYE4HWyKweTvTjGMFrpBHC6rpn47PM1z9QCoIlRKEcK0QnMl7jNyDjECVK7DDQI2OsK3xgO655kL6EYCgoREOLautCpSWGnRuhbh37Ckw+3/FWv8/XyhBdpnOc1rvaZTDXtdRTrjQD1o+2V8VWWlmuq3NWJn08cJeGU0CQ7u6jD+v9DPlhx+2+TMfOXjPb9JW68Dkuz3swCH1B7HsZotadobFZBbMzCsro9PNpeur3EWdCYDZbi2+Fl57Bu7tr/rnwU5XQ==
+       properties :
+        x : 16
+        y : 6
+        width : 36
+        height : 36
+       type : 8
+       code_elements :
+        type_code : 8
+        p_codes :
+         -
+           type : 18
+           enabled : false
+     -
+       name : STC_Section
+       identifier : 0x28f73cb36de8fc3d
+       internal_properties : CAAAAAgAAABMa+BbOc+PfTGe5jzc52O0MJwNH+CgT75wZtwpH7g4z/K4IGmEUdipEoeqrXy2Eg0GpmCf0vM1dKJTXdcpIXtnZGQF7653yAM/VACVTF+fYqwU931KmHjNbqUg952xWry9JS9z/HMmkAoHq5tWTaP+WFVWaIeEall7jl1EiZEQ9pSOvyo6ZFNEGJ4cD5xZ4HqMZ7l4pQdZgZsPEZinbjVx/F0myfNCtRcjY+pToqRGsPinIA/owExjy6Gro579TOEq6ZuzbEybBG0kpNgo4+buEsBkYKodCLcoaLGWWYfBVbJtVTsQ+qJN3dMD2M5DWcysxPEiMiZdImLZca/odj3GpnF9fVrUbOewXFpFMMKfmGz2upAtNonzFHKE53SM22j52OsQGXuEKF7vfN6DwnhOjSQEWCeKpHsdzr5SWELHP1IaRuRI1Kml9LBiPj5eKk1wlbWBTApuhuj/WIV8I2G+o+oMqGd8qYtx7CtSzfY=
+       properties :
+        x : 16
+        y : 6
+        width : 272
+        height : 36
+       type : 3
+       code_elements :
+        type_code : 2
+        p_codes : []
+    columns :
+     -
+       name : ATT_ID
+       identifier : 0x28f73cb36de4fc3d
+       internal_properties : CAAAAAgAAABezkZ0al/Zzd1TG/Wq54/czMncAhDZtlDfTE13oBVPMgb9cPdvHqo8TFmPzJlFNAFkfNzty7lhBZ5g4nmRIOzfSiU6DKOh0nSQS14YPtp/twglcQ5JsTL9eUaPwGam8OhC15Nk
+       type : 3
+       content :
+        identifier : 0x2557a44c0c8d595c
+        internal_properties : CAAAAAgAAADryTcE1wdYvD3vRXveAy878MY0tBGVtRJFCKec9ONjoMSjdXko/BUQ7/aa5td4J0QGwbNDZ7u6HVAmFeJiKUW3AIZke7mPEa6O3T80XKwyKxqdz/+IMzq1H7wKTkmLCftmXeih3L2wxA9F34R1rzMUewXfPfNhH+yFL0Z0QK0+gscBykmAbH8+KcjlpZVlWXf1O2O2UpXFTj2e+Oh2XQ==
+        type : 3
+       code_elements :
+        type_code : 46
+        p_codes : []
+     -
+       name : ATT_NAME
+       identifier : 0x28f73cb36de5fc3d
+       internal_properties : CAAAAAgAAAB/IABzIeA2kkOjUeHW/XJU64989p2kKSZ8HV1rtuZNAs9g0FKIaGJljW9TRDV8z+LYlUkPvwGEmK1Sb8ta/Fb1pA3dKemfFqcf7TrD2fGGSs68gjnQLo6+SpDf9tNogPyk+iQd5gAh2UreSXKjd2YausWf52XwNXNNsUVaUkH3imft
+       type : 3
+       content :
+        identifier : 0x2557a44c0c8f595c
+        internal_properties : CAAAAAgAAADryTcE1wdYvD3vRXveAy878MY0tBGVtRJFCKec9ONjoMSjdXko/BUQ7/aa5td4J0QGwbNDZ7u6HVAmFeJiKUW3AIZke7mPEa6O3T80XKwyKxqdz/+IMzq1H7wKTkmLCftmXeih3L2wxA9F34R1rzMUewXfPfNhH+yFL0Z0QK0+gscBykmAbH8+KcjlpZVlWXf1O2O2UpXFTj2e+Oh2XQ==
+        type : 3
+       code_elements :
+        type_code : 46
+        p_codes : []
+     -
+       name : ATT_SUBSCRIPT
+       identifier : 0x28f73cb36de6fc3d
+       internal_properties : CAAAAAgAAADQItRy8vDSkDvG6rfS6NvVd8nVbmS9r/26y3czg1Pa3LqBfxDirYTF+vnbWjoTwNzYzoXV1W5nsKdWOU4chhy+lK/IoeAn0ihrmQm/WpD+Q4LmJYP1Wn6iXIpE6MKJuhGq6om7WyuYdmw=
+       type : 3
+       content :
+        identifier : 0x2557a44c0c91595c
+        internal_properties : CAAAAAgAAADryTcE1wdYvD3vRXveAy878MY0tBGVtRJFCKec9ONjoMSjdXko/BUQ7/aa5td4J0QGwbNDZ7u6HVAmFeJiKUW3AIZke7mPEa6O3T80XKwyKxqdz/+IMzq1H7wKTkmLCftmXeih3L2wxA9F34R1rzMUewXfPfNhH+yFL0Z0QK0+gscBykmAbH8+KcjlpZVlWXf1O2O2UpXFTj2e+Oh2XQ==
+        type : 3
+       code_elements :
+        type_code : 46
+        p_codes : []
+    type : 30
+    code_elements :
+     type_code : 42
+     p_codes :
+      -
+        type : 35
+        enabled : false
+      -
+        type : 22
+        enabled : false
+      -
+        type : 24
+        enabled : false
+      -
+        type : 23
+        enabled : false
+      -
+        type : 25
+        enabled : false
+      -
+        type : 230
+        enabled : false
+      -
+        type : 241
+        enabled : false
+      -
+        type : 101
+      -
+        type : 102
+      -
+        type : 222
+        enabled : false
+      -
+        type : 223
+        enabled : false
+      -
+        type : 224
+        enabled : false
+ actionbar :
+  name : ACTB_MAIN
+  identifier : 0x28f73cb36debfc3d
+  internal_properties : CAAAAAgAAAANNau1VE/U0NluGDHqha5VnpMq6KAT4NTu+fWPt7V1V9B3+T4tknfMt2mKvIC24PnWoPjcEGNlTPQgp6F/Im2VZ/hKhDUUAeC+2FKb4O6oNsuNBIPQIMJLmfPin0QnmYgnOm8gKSOvEaFMq3CaeNm9eq7V0RS7krnrZfKdAqhWDGOmJ+h+a6UIY58bFrNMaLtxhXzBMBNefF8YBJ39ipg6GG/SXhEQ7VorCux8PGxInIOLF93QWBSKrnyznyQXW9Y+u937Cqdafnlz0KMVev6yTcz5BkIpO1WuCrD6fVbSSKQ18UtoOUvOkc20I8mItJU7v6DGaWBVkdvNFuasrOrqA8bVoTRkLSQU4l9q3yq+AAzo1I6i2Q==
+  controls : []
+  code_elements :
+   type_code : 125
+   p_codes :
+    -
+      code : |1-
+       
+       ExecuteProcess(BTN_Abandon, trtClick)
+      type : 18
+    -
+      type : 229
+      enabled : false
+    -
+      type : 239
+      enabled : false
+    -
+      type : 240
+      enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x28f73cb36de9fc3d
+  internal_properties : CAAAAAgAAAAW1gnpy3noas3oG9zuXMxwkZr3JLeoYBVyeA3OKrGpbG8hUZFR3efjg9zXdvbkP3LOwZ4El+W+yh/BGkQoIMQZoZFhas7dNoK2s3zggks/85ETaI984McgHKWWQaYgHOHVWR2GVBXbwNvaP2ycm4Atn3CujyNLKHh/advQBBA/SjyBGhlS+OVu+5TE1UBpYuTyoMQSz+WQI84se2WdSbgsP+46Rqg+kP3nqD2BlYQgQ/0OVhmkbMPaynkAR9GXiUaW7GJI29Zvzbs1MN1yglvg1H3vemeWKxvW/9SKChIdFRPIVMDPwBAkLg==
+  options :
+   -
+     name : OPT_SAVE
+     identifier : 0x28f73cb36deafc3d
+     internal_properties : CAAAAAgAAABjLZIErMQD0S1L3wZIZoiqvSJqz63EP3WuHciIlxvrWeHTF7MoFK1KwGHdaFZ3i+cbHbcH8rgR7sZ8OH7KTfjJ1HaSOrg3a4u7HcVvJC+Kvn1R1X/hPgcBnvTgMAT0a811SiE781AxyAI6yW/9ldz/ZviCEv4q092yOztA3MxV8+4m4P4g1cg8QpVKXfoWYVvrSPPNqievZ8ruUrFThcBLfYXlKUCNJIczcGxQwdHw+vVMDaFinpXkZGtCDpfh8teochMUgreEoQparLZ/0u713qWaM913yjcB/WS+SUTE6vwns66fqLhHPKY/pA==
+     code_elements :
+      type_code : 26
+      p_codes :
+       -
+         code : |1-
+          
+          // Valid
+          ValidateList()
+         type : 32
+  code_elements :
+   type_code : 26
+   p_codes : []
+ languages :
+  - en-GB
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAABypRa07wP5syGYSEohNydKpi4BEJR2uozq9uyv6kIpz6G+IwG2KItPeanOHXSXFSzq9h45VvCnIyMWZCksR17PhgItX36LhZtLf5fbrJP/AGQNVWzGpSwROjsz
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1-
+      PROCEDURE MyWindow(gpclOneList is CShoppingList dynamic)
+      
+      MyAlias is string = MySelf..Name
+      
+      MyWindow..ReturnedValue = False
+   -
+     code : |1-
+      
+      RefreshSections()
+     type : 34
+   -
+     code : |1-
+      
+     type : 165
+   -
+     code : |1-
+      
+     type : 177
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+  procedures :
+   -
+     name : SortSectionOrder
+     procedure_id : 1798973315892051005
+     type_code : 14
+     code : |1-
+      PROCEDURE SortSectionOrder(stSection1 is STSection, stSection2 is STSection)
+      
+      	nPos1 is int
+      	nPos2 is int
+      	
+      	// Off-section product
+      	IF stSection1.Name = "" THEN nPos1 = 999999998
+      	IF stSection2.Name = "" THEN nPos2 = 999999998
+      	
+      	// If the order of sections was specified
+      	if gpclOneList.SectionOrder..Count > 0 _and_ nPos1 = 0 then nPos1 = Seek(gpclOneList.SectionOrder, asLinear, stSection1.GUID)
+      	if gpclOneList.SectionOrder..Count > 0 _and_ nPos2 = 0 then nPos2 = Seek(gpclOneList.SectionOrder, asLinear, stSection2.GUID)
+      	
+      	// According to the position
+      	IF nPos1 > nPos2 THEN RESULT 1
+      	IF nPos1 < nPos2 THEN RESULT -1		
+      	
+      	// At last, alphabetical order of sections
+      	RESULT StringCompare(stSection1.Name, stSection2.Name, ccIgnoreCase)
+     type : 458752
+   -
+     name : RefreshSections
+     internal_properties : CAAAAAgAAACio311615KvSZ2Z9DPxWvmaKV6ddr3mbA1Pzo0+PUgz54HbVHX45lo6SrDQbjsHvl03+FAquxXauWFKqSxqCeqLxUtciLQxXQ9joyv9QgNoon2Vfz/0qV2VCZzZLWAbaSJVmRXXGleFVquhh15
+     procedure_id : 1798973315892116541
+     type_code : 14
+     code : |1-
+      // Summary: Refreshes the sections
+      // Syntax:
+      //RefreshSections ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      PROCEDURE RefreshSections()
+      	
+      	arrSections is array of STSection
+      	stCat is STSection
+      	nRow is int
+      	
+      	LooperDeleteAll(LOOP_RESULTS)
+      	
+      	// Duplicates the root sections
+      	FOR EACH stCat of MySections
+      		IF stCat.ParentGUID = "" THEN
+      			Add(arrSections, stCat)
+      		END
+      	END
+      	
+      	// Eeffective sort according to the order defined for the current list
+      	Sort(arrSections, asFunction, SortSectionOrder)
+      		
+      	FOR EACH stCat of arrSections
+      		
+      		nRow = LooperAddLine(LOOP_RESULTS)
+      		LOOP_RESULTS[nRow].ATT_ID 	= stCat.GUID
+      		LOOP_RESULTS[nRow].ATT_NAME 	= stCat.Name
+      		LOOP_RESULTS[nRow].ATT_SUBSCRIPT	= nRow
+      	END
+     type : 458752
+   -
+     name : ValidateList
+     procedure_id : 1798973315892182077
+     type_code : 14
+     code : |1+
+      // Summary: Validates the list
+      // Syntax:
+      // ValidateList ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      PROCEDURE ValidateList()
+      	
+      	arrOrder is array of strings
+      	bOrderModified is boolean
+      	nRow is int
+      	
+      	FOR ALL ROW nRow of LOOP_RESULTS
+      		Add(arrOrder, ATT_ID)
+      		
+      		// Defines whether the order was modified
+      		IF nRow <> ATT_SUBSCRIPT[nRow] THEN bOrderModified = True
+      	END
+      	
+      	// If the order was modified
+      	IF bOrderModified THEN
+      		
+      		// Modifies the order of sections
+      		gpclOneList.SetSectionsOrder(arrOrder, True)
+      	END
+      	
+      	MyWindow..ReturnedValue = bOrderModified
+      	Close(WIN_SORT_SECTIONS)
+     type : 458752
+   -
+     name : WinForceOrientation
+     internal_properties : CAAAAAgAAABRQp9xr58d1wmhJVthC0x15l9/LZZ9rWKU+sx8nxOsDjRf0sQUYdAOW49d4y6lzqIHzXycrOYAs59fxsUEwzBBkEzcSWw6SpI1XGxdWG8bBCDSyRiDsPlwGbq+7VJapA==
+     procedure_id : 1798973315892247613
+     type_code : 14
+     code : |1-
+      // Summary: Forces the orientation according to the device
+      // Syntax:
+      //WinForceOriention ([<bInitial> is boolean])
+      //
+      // Parameters:
+      //	bInitial (boolean - default value=0): True if it is the initial loading, False otherwise
+      // Return value:
+      // 	None
+      //
+      PROCEDURE WinForceOrientation(bInitial is boolean <useful> = False)
+      
+      	<COMPILE IF ANDROID_MODE>
+      
+      	// In phone mode, forces the portrait orientation
+      	// In tablet, forces the landscape orientation
+      	IF NOT TABLET_MODE THEN
+      		WinOrientation(winOrientationPortrait)	
+      	END	
+      	
+      	<END>
+     type : 458752
+  templates :
+   -
+     name : WIN_SORT_SECTIONS
+     identifier : 0x1557a45307b2757f
+     code_elements :
+      internal_properties : CAAAAAgAAAALs2r8WhEnUPfxG7ClZxAy1DDL5ZmcdserQKcSKmE+2xtJGdcwFMIpH6/a6nIa2Qw5Rq0lVWTrO5k8DfOEPdu84Wly7TjDHDV3L160OTd+Y4WIS9hma+uXilw6X5c+
+      type_code : 1
+      p_codes :
+       -
+         code : |1-
+          
+          <COMPILE IF ANDROID_MODE>
+          
+          // Forces the orientation according to the device
+          WinForceOrientation(True)
+          
+          <END>
+       -
+         code : |1-
+          
+         type : 34
+       -
+         code : |1-
+          
+          <COMPILE IF ANDROID_MODE>
+          	
+          	// Forces the orientation according to the device
+          	WinForceOrientation()
+          	
+          <END>
+         type : 165
+       -
+         type : 180
+         enabled : false
+       -
+         type : 230
+         enabled : false
+      templates :
+       -
+         name : WIN_SORT_SECTIONS
+         identifier : 0x1557a45307b3757f
+         code_elements :
+          internal_properties : CAAAAAgAAAAdlDhBcHsxSm+RwTDgCPqpKRPyp+gZVWExNq8cDI6+JIScd5BaKQDEt1y4jddtNAMA9gIMagXEv9MOGg==
+          type_code : 1
+          p_codes :
+           -
+             type : 180
+             enabled : false
+           -
+             type : 230
+             enabled : false
+           -
+             type : 11
+           -
+             type : 12
+           -
+             type : 17
+           -
+             type : 13
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAADgFXSuTZb8qfP6Gq+nXf7UTr6zl/Oq6dU2khmTYShDWGGyt+VwOwgnDPLyZsdAKJRdmYwGfLJxl1mnfqDeSlYE96+RlJxxvTjgZ527QVehoqx33F6zTuq55Cgc89VWa3XXjal0yDxwFQn50C/xL5hUCB84TsIjvfrCLAqau1r2/aDK9frY2byz/ic8e+8=
+  original_name : _11
+resources :
+ string_res :
+  identifier : 0x16015ad6057d9160
+  internal_properties : CAAAAAgAAADkmnqOYSJCDK1nMhPGGh8H1UZKJzVoD1l4hOg4wbbKZfZt6Ql5QshoLhEpKGjwdPlUujQ8vnBt7A==
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

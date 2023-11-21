@@ -1,0 +1,521 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : COL_DATA
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x15fffbb10ec2ed6c
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes :
+   -
+     code : |1-
+      
+     type : 720896
+  procedures :
+   -
+     name : ParentSection
+     procedure_id : 1585291774004660221
+     type_code : 15
+     code : |1-
+      // Summary: Returns the GUID of the root section parent of a section
+      // Syntax:
+      //[ <Result> = ] ParentSection (<sGUID> is string)
+      //
+      // Parameters:
+      //	sGUID (UNICODE string): GUID of a section
+      // Return value:
+      //	UNICODE string: GUID of the parent root section
+      //
+      PROCEDURE ParentSection(LOCAL sGUID is string) : string
+      
+      	// Null section
+      	IF sGUID = "" THEN
+      		RESULT sGUID
+      	END
+      
+      	// Finds the requested section
+      	nSubscript is int = Seek(MySections, asLinear, "GUID", sGUID)
+      	IF nSubscript > 0 THEN
+      		
+      		stCat is STSection = MySections[nSubscript]
+      		
+      		// /!\
+      		IF sGUID = stCat.ParentGUID THEN
+      			RESULT sGUID
+      		END
+      		
+      		// Retrieves the GUID of the parent section
+      		sGUID = stCat.ParentGUID
+      		
+      		// The section is a root section
+      		IF sGUID = "" THEN
+      			RESULT stCat.GUID
+      		ELSE
+      			// Recursive call
+      			RESULT ParentSection(sGUID)
+      		END
+      	ELSE
+      		RESULT ""
+      	END
+     type : 458752
+   -
+     name : InitializeStorage
+     internal_properties : CAAAAAgAAAADizKA4a8R6ce/RWTFR/GZ8szXB4rn1MEnyhg+seKyj73BwwiMGsjfS9XKvSov3hsGsekJm96inFJMfn8uVfRHFRtOucN0xNbRDgGtJMdtV6npDIJQ0iNQz99EzEPrivQFXOuFh4XQvQGBnQyP5P08NoE5LL0DiyqfiT27hh27+h9VpYhkjXTQxqFdpUEGiBJECOrQ4luu+ME6uvlsfk8he1LIxblsvRhwyyMpCehQfCmI0cCQPhIZOkutOEH8V/IQEA==
+     procedure_id : 1586027476120303877
+     type_code : 15
+     code : |1-
+      // Summary: Initializes the storage folders of the application
+      // Syntax:
+      //InitializeStorage ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      PROCEDURE InitializeStorage()
+      
+      	IF InSimulatorMode() THEN
+      		
+      		// In simulator, take the data directory of the project
+      		DATA_PATH = fDataDir() + [fSep] + "data"	
+      		DATA_CACHE = fDataDir() + [fSep] + "cache"	
+      		
+      	ELSE
+      			
+      		<COMPILE IF ConfigurationType = Android>
+      		
+      			// System cache folder
+      			DATA_CACHE = fCacheDir()
+      			
+      			// Data folder
+      			DATA_PATH = LoadParameter(PARAM_DATA_PATH, "")
+      			
+      			// No path with parameters or inaccessible path
+      			IF DATA_PATH = "" _OR_ fDirectoryExist(DATA_PATH) = False THEN
+      			
+      				// Take a folder on the internal storage card (+ the project name)
+      				DATA_PATH = SysDirStorageCard() + [fSep] + ...
+      								StringFormat(APP_NAME, ...
+      								ccIgnorePunctuationAndSpace + ccIgnoreAccent + ccLowCase)
+      				
+      				// If an external storage card is available
+      				IF SysNbExternalStorage() > 0 THEN
+      					
+      					nCard is int
+      					
+      					// Checks each external storage
+      					FOR nCard = 1 _TO_ SysNbExternalStorage() 		
+      						
+      						// The storage must be removable and available
+      						IF SysRemovableExternalStorage(nCard) _AND_ SysStatusExternalStorage(nCard) = sseAvailable THEN
+      					
+      							// Take a folder on the external storage card (+ the project name)
+      							DATA_PATH = SysDirExternalStorage(nCard, sseAppFile) + [fSep] + ...
+      											StringFormat(APP_NAME, ...
+      											ccIgnorePunctuationAndSpace + ccIgnoreAccent + ccLowCase)
+      	
+      							XLOG("External data path detected :" + SysDirExternalStorage(nCard, sseAppFile))									
+      							BREAK
+      						END
+      					END									
+      				END
+      				
+      				// Backup for the next start
+      				SaveParameter(PARAM_DATA_PATH, DATA_PATH)
+      			END
+      		<ELSE>
+      		
+      			// Temporary folder
+      			DATA_CACHE = fTempDir()
+      			
+      			// Personal data folder
+      			DATA_PATH = fDataDirUser()
+      			
+      		<END>
+      		
+      		XLOG("Data path = " + DATA_PATH)
+      	END
+      		
+      	// The images are stored in a data sub-directory
+      	DATA_IMAGE_SUPPLIER = fSeparator(DATA_PATH + [fSep] + "images\suppliers")
+      	DATA_IMAGE_PRODUCTS = fSeparator(DATA_PATH + [fSep] + "images")
+      	
+      	// Creates the data directory if it does not exist
+      	IF NOT fDirectoryExist(DATA_PATH) THEN
+      		fMakeDir(DATA_PATH)
+      	END
+      			
+      	// Creates the cache directory if it does not exist
+      	IF NOT fDirectoryExist(DATA_CACHE) THEN
+      		fMakeDir(DATA_CACHE)
+      	END
+      	
+      	// Checks the existence of the image directory
+      	IF NOT fDirectoryExist(DATA_IMAGE_PRODUCTS) THEN fMakeDir(DATA_IMAGE_PRODUCTS)
+      	IF NOT fDirectoryExist(DATA_IMAGE_SUPPLIER) THEN fMakeDir(DATA_IMAGE_SUPPLIER)
+     type : 458752
+   -
+     name : InitializeData
+     procedure_id : 1588521572076273937
+     type_code : 15
+     code : |1-
+      // Summary: Initializes the HFSQL data
+      // Syntax:
+      // InitializeData ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      PROCEDURE InitializeData()
+      
+      	// Close all the files
+      	HClose("*")
+      				
+      	// In simulation, the fixed data is found in the data directory
+      	// (at run time, it is found in the archive/DataBase directory of the application)
+      	IF InSimulatorMode THEN
+      		HChangeDir(Data, 	DATA_PATH)
+      		HChangeDir(Supplier, DATA_PATH)
+      		HChangeDir(Unit, 	 	DATA_PATH)
+      	ELSE
+      		
+      		// If necessary
+      		IF DATABASE_VERSION > VERSION THEN
+      	
+      			// Extracts the data files of the application locally
+      			HFExtractResource(Data)
+      			HFExtractResource(Supplier)
+      			HFExtractResource(Unit)
+      			
+      			VERSION = DATABASE_VERSION
+      			SaveParameter(BASE_VERSION, VERSION)		
+      		END
+      	END
+      
+      	// User data
+      	HChangeDir(History, 	 DATA_PATH)
+      	HChangeDir(List, 		 DATA_PATH)
+      	HChangeDir(ListContent, DATA_PATH)
+      	HChangeDir(Personal, 	 DATA_PATH)
+      	HChangeDir(Note, 		 DATA_PATH)
+      	
+      	// Update the structures (if necessary)
+      	HModifyStructure(History, hmsNoCheck)	
+      	HModifyStructure(List, hmsNoCheck)		
+      	HModifyStructure(ListContent, hmsNoCheck)	
+      	HModifyStructure(Personal, hmsNoCheck)	
+      	HModifyStructure(Note, hmsNoCheck)			
+      	
+      	// Creates alias an for managing the sections
+      	HAlias(Personal, PersonalData)
+      	HChangeName(PersonalData, Personal..Name)
+      	HChangeDir(PersonalData, DATA_PATH)
+      	
+      	// Update the content sources	
+      	SourceRefresh()
+     type : 458752
+   -
+     name : InitializeParameters
+     internal_properties : CAAAAAgAAAAe3wU/BFIHWxPOHG73iuOlMbUAsHsjav2liRQBm3E78r0au/FYH7O3Mss0dDLcLR0nPGNzTSb82X+TE3KBujvch9LKG9YOSp6lkNVfwz0HchOLEdjSp/nGf0X7EuYvICYJevu8rzBJwik72VPDv2ex/8Ovv/9w4in16bVqMKb/1VkpKa4phFC9gvhP6v7856KXCg5mH4GzxdIoWqxg94N0idFd
+     procedure_id : 1588521937155329321
+     type_code : 15
+     code : |1+
+      // Summary: Initializes the aplication parameters
+      // Syntax:
+      // InitializeParameters ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      PROCEDURE InitializeParameters()
+      	
+      	VERSION = LoadParameter(BASE_VERSION, 0)
+      	XLOG("Current version : " + VERSION)
+      		
+      	// Load the parameters
+      	USER_PARAMS.InvertLeftRight = LoadParameter(PARAM_INVERTED_CHECKBOX, False)
+      	USER_PARAMS.LockScreen = LoadParameter(PARAM_SCREEN_LOCK, True)
+      	USER_PARAMS.AutoDeleteBoughtProducts = LoadParameter(PARAM_AUTO_DELETE, True)
+      	USER_GUID = LoadParameter(PARAM_USER_GUID, GetGUID(guidRough))
+      	
+      	// Favorites
+      	StringToArray(LoadParameter(PARAM_USER_FAVORITES, ""), MyFavoriteProducts, ";")
+      	
+      	// If the screen must be locked
+      	IF USER_PARAMS.LockScreen THEN
+      		
+      		// In real
+      		IF InSimulatorMode = False THEN
+      			
+      			// Disables the standby mode
+      			SysStandby(sysBattery, sysStandbyInactive)
+      		END
+      	END
+      	
+      	SaveParameter(PARAM_USER_GUID, USER_GUID)
+     type : 458752
+   -
+     name : SourceRefresh
+     procedure_id : 1588570233893200391
+     type_code : 15
+     code : |1-
+      // Summary: Update the data source used to extract the products and sections
+      // Syntax:
+      //[ <Result> = ] SourceRefresh ([<bRefreshSections> is boolean])
+      //
+      // Parameters:
+      //	bRefreshSections (boolean - default value=1): True if the sections must be refreshed, False otherwise
+      // Return value:
+      // 	boolean: True if the data was refreshed, False otherwise
+      //
+      PROCEDURE SourceRefresh(LOCAL bRefreshSections is boolean = True) : boolean
+      	
+      	sTabulation is string
+      	
+      	<COMPILE IF ConfigurationType = ios>
+      		sTabulation = SPC + SPC
+      	<ELSE>
+      		IF InSimulatorMode() THEN
+      			sTabulation = SPC + SPC
+      		ELSE
+      			sTabulation = TAB
+      		END
+      	<END>
+      	
+      	NextTitle(<§@15fffbb10ec1ed6c0003§>)
+      	ChronoStart()
+      	
+      	// Number of history entries
+      	ListManager.NbHistory = HNbRec(History)
+      	
+      	// Runs the query
+      	IF HExecuteQuery(QRY_SOURCE_CONTENTLIST) THEN
+      		
+      		// Read the first record
+      		HReadFirst(QRY_SOURCE_CONTENTLIST)
+      				
+      		// Update the sections
+      		XLOG("[SourceRefresh] Extracting sections...")
+      
+      		QRY_SECTIONS.pLanguage = Nation
+      		IF NOT HExecuteQuery(QRY_SECTIONS) 			THEN XLOG("[SourceRefresh] (QRY_SECTIONS) Error: " + HErrorInfo)
+      		
+      		IF bRefreshSections THEN
+      		
+      			XLOG("[SourceRefresh] Refreshing sections")
+      		
+      			stParentCat is STSection
+      			stCat is STSection
+      			nInserSubscript is int
+      			
+      			DeleteAll(MySections)
+      					
+      			// Root sections
+      			QRY_SECTIONS_LISTING.pGUIDParent = Null
+      			IF HExecuteQuery(QRY_SECTIONS_LISTING) THEN
+      				
+      				nLevel is int = 0
+      				nTotal is int = HNbRec(QRY_SECTIONS_LISTING)
+      				bRemainBrowse is boolean
+      				
+      				LOOP
+      				
+      					// Read the sections
+      					HReadFirst(QRY_SECTIONS_LISTING)
+      					WHILE NOT HOut(QRY_SECTIONS_LISTING)
+      						
+      						IF nLevel > 0 THEN
+      							
+      							// Off root section
+      							IF QRY_SECTIONS_LISTING.ParentGUID <> "" THEN
+      								
+      								// Checks whether this section was already processed
+      								IF Seek(MySections, asLinear, "GUID", QRY_SECTIONS_LISTING.GUID) < 1 THEN
+      								
+      									// Finds the subscript of the parent section in the cache
+      									nInserSubscript = Seek(MySections, asLinear, "GUID", QRY_SECTIONS_LISTING.ParentGUID)
+      									
+      									// If the parent section was already inserted
+      									IF nInserSubscript > 0 THEN
+      										
+      										// Retrieves the characteristics of the parent section
+      										stParentCat = MySections[nInserSubscript]
+      																														
+      										// Store the entry
+      										stCat = [RepeatString(sTabulation, (stParentCat.Level + 1)) + QRY_SECTIONS_LISTING.Name, QRY_SECTIONS_LISTING.NameIndex, QRY_SECTIONS_LISTING.GUID, QRY_SECTIONS_LISTING.ParentGUID, (stParentCat.Level + 1)]
+      										
+      										// Section path
+      										stCat.Path = stParentCat.Path + TAB + QRY_SECTIONS_LISTING.NameIndex
+      										stCat.Name = Replace(stCat.Name, "&", "&&")
+      										stCat.Custom = QRY_SECTIONS_LISTING.IsPersonal
+      										Insert(MySections, (nInserSubscript + 1), stCat)			
+      									END							
+      								END
+      							END
+      							
+      						// First pass
+      						ELSE
+      							
+      							// Root section only
+      							IF QRY_SECTIONS_LISTING.ParentGUID = "" THEN
+      								
+      								// Store the entry
+      								stCat = [QRY_SECTIONS_LISTING.Name, QRY_SECTIONS_LISTING.NameIndex, QRY_SECTIONS_LISTING.GUID, QRY_SECTIONS_LISTING.ParentGUID, nLevel, "", QRY_SECTIONS_LISTING.NameIndex]
+      								stCat.Name = Replace(stCat.Name, "&", "&&")
+      								stCat.Custom = QRY_SECTIONS_LISTING.IsPersonal
+      								Add(MySections, stCat)							
+      							END						
+      						END		
+      						
+      						HReadNext(QRY_SECTIONS_LISTING)				
+      					END
+      				
+      					// Checks whether all the sections have been listed
+      					bRemainBrowse = (MySections..Count < nTotal _and_ nLevel < nTotal)
+      					nLevel ++
+      				
+      				TO DO WHILE bRemainBrowse
+      													
+      				// Adds the "Other" entry into the list
+      				stCat = [<§@158832990050ccf80000§>, <§@158832990050ccf80000§>, "", "", 0, "", <§@158832990050ccf80000§>]
+      				stCat.Custom = False
+      				Insert(MySections, 1, stCat)
+      				
+      				// Alphabetical sort by path
+      				Sort(MySections, asMember, "+Path")
+      			ELSE
+      				XLOG("[SourceRefresh] (QRY_SECTIONS_LISTING) Error: " + HErrorInfo)	
+      			END
+      		ELSE
+      			// Let do it
+      			Multitask(-1)
+      		END
+      		
+      		XLOG("[SourceRefresh] Extracting products...")
+      		QRY_PRODUCTS.pLanguage = Nation
+      		IF NOT HExecuteQuery(QRY_PRODUCTS) 		THEN XLOG("[SourceRefresh] (QRY_PRODUCTS) Error: " + HErrorInfo)
+      		
+      		
+      	ELSE
+      		XLOG("[SourceRefresh] (QRy_SOURCE_LISTCONTENT) Error: " + HErrorInfo)
+      		RESULT False
+      	END
+      	
+      	XLOG("[SourceRefresh] " + ChronoEnd)
+      	
+      RESULT True
+      
+      END:
+      	NextTitle("")
+     type : 458752
+   -
+     name : HFExtractResource
+     internal_properties : CAAAAAgAAAC0QnngerSkllHM7IJUmZud1LrgG3qTcTvacNwYJAPCuMZtFKV026MlYRI2wc9WMYB+3fk+0HMBB41+3BqUDdxF1ohMWvJpcIJOu7r2hSxXpW51hj7cZezRUsW2AX+yoo5zRAXBwdmegTeXWtglSh+eO0UQhJPZpinTfvgPKE/rBpKxvH6+n5NnElKg6UFSvsCu3179tbRmSuoINIi3H5YW4PSd3/LzdCO4etA1Bfie2peiK1Uy+ejdNJe5LbJPfo4cwP98UwRs/pRS0Oeun98T05W3TA==
+     procedure_id : 1609781707186833249
+     type_code : 15
+     code : |1-
+      // Summary: Extracts a data file from the archive
+      // Syntax:
+      //HFExtractResource (<File>)
+      //
+      // Parameters:
+      //	File: File to extract
+      // Return value:
+      // 	None
+      //
+      PROCEDURE HFExtractResource(File_Name)
+      	
+      	bExtracts is boolean
+      	
+      	XLOG("[HFExtractResource] " + File_Name..PhysicalName)
+      	
+      	// Re-uses the name 
+      	sFile is string = Lower(File_Name..PhysicalName)
+      	
+      	// Deletes the local files
+      	fDelete(fDataDir() + [fSep] + sFile + ".fic", frReadOnly)
+      	fDelete(fDataDir() + [fSep] + sFile + ".ndx", frReadOnly)
+      	fDelete(fDataDir() + [fSep] + sFile + ".mmo", frReadOnly)
+      	
+      	// Extracts the files
+      	bExtracts = fExtractResource(sFile + ".fic", fDataDir() + [fSep] + sFile + ".fic")
+      	IF bExtracts THEN bExtracts = fExtractResource(sFile + ".ndx", 	fDataDir() + [fSep] + sFile + ".ndx")
+      	IF bExtracts THEN bExtracts = fExtractResource(sFile + ".mmo", 	fDataDir() + [fSep] + sFile + ".mmo")
+      	
+      	XLOG("[HFExtractResource] " + sFile + " : " + (bExtracts ? "OK" ELSE "FAILED " + ErrorInfo))
+     type : 458752
+   -
+     name : SectionCaption
+     procedure_id : 1612663205326093232
+     type_code : 15
+     code : |1-
+      // Summary: Returns the section name
+      // Syntax:
+      //[ <Result> = ] SectionCaption (<sGUID> is string)
+      //
+      // Parameters:
+      //	sGUID (UNICODE string): GUID of a section
+      // Return value:
+      // 	UNICODE string: Section name
+      //
+      PROCEDURE SectionCaption(LOCAL sGUID is string) : string
+      
+      	sName is string
+      
+      	// Null section
+      	IF sGUID = "" THEN
+      		RESULT <§@15fffbb10ec1ed6c0000§> 
+      	END
+      
+      	// Finds the requested section
+      	nSubscript is int = Seek(MySections, asLinear, "GUID", sGUID)
+      	IF nSubscript > 0 THEN
+      		
+      		// Cleaning
+      		sName = NoCharacter(MySections[nSubscript].Name, TAB + SPC)
+      				
+      		// Returns the name
+      		RESULT sName
+      	ELSE
+      		RESULT ""
+      	END
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_SansNom1
+resources :
+ string_res :
+  identifier : 0x15fffbb10ec1ed6c
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      en-GB : Other
+     index : 0
+   -
+     text :
+      en-GB : Updating resources...
+     index : 1
+   -
+     text :
+      en-GB : Initialize the data...
+     index : 2
+   -
+     text :
+      en-GB : Load the data...
+     index : 3
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

@@ -1,0 +1,122 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WINTPL_SHOPPING
+ major_version : 28
+ minor_version : 0
+ type : 18
+ description : ""
+ subtype : 0
+window :
+ name : WINTPL_SHOPPING
+ identifier : 0x28f73cc4715e3ba7
+ internal_properties : CAAAAAgAAAAWTdinaJIJe0bVDLOWbJtOvhT2p463WJD/Nn/OuJGZ4jEDUWd77wUNRiM7PVdQOBeEw9RvmWh91B0b5/dDrMwP7oTKLVO4RzCijhl/AqvOYESlMiqPESrJN4Y+VPAShxBZWliamr5MxH7lmwIDzM7mg4PimbCXY9VmAvLsJu7rlsk3vq5nZQRGfQOYxiEHe+VBkO4tq203SQey6vEypYyRQ9EWnhhXTkd0xeApcfWTw5CCP9tPmYZjHTTGRmaSEn5N2m6WX6HcX27m+76tAqx83ZEbX5F0ZNxaGFuQgHVL7Oh2azXkI6Bbmw1j7Lj5WnmL8msAOkbT4IC7lMl8hSrATrtPhxx/GznYnhYrDA7krYOJQ/ee3zz0gQxNy4nEjkQ2BEWKNeHheR6TivTcolvuwTqdihEAUZ44hAstY+unF476RKq1Kt9df3KRt34BPxnuD43TeOEj/qAbW0Fm16sG6+QEeqtchSneWUqtg2stkQZ1BcCFBgPWDIYDI07nUMi3gpVn4XTb4GBvAtBFpdkpyor7D2532s6GSHwulcgIYXR1qf01t5y9IeHfK3uumW4uWRJ8M2oGKk4JjSqZwJgx3+B+j3zpTMBIjbowPD0XQDy96lS/qHP2mDNXjcpRhDdoeDY26qZWqwcuErQ+Hu62y00J4krzZ1EJDysoNFwnE9eBukq/edyifHUhpXvuw18iPTUpSEI4Ngc7uIC2/JW2m/oEqJ1H4W2YP/63sINZSaX6SFw3wAHOHs3/5NAWZ2YpyYNK4eo=
+ properties :
+  width : 320
+  height : 528
+ controls : []
+ menu :
+  name : _Menu
+  identifier : 0x29f8144500a4e5ba
+  internal_properties : CAAAAAgAAADgMVTORwj2Mt8z/R5WRL0mTVIMDO11ij5YdBwcO3ZAw8tWdEBL95DgWGGgMGBRKql5dANp5Vg/qpNyJvJQ8sIrr6GzC+masJIwyV5P7DpW0go2kGsf4EvdW1eqlu6V7I5EHVrMjd02cTaXwP0dbd1DSbdsd/Wxk0ScMGI7Z0eDsGOMLRfieoTYskOjcLtA7tgFoR24z+3d3zH3Bloaoqj6XKllvOzqHQUKs5ikiJtsiZpXF9leDIYykRzjnC4k4qQVjthAFpugw+diG+HfnEMv+L/rU3DRjlIiDq+0aeUP
+  options : []
+ languages :
+  - en-GB
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAABKff4sxysR+9kg8GIJ708iDvb5GJxqytSUKL54fomJ9xlu42EWUFv/+en+BSQDmdB2krqVslwL/1eyQDVw8sffQk7lF3aDfZNzV/+zROsnKAy1jaSejRR5UgML
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1-
+      
+      <COMPILE IF ANDROID_MODE>
+      
+      // Forces the orientation according to the device
+      WinForceOrientation(True)
+      
+      <END>
+   -
+     code : |1-
+      
+     type : 34
+   -
+     code : |1-
+      
+      <COMPILE IF ANDROID_MODE>
+      	
+      	// Forces the orientation according to the device
+      	WinForceOrientation()
+      	
+      <END>
+     type : 165
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+  procedures :
+   -
+     name : WinForceOrientation
+     procedure_id : 1798973388920470439
+     type_code : 14
+     code : |1-
+      // Summary: Forces the orientation according to the device
+      // Syntax:
+      //WinForceOriention ([<bInitial> is boolean])
+      //
+      // Parameters:
+      //	bInitial (boolean - default value=0): True if it is the initial loading, False otherwise
+      // Return value:
+      // 	None
+      //
+      PROCEDURE WinForceOrientation(bInitial is boolean <useful> = False)
+      
+      	<COMPILE IF ANDROID_MODE>
+      
+      	// In phone mode, forces the portrait orientation
+      	// In tablet, forces the landscape orientation
+      	IF NOT TABLET_MODE THEN
+      		WinOrientation(winOrientationPortrait)	
+      	END	
+      	
+      	<END>
+     type : 458752
+  templates :
+   -
+     name : WINTPL_SHOPPING
+     identifier : 0x18f73cc40efb3ba7
+     code_elements :
+      internal_properties : CAAAAAgAAAAdlDhBcHsxSm+RwTDgCPqpKRPyp+gZVWExNq8cDI6+JIScd5BaKQDEt1y4jddtNAMA9gIMagXEv9MOGg==
+      type_code : 1
+      p_codes :
+       -
+         type : 180
+         enabled : false
+       -
+         type : 230
+         enabled : false
+       -
+         type : 11
+       -
+         type : 12
+       -
+         type : 17
+       -
+         type : 13
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAAB6ragasMBWLfpsSyU19J6lAvYEqFWd1xYOjmHr1XHVZOVmechqLo1vKvfoAJhHeXL59P8BudVQfrBZ/U9vpjDz5RFibMKKm/84EA==
+  original_name : _11
+resources :
+ string_res :
+  identifier : 0x16bb462a1ff781f2
+  internal_properties : CAAAAAgAAACyXVFaObH4lOGSEHJoZf1MD49w+XTw2LScZCP/urkWFwy+HYJdyQ3umA==
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

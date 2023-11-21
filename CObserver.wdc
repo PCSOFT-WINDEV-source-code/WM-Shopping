@@ -1,0 +1,108 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : CObserver
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x18f73cc20ec534e1
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      // Represents an observer
+      CObserver is class
+      	
+      	PUBLIC CONSTANT
+      		Container		is string			// Name of container
+      		Callback		is PROCEDURE			// Callback to run
+      
+      END
+     type : 131072
+  procedures :
+   -
+     name : Constructor
+     procedure_id : 1798973380326995169
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructor(LOCAL sContainer is string, LOCAL pCallback is PROCEDURE)
+      	
+      	// Default values
+      	Container = sContainer
+      	Callback  = pCallback	
+     type : 589824
+   -
+     name : Destructor
+     procedure_id : 1798973380327060705
+     type_code : 28
+     code : |1+
+      PROCEDURE Destructor()
+      
+     type : 655360
+   -
+     name : Trigger
+     procedure_id : 1798973380327126241
+     type_code : 12
+     code : |1-
+      // Summary: Triggers the observer
+      // Syntax:
+      // Execute ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      PROCEDURE Trigger(XT_PARAMETER)
+      	
+      	WHEN EXCEPTION IN
+      		
+      		// Runs the callback
+      		Callback(XT_PARAMETER)
+      	DO
+      		
+      		XLOG("[CObserver." + Container + "] Error: " + ExceptionInfo + CR + dbgInfo(dbgStack))
+      	END
+     type : 458752
+   -
+     name : TriggerYield
+     procedure_id : 1798973380327191777
+     type_code : 12
+     code : |1-
+      // Summary: Triggers the observer
+      // Syntax:
+      //[ <Result> = ] TriggerWithReturn (<PARAMETER>)
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	Undefined type: Return value
+      //
+      PROCEDURE TriggerYield(XT_PARAMETER)
+      	
+      	WHEN EXCEPTION IN
+      		
+      		// Runs the callback
+      		RESULT Callback(XT_PARAMETER)
+      	DO
+      		
+      		XLOG("[CObserver." + Container + "] Error: " + ExceptionInfo + CR + dbgInfo(dbgStack))
+      		RESULT False
+      	END
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : Classe1
+resources :
+ string_res :
+  identifier : 0x160ba2f02a08e942
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

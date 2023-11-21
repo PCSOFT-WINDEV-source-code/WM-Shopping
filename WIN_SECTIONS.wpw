@@ -1,0 +1,549 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WIN_SECTIONS
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : WIN_SECTIONS
+ identifier : 0x28f73cab6b9ada8c
+ internal_properties : CAAAAAgAAACkn4qIcdgYbYGe2CDTcyDaXppAZ/2RRtk9jE0vuM38WoUTM+jV+Sxb8x7jX788sqtOfeewhl3PEdxvM5Kvjq+QIGgT84wdw4g+hAkUc8OrrDiuJJfKcPk3Wcgc2ik1Om5eURXsYIFJ1/RUIrjyUCHsW/uzqnbGS4qCWQALowUitOWznhPK3f2esX/6iiGMVU2UF/3R91aFWoAUOMtqzo3Odrpy/G7RczxCFFyyKCws5GKiKFx1Mbbnc0LRZaM1O9PnFTZaysLZJHnFBO3agUVCFXGQ2FP6jCCcIOCCphZGmDQGFyYYnjEbkZXAHb7C0T8BFKIDHvnUSzzQd5pE/aHlzRCI6iZni/tqoN8lJX6joGEk3Cuhh9FYIus39MM2fyph5U4xMoFQdrz9HZ1Oi4lzAbfXGmQIldJPkCNCvYyQrT6zvgaIr6+sA6hRSytLIrrT6x+ouQMAIz5n7q0AojP20NgMQHqEBI6Z6fm1X7XSNrFba8+3ZUihwEpTA/WF3IliTXkGrKzvzaanlHOnGAlF5p7omGL0wRn33A45Pu6dkWLJXG/yt1bINwHjxYyWQQN/3DLcz2iBSAmpft1b3YbPdKaenLYHTKfg5gOP+vL6EktdwyY5rQY3ukaQ3Pne2LCK8lTS9Op+fAttQV4BO8IVGgvyhFxrYZQv9dWTxoUNzLPVv3r8dabMtC0lc9Zwggaqc5d9oj5Js+JSzQyBkCgzqRr5DPq7JcW+upuDJ0SOiMPaYtbxczNT3OSyZL2mor1Avoi/iOHU1Pc18ZaOoKfHKhKjxbusA8NGt4F+SGSzaNuVz18sMAXB3hcx8iec7BZJL/n4y/G3jT/pFvCoM4zKOjFOKAJl/jDeUYVOjN4kR1pWOt3v2jlrYMw=
+ properties :
+  width : 320
+  height : 320
+  heightMin : 384
+ controls :
+  -
+    name : LOOP_SECTIONS
+    identifier : 0x28f73cab6b9eda8c
+    internal_properties : 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
+    properties :
+     width : 320
+     height : 320
+    controls :
+     -
+       name : STC_SECTION
+       identifier : 0x28f73cab6ba3da8c
+       internal_properties : CAAAAAgAAACvqTBTN/ZIhg5fMVFS5fEodlxdyMRKDzO0mOb8GuapB/OTS0eAVaR0g/MO7pYevBQOJ+U5goVQ7mqgGwxa3wXVE4JR6kFZ2a7xf3x+kQ+nX1Fx7VE76BUs6PNdGcYjqMEOTZWKxPPOle43ehpbR1iBNZNxvL0Yrr1OGn/baYxEWOYscFVeK+K+z3lxyX/sKnAHf3wsIBP7Y16XqXK97b4fJPt0p2W1dKmt+pdj0DItVo4dqwbBJ1S4i64MD0vGdzoQsQZcv0Z+MYBz/Mi3L29sYfmBiUTY1/PA7CgMi9MXb14IG9mPaxfBH/8mksy+DILqiFqVxe6mOBGM9eokTWvfh1OLRiJ6UaidlrtDMeeaviTvQCCjM0jYK+XJx53LSaU9ITmTPNulV7i2n4BJTypl+xn609+jT9tFi65PH60/ewM1tcqCIe8CaGUiV3tV40ExBZN2lPRRKQnY8TfpNbtowGN99C4y1wkw3JYxf6z60+8CYGgK9r8kXSJzaA==
+       properties :
+        x : 16
+        y : 6
+        width : 288
+        height : 36
+       type : 3
+       code_elements :
+        type_code : 2
+        p_codes : []
+     -
+       name : IMG_ROWBACKGROUND
+       identifier : 0x28f73cab6ba2da8c
+       internal_properties : CAAAAAgAAACWIEt+FtJeTqFBGxkVMPPZM57b3rlT+PzYnRpQy899DcIDvsE/siSjN7N+EZZ9pNtozJXFWARwJpdOsrR6hqj3TS+KrLO9Y7mJT5KMfPGKSvdYolhCQAypOig/9HdWNAuQ1eLp+ztswiwcUn8av5AsA9azqph/g3SLkHF052nWwR6kLbk3jMRLmAfw12GrFC5/PUrApriBST4skOFgssN7ZhZccAxbYT8ZuYONfh0WGVlLgoVdYHtyV0mau3RjiOGK8jeVrzqXaUgDyHt4hdQl1WRPiM16XJC/f1LnW76qK7Ty/RxWErx+eOxwD2df0VFwejctDLaeacShutjvl02bJyrV+nmaZXehfKe41KhtnmE+gCsGgBNnolTqvTpQXIbKy0ePbUnZF3T3kP3kOJQ9Ig/f5OdN0mR0R/FA5i5YLLQNYqOWaDtoyldnSb9/kgyYt4oHOYQ9Yc7bX9et3bNojElfmoJX3bZ7CFTnFzmWM6Sp9qLHusEZb5OEMLKy8lUUW9X15ThD5INL+XgY0NaOR3YuRibpHhr08WzO5ikxFp5W1PDFx0NFX5DbnA2v5y65BN1696YPEZKAt8mRJlbDLC3+Y/xX/1FemI78vIgbnQ9ahw4iTDchWHw81dPM6UyFc4ysdvmdryytTl0hNOjJAM8HkuRLr3lhDGDxKIUAJU8Csr5soHbOImstSKPrW4ck3ATTrX64F4y9VERNHLoJqbPDQV9coumCBSEb2iUbntpgllm2MzsHIU82zul4TxrZ66DIUzQd1nOTt8VXpSFF+2+Zag==
+       properties :
+        width : 322
+        height : 48
+       type : 8
+       code_elements :
+        type_code : 8
+        p_codes :
+         -
+           type : 18
+           enabled : false
+     -
+       name : IMG_UNLOCKED
+       identifier : 0x28f73cab6ba4da8c
+       internal_properties : CAAAAAgAAABq/cd7T8FWOqRbSFKqbXrvuKpSHOxbyyn581FdsD9uDjlCzdANXyEl1ID2DMNnXQ6rMXt51e+zfrlsjrGjwgfIyV6kN8/bpBp2sah+Kw1oQIB0SJ5KufLq9hp1EO9z1YU6eOVAgEC1WVSI9rpb4xJ+Ttt9d+4t/wfdxMG2UkjDhKsBiCgdRySZ982E2Dp3TULxA/bNjNTJjexmNmRAC5jMST/5cEoQTkoVft1bRxXllvyDxagRlP/oajcjtes6yKdVEqflz6gDBOVJp/370XJLGF/IUGcrAfrzwEwnErhR5ycXrFNQ+Od2vTDAgjIjg4VCqVH8c6nDymvm6M2nNsLRoWTBwSwvHpKQ5Te1aaA9Dyq2spo/+8dM5N+Ua0cObHCosrPJlUi6HjdMxlHcEy6wlWEa7UNjmXCIsXWXeAJwnMBiFpzkMLFSy14wfD2ze5PaXmxwAZau6SbmcHyKliKLCHsmK9d6wAWlWmG07Ri6SeCOIdPWf3Dt8pMMlbC1wqGAHghLO2tXYfTg3XldMT7KoSYEO3q6yxnQCWTNACdgbCGKBk1RHjdlEePQNlItP2bezGNlw3GzUdnefOunsJBc50Lxv2c7SrN/Tbjfjn8bCJYmnOR2sIbJhlz5LDEy8yot6Mu9yf0Jr0ztSDt7xB+ly+kk+QhczxX4+muk70IZJjqpoj8PLR86ZYLo52hl4MN6kRgz9/5u7g795pfaE0P6yTFw17CkQmXl5by/9YgAPMJfNNsgSZbHpKvEwcqZ2Iq32/FjwAbGLuwZRG/34upo5yWkvRyOiBDeicZVXJeZmS6ugYgITs4kT7Yb0bC4lv4AGIuWyoRcDp+79vTgo751u6DLdT0phDCVxOvk30KH5AWKjbVutHlncG4qeTMLDpBTApj5sGhDeX6/PpFZyivFwXrbvRuN0Is82WCptHsnf+4=
+       properties :
+        x : 280
+        y : 15
+        width : 18
+        height : 18
+       type : 8
+       code_elements :
+        type_code : 8
+        p_codes : []
+    columns :
+     -
+       name : ATT_GUID
+       identifier : 0x28f73cab6b9fda8c
+       internal_properties : CAAAAAgAAAAdjhnHkupiR69RsVFKRNxmBQoSDxVsLe8nZc/FJ7z92p/tvx5IGLS/oZzJMqbf95UsZoSeV7LxpQLwZ0hj2w4w2dftraoC7taOSoYfvy5KvtGQGgto+3E8Z7JFuQx4sJUFKdQOOg==
+       type : 3
+       content :
+        identifier : 0x2557a44c0d1b599b
+        internal_properties : CAAAAAgAAADryTcE1wdYvD3vRXveAy878MY0tBGVtRJFCKec9ONjoMSjdXko/BUQ7/aa5td4J0QGwbNDZ7u6HVAmFeJiKUW3AIZke7mPEa6O3T80XKwyKxqdz/+IMzq1H7wKTkmLCftmXeih3L2wxA9F34R1rzMUewXfPfNhH+yFL0Z0QK0+gscBykmAbH8+KcjlpZVlWXf1O2O2UpXFTj2e+Oh2XQ==
+        type : 3
+       code_elements :
+        type_code : 46
+        p_codes : []
+     -
+       name : ATT_NAME
+       identifier : 0x28f73cab6ba0da8c
+       internal_properties : CAAAAAgAAAAkb9k8eG+tG8oa+BhFiMGRUKrpS9j3XCf3QIUvdq6HOC2MUmTUFPLZNwNlkhEYLZxm2b8tF7EC0JFHE4nafNY1JG39CQl/eL1+mJNkNHZ9E+W1iaJrC/EXZW32pw4tRxXv/yeqZbmIyuNb8sl21HvFizporJ53Dmq0KMzTy/i+0y40
+       type : 3
+       content :
+        identifier : 0x2557a44c0d1d599b
+        internal_properties : CAAAAAgAAADryTcE1wdYvD3vRXveAy878MY0tBGVtRJFCKec9ONjoMSjdXko/BUQ7/aa5td4J0QGwbNDZ7u6HVAmFeJiKUW3AIZke7mPEa6O3T80XKwyKxqdz/+IMzq1H7wKTkmLCftmXeih3L2wxA9F34R1rzMUewXfPfNhH+yFL0Z0QK0+gscBykmAbH8+KcjlpZVlWXf1O2O2UpXFTj2e+Oh2XQ==
+        type : 3
+       code_elements :
+        type_code : 46
+        p_codes : []
+     -
+       name : ATT_PERSONAL
+       identifier : 0x28f73cab6ba1da8c
+       internal_properties : CAAAAAgAAAADuJnYxD767ERr25SlU21hXA4PBcxCE8y7tV1Flb2tpEFjADrr7p8fG63giI6bAZb557JL1lM6kiBCH1IFA80D9T7tjcIGzXZ1xMn7wuMm4+wirCsuEkizObi83aSVqZBCzzvI+BJ0iVUTwx1lNc1sqzZm7mt1tLrYp1hq+emWa3E06QnQjMpL
+       type : 3
+       content :
+        identifier : 0x2557a44c0d1f599b
+        internal_properties : CAAAAAgAAADryTcE1wdYvD3vRXveAy878MY0tBGVtRJFCKec9ONjoMSjdXko/BUQ7/aa5td4J0QGwbNDZ7u6HVAmFeJiKUW3AIZke7mPEa6O3T80XKwyKxqdz/+IMzq1H7wKTkmLCftmXeih3L2wxA9F34R1rzMUewXfPfNhH+yFL0Z0QK0+gscBykmAbH8+KcjlpZVlWXf1O2O2UpXFTj2e+Oh2XQ==
+        type : 3
+       code_elements :
+        type_code : 46
+        p_codes : []
+    type : 30
+    code_elements :
+     type_code : 42
+     p_codes :
+      -
+        type : 35
+        enabled : false
+      -
+        type : 22
+        enabled : false
+      -
+        type : 24
+        enabled : false
+      -
+        type : 23
+        enabled : false
+      -
+        type : 25
+        enabled : false
+      -
+        code : |1-
+         
+         MyWindow..ReturnedValue = ATT_GUID
+         Close()
+        type : 33
+      -
+        type : 230
+        enabled : false
+      -
+        type : 241
+        enabled : false
+      -
+        type : 222
+        enabled : false
+      -
+        type : 223
+        enabled : false
+      -
+        code : |1-
+         
+         IF NOT ATT_PERSONAL _OR_ NOT AdditionPossible THEN
+         	// Cancels the swipe
+         	LooperCancelSwipe(LOOP_SECTIONS)
+         END
+        type : 224
+  -
+    name : BTN_ADD
+    identifier : 0x28f73cab6ba5da8c
+    internal_properties : CAAAAAgAAABhyWCtPIVugUMQGkdjWvPRGk7Ru/9aUTcVLdfE/GuTgrospELykl/8d6tws6PXR9x9vUhPiCH+IL61Mi5+QJSiGVUf+YsIsssfLg/S/+PW06rQt9Dki4kHdT088knt9TLZlohkm+kZKUTNItHK0lgckp3NRfP3TkonZvlZEhwWwfm2ajwXk/xdx949NIgsPpepxjspWmWmRLOmr6e5O6CeDr0LJRKCPEEdet8URN8z+dDfl+hUfDwsbrwuELVg2FvcrAtOOgz98kXwjx9zy2d9PJAQlcOkVLosAK9FRwYN4YcSmxWeiWllSrJcjyi/dhaBS3QDUz9Y2TOoD7IYsoA90d+rNgbUtjTIpQKidf0KLPa14P0GwcY9Wk3T8cUMpvgSocyONWxo7uLzq/9IAH6+gsAUlFCod5rbQMFAaaDtjPLX5dKe5lsreeCRfwAulgj5FHlf0VEka4UJrcjuUiolDh5sro56JGtM+FcAc/KNQyAyNyzdGD1JbHuBrqiSL3G4Y2mzCsiH6GplkO4T0Q+i4+BKrxQT4XVVVAlE6qBLj7os1o/ll5WIrCuhYJE0naEAikyS3vj3xRkY8trJ55H+Rnf6ZoaKuYN5IRHNwb2ijsXlWp9ShLnKiYh6Ook4Qhb5rxRL0RvbvE6iyPfILUBy65dk2kh6ITIDZ9r60Te/r7RauF7pifx850InACjJ6WuEaqfiN6doEm+vhCyIbKFM1YGI1JlzZKe23SsDNcfBPum3tpytBJKYvcz1VP7CMaSZbvoHEBcW76zIDVFja22CRjsy/kjChPHZKrllwB8ETjOa1fISaLgOpWKGJnzo7xA9YLICfURKXcBgJja6PnkBApRs2xetqqxAfnSCIU87OPLGs+KOxED4bMAeGDj09yvDi6U1MiJZEQbZmYNsnR7iSp8fvUPuSuUEtNyiSHXEIAmzchpPV04GPO0h25VCPlQvHmTiKpreQ96qnGRo1WjCAKa2rORjmKFOVomZzv6Hjz3oRYeYcYjrm4M=
+    properties :
+     x : 248
+     y : 248
+     width : 56
+     height : 56
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+         ExecuteProcess(OPT_NEW_SECTION, trtMenuOption)
+        type : 18
+      -
+        type : 161
+        enabled : false
+ actionbar :
+  name : ACTB_MAIN
+  identifier : 0x28f73cab6ba9da8c
+  internal_properties : CAAAAAgAAAA7A67v4K38DCNgwCnyH3Y5fOkYqhBNAAh0V/2376/howbNe0y1HK8QcatqIKxcgBUwOp5W5MnFYJKOYwXLYEGZFZEJW3fwo0aGALyheu6GnCO1ZDu6zBj1SRPATf4vDx5jdnfgNzuMASUgz1CidDkRJpqd8Twnjol/qa5V2rReiGeyL4gGX4EQN5NHLKl6Tp1P+1KDdskUMjUmggvrsJZszoX4gLeua1ghyGq60to+X3bm/MD3B29nSQ/WhMdqpJ1xVmbKKXYNw6Di/6CU+T953GOA/0fCPERXu4GRKo8xKYki+Jz1SkS5kg61HqKlp4L4rK/Xjhmu6GBa44lh7dETPI+sih1RMqvtyyhBFMP9AeHlO3i0zw==
+  controls : []
+  code_elements :
+   type_code : 125
+   p_codes :
+    -
+      code : |1-
+       
+       MyWindow..ReturnedValue = GUIDSelectedSection
+       Close(WIN_SECTIONS)
+      type : 18
+    -
+      type : 229
+      enabled : false
+    -
+      code : |1-
+       
+       IF OPT_SEARCH..Visible = True THEN
+       	OPT_SEARCH..Visible = False
+       END
+      type : 239
+    -
+      code : |1-
+       
+       sFind is string = StringFormat(ACTB_MAIN..SearchValue, ccIgnorePunctuationAndSpace + ccLowCase + ccIgnoreAccent)
+       
+       IF sFind <> "" THEN
+       
+       	nSubscript is int = Seek(SourceSearch, asLinear, sFind)
+       	IF nSubscript > 0 THEN
+       		
+       		// Positions on the section
+       		LooperPosition(LOOP_SECTIONS, Max(1, nSubscript - 1))
+       		
+       		// Highlights the line
+       		HighlightLine(nSubscript, Highlighting[1])	
+       		EndOfHighlight(nSubscript)
+       	END
+       END
+       
+       OPT_SEARCH..Visible = True
+       ActionBarSearchVisible(False)
+      type : 240
+ menu :
+  name : _Menu
+  identifier : 0x28f73cab6ba6da8c
+  internal_properties : CAAAAAgAAACBAxaPMdsI83p2BC+gDP/3I/tqIQEDO7nGpmpGyQwWAZTuHsujXSf2GR/642ZwLwSo+EEHEruAmO9sefp4qy4/XeVnTdHZW+CaXDRgUIx6Vr8xBs/hPGvrd/XdEZqZv2KY8ity70dd8Nl0XlEgxL7Wxq4J1Q0t49tGvwv6nZdR7xAcrkmf3Mov4l40heGIcG0u9DmLO+Em+6SgDf8sArWrPSZETMAbwnTMnxoL+vm2LBfqUwqsHFTn8UACTdxVLKxN8svqROJbaReiwwNmjLY8KMQw4y3Oo7u0/Yaq/KreAldrWBTZjdCWMHzdxg==
+  options :
+   -
+     name : OPT_SEARCH
+     identifier : 0x28f73cab6ba7da8c
+     internal_properties : CAAAAAgAAAAPtQP8Iv7bqc6cekK51e3vzJx1cEPqwW8TMa5D1covrq+FeCUdnpdMlGE+JxRZSZvMv6IlfLXhNumYrglJwAz325q2xpR4rfEg7OmQtC2cMHxiFZmkKrwmaJ2CfYlZtHndBhDjXIQG6wOefKPpUynqg+7XcAK3rHTTzG5iHiXAUJqk/OVOVr/1R4nbub0vE4de6FMi9UKesWSQLueQm+o5SPIQWtiU+7xgbnUtYJUY+IFpkTZ9rZydaDaJL7aBJbKUybyCNg+rW8Ly3YMIsIqmmGiBIVA0qgXoLAmAqevm12q7dQDu6Q==
+     code_elements :
+      type_code : 26
+      p_codes :
+       -
+         code : |1-
+          
+          OPT_SEARCH..Visible = False
+          ActionBarSearchVisible(True, <§$0000§>)
+         type : 32
+   -
+     name : OPT_NEW_SECTION
+     identifier : 0x28f73cab6ba8da8c
+     internal_properties : CAAAAAgAAACwTAeOWEhyOzWLq7HM+3I0856RAhLOiYgJx6sxY/QZZGE0WTMpa+x/1HpG37pTm89ofzCesvD5OKmI2Gvgdyqdq+IrRrtCkzYkA/9SNVCDRnjn+VSTq1Du40LkVAVgnNqGNxHNtkCa4v6/xsYPgB4pmHobV8F1oh3KXxu8XIwX6dcbDcNriaQIGWzTCK1DmAYIszFEWmr/E1sOdlDq/iUWCuX1B2F2k2R5fi1BbwjrNxCWWfA6tGNMjmWx47V6dEVww2OqkhuVSlRyDR9XEhnMFIK1B/raXzPEMyC+vVgFcYLJuVAPE7sbvc/s9w==
+     code_elements :
+      type_code : 26
+      p_codes :
+       -
+         code : |1-
+          
+          // New section
+          OpenMobileWindow(WIN_EDIT_SECTION, (GUIDSelectedSection), "")
+         type : 32
+  code_elements :
+   type_code : 26
+   p_codes : []
+ languages :
+  - en-GB
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAABqXR5M5wvxm/nAEIJpj++C7hZZeHyOooTSzmSVymRpd1lu4yGW0Fv/uWn+xeTjefDWcpp1Ejzr37eS4JUwRWCn/voVZ2bj3XMTt18T5EtHyKzVrYS+rTQZMiMr
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAABzRaU8C9FQcgUGM0zok8bvracGUB4bv9+t3Mfq3AEpQYfqqFy9pmUdNoXDWujWS+QNOMjIhl77P1uqEcJzfXnZ0LRtmPS1rZ+9p5OpkWdTny5kPXw9KHdm7ZUumVqOPqW0bNC+uXZAbMueTxQ=
+     code : |1-
+      PROCEDURE MyWindow(Sections is array of STSection, GUIDSelectedSection is string, AdditionPossible is boolean = True)
+      
+      	SourceSearch is array of strings
+      	HoloCursor is int = 1
+      	
+      	BTN_ADD..Visible = InAndroidMode _AND_ AdditionPossible
+      	OPT_NEW_SECTION..Visible = IniOSMode _AND_ AdditionPossible
+      	
+      LOCAL
+      	// Displays the sections
+      	nSection is int = ShowSections()
+      	
+      	// By default, return the selected section
+      	MyWindow..ReturnedValue = GUIDSelectedSection
+      
+      	// Positions the scrollbar at the section location
+      	LooperPosition(LOOP_SECTIONS, Max(1, nSection - 1))	
+   -
+     code : |1-
+      
+      	
+     type : 34
+   -
+     code : |1+
+      
+      
+     type : 234
+   -
+     code : |1+
+      
+      
+     type : 165
+   -
+     code : |1-
+      
+      // Edit the section
+      IF MyChildWindow..Name = "WIN_EDIT_SECTION" THEN
+      	
+      	sGUID is string = MyChildWindow..ReturnedValue
+      	IF sGUID <> "" THEN
+      		
+      		// Copies the sections again
+      		ArrayCopy(MySections, Sections)
+      		
+      		// Refreshes the sections
+      		ShowSections()
+      		
+      		// Finds the edited section
+      		nSubscript is int = LooperSeek(ATT_GUID, sGUID)
+      		IF nSubscript > 0 THEN
+      			
+      			// Positions on the section
+      			LooperPosition(LOOP_SECTIONS, Max(1, nSubscript - 1))
+      			
+      			// Highlights the line
+      			HighlightLine(nSubscript, Highlighting[1])	
+      			EndOfHighlight(nSubscript)
+      		END
+      	END
+      END
+     type : 177
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1+
+      
+      
+     type : 2
+  procedures :
+   -
+     name : EndOfHighlight
+     procedure_id : 1798973281528699532
+     type_code : 14
+     code : |1-
+      PROCEDURE EndOfHighlight(LOCAL nLineHighlighting is int)
+      
+      	// Triggers the end of highlighting
+      	HoloCursor = 1
+      	EndOfItemHighlight(nLineHighlighting)
+     type : 458752
+   -
+     name : EndOfItemHighlight
+     internal_properties : CAAAAAgAAABiNQvbf418G6aleWOHU6gMtMoztyXCPnZvseK7aKMV9An6N6r+tOhLOffl/3pTfS5Heza6xPcgIxTm68p/djvqXmuzsmIFPbi193k0MoLXa/qmM3L714xcChIRV3scTJiM9dRkKOg78f3lnEAFZ/C1vRSULAiAjfAlAf8ZSYNceXTy
+     procedure_id : 1798973281528765068
+     type_code : 14
+     code : |1-
+      // Automatic procedure:
+      // The procedure is run manually, during a call in the code, with a time-out set to 1 second
+      // It will be repeated in loop, with 5 hundredths of a second between each call
+      // A new timer is created for each call to the procedure
+      // 
+      PROCEDURE EndOfItemHighlight(LOCAL nLineHighlighting is int)
+      
+      	HoloCursor ++
+      	
+      	if HoloCursor <= Highlighting..Count then
+      		// Update the row
+      		HighlightLine(nLineHighlighting, Highlighting[HoloCursor])
+      	END
+      
+      	// End of timer
+      	if HoloCursor >= Highlighting..Count then
+      		EndAutomatedProcedure()
+      	END
+     type : 458752
+   -
+     name : HighlightLine
+     procedure_id : 1798973281528830604
+     type_code : 14
+     code : |1-
+      procedure HighlightLine(local nRowLOOP is int, local nColor is int)
+      
+      	// Update the background color
+      	if 1 <= nRowLOOP <= LOOP_SECTIONS..Count then
+      		LOOP_SECTIONS[nRowLOOP].IMG_ROWBACKGROUND..BackgroundColor = nColor		
+      	END
+     type : 458752
+   -
+     name : ShowSections
+     procedure_id : 1798973281528896140
+     type_code : 14
+     code : |1-
+      // Summary: Displays the sections
+      // Syntax:
+      //[ <Result> = ] DisplaySections ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	integer: Subscript to position
+      //
+      PROCEDURE ShowSections()
+      
+      	stOneSection is STSection
+      	nOneSection is int
+      	nSection is int
+      	
+      	// Reset
+      	DeleteAll(SourceSearch)
+      	LooperDeleteAll(LOOP_SECTIONS)
+      	
+      	// Filling
+      	FOR EACH stOneSection of MySections
+      		
+      		// Adds a row
+      		nOneSection = LooperAddLine(LOOP_SECTIONS, stOneSection.GUID, stOneSection.Name, stOneSection.Custom)
+      								
+      		// Highlights the section that is currently selected
+      		IF stOneSection.GUID = GUIDSelectedSection THEN
+      			LOOP_SECTIONS[nOneSection].STC_SECTION..FontBold = True
+      			nSection = nOneSection
+      		END
+      		
+      		// Stores the section name for the search
+      		Add(SourceSearch, StringFormat(stOneSection.Name, ccIgnorePunctuationAndSpace + ccLowCase + ccIgnoreAccent))
+      	END
+      	
+      RESULT nSection
+     type : 458752
+   -
+     name : OnSectionsModified
+     internal_properties : CAAAAAgAAABq22PPSx7uzR4ur/gXjbOuqPVaJZo3IWhFv9pk6DUAD6ZfFQnfG6kosZJbmeCkZkEUD2GgWhxr/qlRbhCF5OPW8yFpPl6EaYgRWpBrmRT5jl1yESj79sma6IKnADkMWaCNwuBjWH1GjcKMTlWx
+     procedure_id : 1798973281528961676
+     type_code : 14
+     code : |1-
+      // Summary: Update the sections
+      // Syntax:
+      //OnModifiedSections ([<VOID>])
+      //
+      // Parameters:
+      // 	VOID (default value=0): NULL
+      // Return value:
+      // 	None
+      //
+      PROCEDURE OnSectionsModified(VOID <useful> = Null)
+      	
+      	// Displays the sections
+      	nSection is int = ShowSections()
+      	
+      	// Positions the scrollbar at the section location
+      	LooperPosition(LOOP_SECTIONS, Max(1, nSection - 1))	
+     type : 458752
+   -
+     name : WinForceOrientation
+     internal_properties : CAAAAAgAAABRQp9xr58d1wmhJVthC0x15l9/LZZ9rWKU+sx8nxOsDjRf0sQUYdAOW49d4y6lzqIHzXycrOYAs59fxsUEwzBBkEzcSWw6SpI1XGxdWG8bBCDSyRiDsPlwGbq+7VJapA==
+     procedure_id : 1798973281529027212
+     type_code : 14
+     code : |1-
+      // Summary: Forces the orientation according to the device
+      // Syntax:
+      //WinForceOriention ([<bInitial> is boolean])
+      //
+      // Parameters:
+      //	bInitial (boolean - default value=0): True if it is the initial loading, False otherwise
+      // Return value:
+      // 	None
+      //
+      PROCEDURE WinForceOrientation(bInitial is boolean <useful> = False)
+      
+      	<COMPILE IF ANDROID_MODE>
+      
+      	// In phone mode, forces the portrait orientation
+      	// In tablet, forces the landscape orientation
+      	IF NOT TABLET_MODE THEN
+      		WinOrientation(winOrientationPortrait)	
+      	END	
+      	
+      	<END>
+     type : 458752
+  templates :
+   -
+     name : WIN_SECTIONS
+     identifier : 0x1557a45407b8758f
+     code_elements :
+      internal_properties : CAAAAAgAAAALs2r8WhEnUPfxG7ClZxAy1DDL5ZmcdserQKcSKmE+2xtJGdcwFMIpH6/a6nIa2Qw5Rq0lVWTrO5k8DfOEPdu84Wly7TjDHDV3L160OTd+Y4WIS9hma+uXilw6X5c+
+      type_code : 1
+      p_codes :
+       -
+         code : |1-
+          
+          <COMPILE IF ANDROID_MODE>
+          
+          // Forces the orientation according to the device
+          WinForceOrientation(True)
+          
+          <END>
+       -
+         code : |1-
+          
+         type : 34
+       -
+         code : |1-
+          
+          <COMPILE IF ANDROID_MODE>
+          	
+          	// Forces the orientation according to the device
+          	WinForceOrientation()
+          	
+          <END>
+         type : 165
+       -
+         type : 180
+         enabled : false
+       -
+         type : 230
+         enabled : false
+      templates :
+       -
+         name : WIN_SECTIONS
+         identifier : 0x1557a45407b9758f
+         code_elements :
+          internal_properties : CAAAAAgAAAAdlDhBcHsxSm+RwTDgCPqpKRPyp+gZVWExNq8cDI6+JIScd5BaKQDEt1y4jddtNAMA9gIMagXEv9MOGg==
+          type_code : 1
+          p_codes :
+           -
+             type : 180
+             enabled : false
+           -
+             type : 230
+             enabled : false
+           -
+             type : 11
+           -
+             type : 12
+           -
+             type : 17
+           -
+             type : 13
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACzaYSNHinRsuoB6JBsrn+AjSN2Y5E3I9oXoveHo9NV+ByxG96O74WGGNtbV3CmmHv1rr2faVZ4t3yYswBTMecb/CvH4LrdaHWvBB87Ub3I2v3ID63tIrvyXCW0aP/lMDtfskdzAOG0U/wnj1O9jEdtK8LlRzqmhOaPbH7cGA==
+resources :
+ string_res :
+  identifier : 0x16c30b8a08a02a28
+  internal_properties : CAAAAAgAAADKK4J/oieVyEFJuCj/+BB9Sfd99nNItIHb3Dq288YGO3u/WsOCvxQKLRs2B8O2LUgCxgER+dYR
+  strings :
+   -
+     text :
+      en-GB : Section
+     index : 0
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

@@ -1,0 +1,191 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WIN_CB_SCAN
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : WIN_CB_SCAN
+ identifier : 0x28f73cbd70cb2169
+ internal_properties : CAAAAAgAAACGcTfQ3YGCYDmBPR0SJMige6eKaLD2W+lxxCUM+1JWGZEO7vTtJUMe8YiRrgFGsOLjQ6P0jyeDj8u9i3Ztu4oaA/5as/e2D44rAoYSUZnVPR+wBWSDZwALSBcetrN6iiepa5/JDB2FSjBop1Qdj4ieilHX6MlGX65PnzzXHv0U4E+AYTN9trULiqIpv7yi8DtHb+SJcvw87QxYvxxu14z3hbEe3vEOIxx5RYO08HaMbDtV6lTcbQjgGPHPH9gP6S3oU+fAtrXy83oQQy2qPMAjgnO2yXRZzwov5YInacog/8ZrBOBJPOcX9dnETdWOoYBF7L02kWAosVZ6duan6MfP9SoPiUQr+4nysznKj3EdlaQzHL92PCvRPgtp314LlmnE1vVKDpxF3GOopx7f7A1HfP15/gvZ8Mqq9EFy3Rt9r611cHBVx8VPixvrrQf3Kix2R4LbmBWShQOnElbPUvF1stPencncz/RktebOk0yC9/J4CbYZOoS7FRALENkBtwsugQpobkR5Qmv91tv0TJ5iBTC/oJ0vElcYimxlkWw3gRTv4l+Ov0mUlmq6iV9IXd4FwT6BIs0FSRE4H++TquiW7rdYZQq86NmxVtJDlKJnrqjHgWM7lkhFw7yyqF+1JcrV1bRIJrs0OeG7XYJDAf9Fyb3NGqEe/K6Ee+4I72UujifEaFhnlcz6iiM7IOUqZ1LmONjpzXR8b/6gElOeP/jDPlxe4rnb960L9F2aVV16B0nDDQ8saRtXQzU9Dk51Lmy4yjtujJnhgCSfDk4DW4OzYg==
+ properties :
+  width : 320
+  height : 295
+  heightMin : 315
+ controls :
+  -
+    name : CAM_CB_SCAN
+    identifier : 0x28f73cbd70ce2169
+    internal_properties : CAAAAAgAAABoktc4SSunumeNhG+C8qhmP+dLcULNghmmxmntnPubh6gsvW24oQyh1l8h8OLtOHZYMZqlicE6SWoQR5jNATl95/qtNlDQyqYUhPYcUNAKnNZrs5MLHjtNmEtSVH7pRHzQtgOwogjlwi7oN63zQJ5v3BuHqOG2dWr77vEgbZAkwiW7TKZvVi/6glZlJ24bBvsMwvg0lz9sj6yUiRbVvbP6gINUCIrykamkiag466k1XELqBiM+V/v3cu5uJpkoImEx1sc3jrFlCb/W5NoxuiTzBQ4XNCeHIBbVzXyf8mka6aNxsfbmOXxXpi2c9Yle6KOM8SauF5VnsSC4jwKtzElIjZpCnE/RumptY4/GIXIHaGTEa14FmruJTHDv4NsVVy32y1NpxMjT793hL94C8O+yeCoYXRKffykEjEYHXgbMsmBFx8LgyjouVgCjm3IlNJcZv2ysF4TYBh10foWrnWvAOmfr
+    properties :
+     width : 320
+     height : 295
+    type : 24
+    code_elements :
+     type_code : 37
+     p_codes :
+      -
+        code : |1-
+         procedure DecodeBarCode(bc is a BarCode)
+         	
+         	// No product
+         	MyWindow..ReturnedValue = bc..Content
+         	Close
+        type : 237
+  -
+    name : IMG_FLASH_ON
+    identifier : 0x28f73cbd70cf2169
+    internal_properties : CAAAAAgAAAA1fdPksdYWxwwaR5IOs0r5mBhEXqFZEngfnZ+Dp9B5lhF9UrAddO3OGIuAYoqck/08BTUbALE9EzTy7sjOUeuVhv3FL7u0ixU39Hf/AwAz1HymYB1lcXZ4DbQ0jKgr6bHFZeHrffK0JfYw/XPaVz5vehsYrjbsoEG5CUDAy6F+FHKSweBxQVZlMMI44TAFoVzfFz/SOcDgqu96Pixii5qbD5kJgOGsAVklAAcAVhFJS+MIE1yRPS4HRnU9tJCpg5eeyNufT/aGLzhqfTndfzUg3RdjNOLuBgUooifw+T+xXcJ6ZqoaoKDD3dvPA2F1zIuQsN2gjcwNXD83X120aopAn3xlTAYtlxx2VoOQqP03eW02cMYZ4LH3dbDxSrlOBjA0CTKwhhpNVBbcE5E9/NeCsUKChzR1dYwOBkSpGfEr8ikvizItoVJL4YOevxiSSz5H1gvAQlKociU3x8caEI13XWjzKqE77ShW46i/0TCkKK/DonCodd3UgJumWAAHuPMZoFs07vwjvlOdPWxBKF6M9L/tBCW2Z5ol8inWQ3xeBb51cnvybQDZlHMklrjJ73mI4dJNBm5ZO+zOcSV0ee9qeHDDQ8Vfa1K7RS5qwi0VKr8fcMvEV644sxa1rM9h8OGAnmRqQ/I5pThQUx2+/ONiwKtKC5m71WNyOM/qUOEOjJCjoj5BrY1pBAOfnxG623pK0oPTA/UP82ix+St2FKO06DnzSC5gLM5GYnmBka9cb7OGteRAkbHg9eYF0G5o1mRFAY6bCTF78noccS866ob3XzpqVijFMo+jrn5+ex/61tOje+biFTcTQarpKNMdvfwhr4WzyUN2hiQDO3UjvgWjQkYosz6x2p/TCc4qjg==
+    properties :
+     y : -59
+     width : 22
+     height : 22
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : IMG_FLASH_OFF
+    identifier : 0x28f73cbd70d02169
+    internal_properties : CAAAAAgAAAAVKa/rrPexZTpkszK65JBa+KaPAitu7FO1YUu+dcP1g8UmvUgqDqdQQX/FTcsWaHQa2mD7WnFpXJJL9BsNtATZuMfTWvJzEnqnVHdpPIPDS49ldvYpo9fjKXKci8coI8EHiK6P1c5N0Iwud2wqrrjfo1KARChOU6AfIUxAAnm4Zlsz1so89mT/z4yjHZQCwr1r7s6uK3cZEgqEV1CsZH4eqClTN1jx2cS5XLxXHD4nLgCFtQPDrIJgerYtwxQZHtCPIJdaLGyQa4tdLf5Lm9nv3Hvf/4+ZW7+A3HSh87Wt9TpaBcUfpyb4f2q6/xuqLbl75ZORv3bM4AEjHNT3Gwxl04MAtAeDJCMkCOGHjGQKGbw6M9ZI5WpXUqjUKt2gzkoMciNi6MGzyppRxeDBbicKwyhFqMer8PI0APWdvBICn4gAZOC8P2hRpKX/mGty1bZOvbV9KHG2StLlUGJaYF/B+uK6qmSYEvXdg0xC7LuC4SOWTLf1Tppt+l0gQTPayxc1HjrUpPJfv/YAduqzdfZM5bApQFhqCZJHf69O58UuWeupWaKZfu6Z53bdx0wz/NndNrSTdf5xqn6GxGYKLumuGUYjO6Lm7cSC8Gg2YvrLnYLCC45h9Xc+WjVL5HOHdP/x/3fEWWUZZLJRv1+722DJh3VlCVypME37BjTZcDMu26r1XtgfKJKGfdgXCmHYc/TzNDaqUcCBllROXpaxiyBo5EOo6YAkAiMnsRfK6ID7W80Ao4vIICCvRsaRSeXuTJfi+nJpUt9lfJTKRsYBXqwjCRytj6S8AqlMdIn8paSJMiVrnvUp9t78QilPXWCC7IlMUkM7H21Cf+cvttuCEw+9yVhoZhX7fZ2b4K6o29wQFw==
+    properties :
+     x : 29
+     y : -59
+     width : 22
+     height : 22
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+ actionbar :
+  name : ACTB_MAIN
+  identifier : 0x28f73cbd70d32169
+  internal_properties : CAAAAAgAAAD21JjZAS2xdrUGRS1x1L8ZFG/tr1EQXRAR2W7mQRAQtrrmVG5BN79Nypbfha4j0oi94oo1aXI1kWITM2udoyxSuXtDEaSBoszA2SQnt0kN1ewYfdEb3YL2Yp9hcM5ifVeVlLUDYZxIKxccM6Vhg7+/Q3rieeAnEgzvuq18dsDYkZHcnNWVj//xtykodiNBlvtIuVyJxwDel13W06cf+cipIF921O4Kj/38RQ1fd0Ro4ZJa0DqFjix0Grc8gGOXWikxBs2kQEkttovONMagjkWzbtk6KEexvC2fn3BG/NEREskwIzl0RthiwKce3o7onz3bWE5S68gdzjsYNF6vtQncnb8L4E4a9O0UVZ9AW9d5+g==
+  controls : []
+  code_elements :
+   type_code : 125
+   p_codes :
+    -
+      code : |1-
+       
+       Close
+      type : 18
+    -
+      type : 229
+      enabled : false
+    -
+      type : 239
+      enabled : false
+    -
+      type : 240
+      enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x28f73cbd70d12169
+  internal_properties : CAAAAAgAAACaao1tH0003hG8zyBCcPgsTbYDgAM01IEOJNn65v2dEIPFdcVlMcOn17D76kr4207qfapg42EyVgvNlrBUjCgBaXERcsYtVuK2O+yI2utvU4G7QI+sqF/o5DWuoWbYdLmdiZ3uvIX74HvCT+Rk2zANvwi2j7fHpPzjDQ+U+AwjpoBVbtWWhJHSbxjYyUTFpjCGBPhuk9F81+LwT1nRNbwo0zK+Yqw6nGEbnCHlMRiUN/F6ypU4kO+GpoUcYzUzdbJiMD5spwKT8Z8pJCG+Vg8U6Alj9vs610cCqwCmbr7pYd8cIPSbPJSoog==
+  options :
+   -
+     name : OPT_FLASHLIGHT
+     identifier : 0x28f73cbd70d22169
+     internal_properties : CAAAAAgAAAD30TrFTSYCrO/LJM6289P6r0JptpI69+NrFFHIwU79KptQKRDcNlTWSE7isyhvV08A/lcqmKLa7trp0tdgjP59/W72yvRKIIDhZZm/SfTRZzeqfAmMV4wQhLtnLfspNBre6S2zoTmjm8a+SsDYSBA9AlNaGUpJ8HSLrFCh8+Y5iRRC1j/awcvv3qUGRvPU4lj8E43/LxGPTs3g/yAHiiS2//OCkfV94LNEJ8puwQz7X6GZaqAgGJMi6ndKSKh9FevR615ig0tOrEhIdNR4nwkSdQ4PcbXXuiVuGfTHuLkgz/FVmMsXBRvnsH6bgncOV+VEpjHe8hKastiIfJn4f7yjID3o3n7OuxYvc/XgPczzDqMfPa0KfL6+wq4mWplLfOWoqUHuDIc=
+     code_elements :
+      type_code : 26
+      p_codes :
+       -
+         code : |1-
+          
+          IF gbFlashlightActive THEN
+          	
+          	OPT_FLASHLIGHT..Image = IMG_FLASH_OFF
+          	OPT_FLASHLIGHT..Caption = <§$0000§>
+          	gbFlashlightActive = False
+          	
+          ELSE
+          	
+          	OPT_FLASHLIGHT..Image = IMG_FLASH_ON
+          	OPT_FLASHLIGHT..Caption = <§$0001§>
+          	gbFlashlightActive = True	
+          	
+          END
+          
+          // Manages the flash
+          SysFlashlightActive(gbFlashlightActive)
+         type : 32
+  code_elements :
+   type_code : 26
+   p_codes : []
+ languages :
+  - en-GB
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAABuURJAmx/lj/XEJPb9c+OW6hJFVEi6/sCWChDbXliZ882W91V6rAuvHUHGVcD5Y07Q/DCLCJptaQXMltv+m4JbMrZZozrXyV8Ps1sf6FeztLjZqZiquTgdNicv
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1-
+      PROCEDURE MyWindow()
+      
+      gbFlashlightActive is boolean = False
+      gbFlashlightAvailable is boolean = SysFlashlightIsPresent()
+      
+      // Visibility
+      OPT_FLASHLIGHT..Visible = gbFlashlightAvailable
+      
+      // No product
+      MyWindow..Title = ""
+      MyWindow..ReturnedValue = ""
+   -
+     code : |1+
+      
+      
+     type : 34
+   -
+     code : |1+
+      
+      
+     type : 234
+   -
+     code : |1+
+      
+      
+     type : 165
+   -
+     code : |1+
+      
+      
+     type : 177
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1+
+      
+      
+     type : 2
+ code_parameters :
+  internal_properties : CAAAAAgAAAB6ragasMBWLfpsSyU19J6lAvYEqFWd1xYOjmHr1XHVZOVmechqLo1vKvfoAJhHeXL59P8BudVQfrBZ/U9vpjDz5RFibMKKm/84EA==
+  original_name : _11
+resources :
+ string_res :
+  identifier : 0x159104b9006895a3
+  internal_properties : CAAAAAgAAACyXVFaObH4lOGSEHJoZf1MD49w+XTw2LScZCP/urkWFwy+HYJdyQ3umA==
+  strings :
+   -
+     text :
+      en-GB : Enable the flashlight
+     index : 0
+   -
+     text :
+      en-GB : Disable the flash
+     index : 1
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

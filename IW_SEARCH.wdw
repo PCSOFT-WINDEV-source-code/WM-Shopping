@@ -1,0 +1,437 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : IW_SEARCH
+ major_version : 28
+ minor_version : 0
+ type : 8
+ description : ""
+ subtype : 0
+window :
+ name : IW_SEARCH
+ identifier : 0x28f73cba6ffb1831
+ internal_properties : CAAAAAgAAADiG48FRqQ9mvvBq6tkxIPjuGmaVlLLDOI5NxcqkIzgAkq3xw1lU4GiEfIRBconUL53xHL9gvOp0jVzLF3AZZYusJ6Zog3K/JeO6s9FiYHkLLekBGZmwqAQq6muVrIV5IfRqPaoWQRUFz3iGNfMe2616kDhcgoiZ+487UgPCjEfdRuUUja1ZWYNk/5AKsrW45BYOZgjHq22VEcPYEZBJx2Mgbfh2PbhvgpWQSFWrlEFF9IGSYK7ULIm5NPLoJw7vrRlVGmo5dxVhDn2ffDWAL2ICka+z12kHycQggUbqzsbnlUqdWVKz4xB66ouz2RV38YX9/weBYYVUDfkr85W7AKU82P2CrU5+xWw9CJDVV2u0nPPLK/n45CalwZOcwE8ucX9efG2vAFfPzxEIGzV1Ri0YgDcXU55VGafbapexuqLKeM5+6SSco3ptuTKsIgizOMtrkwo918WME1jrAATUp4VPwiz89WLCMUEYhTK/oeOQRmLgvIEPm4/UG5taiqOg1RMCcj6gUyeVjO4r9szczpl9SC19mgpD7tgP/T/xZduK2tdRtZDV27NuCb0ecKtUluaPBNLqbjIkTgvsBb0m2Q5zGbcDmD6OhOExcvgjujROPDLGjytRIBjWVwrfAyEesuLgM31BzDDgf4TCILbPjGyIpBPuoKRD4Jp5/aGFGPXz9B6wtjtM/+ehwkt0dWLhhfnNOGVHDkj67OODZCsgUOQLzvh13c9o8coSaFjh2AiAs+Zic2QuG2Br1Gc6xqiYjijiSSOAfDk2Be0tu6h9gekpbHvPkmHu1T9NLU0eTsNXDLIPpMcxp5cZn3U16W0+eoE6r+tNdSkWkRRTmNs2Uq59zgIpFvuepJIuWg19UGe+WL7gKDKvkue6ziuSVvTC/sSn0N5vQ==
+ properties :
+  width : 320
+  height : 320
+ controls :
+  -
+    name : IW_SEARCH
+    identifier : 0x28f73cba6ffc1831
+    internal_properties : CAAAAAgAAADkM1mTdVwzXaDHy4QtJJkJN45GMenefWDbukv9oj9AZFoyO2hL0K6GDc5JyjbGDQ1vTBWg1tTVXUQl2pUnErAuwrccu2L1AKMAzZYC4CW3FJvrGj3XDBk06btEm/QbI3l+Cxhl82sGeIkwjFKShoksFmLfe/DcjbNDR1gtuW961bXB+TAYe+6Fh8vp98aEH37XS23J7m9iLnZN4T78egDY03uaDEkrdw21gtoxx++vu718ZB28unM9u486fuR0GtzsQm8dE80psM6AmzhxdFkBalZe6lXXP56lA2RokBqfHZU7RqpR2J2kjYxslSa+RGnlIpDikrdmWhvOrNbfXdI0+pwxFKhGWcF/eGgnPZFWtsZlD4KrxCB3LPfJ5zk5gN0pP+Td3NQ0KKFlXheka3YfxRNDFkCFdTyG9fYRvfa6w2jlHlz06UVU7pf+cgJEZPf/hVWYFyy4bpyPPH8MhyCBlanqpJRUlW4axKGzGT+Mwaycn1ej
+    properties :
+     width : 320
+     height : 320
+    controls :
+     -
+       name : LOOP_RESULTS
+       identifier : 0x28f73cba6ffd1831
+       internal_properties : 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
+       properties :
+        width : 320
+        height : 320
+       controls :
+        -
+          name : IMG_PICTO_PRODUCT
+          identifier : 0x28f73cba70001831
+          internal_properties : CAAAAAgAAAAemdcVF82ZphobZR5Bf3EcpJ0My+haS1Zy9Gg/b1GomcBxCblHejnFRLUpFMcLBBLAt4j0Jz7AXnZ0jGKZxOYPr08BHDQy8StWI6+1Ytl/Keey8j/1xn/N3aq4LZIDffYYl0tSAmrAZMQa9+zqzz/zCJoiZfIJX40Z8ub56XG2wVk8xqI2ow15mBAnzQ7wMVPJYWUkZIEWtAXUirYNxr6QvZ3l0N+a0YsJvgfhh9m45jCR6e7J/s7aZPCWwbl/TgPqaOQrXKvy6TJdS13Hp21fl7c+C5pN4MCNlMvoyc1lHVvF9KzDsRKOjCfwZAOwe4GWoE+gRFFPNa8YusyKdNZCwUDJJr+qHf3zAhi9SJiRzh+l/2BP7bxRP5mDqIR0m07TQpp4IZUbyj+HLEV80OKK1TLiYYCSyDqGLBq7ubvH5cz4XlsduXgQAeDo6ImQrEonWK0NW0DDZRwV/heF+8uh+RVv2K3sb8OaZxtM8afIZyFCP68TEyG4+pZrseJa7U8AN+8S5HyMISFH6QCgEwrxmPyi0lRDIbxroPMGFvrU82/fmjdE+TpGFBZo92Ryt70nFC9ixts1N5w1F5Y4rF0zUyiZcasz/VQjOoPQQy2ABJxx+X2adXbALNhIJQ7Tua+ehV/TYVhXdAPabBdFPQqc6GnFUDWzEP8GyThOTslDTOD2XZjinsfK5prBToR89NnAXyOhlKDYv0SZqB0gIap/u6XFYOEiS7ngc1ZeIoACaugDnXRBpVPb8k1CB4fwCbjt/2KsdVU4IF+oP63irvyvcPoR4g==
+          properties :
+           x : 16
+           y : 6
+           width : 36
+           height : 36
+          type : 8
+          code_elements :
+           type_code : 8
+           p_codes :
+            -
+              type : 18
+              enabled : false
+        -
+          name : STC_PRODUCT
+          identifier : 0x28f73cba70011831
+          internal_properties : CAAAAAgAAABXxSRJNDUINeCp2W6mcsJwfeqUQ4nMnPhTyV/zOO/5EfZxtMb/jIYT4cR5WABWLtIIT/fCnYwwXASG3YOf9PpG1flIMT9faGKnPzYufIuwJJHR0Ask+qKlYu30hKBzOItoGVNDKhJS/GTKdwAS70aJeHdjE/2ek6y1AbclexoimWo9uVqIvCy4AsgbBdIk5jvXPxZCQDtnYxe+oejcNTUJbrzCmHm7tBwRgfQpxGmY5pukgNXFDnf182JEzdRhFfoLYfmJJYTqmzsAIL5L2Of43ECRMDlGrQNl/3oxDPsXMzC08sEeA2tviqvNZdoadm1gl72UFSuedgt2WXwCHj9gOe+oRflPn0siZ4o5501rMWUZ2+xJmC8I/UrwXp+ODz57WYn/huqGS/SdpO3YQ2QJc1C2Vl68jDi4Q4TD73628nDH4NvRw5Eh1zyAfrVd91YgpkVDDcBPb3caT8MGxx9GW5W7VIWmEnG0ItxwVBD4zf3ujZkvEXZEENrGsyLyIKStADoN
+          properties :
+           x : 72
+           y : 6
+           width : 188
+           height : 25
+          type : 3
+          code_elements :
+           type_code : 2
+           p_codes : []
+        -
+          name : STC_SECTION
+          identifier : 0x28f73cba70021831
+          internal_properties : CAAAAAgAAAC5eEOLT/B1gPLXBEjEjt3GqbGPLVkmJ4j2d9k+vzoWlxlDaMhgtUM4XLtaNqAm2rA3RVm8BNVrIbdEa4yXiW6GpGjBdqzyQp2ycuTPqVQ32mTbPr/fLWvsiXRJOWD/IbwoVgacSohGWeiRVhD/rDAaLeWIs3eif0Y25BqoV0hsz3tgzc73aWJOKkkrVlFy+HhUeqiwpuCHj2bQ6cxQbVtZVJ36Lle279Gtm4chTiCNa46Giwy3IuP/9WU1uUDiww7n8UO0fEnqAAjaF0tZ0KhdXmAYkwXIUpK1qvpXWU0WeLeaUdJJrbjYlbj+CglwIc2ypvZ09sowMiYQM8PTphQsEKDfARy2purc4AsmPS/PJ3Cw8y6b6k2xF7oIyjY/SBqs4jPrM2cNrl8fkKgQhRJZG/yOLemoNFbUcJanwm/wUw3yp79jPvYuIowliArV6g3UScE8ONIGOscqLR5ztbhVYaABXUrs93VIudyzjg0MAVgy7HpH6SOVrhn3kUuU/Y9lFEjnSVQLQjMx1+4a
+          properties :
+           x : 72
+           y : 17
+           width : 188
+           height : 25
+          type : 3
+          code_elements :
+           type_code : 2
+           p_codes : []
+        -
+          name : BTN_ADD
+          identifier : 0x28f73cba70031831
+          internal_properties : CAAAAAgAAADll2DwpGtznl3Z3xTapdqrUoUNduFZLzv/qE0f3NH13itjO3d6n3Rukbr/c8m+T8FX14mMInzX4xa6hOGRIGO5BJaAlcJuvUPsW4Nl48xPo2LO6ZmfbFgCkEWinAlMBsIR3ZG5IYPw8Qmx1uCwiadsokIY5zNz7rrgjs1+iK5q9+Q6wMXHIceSs1kqzphw5BIIIeCVM3kusKIFxVzB0s9bGkyNYEsjMars/Vzit/Eaux1I76lQTJV1Ar4ZsJb7XyUswARO5OeURij9OxPSD2EKIyYykUZbeai+VlFu7Iu3TGgpHkF2CtaNkR3RZwZV06+Wn/ZUWvCcB39cNWDttJYLwNdiDT2qipYVGmahGIYGL9DX1v/reU63DqG8Upe2K1ySdyF0U9zHXHHbouWL9PvunqzSQDhfG6a1KcN28wq9jhmtIUdVCfzptmPKXnFCfGg9uNhpTcNGciaiL+gASrSzbfg1KfNhQPiTun3451aJabVCdEaVwYWZuuEVyiRNYahc7LNon0hPp3jXFkAj1baobgJvxXChzCgPuxvvqvTaSScu4CrcPd7ANi4BlQMh/kt58typmdn3ZdJuffpQdGTjtiH2S2c++e1+58r2wUJ+oo93IAfB5JWndBqmHVkMjUDYysFCBjnVYrXD1uem4oWyvfgmXe9DluQDzT5BnsU+gEuNFqVMrKliqw1UFYsOrFVWSwwMjHq+eudtto4CbDiS+k08OEvQKfPtzf/rmxZMnWFd/qDUh4UCDTTfpcozrKsvwKuwI7bxHo2Fb/beCjc6SS6kuQ5+ePWqurvl9cKsqJXZhV/Whp95Kkg+bY0AYON4vhgCmDGlzI9jMWQwOlCACnp1Qzofywna6uhloJfemSPEUaLef94pLsrbpSQCa17+UtutlNnKDkixP1w//vLBCKk1Hj2qEhvoVRseoBhNfJHvgoF9GFdmkqFxmH1MIwBoa5IUTRAUWRSaJePlGK9qc59DqESR57RNaZGHMH12tNNnMT9jT6GvMnokmv4=
+          properties :
+           x : 268
+           y : 6
+           width : 36
+           height : 36
+          type : 4
+          code_elements :
+           type_code : 4
+           p_codes :
+            -
+              code : |1-
+               
+               // Adds the product to the list
+               IF gpclOneList = Null THEN
+               	
+               	// Product not found
+               	IF ATT_ID <> "" THEN
+               		
+               		// Asks for the selection of a list, that will be followed by an automatic addition
+               		ListManager.TriggerRequestSelectionList((ATT_ID))
+               	
+               	// Creation of product
+               	ELSE
+               		
+               		
+               		// Triggers the product addition in external
+               		ListManager.TriggerAdditionExternalProduct((ATT_ID), (ATT_NAME))			
+               	END
+               ELSE
+               	gpclOneList.ProductAdd(ATT_ID, 1, ATT_NAME)
+               END
+              type : 18
+            -
+              type : 161
+              enabled : false
+        -
+          name : IMG_FAVORITE
+          identifier : 0x28f73cba70041831
+          internal_properties : CAAAAAgAAABXB12MLqlZQ3yrdw1dLk3y20Cvc1eOsyo3TIgy3fg+W9TlV5wTPdfv0NKKkdNdPejc9IRB8P8uIg08iEdKk1Y4GFpM89PLmHjqiYk8DYnoKtvUWtqPBlYyZJtaP21nfzVY3IVbUs/VLnkbdft36k8rEdgbbshXW38cImpq1XCL0jqHL5kXUm+BylZ8pmkYVcE+TKEclsCT+s2uckHQIVrkvEZWH782aK6rbcCR65O60koedTlwHpl7e48aWdfGguto6hphwZz2cOkk08LTuXy631F/sCrZP39eM/ZYy2tf7lqKEBi/RNpQJp7+V/WGlyGvrjvTXD0Cx0pL4GukWwGbTw/rUDgNMqxKSh5PEsrhRAvkTzUBRE5ROIYSva9nvJSGQqQj6Vw4zZg32lez53D2By6vpkGuKmI+ydsDPIPzdCCpHfj43+VsAKipmHwkA5KGQ3/cIY4acsEyj6d4UEC4Hn6GC5vVjAhpeAihKBjsEAnyKJOVXsf/AIZvCgKjaA/c4z0E1WfvprSIDENpX/FX+A1QZqYutsXtmmHdNy7SLiYaPpZX1SqVOfqzZsDZk4pbxQsm/byi7LKAr9AHaKMRgNG2jw3rpWnUCPs9D9/VgthbIgLZ1TQFb6M6fZ8SbvlJCMuKCd73yqbQCsTVkdeVUCXfD4E8pQNHRzimid3YlMSPDel7T1IE+O+p7YRbG6WcgWEg2grFAZOe8qCgHoTIi8o84U/3Q4UVHscjdrWR4FFI6+sif6eLmB+U8I7yv5HuhFWeNApATDTK5KbevsspRB84iDHPEEK1WS/ygXNsNqk0RWUPD9hCK3IeqyHrhd5R29uB3U51oYIKA9y3co7eWnIlWscysjU3t5cwwvHbH7Jpy7fpGrRMkKfITTD1bV/uq6ksFKOdBgGSTomyyIdp2LIJEa70DHxWc3jQbJijPqX+Og0=
+          properties :
+           x : 28
+           y : 17
+           width : 26
+           height : 26
+          type : 8
+          code_elements :
+           type_code : 8
+           p_codes : []
+       columns :
+        -
+          name : ATT_ID
+          identifier : 0x28f73cba6ffe1831
+          internal_properties : CAAAAAgAAABHx6/TR3y4LPxwehRJBm677Wr9obUmYcOqoSzuZsmngVSVzB8PFiLU1nN/QrNfKmcKto26Xq5aPHGLh5qUdbc0p3xL3SnbdPtbztHtyy2iVKdEEO9qUNMcWGWu4UfF082pvop9
+          type : 3
+          content :
+           identifier : 0x2557a44c0ba658ff
+           internal_properties : CAAAAAgAAADryTcE1wdYvD3vRXveAy878MY0tBGVtRJFCKec9ONjoMSjdXko/BUQ7/aa5td4J0QGwbNDZ7u6HVAmFeJiKUW3AIZke7mPEa6O3T80XKwyKxqdz/+IMzq1H7wKTkmLCftmXeih3L2wxA9F34R1rzMUewXfPfNhH+yFL0Z0QK0+gscBykmAbH8+KcjlpZVlWXf1O2O2UpXFTj2e+Oh2XQ==
+           type : 3
+          code_elements :
+           type_code : 46
+           p_codes : []
+        -
+          name : ATT_NAME
+          identifier : 0x28f73cba6fff1831
+          internal_properties : CAAAAAgAAAA5Gy0L4+NB4zQVGQCjGXKi0KKul/3ERuRDIm1GhY8kFBT6fdSiP1APujmnUOap4jCQnCHxQMWQk3ylCLmHy7F/1XYPBHOO6RQb79/fxeWHSovvPvqMw+UL9RPdFzE6C+Cb2/rKSgR/XwU=
+          type : 3
+          content :
+           identifier : 0x2557a44c0ba858ff
+           internal_properties : CAAAAAgAAADryTcE1wdYvD3vRXveAy878MY0tBGVtRJFCKec9ONjoMSjdXko/BUQ7/aa5td4J0QGwbNDZ7u6HVAmFeJiKUW3AIZke7mPEa6O3T80XKwyKxqdz/+IMzq1H7wKTkmLCftmXeih3L2wxA9F34R1rzMUewXfPfNhH+yFL0Z0QK0+gscBykmAbH8+KcjlpZVlWXf1O2O2UpXFTj2e+Oh2XQ==
+           type : 3
+          code_elements :
+           type_code : 46
+           p_codes : []
+       type : 30
+       code_elements :
+        type_code : 42
+        p_codes :
+         -
+           type : 35
+           enabled : false
+         -
+           type : 22
+           enabled : false
+         -
+           type : 24
+           enabled : false
+         -
+           type : 23
+           enabled : false
+         -
+           type : 25
+           enabled : false
+         -
+           code : |1-
+            
+            Multitask(-1)
+            ExecuteProcess(BTN_ADD, trtClick)
+           type : 33
+         -
+           type : 230
+           enabled : false
+         -
+           internal_properties : CAAAAAgAAADzBTWmbOAdkMQqNxiRGSok49WE5Ww6rRtiUhyVk96/fhZURw4XAlOfbUE6xRAp/b860bedLoAUlWa6x1x4RU1pU1fIS4tZze0T5VgMFTIzKgdkrKazU5FNJhTs1rFSatbI77HSX6XCTol8wfwxQliwazQ7Ko30VT7tgtQI/KxtbJA3uprz311Oet+N+nO0n3pn9pvcyus1U8RVOOXVy96RvG32sguMI6jWvbHzFCpbxdHnFfByqPpA1dUUGjgcnX7At5MSDeE4sa++OE7pNQNBiNeUIQPis87b44pHPdfWh84d+p4+Nmhxi0j6jMWjM9ZZMD7J
+           code : |1-
+            
+            // Initial search
+            IF gbContentInitialSearch THEN
+            	
+            	// Remainder
+            	StartSearch("")
+            ELSE
+            	// No other results
+            	RESULT False
+            END
+           type : 241
+         -
+           type : 222
+           enabled : false
+         -
+           type : 223
+           enabled : false
+         -
+           type : 224
+           enabled : false
+     -
+       name : IMG_PRODUCT
+       identifier : 0x28f73cba70051831
+       internal_properties : CAAAAAgAAABs+wJDXf2OE1nt2jfNWf8ZcpuLYp4gMoCm6JpEeLm7Rt9oAZx34X+kfyn7sSB4e/ST33e6crChLcEIjsgGm+KoqdjOPBwtm8REBtWfYbrl8ipQthneZhwpL9FeRMBWnOTIIFYK0SanYImI2jT86NICItAICeNemNIOeBFDqi998luiGnn44MVoBNW43v0r9S0egpS5S/+ma9IvP8QXhwiWZK+KMFZ1X0k7kiiOlmpkca0W86gwkbZ9OaKTYesE4nF/YWsaCc6o/zUqZQOlj1T0Vu42f3IDtB/EOc8slkZrISBNAicy+ytq+7HBC+kopTkGI+9N18VcjGNvd3DwN2E5fJxzp6IFb11Jd6fJr+x8yjeIZKqU9CnJEBQLt3mbxblUXwOz1qBB5L0IfdE6LUozDGtY/jdGAh8gC5rilv3oq34RwpFaSS3Oz9R+gqcDzU8jfIfZh0k0XJxzBIHG/W5rb+CdA4kDT/5S6kwsTzb6uHVretym9emh/ETBTUDIKS+49PysnfGaxHEQS2k1ErTlVwkNEs7hVckKOckodmuHMR/D0gQePsH6ndBaXNfDET4kN4osI6x2orzDdvSBJvRFxmKq25lKPyYVGEhI49eY4r4R9B1PwZYD7dWv+T2sHFQ1yRM5f3CSjwrpSh70DiZSKUQuf70Wsd/8/v3YJ42WbuH8Xe+yBkmO0BfMRoEuQvcS8pmkPhK7rGUEn2vT4BwyBlCZe3jzSpYHazTgMfA2H1+pqh/vgBHLvKKK/ljPhfS3PhiWiR75UAP1sVGPg+BzwDA0246ow7QZ8JGmhiteii4z+bdkWDYN/1Rq9f2MRV6t8/wKQNuU6dDizpjfuA==
+       properties :
+        x : -65
+        y : 6
+        width : 36
+        height : 36
+       type : 8
+       code_elements :
+        type_code : 8
+        p_codes : []
+    type : 32
+    code_elements :
+     type_code : 70
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE MyWindow(gpclOneList is CShoppingList dynamic, gnColorTheme is int, gbContentInitialSearch is boolean = False)
+         
+         MyAlias is string = (gpclOneList <> Null ? gpclOneList.Alias ELSE "") + ["."] + MySelf..Name
+         SubscriptNext is int
+         
+         // Observer
+         AddObserver(ListManager.OnSearchTextUpdated, MyAlias, StartSearch)
+      -
+        code : |1-
+         
+         // Starts the search
+         IF gbContentInitialSearch THEN
+         	StartSearch("")
+         END
+        type : 14
+      -
+        code : |1-
+         
+         // End of observer
+         DeleteObserver(ListManager.OnSearchTextUpdated, MyAlias)
+        type : 2
+ menu :
+  name : _Menu
+  identifier : 0x25ae5e26237c8b37
+  internal_properties : CAAAAAgAAAD6/fwZdBRB8IDYAHHmdn8xAxD+uXi41EZyxyOHKRRlDi2m/CEs9JtCuLNtpQR4bdAgFt15C/buXaxdGrwMrwwJuCoAJikYGopc1uMHSciY5Vph6EKTutrarwgYmlfNh1aVo8wMnkrPSeoSP72wKzwyxRnyuY2QRPOf6GYuWM5l6Ipw0pQnD39OpFcWAKOzfgtGoJixkv0AnpT1JQlY7hTDix6EZgtEQ8rOlTETgsUFxDI7MJeOlRLAFoXGjtTgiCQig5pkzhyLO6og7B3dCdLwCaouJtgl9qLZjPpvALzmdQLCOpZqXsPsrLga0fNO2Wo=
+  options : []
+ languages :
+  - en-GB
+ popup_menus : []
+ message_bar : {}
+ actionbar : {}
+ code_elements :
+  type_code : 71
+  p_codes : []
+  procedures :
+   -
+     name : StartSearch
+     internal_properties : CAAAAAgAAAAn7HpXdwlqRTxQXRuUdk+VrJ2e8Q0e9wt/HRN1gzPRgo6DGd7JsP9wooYmt3XY/WwHE3Xb0GEGY/gtTTLzY3PUk+9XG7JBX2nPAEgpU61kexlOe8UvGU4Lh+RiCZ4y4W9JS255cJxVzHQvrCU/1NeN7KI8PE6vXNVKm2HcDbuoqw==
+     procedure_id : 1798973345960302641
+     type_code : 14
+     code : |1-
+      PROCEDURE StartSearch(LOCAL sWord is string)
+      
+      	bNoWord is boolean
+      	nRow is int
+      	stAResult is STResult
+      	arrResults is array of STResult
+      	nDiffWidthDPI is int = (LOOP_RESULTS..Width - LOOP_RESULTS..InitialWidth)
+      	sSectionCaption is string
+      	bNoWord = (gbContentInitialSearch _AND_ Length(sWord) = 0)
+      	
+      	IF bNoWord THEN
+      		
+      		IF NOT SubscriptNext > 0 THEN
+      			
+      			// Clears the looper only if we are not in a delayed browse
+      			LooperDeleteAll(LOOP_RESULTS)
+      		END
+      		
+      		// Starts the listing
+      		QRY_PRODUCTS_LIST.pStartResult	= SubscriptNext
+      		QRY_PRODUCTS_LIST.pNbResults		= 100	// Up to 100 results
+      		
+      		// -> enumerate the products
+      		IF HExecuteQuery(QRY_PRODUCTS_LIST) THEN
+      			
+      			HReadFirst(QRY_PRODUCTS_LIST)
+      			WHILE NOT HOut(QRY_PRODUCTS_LIST)
+      										
+      				// Saves the result
+      				stAResult.Section		 = SectionCompleteCaption(QRY_PRODUCTS_LIST.ParentGUID)
+      				stAResult.ProductGUID = QRY_PRODUCTS_LIST.ProductGUID
+      				stAResult.ProductName  = QRY_PRODUCTS_LIST.ProductName
+      				stAResult.Image 		 = QRY_PRODUCTS_LIST.Image
+      				stAResult.Score 		 = 0
+      				
+      				Add(arrResults, stAResult)
+      				
+      				HReadNext(QRY_PRODUCTS_LIST)
+      			END
+      		ELSE			
+      			XLOG("[StartSearch] (QRY_PRODUCTS_LIST) Error = " + HErrorInfo)
+      		END
+      		
+      	ELSE
+      		
+      		SubscriptNext = 0
+      		
+      		// At least one letter
+      		IF Length(sWord) > 0 THEN
+      				
+      			// Clears the looper
+      			LooperDeleteAll(LOOP_RESULTS)
+      			
+      			// Creation line
+      			nRow = LooperAddLine(LOOP_RESULTS, "", sWord)						
+      			LOOP_RESULTS[nRow].STC_PRODUCT 			= Replace(sWord, "&", "&&")
+      			LOOP_RESULTS[nRow].STC_SECTION 				= <§$0001§>
+      			LOOP_RESULTS[nRow].IMG_PICTO_PRODUCT 		= IMG_PRODUCT			
+      			LOOP_RESULTS[nRow].IMG_FAVORITE..Visible 	= False		
+      			
+      			// Starts the search
+      			QRY_SEARCH.pSearch = sWord
+      			
+      			// -> run the search
+      			IF HExecuteQuery(QRY_SEARCH) THEN
+      				
+      				HReadFirst(QRY_SEARCH)
+      				WHILE NOT HOut(QRY_SEARCH)
+      											
+      					// Saves the result
+      					stAResult.Section		 = SectionCompleteCaption(QRY_SEARCH.ParentGUID, sSectionCaption)
+      					stAResult.ProductGUID = QRY_SEARCH.ProductGUID
+      					stAResult.ProductName  = QRY_SEARCH.ProductName
+      					stAResult.Image 		 = QRY_SEARCH.Image
+      					stAResult.Score		 = 0
+      					
+      					// Calculates the score
+      					stAResult.Score += StringStartsWith(stAResult.ProductName, sWord, ccIgnoreCase + ccIgnoreAccent) * 100				// The name of the product starts with the text of the search (100 points * <Nb identical characters>)
+      					stAResult.Score += (100 - WordCount(stAResult.ProductName) * 5)												// The greater the number of words in the product is, the less the number of points is (100 - 5 x <Nb words>) 
+      					stAResult.Score += (StringCount(stAResult.ProductName, sWord, IgnoreCase) * 10)									// If the sought word is found several times in the name of the products (10 * <Nb occurrences of sought word>)
+      					stAResult.Score += StringStartsWith(SectionCaption(QRY_SEARCH.ParentGUID), sWord, ccIgnoreCase + ccIgnoreAccent) * 20	// The name of the section starts with the text of the search (20 points * <Nb identical characters>)
+      					stAResult.Score += (Position(stAResult.Section, sWord, ccIgnoreCase + ccIgnoreAccent) > 0) * 20							// The full name of the section contains the text of the search (20 points, otherwise 0)
+      					stAResult.Score += (QRY_SEARCH.IsPersonal ? 350 ELSE 0)														// The product is a product created by the user (350 points, otherwise 0)
+      					stAResult.Score += (FavoriteExists(stAResult.ProductGUID) ? 250 ELSE 0)											// The product is found in the favorites of the user (250 points, otherwise 0)
+      					
+      					Add(arrResults, stAResult)
+      				
+      					HReadNext(QRY_SEARCH)
+      				END		
+      			ELSE			
+      				XLOG("[StartSearch] (QRY_SEARCH) Error = " + HErrorInfo)
+      			END
+      		END
+      
+      		// Sort by score								
+      		IF NOT bNoWord THEN 
+      			Sort(arrResults, asMember, "-Score")
+      		END
+      	END
+      	
+      	// Fill the list
+      	FOR EACH stAResult of arrResults
+      		
+      		nRow = LooperAddLine(LOOP_RESULTS, stAResult.ProductGUID, stAResult.ProductName)
+      		SubscriptNext ++
+      		
+      		LOOP_RESULTS[nRow].STC_PRODUCT 			= stAResult.ProductName
+      		LOOP_RESULTS[nRow].STC_SECTION 				= stAResult.Section
+      		LOOP_RESULTS[nRow].IMG_FAVORITE..Visible	= FavoriteExists(stAResult.ProductGUID)
+      		LOOP_RESULTS[nRow].BTN_ADD..Visible 	= False
+      		LOOP_RESULTS[nRow].STC_PRODUCT..Width 	= STC_PRODUCT..InitialWidth + BTN_ADD..Width + 8
+      		LOOP_RESULTS[nRow].STC_SECTION..Width 	= LOOP_RESULTS[nRow].STC_PRODUCT..Width
+      		
+      		IF stAResult.Image = "" _OR_ fFileExist(DATA_IMAGE_PRODUCTS + [fSep] + stAResult.Image) = False THEN
+      			LOOP_RESULTS[nRow].IMG_PICTO_PRODUCT	= IMG_PRODUCT
+      		ELSE
+      			LOOP_RESULTS[nRow].IMG_PICTO_PRODUCT	= DATA_IMAGE_PRODUCTS + [fSep] + stAResult.Image
+      		END
+      		
+      	END
+      	
+      	ActionBarSearchVisible(True)
+     type : 458752
+   -
+     name : SectionCompleteCaption
+     procedure_id : 1798973345960368177
+     type_code : 14
+     code : |1-
+      // Summary: Returns the full caption of the section
+      // Syntax:
+      //[ <Result> = ] FullSectionCaption (<sParentGUID> is string [, <sSectionCaption> is string])
+      //
+      // Parameters:
+      //	sParentGUID (UNICODE string): GUID of the parent
+      //	sSectionCaption (UNICODE string - default value=""): (Return) short caption of the section)
+      // Return value:
+      // 	UNICODE string: Full caption of the section
+      //
+      PROCEDURE SectionCompleteCaption(LOCAL sParentGUID is string, sSectionCaption is string = "")
+      
+      	sSectionCaption = SectionCaption(sParentGUID) 					
+      	sParentSection is string = ParentSection(sParentGUID)
+      	
+      	// Root
+      	IF sParentSection = "" _OR_ sParentSection = sParentGUID THEN
+      		// <Section>
+      		RESULT sSectionCaption
+      	ELSE
+      		// <Parent> - <Section>
+      		RESULT SectionCaption(sParentSection) + [" - "] + sSectionCaption
+      	END
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : FI_SansNom1
+resources :
+ string_res :
+  identifier : 0x15ae5e2606598b37
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      en-GB : Other
+     index : 0
+   -
+     text :
+      en-GB : Create this product
+     index : 1
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

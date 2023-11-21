@@ -1,0 +1,231 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WIN_LIST_RENAME
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : WIN_LIST_RENAME
+ identifier : 0x28f73cb26da5f7e8
+ internal_properties : CAAAAAgAAAAUWNkie9HnPjHP7YcfWqLYQ1nPTcgLhwsuAhXQied+F+dTR9fe9S5wj3VeHlFyfN7LFuOgHLkhH7fv+ZeDBvjTPTKMch8cV+0LoeXp+09TBRyi9Uxt/H2bdufFptxj6ExNFrXoC8K1C0q4CeO4DiZlrQpjoxehMitsLnIy0lQExU6ieOk0+mFlXTUCW8AATDX6Hftk8PvEetqDVd7qd1V739MezEeeNVS8F831r28cOuUnziDBDYFidO9lJZqcQd6haI+QGOJTQGbx5tiVqBL0ayvXltp4JvhxA1iBlPRkKFzWlaRV0htx5TpBhkIkdoBYPAfDor3Hd/ay7cskopU/sENYfYnkxPbf5JmWSGNtg3K1Ojh8aFHun9kyGlBa4N4N4XNysM7jXdwqAWSzyJD6CT/7B2g3XdB6zTSH3oHLzmr0hweSeY4T6rzQ23x3Gq5hSusUXBWyEvEJ1vyxGaVBxpb3HNFa3zP9RbrpQFgAhbR0y9VAHe8tE3WUPWtmwbeGSLp1KBF/qLRy7Ce4kskZzC9VD/Z0mOOQKx6Nxz/KkwZN7qmkYkXSuUuLNmDZSHHz297/EPA23wBtoCyEz76HmjMOhsugDueMTTBJxst3Cz7KMdZpOnIZH9YT+CSVO38y6jeTqaNp8u+SRl5NbVZ3Jtqgj3hIp13piQbbtKBf0gFnkDEyvkdNL7W/JkPNkVc48t+Cs4ISh3VVskduZL8rRN6zFbqGQb8ciFs/C24JskAl97hUUHTFzI46zfnbr0PIfDRhePLyVjw=
+ properties :
+  width : 320
+  height : 290
+  heightMin : 354
+ controls :
+  -
+    name : IWC_CUSTOM
+    identifier : 0x28f73cb26da8f7e8
+    internal_properties : CAAAAAgAAAAfb9kNOQB9HEWyqMJ4omjeLun9ku6Pvm+IuyDfKLXoUfC4eAnugeNUA0p49HvdBvg3L39hHJQ3CUuDWC+JL6PtKHqkxOZ8eqsbO0s9pItoYNVgTJL00jFJ+CnYY3exIwI+vXzlBTMK2s+mGXzqj8iz9N3ooVwyoKBG7Puw1TVAy78uVYKQ4r0Y3bVpDnE9TizSTqU0Q8fBkk5vJB+A1UipeEdnR7JLryx4epxUZlwEDIb8/3g7OOC4Rj3hhAkytAbSr0sAKSbGEP79/CEhKH057raj3j7GpKmblIt2slXWHUJDjuu6BnK9ydz2Dd54z4NSQtlHq1PkOzvZhTGpeBh7WzRL3/+94uK6ac8IM9wd7JXrkMgOZoyWzwsXudT0wD5Ya1wq663LBq1yXvuDegLtwf5xtu/k7hi7oF5T/oNZVELAIUeQCSfqqbT2gaLxnHx8QJWMiLwXfA1Mbl+yjXK+LI2zD3PeFn1ntMIOP6W1P0kzti4dY+7NIJAAk/NsK1NwRskokFjyRwuLvzcSmnMJY4lEGSY1buvGo/+z7xfyy+g+28CL/UwsHA4W
+    properties :
+     width : 320
+     height : 210
+    controls : []
+    type : 31
+    code_elements :
+     type_code : 73
+     p_codes :
+      -
+        type : 33
+        enabled : false
+  -
+    name : BTN_VALIDATE
+    identifier : 0x28f73cb26da9f7e8
+    internal_properties : CAAAAAgAAAC11rUeJeGuogDY9zBhbYCeD6JhZAzFXyYhPnoZaTVu/M3HQwbToDyoBKLAXdsoXKkOB6DAbpCcEV+yK6UKqwYRIodElaB1NKDXrohr1LBPpU6fRRCBJJ1XJC0fnBUtksShWl1mq3zy+wnffXLMi51z9uf7Mv92hebdC2YBWi/HqJ0uvg7U408SgoB/siqCLiF6I/e06040vntDxsjYddK2NQr6KAJ1gJLOYVJfdBXP7zgtuLFJLpodznxfQNxMPxdnXJFzt6RFrhPHy4nCxQMvj7L0UUlttWWiYlqXSxNm2Si3XcLXw/fR1gffNFfKrphltrfPYqqCJxMTNUF2MON8/zkt8MB8DnNjp8Efz9WIMRPJPtnEaOlphAjdp3iL83i5WcZ0KxAh2NrTD1Q3JuSJSWMUOA9MKmxkKbYRyh4lLz0uk9lTf/oMd3Ga9eDX8guc26xegWAbpUNVGTLletQ4UeBekoFdPzDZL/TDakLB1NkcfoHLJqQam2stUIT3C6KmqtdtokNuH2h9Q7RSkOrQcdtPAIKOYP+MJ8ndT82yVg6dUuTYuP5lJFUnWuTCHDuX5Gm3DlWTWAlHjTAhx7JTgFtPQ1vS43eHsJ2crOsNqF9GAFzIXr8e7UUBxjdxEgzJLQ41QbtpeTkkFiUp+k5u3xHB9kx7fyEsvepuTko7EeJyvcg4pNChKiNf/dco6XCe8srlPEGwwK7kRvXpXrNhcqHJmEdbOM75221nR5NyUOucFClCtZBuCzKUQqdbLoOCg2emxOeczXGiREisT33BEtA4kVqO4Hfw1c0M+sY2sn+QJDKQgfFVw+zeENOYLuZjxtiL72dkfPMIelMDutwEqc4tMEHblqZU4SCIsM4Vcy080WKmulWvTsbT4Ie+JsdxH9pyXRq/lYKeAr8ZHePbd+D9yS8nfvbn5fnDAEyobwLZ6FkWU6QFhpAqqzzuZ7mSsPftA5kdshZUq56mzvNnqgu4Tw==
+    properties :
+     x : 248
+     y : 218
+     width : 56
+     height : 56
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        internal_properties : CAAAAAgAAABDNRqAgQYd9o8MP/rkr9Dpo71svCgNQ1tPcpOAqLVv77G8Tlgz0HGNWEMjtCgGfV43mtrw4BRitM4tWE0gsF70PcFES4Vs2EiUHnJslpK4ytu5CCN6q0a3MJg9lFeBN6QlxbdhYuqhKyyOv+Q=
+        code : |1+
+         
+         // Update
+         ScreenToFile
+         
+         // History data
+         List.ModificationID 	= USERID
+         List.ModificationDate	= SysDateTime
+         
+         IF IWC_CUSTOM.gbModifiedImage THEN
+         	
+         	IF IWC_CUSTOM.IMG_LIST_PICTURE..Note <> "" THEN
+         		fCopyFile(DATA_CACHE + [fSep] + IWC_CUSTOM.IMG_LIST_PICTURE..Note + "_temp", DATA_IMAGE_SUPPLIER + [fSep] + IWC_CUSTOM.IMG_LIST_PICTURE..Note)
+         	END
+         	
+         	// Dissociates from the initial supplier
+         	List.SupplierID = 0
+         	List.Image = IWC_CUSTOM.IMG_LIST_PICTURE..Note
+         END
+         
+         // Record
+         MyWindow..ReturnedValue = HSave(List)
+         Close
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_Abandon
+    identifier : 0x28f73cb26daaf7e8
+    internal_properties : CAAAAAgAAAA0Eowd9WuCZknwn9UM09k2KURv05J236UeI6+drA0eUdJFL5zFua3bgE1L68K3cph+wecQMQXTmBIjWekw0ZAkTFgJADAaxm9FURsJTADDVl9ZFHR55I9P+nNpwakhqja0KkKNFuehEzAfPRBsTjapUGVe8aIigmQHogsfmUVSNh6q+6OTCPcXaKZiMvDAZqbIYQ952MrQCRN/J+tUOPZZ9pdTsgMsRf0RdKZRfkhpnvf+FhjbR6Ilj5zV8RSy9pjFgVYuwtbQGsNb65TBFvZxvlHMmhb9COnJc44W2mARZc0agr/WK5Ccgch7Pt02vGFbwYf9SiOD62Th1+bZ/iKu/OVHVZr+IvJ8usB9We0i4NnBbmp05rGeWWisLXTpmGc5nLmZhh3NUcARqRmIVjdmpldh3iKfUxu5hebU5kkLJQxQnoyK/n7fyhid2KsZlHhmRg5QkPd7WBNhmjt5RZTPBPWMPECe2R1w3R/C1D2d+c6dvEByNLRvy578tYdKE/3tX932kYYUVpnBhB85juLBFaGq7uxl8RsXGtvGcEI5SN9cOhYIjELEiVA2P5XYKfmy/odr5tFVsg+bfFf/vqyCMyOCtoMYoIsJi4QNVSP8loA9KBoYjdW7G12QIYdtCsZ7xcZtLMHdGcZBxHAfbP88U0xeMr4zciRJBwx8bJt7de3QtWK1IA8SyJlJXODVpd1H7/rCmtYiAWccxVUAu+K6x/vckY6OjjmY9xTmyBxDun0htqToOSbFrA3OkZUUvJ29PIQmEjhwj77lJBVz8OkcKgOe+FmMlxsXQZE5sL5jpuzCFP1AvouvqEjdam6sB7Dw2OkBIGQuB5ygv6SNH/tW+pEAxu5lTfatnmWOVCp/NvvufaRtWAYLSo+TAGPMXTDevaAWCNb0vVon9UPXrsVddS75eOa7mv+lByjMko4hWccFk98RSTN7e8TqyeJPyuyeu4pKVgGCLbxJwqgUrFm2/fd3XSsjcfRqtKaStAhZHOLxyq+L
+    properties :
+     x : 2
+     y : -123
+     width : 90
+     height : 48
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+         MyWindow..ReturnedValue = False
+         Close()
+        type : 18
+      -
+        type : 161
+        enabled : false
+ actionbar :
+  name : ACTB_MAIN
+  identifier : 0x28f73cb26dadf7e8
+  internal_properties : CAAAAAgAAABpudAIqBlj+SWUn14Vf6qRkPt0EETJPpW17VpZrvkGTtu+lzb+cCHAieTsZWknWULWR4ABhwACY0AeJ67hmdEj6ZK+kQirbHYfsFOJeIwrcNk1O1ewkOmSovYDAITc3aHJAWLE7E/cI7OnrxhwXYmIsC5W9jsdxD+84VWYGksDGOdyicKsSi7ziOby0YWyltyrCLTYfSnOGW91hUKDXk77qAwiHR4CwUUBjdPL4ArCScv+P+4P0GIT5PPmomCL4ZMsZMlu6+mGR/VaKybn/hT9sXtT223dP4JEDyk384LOw0qiKzB7g1P9BxTfrokU1nxFgqD1Slr3lg9eG/983DjDk6HrtPWcP88QSVJJozJMGeiNXsuN1VI=
+  controls : []
+  code_elements :
+   type_code : 125
+   p_codes :
+    -
+      code : |1-
+       
+       ExecuteProcess(BTN_Abandon, trtClick)
+      type : 18
+    -
+      type : 229
+      enabled : false
+    -
+      type : 239
+      enabled : false
+    -
+      type : 240
+      enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x28f73cb26dabf7e8
+  internal_properties : CAAAAAgAAAAW1gnpy3noas3oG9zuXMxwkZr3JLeoYBVyeA3OKrGpbG8hUZFR3efjg9zXdvbkP3LOwZ4El+W+yh/BGkQoIMQZoZFhas7dNoK2s3zggks/85ETaI984McgHKWWQaYgHOHVWR2GVBXbwNvaP2ycm4Atn3CujyNLKHh/advQBBA/SjyBGhlS+OVu+5TE1UBpYuTyoMQSz+WQI84se2WdSbgsP+46Rqg+kP3nqD2BlYQgQ/0OVhmkbMPaynkAR9GXiUaW7GJI29Zvzbs1MN1yglvg1H3vemeWKxvW/9SKChIdFRPIVMDPwBAkLg==
+  options :
+   -
+     name : OPT_SAVE
+     identifier : 0x28f73cb26dacf7e8
+     internal_properties : CAAAAAgAAACTveIUfDQk99uQb9boRphKnUK6Xw3ET9UevWgIB6trSZHjd5MYBC3aQPEteLaX28c7vQe3EvhhDtZ8uJ76XVhZ5GbSeuhnK1t7rdU/RE/a3l3xxY/B/tfhztQgUBQkS91FOsE740Ax2CIKuR+9VSwfJnhSgv4KO1W6A6NoBASNq1Z+yOYozdA0Sl0ypWKuObPTwPvVkj83/9I2WnnbHbiDZR2N8YhF7D/7uFRYKWlosh0EtQnq1n0cLLMq9r9ZCu/wKts8ym/MWXKidJ5HiqYt5r3CG6Xv8i8JxYwm8bxcAgQf1iOmeIiXTLbP1A==
+     code_elements :
+      type_code : 26
+      p_codes :
+       -
+         code : |1-
+          
+          ExecuteProcess(BTN_VALIDATE, trtClick)
+         type : 32
+  code_elements :
+   type_code : 26
+   p_codes : []
+ languages :
+  - en-GB
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAADg14QmfbGPAXNOrqhHlYXozLCn2tIsQFIkvCpo6KnpF9nOA8EWkFufWWkexUSzKQBmYqpFAuy7r2eCMGVgAi0VTEjrEchBP9WxFT19DjFZ3kJjIx4QE56DqKmh
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1-
+      PROCEDURE MyWindow(ListID is 8-byte int)
+      
+      // Value returned by default
+      MyWindow..ReturnedValue = False
+      MyWindow..Title = ""
+      
+      // Update
+      Refresh()
+   -
+     code : |1-
+      
+      ScreenFirst(IWC_CUSTOM.EDT_LIST_NAME)
+     type : 34
+   -
+     code : |1+
+      
+      
+     type : 234
+   -
+     code : |1+
+      
+      
+     type : 165
+   -
+     code : |1-
+      
+     type : 177
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+  procedures :
+   -
+     name : Refresh
+     procedure_id : 1798973311596623848
+     type_code : 14
+     code : |1-
+      // Summary: Refreshes the information
+      // Syntax:
+      // Refreshed ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      PROCEDURE Refresh()
+      	
+      	// Read
+      	HReadSeekFirst(List, ListID, ListID)
+      	
+      	// Display
+      	FileToScreen
+      	
+      	// Visibility
+      	OPT_SAVE..Visible = IniOSMode
+      	BTN_VALIDATE..Visible = InAndroidMode
+      	
+      	// Reset
+      	IF List.Image = "" THEN
+      		IWC_CUSTOM.IMG_LIST_PICTURE..Note = ""
+      		IWC_CUSTOM.IMG_LIST_PICTURE = "basket.png"
+      	ELSE
+      		IWC_CUSTOM.IMG_LIST_PICTURE..Note = List.Image
+      		IWC_CUSTOM.IMG_LIST_PICTURE = (InSimulatorMode _OR_ List.SupplierID = 0 ? DATA_IMAGE_SUPPLIER + [fSep] ELSE "") + List.Image	
+      	END
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAADfY00FsSB7qIsKGtsRaIsm817gUnBRmfthZGGrkdaVuedUR4YblVKa0/U0Lm1OjO0nj7RLBYWAskn1WOk3ypci6SbJAn6qpFwzIz/iBF1IZBK/Fe0GgvHhWfSDGA==
+  original_name : _11
+resources :
+ string_res :
+  identifier : 0x158aa24a02bf189f
+  internal_properties : CAAAAAgAAACZEjEk9ePFZOo+39SDkDJRBhrPU5L8MGNkyQkX/peSMADIgmGIamrQQ4iQ
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

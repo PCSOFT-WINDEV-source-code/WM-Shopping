@@ -1,0 +1,629 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : CListManager
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x18f73cc00e7d2ea7
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      // CListManager class
+      // - Manages the lists
+      CListManager is class
+      	
+      	PUBLIC CONSTANT
+      		OpenListID				is 8-byte int
+      		ListOpened 				is string
+      				
+      	PUBLIC
+      		ListCleaned				is ASSOCIATIVE ARRAY of booleans
+      		NbHistory				is int	
+      		
+      		SwipeInProgress				is boolean
+      		OnListUpdated			is array of CObserver dynamic
+      		OnListDeleted				is array of CObserver dynamic
+      		OnListsUpdated		is array of CObserver dynamic
+      		OnOpeningRequest			is array of CObserver dynamic
+      		OnInfoIDRequest			is array of CObserver dynamic
+      		OnClose				is array of CObserver dynamic
+      		OnParametersUpdated		is array of CObserver dynamic
+      		OnSectionsModified			is array of CObserver dynamic
+      		OnListObjectRequest		is array of CObserver dynamic
+      		OnSearchTextUpdated		is array of CObserver dynamic
+      		OnSearchEndRequest		is array of CObserver dynamic	
+      		UponRequestSelectionList	is array of CObserver dynamic	
+      
+      END
+     type : 131072
+  procedures :
+   -
+     name : Constructor
+     procedure_id : 1798973371732340391
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructor()
+     type : 589824
+   -
+     name : Destructor
+     procedure_id : 1798973371732405927
+     type_code : 28
+     code : |1-
+      PROCEDURE Destructor()
+      
+      // Close
+      CloseAll()
+     type : 655360
+   -
+     name : ListRemove
+     procedure_id : 1798973371732471463
+     type_code : 12
+     code : |1-
+      PROCEDURE ListRemove(LOCAL nListID is 8-byte int) : boolean
+      
+      	bDeleted is boolean
+      		
+      	HReadSeekFirst(List, ListID, nListID)
+      	IF HFound(List) THEN
+      		
+      		// Ask the question
+      		NextTitle(List.Name)
+      		if Dialog(<§$0000§> + CR + <§$0001§>, [<§$0002§>, <§$0003§>], 2, 2) = 1 then
+      		
+      			// Custom list
+      			IF List.SupplierID = 0 THEN
+      				
+      				// Custom image
+      				IF List.Image <> "" THEN
+      					
+      					// Deletes the associated image
+      					fDelete(DATA_IMAGE_SUPPLIER + [fSep] + List.Image, frReadOnly)
+      				END
+      			END
+      			
+      			// Deletes the list physically
+      			bDeleted = HDelete(List)		
+      		END
+      	
+      		NextTitle("")
+      	END
+      	
+      	// If the deletion was performed
+      	IF bDeleted THEN
+      		TriggerObservers(OnListDeleted, nListID)
+      	END
+      	
+      RESULT bDeleted
+     type : 458752
+   -
+     name : ListOpen
+     internal_properties : CAAAAAgAAAAPqvRorca/ULoiLwOM3Rq5VZgH6bNOiRtaNgApaWvW24OUimKs2LLFQWrkS3X04t8g9n7SWt4xQw+bYebmZZGuKQhpooX/qx5VGRzcsY4mtICDcwSW6UfUsS9xT9NYef2m25bVcHPOafR9vfMrJ9+vvW1BySE+wUCgVC1QNqpisaACCg==
+     procedure_id : 1798973371732536999
+     type_code : 12
+     code : |1-
+      // Automatic procedure:
+      // The procedure is run manually, during a call in the code, with a time-out set to 5 hundredths of a second
+      // 
+      
+      PROCEDURE ListOpen(LOCAL nListID is 8-byte int, LOCAL bFromOpening is boolean = False)
+      	
+      	sListToClose is string 
+      		
+      	// No opened list
+      	IF ListOpened = "" THEN
+      		
+      		// Create a new list
+      		ListOpened = "LIST_" + NumToString(nListID, "06x") + "_" + SysDateTime
+      		OpenListID = nListID		
+      	END
+      	
+      	// List already opened and different
+      	IF OpenListID <> nListID THEN
+      		
+      		// 
+      		IF WinStatus(ListOpened) <> NotFound THEN
+      			sListToClose = ListOpened
+      		END
+      		
+      		// Reset
+      		ListOpened = "LIST_" + NumToString(nListID, "06x") + "_" + SysDateTime
+      		OpenListID = nListID
+      		
+      	// List already opened and identical
+      	ELSE
+      		
+      		// 
+      		IF WinStatus(ListOpened) <> NotFound THEN
+      			
+      			// Goes back to the content plane
+      			WHEN EXCEPTION IN
+      				ExecuteProcess(ListOpened + ".IWBackToContent", trtProcedure)
+      				RETURN
+      			DO
+      				XLOG("[CListManager.ListOpen] (" + ListOpened + ".IWBackToContent" + ") Exception: " + ExceptionInfo)
+      				
+      				// Standard opening
+      				sListToClose = ListOpened
+      				
+      				// Reset
+      				ListOpened = "LIST_" + NumToString(nListID, "06x") + "_" + SysDateTime
+      				OpenListID = nListID
+      			END
+      		END	
+      	END
+      		
+      	// Opens the list
+      	OpenMobileWindow(WIN_LIST, (ListOpened), nListID)
+      	
+      	// If the list is already opened
+      	IF sListToClose <> "" THEN
+      		IF WinStatus(sListToClose) <> NotFound THEN
+      			
+      			// Close it
+      			Close(sListToClose)			
+      		END
+      	END
+      
+      	// Update
+      	TriggerListsUpdated(bFromOpening, bFromOpening)
+     type : 458752
+   -
+     name : TriggerListsUpdated
+     internal_properties : CAAAAAgAAADdHdJZviczJRjNZ/6bU+wMAjXlN5a1Odz9sIYPmrN37C4ba98zCkW+uEJRLz1/uq0jEk6U23B3tY42t/m/1I0sINj64z0Or2pXLNEhR2kOQU4neFsW2I+AH8q6YYQQhC2vyvi3mc95DrOI4LTznMc2W72stm2HWp23qr6vjiKoQRQMOYLAiLLzARDVBbshiOeJM8+m
+     procedure_id : 1798973371732602535
+     type_code : 12
+     code : |1-
+      PROCEDURE TriggerListsUpdated(LOCAL bRefreshDataSource is boolean = True, LOCAL bRefreshCounters is boolean = True, LOCAL nRefreshListID is 8-byte int = -1)
+      
+      	// Lists
+      	IF bRefreshDataSource THEN
+      		
+      		IF NOT HExecuteQuery(QRY_LISTS) THEN
+      			XLOG("[TriggerRefreshedLists] (QRY_LISTS) Error = " + HErrorInfo)
+      		END
+      		
+      		// Reset
+      		DeleteAll(MyLists)
+      		
+      		// Caching
+      		<COMPILE IF ConfigurationType = Android>
+      			
+      			stList is STList
+      			
+      			// Filling
+      			HReadFirst(QRY_LISTS)
+      			WHILE NOT HOut(QRY_LISTS)
+      				
+      				FileToMemory(stList, QRY_LISTS)
+      				stList.Name = Replace(stList.Name, "&", "&&")
+      				Add(MyLists, stList)
+      				
+      				HReadNext(QRY_LISTS)
+      			END
+      			
+      		<ELSE>
+      			FileToArray(MyLists, QRY_LISTS)			
+      		<END>
+      		
+      		bRefreshCounters = True
+      		nRefreshListID = -1
+      	END
+      	
+      	// If the counters must be refreshed
+      	IF bRefreshCounters THEN
+      	
+      		IF nRefreshListID <= 0 THEN
+      			
+      			FOR EACH STList of MyLists
+      				
+      				STList.NbProducts = 0
+      				
+      				// Counts the number of products in this list
+      				QRY_LISTS_NBELEMENTS.pListID = STList.ListID
+      				
+      				IF HExecuteQuery(QRY_LISTS_NBELEMENTS) THEN
+      					HReadFirst(QRY_LISTS_NBELEMENTS)
+      					IF NOT HOut(QRY_LISTS_NBELEMENTS) THEN
+      						STList.NbProducts = QRY_LISTS_NBELEMENTS.PieceQuantity
+      					END
+      				END
+      			END
+      			
+      		ELSE
+      			
+      			// Finds the list in the cache
+      			nSubscript is int = Seek(MyLists, asLinear, "ListID", nRefreshListID)
+      			
+      			// Updates the list counter
+      			IF nSubscript > 0 THEN
+      				
+      				// Reset
+      				MyLists[nSubscript].NbProducts = 0
+      			
+      				// Counts the number of products in this list
+      				QRY_LISTS_NBELEMENTS.pListID = nRefreshListID
+      				
+      				IF HExecuteQuery(QRY_LISTS_NBELEMENTS) THEN
+      					HReadFirst(QRY_LISTS_NBELEMENTS)
+      					IF NOT HOut(QRY_LISTS_NBELEMENTS) THEN
+      						MyLists[nSubscript].NbProducts = QRY_LISTS_NBELEMENTS.PieceQuantity
+      					END
+      				END
+      			END		
+      		END
+      	END
+      	
+      	// Call the listeners
+      	TriggerObservers(OnListsUpdated, Null)				
+     type : 458752
+   -
+     name : ListClose
+     internal_properties : CAAAAAgAAABxSWYNsh4VS/CVqS6PG0wUPml9fQx7d+YFKOSntsNHnFLPjyFlfKOcxLa7r7kDOg3nzkq2FUIxN+qayTkjIKVMGEh+xV+QEWznlIRs9JwjdIHir7LD+6qlUN9tlJHjQRi6zUuSUmYg95j5v7O8qzy5XqiXQXYu8fIIG4WGz+F5oPN71LWRb6Eg8gVcrBwIlPO153sK
+     procedure_id : 1798973371732668071
+     type_code : 12
+     code : |1-
+      PROCEDURE ListClose(LOCAL nListID is 8-byte int, LOCAL sAlias is string)
+      	
+      	// The closing code of the internal window IW_MENU (sliding window) is not run
+      	// Call the listeners 
+      	TriggerObservers(OnClose, sAlias)
+      	
+      	IF OpenListID = nListID THEN
+      		
+      		ListOpened = ""
+      		OpenListID = 0
+      	END	
+     type : 458752
+   -
+     name : RequestOpening
+     internal_properties : CAAAAAgAAAD1xeqRbgxtZ7xpRRK//0Q8aq0VITgPV0JhJBj7Bj8n5C6TR7WZWEPoqIpniwnnUl0bmroCgT5x8y6mpa27jD08vFwu+cPkgZBzCIpirtL5TnPs5bCNMfBj8l1L4tOp34oMn5nYJMR+TcKvjZmmCWJj6NJN1whcL7A6GSskGW/XIs1V8lvz3Q9WJPOyYjYuWB9Ba/eO
+     procedure_id : 1798973371732733607
+     type_code : 12
+     code : |1-
+      PROCEDURE RequestOpening(nListID is 8-byte int)
+      
+      	// Call the listeners
+      	TriggerObservers(OnOpeningRequest, nListID)
+     type : 458752
+   -
+     name : CloseAll
+     internal_properties : CAAAAAgAAACq/LmeAJQXDujzNHZqHMazchjPsNHb8Qq76F41sZ243FIF876Yx69x2T3npg9GRBYD/PrZVUZB7YzoQ7wTACiaOcmnKX5DoGd/vlOfKx6SFPSk04X2dX9PcjPs1Rbx+mSzx48TwdrbU/j/WPjFQz8P+YrPrEPc8limr/xVtn/wRKqDylTaPbBKNJUZpXlGs4+A9CI7Cw==
+     procedure_id : 1798973371732799143
+     type_code : 12
+     code : |1-
+      PROCEDURE CloseAll()
+      
+      	bReturn is boolean = False
+      	
+      	IF ListOpened <> "" THEN
+      		
+      		// The closing code of the internal window IW_MENU (sliding window) is not run
+      		// Call the listeners 
+      		TriggerObservers(OnClose, ListOpened)
+      		IF WinStatus(ListOpened) <> NotFound THEN
+      			Close(ListOpened)
+      		END
+      		
+      		bReturn = True
+      	END
+      	
+      	// Reset
+      	ListOpened = ""
+      	OpenListID = 0
+      	
+      RESULT bReturn
+     type : 458752
+   -
+     name : TriggerParametersUpdated
+     internal_properties : CAAAAAgAAAD1hgU9+Eo+FVG30g9s3Om5PTg4o2h35cpj4svRKb2gOx4G2CxzG54/KoiXFhTBv9agQCOunqzu8tMdk0c9EDRJsP9OM241PnOcHY2Z2r+okVpqEZdMlpMUSCg7onWnDuhp
+     procedure_id : 1798973371732864679
+     type_code : 12
+     code : |1-
+      PROCEDURE TriggerParametersUpdated()
+      
+      	// Update
+      	TriggerObservers(OnParametersUpdated, Null)
+     type : 458752
+   -
+     name : ListCreate
+     internal_properties : CAAAAAgAAADP2C0+BhoTh5X8BeeA2JP7nUfj8M2/p2s1hEmu3uRmaBviRBTvKqQLL1JPmjf9JhHDmqV14XETHMv5+Xssaw==
+     procedure_id : 1798973371732930215
+     type_code : 12
+     code : |1-
+      // Summary: <specify the action of the procedure>
+      // Syntax:
+      //ListCreate (<nSupplierID> is 8-byte int [, <sName> is string [, <sImage> is string]])
+      //
+      // Parameters:
+      //	nSupplierID (8-byte integer): ID of the supplier
+      //	sName (UNICODE string - default value=""): Name of the supplier
+      //	sImage (UNICODE string - default value=""): Image of the supplier
+      // Return value:
+      // 	None
+      //
+      PROCEDURE ListCreate(LOCAL nSupplierID is 8-byte int, LOCAL sName is string = "", LOCAL sImage is string = "")
+      
+      	nPosition is int
+      
+      	// Retrieves the last position
+      	HReadLast(List, Position)
+      	IF NOT HOut(List) THEN
+      		nPosition = List.Position + 1
+      	ELSE
+      		nPosition = 1
+      	END
+      	
+      	// If a preset supplier is defined
+      	IF nSupplierID > 0 THEN
+      		
+      		// Read the supplier
+      		HReadSeekFirst(Supplier, SupplierID, nSupplierID)
+      		IF HFound(Supplier) THEN
+      			
+      			// Name + Image
+      			sName = Supplier.Name
+      			sImage = Supplier.Image
+      		END
+      	END
+      
+      	// Reset
+      	HReset(List)
+      	
+      	// Log process
+      	List.CreationDate 		= SysDateTime
+      	List.ModificationDate	= List.CreationDate
+      	List.CreationID		= USERID()
+      	List.ModificationID	= List.CreationID
+      	
+      	// Data
+      	List.SupplierID		= nSupplierID
+      	List.Name				= sName
+      	List.Image				= sImage
+      	List.Position			= nPosition
+      	List.SectionsOrder		= ""
+      	
+      	// Saves
+      	IF HSave(List) THEN				
+      		Close("", True)
+      	END
+     type : 458752
+   -
+     name : ListeID
+     internal_properties : CAAAAAgAAAD3qkng0rEAgTloAGNvQU3ek9kCT5F+YpGvwqWJ1QMoRABIztpxDZiS7Q7UKWIhJuz6JiPvDuAq7WjDCtKEqM4/TsCXbiXbrb2++oRqX44Tok8ITuR1bYcCKPoiprPVMcyV7ZRsrp4n0gCEsCliIb5zN/6aS67SzE1Q/IYqJXfjqat8xnaqOmPIqbvgjVmSrYfeqLgfGwnSCC4H6y2e9gebgkY=
+     procedure_id : 1798973371732995751
+     type_code : 12
+     code : |1-
+      // Summary: Returns the ID of a list from its subscript (useful for the internal windows of the looper)
+      // Syntax:
+      //[ <Result> = ] ListID (<nSubscript> is int)
+      //
+      // Parameters:
+      //	nSubscript (integer): Subscript
+      // Return value:
+      //	8-byte integer: ID of the list or 0 if an error occurred
+      //
+      PROCEDURE ListeID(nSubscript is int) : 8-byte int
+      
+      	// Call the listeners 
+      	RESULT TriggerYieldObservers(OnInfoIDRequest, nSubscript)
+     type : 458752
+   -
+     name : ListCurrentObject
+     internal_properties : CAAAAAgAAABxSWYNsh6VS/CVqS6PG0wUPml9fQx7d+YFKOSntsNHnFLPjyFlfKOcxLa7r7kDOg3nzkq2FUIxN+qayTkjIKVMGEh+xV+QEWznlATsdByj9AFiLzJDeyol0F/tFBFjwZg6TcsS0uagdxh5PzM8K7w53igXwfaucXKImwUGT2H5IHP7VDUR7yGgcoXcLJwIlPO153sK
+     procedure_id : 1798973371733061287
+     type_code : 12
+     code : |1-
+      // Summary: Returns the current list
+      // Syntax:
+      //[ <Result> = ] CurrentObjectList ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	Undefined type: Current list
+      //
+      PROCEDURE ListCurrentObject()
+      
+      	// Call the listeners 
+      	RESULT TriggerYieldObservers(OnListObjectRequest, Null)
+     type : 458752
+   -
+     name : TriggerSectionsModified
+     internal_properties : CAAAAAgAAAD0PN33kEZ4gWCT5tvEyXIMvEQYNF5hYMOLazaI534ZdMtIdhn9lGTC3HKqDWHvrzKPBobTSI6BSKkiLqL/oerJEUkVio65OyO48BKMTNiuHY+UoWRokdIQaweoMw==
+     procedure_id : 1798973371733126823
+     type_code : 12
+     code : |1-
+      PROCEDURE TriggerSectionsModified()
+      
+      	// Update
+      	TriggerObservers(OnSectionsModified, Null)
+     type : 458752
+   -
+     name : SectionDelete
+     procedure_id : 1798973371733192359
+     type_code : 12
+     code : |1-
+      // Summary: Deletes a section
+      // Syntax:
+      //[ <Result> = ] SectionDelete (<sSectionGUID> is string)
+      //
+      // Parameters:
+      //	sSectionGUID (UNICODE string): GUID of the section to delete
+      // Return value:
+      //	UNICODE string: Substitution GUID
+      //
+      PROCEDURE SectionDelete(LOCAL sGUIDSection is string) : string
+      	
+      	NextTitle(<§$0004§>)
+      	HourGlass(True)
+      	
+      	// Retrieves the parent section
+      	sParentGUID is string
+      	sParentGUID = PersonalData.ParentGUID
+      	
+      	// All the elements of this section (products, sub-sections) must change level
+      	HReadSeekFirst(PersonalData, ParentGUID, sGUIDSection)
+      	WHILE HFound(PersonalData)
+      		
+      		// Modifies the parent
+      		PersonalData.ParentGUID = sParentGUID
+      		HSave(PersonalData)
+      		
+      		// Next section
+      		HReadSeekFirst(PersonalData, ParentGUID, sGUIDSection)
+      	END
+      	
+      	// The deletion is effective
+      	HReadSeekFirst(PersonalData, GUID, sGUIDSection)
+      	IF HFound(PersonalData) THEN
+      		HDelete(PersonalData)
+      	END
+      	
+      	// Update the data sources
+      	SourceRefresh(True)	
+      	
+      	NextTitle("")
+      	HourGlass(False)
+      	
+      	// Triggers the observers to update the sections
+      	TriggerSectionsModified()
+      	
+      RESULT sParentGUID
+     type : 458752
+   -
+     name : TriggerSearch
+     procedure_id : 1798973371733257895
+     type_code : 12
+     code : |1-
+      PROCEDURE TriggerSearch(sWord is string)
+      
+      	// Triggers the search
+      	__OnSearchTextModified(sWord)
+     type : 458752
+   -
+     name : __OnSearchTextModified
+     internal_properties : CAAAAAgAAAASNOKPPwZ5oOJ3GMjoKHKPYKDtqLsVfZwtbBqHL7F8YKyhvXpSdcf/++lvaAXqyBLZRLTd21C1U4Zcj1qN4KiaZ2nlIdRhCK2pIprSMM+jmRvN5LTnZu4+bd4nsMsyO7EOEHj+Tq+mjmfed7O6lGSQaIPQU6RV6UNdhucAO9jhaXFAx6+nivMhx2h4jBr7vsYiC8qDsw==
+     procedure_id : 1798973371733323431
+     type_code : 12
+     code : |1-
+      PROCEDURE PRIVATE __OnSearchTextModified(sWord is string)
+      
+      	// Triggers the listeners
+      	TriggerObservers(OnSearchTextUpdated, sWord)
+     type : 458752
+   -
+     name : __OnSearchEndRequest
+     internal_properties : CAAAAAgAAAASNOKPPwZ5oOJ3GMjoKHKPYKDtqLsVfZwtbBqHL7F8YKyhvXpSdcf/++lvaAXqyBLZRLTd21C1U4Zcj1qN4KiaZ2nlIdRhCK2pIprSMM+jmRvN5LTnZu4+bd4nsMsyO7EOEHj+Tq+mjmfed7O6lGSQaIPQU6RV6UNdhucAO9jhaXFAx6+nivMhx2h4jBr7vsYiC8qDsw==
+     procedure_id : 1798973371733388967
+     type_code : 12
+     code : |1-
+      PROCEDURE PRIVATE __OnSearchEndRequest()
+      
+      	// Triggers the listeners
+      	TriggerObservers(OnSearchEndRequest, Null)
+     type : 458752
+   -
+     name : TriggerSearchEndRequest
+     procedure_id : 1798973371733454503
+     type_code : 12
+     code : |1-
+      PROCEDURE TriggerSearchEndRequest()
+      
+      	// Triggers the request
+      	__OnSearchEndRequest()
+     type : 458752
+   -
+     name : TriggerRequestSelectionList
+     internal_properties : CAAAAAgAAABqvPpX52b/yFafNER09F7TtGg1nM/VEUTRJB7LW2XgxFBxbfYm5VPvd7lrLNEeTBZ1DPx533hBQ/Is+0bJXBwWKzmV9QA5bM31GiA0pnUFK40/ViZ1nIhkX9AVgplALbsYmtJIvMXArFmA1WVogjZiii1S1epLUym3MH1KoW6Le2Oy8UnVWFX/4XIOLvhZ7m5KM+L7Sw==
+     procedure_id : 1798973371733520039
+     type_code : 12
+     code : |1-
+      // Summary: Asks for a list selection
+      // Syntax:
+      //TriggerRequestSelectionList (<sProductGUID> is string)
+      //
+      // Parameters:
+      //	sProductGUID (UNICODE string): GUID of the product to associate with the list
+      // Return value:
+      // 	None
+      //
+      PROCEDURE TriggerRequestSelectionList(LOCAL sProductGUID is string)
+      	
+      	// Triggers the listeners
+      	TriggerObservers(UponRequestSelectionList, sProductGUID)
+     type : 458752
+   -
+     name : TriggerAdditionExternalProduct
+     internal_properties : CAAAAAgAAABjjoUTN8aoALovHA6SX5ZJtEFbfw3UJjDqhS3AzvVuAVh4hkvvESuAWN9/Qjj7DEd6iUiu9GDpGdauE/spHN4yeRH7amrKK1dII+Jv/Qo3BIbmRgGf4COATxgD6CzVH1W+NnbympkUsFS19MWMsTjlkJaavzPVyXWOR4pMqcKtZF6u7ra/CGnEshB0mLN4Y0BjnRQ90Ps=
+     procedure_id : 1798973371733585575
+     type_code : 12
+     code : |1-
+      // Summary: Add a product without owning a list
+      // Syntax:
+      //TriggerAdditionExternalProduct ([<sGUID> is string [, <sName> is string [, <sBarCode> is string]]])
+      //
+      // Parameters:
+      //	sGUID (UNICODE string - default value=""): GUID of the product (or empty string to create one)
+      //	sName (UNICODE string - default value=""): Name of the product to create
+      //	sBarCode (UNICODE string - default value=""): Bar code of the product
+      // Return value:
+      // 	None
+      //
+      // Automatic procedure:
+      // The procedure is run manually, during a call in the code, with a time-out set to 1 hundredths of a second
+      // 
+      PROCEDURE TriggerAdditionExternalProduct(LOCAL sGUID is string = "", LOCAL sName is string = "", LOCAL sBarCode is string = "")
+      
+      	sParentGUID is string
+      	
+      	// Adds the product
+      	pclProduct is EANProduct dynamic = CShoppingList.ProductSave(sGUID, sParentGUID, sName, sBarCode)
+      	IF pclProduct <> Null THEN
+      		
+      		// The product is unknown, let's create it 
+      		OpenMobileWindow(WIN_ITEM_FORM, (Null), GetGUID(guidRough), True, pclProduct, sParentGUID)
+      	ELSE
+      		
+      		// The porduct is known, no edit
+      		TriggerRequestSelectionList(sGUID)
+      	END			
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : Classe1
+resources :
+ string_res :
+  identifier : 0x1601093200a3ac79
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      en-GB : This action cannot be canceled.
+     index : 0
+   -
+     text :
+      en-GB : Delete the list and its content?
+     index : 1
+   -
+     text :
+      en-GB : Delete
+     index : 2
+   -
+     text :
+      en-GB : Cancel
+     index : 3
+   -
+     text :
+      en-GB : Please wait...
+     index : 4
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

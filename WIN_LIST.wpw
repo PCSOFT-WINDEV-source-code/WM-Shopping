@@ -1,0 +1,1284 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WIN_LIST
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : WIN_LIST
+ identifier : 0x28f73ca469e0c1f3
+ internal_properties : CAAAAAgAAAAkb8ImnaRV1aQpai83EdEtNAKbhQg76kY6Yn30V9c2IWANgrXZz7xOKCpsutdxmzrGCJe3OWl4s4s28e1DkGAB1qXvrQgn1RM5P4rrH1vVrNNg0fn9JyYHsWFgShjy9tuamiUnnZMvOevVsDrqePLGyHW4S+fLNTEWcuyCiy9qjEDfKzfxgFD+1eehdhvLESXGwrF7F2eGs0KvzB5k0b0dHa50aVRD0IQrwJUjFyuO20hZjvbj8wn5p0AHbgpydaDO5MRDd1PQsOwTE+jSDj0i00c+bnI0/mXRBiEv3GAvtGdpjDY4A3xtNn6C2TmcImdEiPydndXoNGVbiP8TfhNOuxihP3K/JB/6WgPe3edBXNBY7gl92p3PNMCCx0BnzolHcsNCDAQaGZQrUjxAEtbdyRJDBuquaTVysys3nVo4BuB38eN+/40K49KAZghQgmzNE2SE4h6/jMsgjvoWMC5OPXxfucdzRSOUKtoZwf/Y0paSiqX+2o3/jT1is1j2CajftLuauiSCoZ3TWpfGSVZVM1q1BKshLF5lEiEPEWgWKgdGAIg/qOLcdXM2zDpCgqLbpDIk0LZbtItKG5YhBFZlqteqiRkMnrtaWlPfaMSjOYMHCGCVkpotyzHOXUYN6zYUb+cibtqHp6v8uMyqu4FlA29dSFnYFijz+MnsOuxM7OO1q7zJlEfe9T/nTNcEzABC1C/jfMZoWqhX7YxcYuq5g3fjOUEYkhCPVU6N8g5MSYHamYDgDuZ5XSw8ts1G/6xqkaJShprGX55DRcciYMyw92eM8GAoXiOIP33GvIuWTproVbGNPo9UXvgRfMCp1pDb5QaR0XiwaagHrKOvXy2AjvQvxtbL14Qi8Yr1jOFUpLKmN4VQ75LgH8zWpPZiksN+9iYukGf0UCLVtuhWyHsoSZloM2WmpoNRs1DDx8ktCuJQ4ReDGUKF6NMetKaS4PcM8jdfCfUE/mrcBsUcJ9eUUJc+BT/uvtzWSx3cwDMSV0DrLCBP+hmprXTUSGi3H36GR1j6wV9vnkyszxVLvW0Fu3rKlT8YAtt8jeYjK8n8HyeMzRWGv2ky8tLpO3qKD9GhIGHVO6BNTe/dR4ECsbxzNKwU1bj6G6pP7CLPdahRK87cNoRzvvxQEL2mfnQecQ04D4piP03NHgtRd+fpagMkP2lXY0PSlvlYBPlXeKvykUGmO10Cfd+bynQUQfFBPClzPntcZa/luqhxnro4T8ApgJWjPXMS7VUdqbXWOKKqKaAiibmla8Xn6HiKrRub5qwZdWSOTVDWX7zj9MlPHOR7dpqRMXwGza+kDDVlevcAHra8yv9D2+jnr5w+6kNEoQUUdy4I/8S/5ktLD+DKf7RWC8JOtuTrGtMm2Vove7oG1PDtjDCBbtTPsJZkZlJ4vdxaRBO3gw==
+ properties :
+  width : 320
+  height : 320
+  heightMin : 401
+ controls :
+  -
+    name : IWC_ABZ_CONTENT
+    identifier : 0x28f73ca469efc1f3
+    internal_properties : CAAAAAgAAACIrVzK+XA2aAB5zi+xCI5R608jT9kG7BnN5z9gjtiX3AabBEPqUEf4MBu+AKYrQoKZ6Wi5oWNa87Po3T8wKN/Hbd56SAy6hXmi5u2r93TihgGM+5IeICtmUh4X8+iMY9uwc+/YvP4XThk84h6FiOIsjgPr9KL81QaYHc4N7h3p/cPAX36b7rWgObxZn/TgGnZjilQrWikwreWJuvsSRaEm8QW7supvOGwxn14TS4sJ3GZiGkl3KmrL76QopVdZ5LmKxvsBcSqjCUo5Pxhip+aDhtjj93Hk29z1wW5Ewbse2mpzZJ2msbaXBttkU3jL22Iuys3bz1xiM5n5VEZ1YpyVgztRoLIPhEK7XPDk+na1VvRy2D3Zhyn/0PJXNx6rksGsLQTXEHh092opCx6te21OluSEGFHjtX0xdr2dPxG50BSZ9HpkwMP5HPbZ+QGo2DJYhPrpj1nrs5MK+zv0+vOMXgbMeQ12KzM//lC/a8ZZcjAVihuaZZj6BM+Ar9CSQkfqIwnWmVm7kaaTO74hsX5ALHhM9jZcif+OakxH
+    properties :
+     width : 320
+     height : 320
+    controls : []
+    type : 31
+    layout :
+     -
+       width : 320
+       height : 320
+     -
+       width : 320
+       height : 326
+    code_elements :
+     type_code : 73
+     p_codes :
+      -
+        internal_properties : CAAAAAgAAAAzBSpRJQ6m5j/8P1oc55hZm+1s3Chts5NHKpt4yAWPF5EUNsCbOFkNWDOT1PC+RS5/iuqg0BRmqPoB5LlUHOoIoUV4j0lYfMzggv4Iai4krp+tLBdeh8rLDIzZ8OuNI4i5SZtVNpfuenxej9Q=
+        code : |1-
+         // To add internal windows for the swipe, you have the ability to use
+         // the IWListAdd( ) function when initializing your window.
+         // Example: 
+         //  
+         //  IWListAdd(IWC_NoName1, IW_MyInternalWindow1, Parameter1, Parameter2)
+         //  IWListAdd(IWC_NoName1, IW_MyInternalWindow2)
+         //  IWListAdd(IWC_NoName1, IW_MyInternalWindow3)
+         //
+         // See the online documentation to get more details about this feature.
+        type : 33
+  -
+    name : BTN_Abandon
+    identifier : 0x28f73ca469f0c1f3
+    internal_properties : CAAAAAgAAAAkAvztZTuyttlgL6Xco4lGmfQfY0JGj/Xuk39jJ1TTjtlc2BPkCiim554G8vn4K9E1+ExjqP6OWzn8tPQDdimN7y++W6f7gTZ4Fs78x40486JssZ+k0cZOMqIJCReVnlJ46gKR0n89y1Rf0VSwWgpdTHWOJQ76tkQDSh8j5Rnm4hKye+dPkNs3HJ5mJtyU+trc6nnz3sjga83767HutOK10LPhUoX2UUMDaIKbjFwd4iki0Fw1rdKLqaiJh67a+hSvNewOQOC8pG23az7vot6JEOXqakTnHGeHy+5g8PgxbcsaQI9woXDeQxRbSAuqvGGNZZHZyD0vxeK58xwrKgZasrUREUAwDkyu7pTPN1HOzOOdFALCGPXY1whMu66V/Isj+DMlmD+Rl5bxZT8qSsNCQLvfBmBZN23frWpWZLk7teZkxNxcEKrlICCNTiXlQIzc/qSQviGvKj19himjMdi7WlXuWDKEwfuO1QvA/gn1aby1AoAgbvhNXSoTJCiXDFqolJphTmNnLXiQ65KOH1Me4PZf9S3+iKq+wVr9QVfqZdpJFyH9kc1j0IeZugJB/jJtN7j2i46Ycc5av75gI4ELqiRTsUgdKw7MDleU3ojR36varUWNKuhGVrgfMIBab5eq9sdoQZYo3IUgx0scTdS1CvnLARfEcTeEInejdTjsilC5trleGQZ9f/AgpzWeSm6WNGd9z5N1zArvICj1HLuX0hDBYI9HxfAbOq/l4flkT7Beg6tBwq1MJxjJfLrFDXKQAcF5z0WDoo0k9xh40Y4l9dTvEz7hYmaiXExEhddIn+c5+8sisGmJTs4HCOgGrc6eFv8HIh7kSSqecWpnSdGkWHceJFDfw2grzFe85rwt9An8o1qv0uxtKO1NVIe+W5BOq4bkaJCa5UqHvZFvpNcRiUTP5oYlgOeF9zDOlogv+Qc/RX2h+/GzqyTeX1r93NDi/Wx8IneMNYwZEhiEXCmGLaenrdtzwUS6RDYCJLgpbFJhur97
+    properties :
+     y : -123
+     width : 90
+     height : 48
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        internal_properties : CAAAAAgAAACvZOKib23Of7gs+RewbNqNkpz+JKPfcBV9mlxqNqHPATCFHS0MG6m/AhFKY23EIbQbx8H3hP36B1BBpZYP3/fMAW3ZkViPqTfVRoL3Yf9OJf+s1T/Rx6lY8eK/GTcvNoit4Ub0/qdDBh5oiDeKi5nNqFdtI3UozVYlzjbvVUMgIw==
+        code : |1-
+         
+         // The search is enabled
+         bSearchEnabled is boolean
+         
+         <COMPILE IF ANDROID_MODE>
+         	bSearchEnabled = NOT OPT_FIND_ADD..Visible
+         <ELSE>
+         	bSearchEnabled = (BTN_ADD_PRODUCT_IOS..State = Inactive)
+         <END>
+         
+         IF bSearchEnabled THEN
+         	
+         	// End of Search
+         	EndSearch("")	
+         	RETURN
+         END
+         
+         // If we are positioned on the list of products + history
+         IF IWListPosition(IWC_ABZ_CONTENT) = 2 THEN
+         	
+         	// Go to the content of the list
+         	IWListPrevious(IWC_ABZ_CONTENT)	
+         	ModifyMenuIconAccordingToPlane()
+         	RETURN
+         
+         // If we are positioned on the list of search results
+         ELSE IF IWListPosition(IWC_ABZ_CONTENT) = 3 THEN
+         	
+         	// Go to the content of the list
+         	IWListPosition(IWC_ABZ_CONTENT, 1)	
+         	ModifyMenuIconAccordingToPlane()
+         	RETURN
+         END
+         
+         // If the sliding menu is opened
+         IF WinSlidingVisible(swLeft) THEN
+         	
+         	// Closes the sliding menu
+         	WinSlidingVisible(swLeft, False)		
+         	RETURN
+         END
+         
+         Close
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : IMG_MENU
+    identifier : 0x28f73ca469f1c1f3
+    internal_properties : CAAAAAgAAAArOwcrfmuv/+so5UReNMN/KHywnX0C3X6w32+Z2sK/rWwLGHqdMrJxORZVdSc8uSFPgSnpffv/kh+T/O++4NFfve+n5L+Wa7YceeUdTn9fZsWwW1Akcc5XUoKp5rr+7F0xYTzQCS2mHiJ7M/DnJkl4Zqi2/SRRTTgDVEF9oPF6XBJ4RddlwwvRQiFEysOR8dqbTDRf1Sv3Kfu30oXSi6l8tAXCOT+mVP7vPXDaKptcwrF2jegbSvF1+j9DmDxSUVu+UoWrYGc709ha6uQuqY8ZxvsTAANZ/y4GpM3sRHjd1n8avH2TAdkEw1XqQjho1tAZ/yer+KdT27bMQgNFCp4qx7g5hCfP9w/3sS1Y2gi1uJ3mTDKz3qGrDvkEpUGlzInzvL54aaDy28h1Fb0tfsXcxPOn4QJyGbxlTHMm6iqRFkmZERJtuEX5rsLk4WvnUu3vnc0iTd/sEBgMDyYUFkkzfqw9hi45hsR+Zdb4L/G/lTqohIVEqxPZVy+6bWBAc/6xb7RxOto+H+T2PbYtHnsDFxLnAZPy6lUxLrk1KCpowwFKXAzbXXWEP5GvWoUFpSxagEa90yzZlXDdHmYX4QY6x5dibaTcqOPa4tvwlY4UntmHtvsb2sXpx5edSqJ+Y5bcn/n5BtQDbI1bb93Jve5Tyzd/vM/J7Q8jAe0fBLaty8QZ7Bbttx3vIWkaueOHzmHnQjQshNxJDLqsJ5I+1vvgC0JdcjROQ1ePQl+V9dRXpPhwH6OUcFqejduw1uh2OuXXbhcBrykUPbi7s07mX7uf6zoAdzw5cyiPoRT+CnNuppfM5oPr7qP2s+v7c91D3VZbdMT0908Se1kn4QFdEsi8aP6GjAzrkRejCNti+yQtYZkV0tWoikNpAw==
+    properties :
+     x : 93
+     y : -99
+     width : 24
+     height : 24
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : IMG_BACK
+    identifier : 0x28f73ca469f2c1f3
+    internal_properties : CAAAAAgAAACaV06z3u3nUUxAHE9G56m8sKTxs2gC+MktirhjWcS0gFXT1LHYhi3ZmM5df+YhohRVCT0Up3gIQSFW3Zz/MMk0JedySEhKIU3k39HCPcYsTd9zzFGcMK/LejyeLOEq6tusHm/FxNpWmEcOx8UimGunw/CWNE0WP+QJ9h5e5FDceCj55+EbuKwh7eb76S1DZoxyG/RDAqOhOfIICl2+vu9EQY9EnQ7cNiDLvjVkrfpD3FjFGW/CImxAzYOrSUI+1c5PvvZm8CF32k8x0fuNh32eWPLZwFiwogiTBsrmaSNN8+0PXcxZM/xRntFQuka61bl7hePMgjDQGL0EQd/2mv8qZmlV5z6SFMDuiC2kQDYOHzkvgeTqJnwHMJkGyGANRhxocgAwD+K5Wt478BfneAYjTNMdxCov6qhAIzEpRUQ0jD/sYk4u07xmc7S1jv/Ar9KABE5P3lkpY7lL46GsHxg54/WgOc+byXJYyhfdpM/L1SPLxvq8Gyt1CNEVqppKt/PMi/fKF5vLzMFZqIfaBXNt8rPyw50hF9LFqVjbiyKbH+IJfHYBrM7HrJymKT3xMkEw4XucUjnMjbL95by1vJ/6c98HBAeq+7PtudCCDXoZM3THE1BXmIYJYbTAf8CFvBQzUoPad2HBrj/JEwv4GP6eOtgOrxNgPYG7wyxpdPWCvnOdzqNXukhTK3xQjAGyZfzRXwo51sRJp7qQQ9PBT8CNoqP6xaPSvNq07ndEcwQZPLZVDuFqDD2wGDUAKkLj4AKnhPUO9Y+BVlLz7JVm4sNDwNKOKJip9rLSQpWyLYXbqsUcgj6wbcATOkTkJsXq4hmAZfW4JMUW62X8usC9QW3i+ZYinKwqwO+olUslD9l7NUNPzVunPL3xBEY6Ncumsa9+
+    properties :
+     x : 120
+     y : -99
+     width : 24
+     height : 24
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : BTN_MENU
+    identifier : 0x28f73ca469f3c1f3
+    internal_properties : CAAAAAgAAAADVIuglEjHnI2sOg2pH5Em7Qy52ejvhWtbLhaI24Uyoj85S/HPdYqdrHCit7ptV3rR9BDu0VCaOe7i5psA0Bpv3Ae4A/Oo7cMraJ54zauzCpKlEgldH54wLOq2dXx8Gmspme3PzrN1Iy9cwOj4b0Yr0b1K/yKY2QYl+iMT1u3jaKGTll5MUfLJab0gNxMiH70C2uD6sx6V5thi5LSYoFChIYkMu8uy2UaKroFtozrV7kQFl4i92QT+RGsiMcCjN8FNBOgEvWkXYOrTR4ehbZd0mqR0nhYjhnpf1g+nqzg81nc91yqDhCJnkPaW1dFuifQG5iHtQ8B4eDVFzZGrmqjDRSPmAJZRWCPxF1aTDjpTN/XGacP+647uwmxny0U+pvmi5bKnvzrHIT48C7EH8lNu7UYyLy49LZ0XWK9hKf9cen+IA/wKdO9rpGRQI3uEIbjsMM8VCepgyJ/v+i6EtYpipGl7HP5yqSWVw/wY7sHyAZZTnOgZ8X4srznMiiBEDW8QxUP/8qfQYBPpADAx8YI2btomWVd//51YwohWdLp/bw8u4V2JNGHw3y/0xSZYzdNJxCqKqczSCHNewzIoLMv7VVGB/dJtIPIuv61rBLwnQRg4i73jozjDJ7ddsflw3gjCtPyhuUCbbzgAbPS8dIqzYerEWQqCDiYYXTMenkabwPiFvzln5AzjJ6M9o5K+7SkFzF2nNvCGt3KUghNQxEU8jKVgsv675rO1800/9eDGKJUfU7SQ9KlNJbcXIfMn5Y/bYAdr2VTbPxRbdVV3b489260v6rTS4CQmdpzcNHKTCKOactd5zP23o2rqAdXZ3AkcMrBIQV+uh4KNO2mdV+xMFNsVpH08GEbBaQ==
+    properties :
+     x : 80
+     y : 96
+     width : 160
+     height : 48
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+         <COMPILE IF IOS_MODE>
+         	OpenPopupMenu(MENU_ADVANCE)
+         <END>
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : IMG_NAVBAR_IOS
+    identifier : 0x28f73ca469f4c1f3
+    internal_properties : CAAAAAgAAAC9/vucVylTrAQzeAA3j3MIXzo7rvSleCSL6Ao/E2JN3OMpI+gJEKHNbLUBohGfYhtA5GWDlW3152ZccoDUwdaWpU3azUMM8k5b7llrpp526RZ6cggUSdmY/4n/fdn/mwz2j1Y+sZk4IDFT1XXGp3n8XwB0KOIc16IYFZ1hytNLpRZZEStGtf2FAYhTHJL3XWNtezkif0neqv89ZSZ7iIlSPxvv4tK5WTxm1m0U6aIz+v/6IJ6O3eW7UDUOtUpgskHOMp3ZQTCwgQI3avYxFVKcADU+kAbC72XJ2oJKuIZYJfzdv9pfkCtLvokL+01IqB1MJSexoOsYpUCat0KMWvl6vuhXUlNzYPzikYAPSbkkG93HBwLMX3JGYjxfMG7ky5zoh49EgeQYxhTfSNi7BaFsBGI55C+aA7oXGUphjFPsNdTt4IqTEKpcHHlkyHZvsGbDyuwVYzCVmVqOD4AMrBfXINmcJSexFNZfegqgoPR2CHDB+gW+8vNCyMiz/Ey5aTjPDKgt6GKWs7DPTZB0KdkHFFp0DKdp4D9ceKlW9P54zgfmZPD4D76gn+SMoDQqgxPGcLTQgG0ANJWa1Ok0qCizoZDDDYR+OxNTUrLJHJC1yWXgDaAdt/MpWtAgvgxKzkJTS6RagnXeeUqfmTqgdsbeJjizVOp19REwzWImKhgYbbtsClnNX4w1YrbYCUNlwOZJn3jh99dn3sdPyZjJ+0dVB3ooCQUyYESx7W8thbsX0DYFhzbIx2cpqqsr2jEhnM2g7C9VmlAHtgYANqZSRin6CgK+Nm6nsoc20QjKhlNo5y5IUFjdTRNIYpMEgkIJUqACn21vF55/gmHiH6HT9fdscinlnlkpDoq5j86Mnc3Vr6ATsEc=
+    properties :
+     y : 273
+     width : 320
+     height : 48
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        code : |1-
+         
+         MySelf..BackgroundColor = ACTB_MAIN..BackgroundColor
+        type : 14
+      -
+        type : 18
+        enabled : false
+  -
+    name : BTN_ADD_PRODUCT_IOS
+    identifier : 0x28f73ca469f5c1f3
+    internal_properties : CAAAAAgAAAAjmOQCvpZZoGL+3PGFln/pGNlF49WOasj70LUorlnPgk2z/yk9M0cGakFehy4UoEXPhOMr2FG//C7O3nvLFwYX7v2ZCnlwccTM9zhdIqZoD0qFgn1UBAZ30Ix1tmBAptPlCo65GKXZX7G6Q4dYX55y2cejWCiBMqk4nxO8jbkO5XXbZcHGyHsOZTHHj+xHZTfa0TinapYyjeIrjYTF8BasX4y4tJerObVlQcnVasFPtPSnbVc994J7dDt/arbfoSBEeBdDed7oviG47ITIdy4Qvx5ithy+xfreiSsXnCRO81B8SUyJypFzqSBrr/hzihZnhI6fuM/dw9qKwAD9eXw3mgyYAAsSwJ1pXA56HYAEjfW1PN5vMf33OZ1TAbPYDM89RlcNI+MQeZL5948V0hFMVo+h6pGE1DUkjFMLWvInYORNl5fOyZvQnUE+sfUVeoV/BPR5ctNx7gRGKKz+As0euAfVnMQQuktz7skVlXwCLrflIeX6ts1z/7MobsenISZ39tbgmdSiUFHgd8aWmUuJlx3PC/+gmmHG9vWu2VEjpGf4fvzpBF821n8RodbxBMg9nYfCtHJXBRo34YBYoOzp8qWmLi0QdOzrTLyUXBdGTCY5E+MIUjUD9VfI3Tpryv0mFapwBesn0QSOPKA28+C3mSTyPCVFK6KeUvviEhmz1g3JIuknFiaUUR6iIkyASQREkUo44q9mmLbXwb62aRy8c5rGcblPoiP8FTFKl8xFlf7739SuLmJxUXXfCUkQtICLS3FilwyBmW5mWvEfjbYFJegxhTSZqqVY4rWPCzNS0VoX9K1JCONKXbYFpqJ+ElqhNb9gJ7DVLr8WYfk/rVL+xKe2hr8xgtWnBTUs0UAlc8eko81dyfILfN1X6AL/1obxsP7/7FJhIt8YFF3JU2T3foDDjHzcxI2uQagLi+kYfx4UxTU9uBuvx9+GbCl8VWJGMkls3tRHuUebzHdroBYs8aOspD2fphb56s4FGHDxTOL4oxCguQRSU40Dkx3dDjRrus/h8ag5lUPwQCvbtOSIA2JIFuGzFNUUNqjN9oV6UNshfW7KmLKwQIQOll810g5COS7Z
+    properties :
+     x : 80
+     y : 273
+     width : 80
+     height : 46
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+         ExecuteProcess(OPT_FIND_ADD, trtMenuOption)
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_SCAN_IOS
+    identifier : 0x28f73ca469f6c1f3
+    internal_properties : CAAAAAgAAADdmfrFj6DMdYxjA4rP87O5lE8XaScx0T60Tc4PI2LjwrUeVWqkA0VXY/xAyNQ176UG6/pCaCisS6Mhgy0NYFUvWh9Ax1Inipc+a2LI36Fo/U28ucg21sUKNTatL2NKoebPptx+BdqGxa85/kVD+utktfmWt3tQ+Z/7tby1vTDGzTEpvJirMqmk3om3s5tOAGmSbZ2SW6PUbplTdcikzH6tVOlCUtBuDNUT+ZDe7VOnNNY9PMS8S+D4PnUj9JNGbEKZkDEpNPIMBDVnapoxBKwOEh/PAlByqW+Y93JRkcJHe4hHvKWYcREsVO6Inc82WBJIg4Ob90Tu4iPN0g5Uivk4TdJ4BkC5TGsbnP/+stPcE2R5PXtN/m3JnbIgghGRIR8K8kHIyoc1FBwZD/cqonOoU695NdmQhiLL7svzMq7losobdg1sYFL3MN3kczNp5X9RdhEtfrwf+hT33QZxUiT50Xo1Ute8eJCRaUAmR2Mdbdnbncb5BHTX/DNjFfAK5kN9Rt8HAI8aLGV1VH2d1FnNdXlqFDJZrPhR3XRQlqS5PL+KhUmfLchIjPIzXIiAfjWf38PbpT6O8Z5yzOaVdAJ08Ta/buq45ox7cN20OHNQ5R69XtxG+o4EdcTlDbBu1GTisgIqxceTD3WigbKpCb/HiWqxtNLntlJfsYTUAfYfp5ByRfBtLhM0eXIhQ8memEJgbYb4rNvVqNZ+ta/346G9S+75jYWI7CyMkTv3yMFpUDKdi/8hHXZteqgi0Kq7AMZaffAMtUB4kPWyk37wL95WmmU8adGtBfYwwhg+9OpjbD3QsC3hcjibEZ+KKds9/dPP9mXbt05iMCVC/LIe7Cax+WSJI5DZ7Bsr//4hYj8Ptc3jy+QHZhZFPRv2ZMhdlg/2yRM2yJmWKNhLm3yky7A4yIXg0ioA1XIaB/SYzoe4sOfeN74FrmvMIYN6QTlK+XdEGX5pxsFb2Bf/onMl7lr+Ip6mukUJhATLB3+TwEFCWjh4A7h0BwKnrKfMyUvCPPB0WpZku1rxVlHf8JzE
+    properties :
+     x : 160
+     y : 273
+     width : 80
+     height : 46
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+         ExecuteProcess(OPT_SCAN, trtMenuOption)
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_HISTORY_IOS
+    identifier : 0x28f73ca469f7c1f3
+    internal_properties : CAAAAAgAAAC2QW0mWcVcw3p4Ln6bAlb9ZokoY9q2b/gHNOznl+nM8y1gjrzOMRlBjnrMy/P+X08Ob8UT7ZXd42OwAsdaEl0pspviajUhA/LaLpqV4OVbb7Icuv4IWQ0JmdxI60OayjHK/Tvot/facX/OGiEKG0R2kXpf/ZMvp39/c23l2u9A0xPiNoKX/MUDcXC62xOJ+vELdHgS/EvpbYa0p0IRC0cuxVOsyGvksedBA7Oh9hjY89s1XA6Jtw5VaK0dfNqaMehJq2qoPOMjg/5W9PxiVaGLkMfbHVl+uz1/5yZ10HfxJNEkY5wjEtbkUlW85eZGi+Cs86CCEabPuNOwTBoMR49LhfYvqk9RpBwvHnihOGQrBcBvU2qvsKav96CziERNOceMCd6U3WETOobmaBVtwVsNcawe4iLrK+Ua7CyF7JZY+1cVBBKHzdiOXx2zph5Z1gzPXOpxTThdr1wp1W8fZcv7b/b3SmcLlb67qC7k5OX/CslwSLwtO/1ufOlFAtSN51xYrPPa4+B6+vPjMRGPoRgP+9bBVBjCoo0ApsJvDuocF+91KzF+LHIZIBSzk/zDJUfkD1PhD0SxySpZ2/XmjLzMO/YjjzVnzaBZNFZ2CVMYG0rqvp5xkG/OjaZO7tbOe8eLClDGTg5XVWNPjdlZzSG8s/HwfJUfpqh3E5+MxTO/CGLoo91LyyxZpu+QxAnB2RjNFfTN0in6ySMN9Lk4N43h/2GVeEVIYs58C7LttIlpYl/d0gjEV/OSJ/VP/UNbxDUvP71nnosKIeurRxfhlbdnrJ0+HPcvV708wRBmxVKFNKEVmMe8OTesldGK+kwD0atQzNINN+13uL/fydJ2Xk/lqVnvSrXc7WWfoF1SriisDwe1+QhxkrmKhD/yO9TMpEA1mzoo5lloq5aN+cd9z5S/zLyVFBKlc3Z7lKMxozR26vCAuMaiuIfoB/0Z0PxYxGow01lcREz04b2kM9SOHp41k/eZCf5021NgBJILi7HLOSK2DPnhyUe2XoMGB3UzuQ==
+    properties :
+     x : 240
+     y : 273
+     width : 80
+     height : 46
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         
+         ExecuteProcess(OPT_HISTORY1, trtMenuOption)
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_MY_LIST
+    identifier : 0x28f73ca469f8c1f3
+    internal_properties : CAAAAAgAAAAdZjAFt7wKJ8jD1M0kaookJHAl0y6DQQxtn7rfHVdyD0ZNRuLXdE3gNKMl4JpaR+3qBXxH+oFE00xdM8OA31stqeI59zWuLtvTG96nAuNJTFVx667ZdMmHhavSrTvXnT/0aTkyAH6zFdsD2S+uNPzuf2E3jBlI6LdIsEh4L+WCZ6uS7SnTKbVT3v0dzlRUZH7zl5cslr9pe+hc3GpbHeHp/FrUvJZijrA+CkrPSTdJpcNOskKRQInDhaI3d0FV58ropOCUxtBkMjlO0kl55Jaa4HEH3V3mEOI5ijkPDfzrCGO6J464fyeiXL/mya2BaUs/RG2KIuhUY43dicQ0un9ZW0V4sdNADOjFIzAirMEhthC5DJrF2fGf66KXoiRB97xmRhW80B7zgHYOMyamrvHNLiSH7jJcwNVqxJvc17OIJ325SbdM/+UF3WtG4oiqFpoDYVOQYRWmtsgpibvGiDXVTJ48GQjNbfVRaDW3Ih5lpocevYPLj4/3MJ3XHDnAdL+SzI8nkZ3QXTeIMHc/Ta/a05NTVOw6ak/jAIL6Ixl0LAwL6Ut+vH0SiEllzzRZl4/2NbdK8jfPZ3n0NRTArw1pnM3L6OC3pb2I7+t7rTh5JHLFJSDt6ikwN+fET4NFKn5wrolXriKd7yEBL3gXSbGkDqS0ceHcSURtdrVCv+G/QCQrQsH46j7QZffXmVUnkl7bys8h14qhJeCzqKvDe3loB1Godb9pfDW2rFTO+BCONtfhrNMVb/i48X3s0ySFn9rcKTKDwPZjsB8YKgC0BPQ9H6S1XPDO1h5A/BvUolcBMCSwtCGl7pghEHLR+wGzrhoGmljFbLt6DwEuSy50brwHYaW5i3b7ksyZRk3qEukxMDOJGzWVAjRnW0RXOzYSr1CEcB4TKenwFfupFcoedDvh2bc6E49iLO26lpBx+MWAul9rtflFyaIQKgGATC7nOqzXe7MKuEThIlIV/hoHPu4omp703V/of/kXGNfuT+FpDJmxfC0Cd1GUTKT9gzG4P0nHAxjf
+    properties :
+     y : 273
+     width : 80
+     height : 46
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+         // End of Search
+         EndSearch()	
+         
+         // Return
+         IWBackToContent()	
+         
+         // Update the icon according to the plane
+         ModifyMenuIconAccordingToPlane()
+        type : 18
+      -
+        type : 161
+        enabled : false
+ actionbar :
+  name : ACTB_MAIN
+  identifier : 0x28f73ca46a07c1f3
+  internal_properties : CAAAAAgAAADVjX1zTRXr+STEqANvgqLXbWzvXxsZ1roRK36X6v6F9gjJxsxz2Yws40HwB+2BXgpkOS71x8ajlOn6+hkYYuHhay3UYdbWIFSVezg6PKS8AbhhxSuKADB1hHxuuwb4KDMzkB6w8O/9v5CDEHxZ6HYWuvbXlMsu9lDQnPjG/pPbkglaUh43FHsVjnkj98bXjnDc8XljL7eXIu7TlbCanSgx6ZMBKteBQEy3xQ+tc5LwrQXtwGyGaXJyJkViUeXcoOo+V43bPtdrEfO12niz6Py873nKiNbTteA/KFz8qgAThKdOnWde8dGEyUk3Tz80PLXb462kmBqxAVS0PxdiOw0TgFKPKXyW7K5aTTvdFvcRv/e4bi3DqWE8PsUUYeqsjmDN2egaD4w0DFuuaXUTmYHB9OYLSfMGZVh4A7b4G0euUgubhC3QwUs3PocOv6HsOkp+u6guw2VRSW8nh4FveDRmN+SChsqR
+  controls : []
+  code_elements :
+   type_code : 125
+   p_codes :
+    -
+      internal_properties : CAAAAAgAAADR2S5eXkfkGtXwCMpTzaCE+65hYSS8SuCfIwNZuqJcHkTzoD53mE9L2oHA/KnmcJX4GQADBQfZvYOO8RQSYxkyM8oT+2CIjDBV59Lye3t5NMnHQTe7ElCBnxt39Bk71dPz6OIUiOREzdZd3CrWdUxMPDDVnxshBlgoRI/5xxxm
+      code : |1-
+       
+       IF IWListPosition(IWC_ABZ_CONTENT) = 1 _AND_ NOT ActionBarSearchVisible() THEN
+       		
+       	<COMPILE IF IOS_MODE>
+       				
+       		// If the sliding menu is opened
+       		IF WinSlidingVisible(swLeft) THEN
+       			
+       			// Closes the sliding menu
+       			WinSlidingVisible(swLeft, False)		
+       			RETURN
+       		END
+       		
+       		Close
+       		
+       	<ELSE IF ANDROID_MODE>
+       		
+       		// if the sliding window is not visible
+       		IF WinSlidingVisible(swLeft) = False THEN
+       			
+       			// Displays the sliding window
+       			WinSlidingVisible(swLeft, True)
+       			
+       		ELSE
+       			
+       			// Hides the sliding window
+       			WinSlidingVisible(swLeft, False)
+       		END
+       		
+       	<END>
+       	
+       ELSE
+       	
+       	// End of Search
+       	EndSearch()	
+       	
+       	// Return
+       	IWBackToContent()	
+       END
+       
+       // Update the icon according to the plane
+       ModifyMenuIconAccordingToPlane()
+      type : 18
+    -
+      type : 229
+      enabled : false
+    -
+      code : |1-
+       
+       // Starts the context-sensitive search
+       OnInputSearch()
+      type : 239
+    -
+      code : |1-
+       
+       sFind is string = ACTB_MAIN..SearchValue
+       
+       // Abandon the search?
+       IF sFind = "" THEN
+       		
+       	// End of Search
+       	EndSearch()	
+       	
+       	// Return
+       	IWBackToContent()	
+       	
+       	// Update the icon according to the plane
+       	ModifyMenuIconAccordingToPlane()
+       END
+      type : 240
+ menu :
+  name : _Menu
+  identifier : 0x28f73ca469f9c1f3
+  internal_properties : CAAAAAgAAABM0BfnmCKOS8s5ewDumBSkqSoTUHe8YBUCJN1iGhWBCHeBlc3Rmd+DqxBvcqZg7y6GITJgp2muUk/detAQxLS14cFVtt7pjlLOFxS84q+fl9FTLJvkXAdwrDE2hT7EhJWdkUEafAlLEHum7xDsX0DpV5Bak6nVtpJJp5kWeioBgP4PaO9oYmuA/XKSC/57LFKshjpYdbeGFcjqOVvT0/LqeXxwFM5YfrepFqsfay4KgVdMHFdqpkGkfI+W7f+5G7wYKvimefBNN9UTDjNI3A0W5nvtcJ0gwa2gNZrQGLRvCOL8QFshtgoe1A==
+  options :
+   -
+     name : OPT_FIND_ADD
+     identifier : 0x28f73ca469fac1f3
+     internal_properties : CAAAAAgAAAAM6kWQPP6XMY3nBWZosJSg7RWRA28Pqg94901yoSryQJ76fib41/MlHjXkvG0hmagugM5Au8dW6st2jT/Fdo+6vsvW8KD1EcQFitai1aQhPNVn6VfA1WfDddPcf7v1pqV3dGXTsoshXD020om6m+/T3RwCtunRe+hy6Nb6Bhyf5cZuwOI4TpHWwoj2arriaJ+YSp+I2qauiwTAVYW70SnWb+D2+DeRDVq2rR1ONemWLcWUmuikhezClNasQx+JmM4Urc3fvRtIUrxae1OuXJoD7n05QWvFw5CMezmAAsVsM3Fr0DL6Fplhx0l9VLQPGFWodSobckeOnFgbMAPfe7N3LBeZvme5SDO6guzaza40v7Ioqa2eR32DsgidPTtFU4s7ISZDkHY6qVVala/f+S6odblJGZAIbfw=
+     code_elements :
+      type_code : 26
+      p_codes :
+       -
+         internal_properties : CAAAAAgAAACfF1dDJG+M/dTppm6JrnKCQ8V8MWWzXmT12wNZevrcHmRrQLavkD9zmmHYBAEWuN3wCWgThVcRPQtmUURCC8nGV/bPT/SUiDShs952zw/9WP3jLQs/jqyVqwcTiI2/mbfXxA44LADigyhSwPj/HUam5ruI3JRRT+poVpEYAdIo
+         code : |1-
+          
+          // If the sliding menu is opened
+          IF WinSlidingVisible(swLeft) THEN
+          	
+          	// Closes the sliding menu
+          	WinSlidingVisible(swLeft, False)		
+          END
+          
+          // Enables the search
+          ActionBarSearchVisible(True, <§$0006§>)
+          
+          <COMPILE IF ANDROID_MODE>
+          	OPT_FIND_ADD..Visible = False
+          <ELSE>
+          	
+          	BTN_ADD_PRODUCT_IOS..BackgroundColor = 0x101010
+          	BTN_ADD_PRODUCT_IOS..Opacity = 60
+          	BTN_ADD_PRODUCT_IOS..State = Inactive
+          	
+          	IF BTN_HISTORY_IOS..State = Inactive THEN
+          		BTN_HISTORY_IOS..BackgroundColor = IMG_NAVBAR_IOS..BackgroundColor
+          		BTN_HISTORY_IOS..Opacity = 100
+          		BTN_HISTORY_IOS..State = Active
+          	END
+          	
+          	IF BTN_MY_LIST..State = Inactive THEN
+          		BTN_MY_LIST..BackgroundColor = IMG_NAVBAR_IOS..BackgroundColor
+          		BTN_MY_LIST..Opacity = 100
+          		BTN_MY_LIST..State = Active
+          	END
+          	
+          	OPT_ADVANCED..Visible = False
+          <END>
+          
+          IF ListManager.NbHistory > 0 THEN
+          	
+          	// Rather than displaying the current shopping list
+          	// Display the history plane
+          	IWListPosition(IWC_ABZ_CONTENT, 2)
+          	ActionBarSearchVisible(True)
+          	
+          	// Refreshes the history
+          	MyList.TriggerHistoryUpdate()
+          	ActionBarSearchVisible(True)
+          END
+         type : 32
+   -
+     name : OPT_SCAN
+     identifier : 0x28f73ca469fbc1f3
+     internal_properties : CAAAAAgAAACqXxQ2mZgNblConrfokJTF+7ejQkotFwlUAUVgalYpDvYhjYXmxWwgohOOgTLWwn2bBnH6vYHOYKXXSTi27aSkIV2miCDdPBzvJ1IS8Kk1sGsHt14Y/nXDMuvytq4VCOnUIgieOgSFr5v6qieTcQaSgIlmQPOBEjtESY66BNssKmyDHO5uEO9abBxjR1MP21YRGxE4t0U+0c+1CIHg42Y82+IJbhIOq0QJk1W4GHgGYH29JpgdYQbp4Vcs56j1DZltBj0JUpnoK+eY57yp+EaE88y9RnEXi9VUEro5quLJ9yw2AYAqh8WD7bT4YyJS1DI/643k6hD8nChg5vfXMfqVtcHT3b1/8Ffi7r9N7Qydn96YKqCFPg==
+     code_elements :
+      type_code : 26
+      p_codes :
+       -
+         internal_properties : CAAAAAgAAAD5UEZMpGSNB2ZzbIG4m4wPcE5OgtxxG4gT/CHWqZMcnAndLOr55gB9QqBiTvk3vdffQDBpVmnKb80YOPwrNJgAXmhOUmHITcatllARQfeqwDpnDlIde0wH2b6q0i/xqJCsNlcIJzmokd74JIPJVV1T5OoEiOKco2lCOasJlNsRZlg+yMEKzcoioh8lacOLllU=
+         code : |1-
+          	
+          	// If the sliding menu is opened
+          	IF WinSlidingVisible(swLeft) THEN
+          		
+          		// Closes the sliding menu
+          		WinSlidingVisible(swLeft, False)		
+          	END
+          
+          	// Cancels the current search
+          	EndSearch("")
+          
+          	IF InSimulatorMode() THEN
+          	
+          		// La Vosgienne - Pine sap (Snacks, sweets, candies)	
+          		sCode is string = "3014680009175"
+          		
+          		// Adds the product scanned
+          		MyList.ProductAdd("", 1, "", sCode)
+          		
+          	ELSE
+          	
+          		// Opens the scanner
+          		OpenMobileWindow(WIN_CB_SCAN)
+          	END
+         type : 32
+   -
+     name : OPT_HISTORY1
+     identifier : 0x28f73ca469fcc1f3
+     internal_properties : CAAAAAgAAACHn5ZaG33uZMOxP+Hlf8fnhiY8AsSwbDwjBjzXTfoMG4exGTeabeHm3td183NNuZHapuiMPejTfcLsxb7SzIBdsOCZyN0KjyFYkYImTn18rpvjxcReviDfmuM5PcCw3cvto6jAFrXHH2e2ELIEaHKs6SHSsqsZEjOt348pO9HgZwmNhPwEESXkqW1HCnAOZVgFiW3ShNzgia9EAuYPJ5wpS5JLx4E1+ohUixn2JEqLn1WKbB8qb5n2mU7WEl4/2ArsWAcolMVijKp2eh4io99bXgSKhzQ6+fd82zQCvios8p/FE8onfKbthO94n9pDzbsCRsq9
+     code_elements :
+      type_code : 26
+      p_codes :
+       -
+         internal_properties : CAAAAAgAAACfF1dDJG+M/dTppm6JrnKCQ8V8MWWzXmT12wNZevrcHmRrQLavkD9zmmHYBAEWuN3wCWgThVcRPQtmUURCC8nGV/bPT/SUiDShs952zw/9WP3jLQs/jqyVqwcTiI2/mbfXxA44LADigyhSwPj/HUam5ruI3JRRT+poVpEYAdIo
+         code : |1+
+          
+          // If the sliding menu is opened
+          IF WinSlidingVisible(swLeft) THEN
+          	
+          	// Closes the sliding menu
+          	WinSlidingVisible(swLeft, False)		
+          END
+          
+          // Cancels the current search
+          EndSearch("")
+          
+          //
+          IWListPosition(IWC_ABZ_CONTENT, 2)
+          ModifyMenuIconAccordingToPlane()
+          
+          // Refreshes the history
+          MyList.TriggerHistoryUpdate()
+         type : 32
+   -
+     name : OPT_SECTION_ORDER1
+     identifier : 0x28f73ca469fdc1f3
+     internal_properties : CAAAAAgAAAAkJa1RzLxtKvzT0tmKgjjbmlBVeOC+huvEnaS0aXO39fVGS9iEoQrDroW+43BUOCBJWmB94QMD6OJVJ29EJBORvY6nVQE3kEDDcORuptSbg7LfYfAd1jECUyCQSNo7a+IlbSRxKZKvV9lWYDaMwxVRiJW4Ny4UyDHMU7ogmia6V7wyggyS2q4jm74m75A4HVFqQ35Yx26e7CHlwsf4Xszdn7w+v0pPLtnHjhW6EbzgNmTCc0S2/rmecpguuJoeO5K3bqZCFGVE1KuT1QBmwSmtJigBhXpyH5c7dvdJZGkZqiWZqXHmRDAvdWensk4Di0Oe7EzQyK/7IaSymMM=
+     code_elements :
+      type_code : 26
+      p_codes :
+       -
+         code : |1-
+          
+          ExecuteProcess(OPT_SECTION_ORDER, trtMenuOption)
+         type : 32
+   -
+     name : OPT_DELETE_PURCHASED1
+     identifier : 0x28f73ca469fec1f3
+     internal_properties : CAAAAAgAAACxaCTttrRf4R5Ox8Yyo8QY7o5NEJJH2JgXjQD1oEszT8CZK5P/EOUrOrlLLtvfn9dM97dIjo6QbVzSt4taJ5VC49z+nz0qhlW5qrK2bDruE97ysA16op5FbFV37z4KH62BmuvjoplmBC2Jjzdp70sdhDeNChrZ1ZbBejBR0HiRuvEmPrJmjK1whdqmZESZzdCOeHRc4UIHHult2dR2U4KryOD4ls3Aye8XxUiOq5i4XUWPHoH48+TxrllqBM59cy/aZgs0RRmPbJIDqAqlWcnwWEt/bTZkGFQGxC2wPu33F1edo5rURW3+pTFLEuNrJW95HpPPEzsJaqEGTp3OpIpeynj68ehtqg==
+     code_elements :
+      type_code : 26
+      p_codes :
+       -
+         code : |1+
+          
+          ExecuteProcess(OPT_DELETE_PURCHASED, trtMenuOption)
+         type : 32
+   -
+     name : OPT_CLEAR_LIST1
+     identifier : 0x28f73ca469ffc1f3
+     internal_properties : CAAAAAgAAADYsQntmOgp5qgXjkUGDqSnJtTZ3DTiSt/oSfhY/ecrBT0WaogIsLp9FCh7hNvITER9NkyJrU/v5DK1N09cLIvxVb53VfEXwNhbKDymluT768LXyajVPkmSg6CAiNIj0yKdvYTxaWLPH4EuWB7MA9XpCE3Av5bM8KE8w3qQkj6uU9i+vlg+froPj4rKUzx8UT027yoEE9IKqJUhNuvEcsDZGxgau4bTKsVLyqnuDQAkwnDuLwCiAmU6RqQinOaiT66jWoJuGBkQAIefoZyaPbU58mj7g1hUc2v3+gOlWOWlNlFN1UUSEAQDGdsrNsqHD8cCSBCc/HPHbfBOJH8=
+     code_elements :
+      type_code : 26
+      p_codes :
+       -
+         code : |1+
+          
+          ExecuteProcess(OPT_CLEAR_LIST, trtMenuOption)
+         type : 32
+   -
+     name : OPT_SEND_EMAILSMS1
+     identifier : 0x28f73ca46a00c1f3
+     internal_properties : CAAAAAgAAABHmw537jtxnyxClGAkyR2+XC1Mw4/h4yR1XseeHnkA8LTEuJb3EsP+OPZsJ9jQQhuP1NQ3nLvo/KcrNxTztrp8EgJ8/0PMOAW4Nt3EdHQ8X1dHO3/TKJHvNR982St5kBJj1XO+4pIUbue613opRZe9kBsKNuRGaezPd43lDG8RuMEnxvSuNzZYMvvj9RiKasfcY1tC3D83KRVnKxy6XRr2z27bNPOZjelstyp0sxjPJKJcvrSeX++ZMKfHltELKxe0pEmWwDXyUBPEbISo3N8uBESIEWsuV/OATni9M67w+z5/2qJBdAXEk4QkGVs/JUVSZgBQeHD1JKVUvHic
+     code_elements :
+      type_code : 26
+      p_codes :
+       -
+         code : |1+
+          
+          ExecuteProcess(OPT_SEND_EMAILSMS, trtMenuOption)
+         type : 32
+   -
+     name : OPT_ADVANCED
+     identifier : 0x28f73ca46a01c1f3
+     internal_properties : CAAAAAgAAADnwJvKOjJyK/bzzPyHQcDc0AtqAZ0DTfGZBokcR2c/9okmpIqYAsDNscmCp4aObSPtERpBxRO3IscBwW8dPU2YbidY8zoYED8U0vateK+zNtyeHNEqtAOYyxSIsJs5LyiYQ9yeIKl960n6EYSxUImqPY87jWz/9yBBPgKx0oLGL8JeP8V0M+VXbXDvBm56qEwjOrnM2l2fBPFQF6x+s0zKTnk0RNS0f1Rp4nm6t79eXD8bQkwz47IjwELaRSHyvrJQZapWGCUGX19HFMEbypw8pgik+BlPFkOIqKKnUsfBTQSxrtO0XmneA8Ze9fBC+l+dxeo3HT2ZPJptxzpDQTq7u3ThceOnSvXU7frzVDM=
+     code_elements :
+      type_code : 26
+      p_codes :
+       -
+         internal_properties : CAAAAAgAAACj+ev0ZfRfsEHRemy30l4HbOnn7K9TcaOgPkYIEJp9IV9ENW7GZPt7mFr4uCsfZrSb9IwFCW6tRp/qkDdvy7+bQiKl0uy91beHwX2LtXNbxwnPro4PxcgmF4v6myaL+9Dy/MLZUvuGvKfY0RnSfs+NzhFSer0DsA55Ijdc
+         code : |1-
+          
+         type : 32
+  code_elements :
+   type_code : 26
+   p_codes : []
+ popup_menus :
+  -
+    name : MENU_ADVANCE
+    identifier : 0x28f73ca46a02c1f3
+    internal_properties : CAAAAAgAAAAjbM1Bi4pfCSFvDHQZsxdvVYS1WpNu4CfUBmyhqgUwjokcZoVKXa70AkWoczZ63tG1cUYZ0eFgaUiFTMBpHe069Uf0mF7yHMH3yWFkQgCKFNNeyE/7dW1vMntjDSIoDcNxsKu85w0NZBSpA+zWH9Ue1yc8dLImqb51hh1LINLtj40TBeSjkV5T6/d+W+gQ7zNZkbCkQUyjwlAtoav7+gYtHiE28JaEi1c8JXSgEUQv0SeSXXOeERzQVojFB2iZXry8+Aj3WAe+fDpsjT+TF6ceEstsGlN71J/rIf9Rtpe7hlq/4VnFCyNMAAaFiE8xytw7RMZgUqODOrTjea22u5A7s9q0P8CFd0jP5Byr5tdOJjv9RnxFeDHL8l1LrlfhNNjwQhcGKOG1mg0Lel5BBa17wuuRe9zH
+    options :
+     -
+       name : OPT_SECTION_ORDER
+       identifier : 0x28f73ca46a03c1f3
+       internal_properties : CAAAAAgAAADHvx8wukjmQ5nkz0nMZfLICyWO8sL/Y7qyZc8xDAZz+ywPZMPUA/P2VKSZKK637IsBCn1zC3BsRffMNScZ6rHKb+leuLKTJcLIKm15pAfJ3P/+k7JDzcOdqAtqUDrdoj1YE2pEFOkJ1RrxsQSrK3XRoteG6fzgviXHKkAU0FdVVIonB4YRlv0FMK3gmQ/mCyT6BNmNC0QQsg43Ef8cOtmyCKRXWspF75hClBEwQcFr3+Zh4Z02iue5mDJnae7wHmeEUDYiYRe6em6NoJZBCCDG9LJTh4sZaduAWse8ruCxGZ7G3cdOQjwA2J/P/irJ67sxIPD8p82sp2djkhnK94t+aJIYshk4riplHNiEwqgj6xjFcGWWhdgNXEAtMjNVyZQ1mxgHRnD4oTve/CzMfasOzFQ=
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           internal_properties : CAAAAAgAAACfF1dDJG+M/dTppm6JrnKCQ8V8MWWzXmT12wNZevrcHmRrQLavkD9zmmHYBAEWuN3wCWgThVcRPQtmUURCC8nGV/bPT/SUiDShs952zw/9WP3jLQs/jqyVqwcTiI2/mbfXxA44LADigyhSwPj/HUam5ruI3JRRT+poVpEYAdIo
+           code : |1-
+            
+            // If the sliding menu is opened
+            IF WinSlidingVisible(swLeft) THEN
+            	
+            	// Closes the sliding menu
+            	WinSlidingVisible(swLeft, False)		
+            END
+            
+            <COMPILE IF ConfigurationType = Android>
+            
+            	// Opens the window for managing sections
+            	OpenMobileWindow(WIN_SORT_SECTIONS, MyList)
+            <END>
+           type : 32
+     -
+       name : OPT_DELETE_PURCHASED
+       identifier : 0x28f73ca46a04c1f3
+       internal_properties : CAAAAAgAAABC7lvqvUMd33SmezgajF/jTbpqC64hXZGNvLYYOkOAWGUQ1ZoR7IY6P9Gyx/zCM72EUleGWZDBJG4I1w1luKsZuwN9zQ5ELYhwqS21590BycsLynA4iPk32xAo0mkqt9X8N6BDkEsCa15VE3/5NpNc6vH1T3aRNoCdll7yNcWCpzxUbiDXV8NWyRZYHBBu6Ks/fkuWHMrRS6Z8efMnlICfrsIzRtnqefHfqBfl2/h8ZrU+YIyd/0wqKiWM04RHP0btP8T/Zq37FfttTkBl9l797j6ONynOuG9LHfDVy97VEWiE0BQfsD4QNu8PTEh+oXGyNocjK9yYkSgqYx04WfPugOEWOAD6jb1cKRw8NeBijCfbW3Hd6mL1dF8cdy9eKUq89/bPNrt85ilLbuzfrREfBmp1LyVsmEvKWXExsdY=
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           internal_properties : CAAAAAgAAACfF1dDJG+M/dTppm6JrnKCQ8V8MWWzXmT12wNZevrcHmRrQLavkD9zmmHYBAEWuN3wCWgThVcRPQtmUURCC8nGV/bPT/SUiDShs952zw/9WP3jLQs/jqyVqwcTiI2/mbfXxA44LADigyhSwPj/HUam5ruI3JRRT+poVpEYAdIo
+           code : |1-
+            
+            // If the sliding menu is opened
+            IF WinSlidingVisible(swLeft) THEN
+            	
+            	// Closes the sliding menu
+            	WinSlidingVisible(swLeft, False)		
+            END
+            
+            // Cancels the current search
+            EndSearch("")
+            
+            //
+            NextTitle(MyList.Name)
+            
+            // Warning
+            if not OKCancel(<§$0004§>) then return
+            
+            // Deletes the products bought
+            MyList.DeleteAllProducts(True)
+            
+            END:
+            NextTitle("")
+           type : 32
+     -
+       name : OPT_CLEAR_LIST
+       identifier : 0x28f73ca46a05c1f3
+       internal_properties : CAAAAAgAAACvp9f48hAei6Hc95GELaoQ4332isr3a7KKbccrCjxxZVatjiXywTnI6lKHGvzVUuV7yM8F8V6aPz1Cs4GXOI8sgS9IWrmb7eowgrWB7G8B1NfGCypbdYul8IMyWKLFepUQG2LcLJHx3WKpOWzTM10vKEmE4Pknw9URhEpqu/qIv1Xe3p308XxtuEHQsfuapyi6IME9Rzj8UjaVS/2GwFMAGlLpWLSbeeYEquMe0TH5EXBV8wvuCqf1LIL3mdQacivsJAZCUad6Cp6dsIZh+LAm5NJzd6s5GXtgWifcnsBRaV6W7adeMlxwKC+fbsopizuFSEyg/72Mm2NDXh1ybxM2pGJMHqnoHk75RJzAApgzg7RV5HGOjeAVVEglOjtdwYwN8+DPjiiw2WO2xGQENXNWtLw=
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           internal_properties : CAAAAAgAAACfF1dDJG+M/dTppm6JrnKCQ8V8MWWzXmT12wNZevrcHmRrQLavkD9zmmHYBAEWuN3wCWgThVcRPQtmUURCC8nGV/bPT/SUiDShs952zw/9WP3jLQs/jqyVqwcTiI2/mbfXxA44LADigyhSwPj/HUam5ruI3JRRT+poVpEYAdIo
+           code : |1-
+            
+            // If the sliding menu is opened
+            IF WinSlidingVisible(swLeft) THEN
+            	
+            	// Closes the sliding menu
+            	WinSlidingVisible(swLeft, False)		
+            END
+            
+            // Cancels the current search
+            EndSearch("")
+            
+            // 
+            NextTitle(MyList.Name)
+            
+            // Warning
+            if not OKCancel(<§$0005§>) then return
+            
+            // Deletes all
+            MyList.DeleteAllProducts(False)
+            
+            END:
+            NextTitle("")
+           type : 32
+     -
+       name : OPT_SEND_EMAILSMS
+       identifier : 0x28f73ca46a06c1f3
+       internal_properties : CAAAAAgAAAAdGJqQW6wT854paxk7kKK9rL5EilsFs+bRAKvCV9NHsP1g3UiLa1vHlKI+jYpKwKdU1Z7uMd6YIKBQksNQBtMKGdm2Rego6hFAPUtmKEnzzFx13cyXgcYqWOcwQ/zn4t0X8rsQ/EZPPUmgkNR21qafeMGp2Tpx8kapZYeFRsqlEgt68RbBz6ODaFV3OS58l8rKltEk6lka+cD+IP71ev9ciJCSHnd8xiQFDr8DB6y1YM4Z6AWqg6LWGD4NE3IoaE+8Iz3IuzozpixX2mmEH36VRVztJ+WYrI92s+5UJdiY4idpQDBoAqINAMsV9mlZa3GGttssbmIV9KGhEXNLU5yae5TtqA7NQh3BZmrTEGdAMaeB0bBJYkIuy7ztQzyxff38U4m9xV37ED2vawpnF8Co9AoW
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           internal_properties : CAAAAAgAAAAFrd15ckGyP7ofPBSzvKAg4TM6z6Nchl57OeXp0CpmlCiV8NyBoDPx0F922EOCNrcYZ8wNU1PZo8G8l+yY40+Xhps8ApPfx5PAmAODLKZmxXh0tnLOgcNwjrhEWYbaRqC+Mbu7d0sxjv9IJtKBa+Ac7FHW3kbHmbRmhFdSe0iy
+           code : |1-
+            
+            	// If the sliding menu is opened
+            	IF WinSlidingVisible(swLeft) THEN
+            		
+            		// Closes the sliding menu
+            		WinSlidingVisible(swLeft, False)		
+            	END
+            
+            	// Cancels the current search
+            	EndSearch("")
+            
+            	// Triggers the export
+            	MyList.TriggerEmailExport()
+           type : 32
+    controls : []
+    code_elements :
+     type_code : 26
+     p_codes : []
+ layout :
+  -
+    widthClient : 320
+    heightClient : 320
+  -
+    widthClient : 320
+    heightClient : 372
+ languages :
+  - en-GB
+ message_bar :
+  internal_properties : CAAAAAgAAADI/3yuRamXeVumBtCfXf2wxIivMqpUmLocpDJ5uLNrZ2NyM5e0dpc5I1HMXzR29M1Jb7V8Ee+4qETjr8zvuTT9VFDjKaCpp72pHTVF1nmRlpo7CyYYC5b70IGJ
+ code_elements :
+  internal_properties : CAAAAAgAAAD1bQEZERRa2Z99EovrsCLBBCBmeZJWOpxqbQj1d84CY9NANLbVfBPeLTZ69i3IEIMJsuoJy3bOWn7a1J/GtCh6RoIuogSt51RJSt+ILdf2z3nWVjGkIcQILvhxZmxPt3O7mlY=
+  type_code : 1
+  p_codes :
+   -
+     code : |1-
+      PROCEDURE MyWindow(MyAlias is string, ListID is 8-byte int)
+      
+      MyWindow..Alias = MyAlias
+      
+      MyList is CShoppingList dynamic = CShoppingList::Load(ListID, MyAlias)
+      ColorTheme is int = ACTB_MAIN..BackgroundColor
+      
+      // Name of the list in window title
+      MyWindow..Title = MyList.Name
+      
+      // Automatic erase: to be automatically done before declaring the 
+      // observers to avoid the unnecessary updates
+      IF USER_PARAMS.AutoDeleteBoughtProducts THEN
+      	
+      	// If the list was not cleaned yet
+      	IF ListManager.ListCleaned[ListID]..Empty THEN
+      		
+      		// Checks whether at least one product was purchased from the list
+      		HSeekFirst(ListContent, BoughtInList, [ListID, True])
+      		IF HFound(ListContent) THEN
+      			
+      			// Deletes the products bought
+      			MyList.DeleteAllProducts(True)
+      			ListManager.ListCleaned[ListID] = True
+      			
+      			ToastDisplay(<§$0007§>, toastLong)
+      		ELSE
+      			ListManager.ListCleaned[ListID] = False
+      		END		
+      	END		
+      ELSE
+      	// Flag to avoid an erasing during the next opening
+      	// if the option for automatic erase was modified in the meantime
+      	ListManager.ListCleaned[ListID] = False
+      END
+      
+      // Observers
+      AddObserver(MyList.OnListUpdated, MyAlias, OnListUpdated)
+      AddObserver(MyList.OnListUpdate, MyAlias, OnListUpdate)
+      AddObserver(ListManager.OnSearchEndRequest, MyAlias, EndSearch)
+      
+      // Source list
+      IWC_ABZ_CONTENT..SwipeEnabled = False
+      ACTB_MAIN..Image = IMG_MENU
+      
+      // Update
+      Refresh()
+      
+      IWListAdd(IWC_ABZ_CONTENT, IW_LIST_CONTENT, MyList, ColorTheme)
+      IWListAdd(IWC_ABZ_CONTENT, IW_HISTORY_CONTENT, MyList, ColorTheme)
+      IWListAdd(IWC_ABZ_CONTENT, IW_SEARCH, MyList, ColorTheme)
+   -
+     code : |1-
+      
+      ModifyMenuIconAccordingToPlane()
+     type : 34
+   -
+     code : |1-
+      
+      // Close the scanner
+      IF MyChildWindow..Name = "WIN_CB_SCAN" THEN
+      	
+      	sCode is string = MyChildWindow..ReturnedValue
+      	IF sCode <> "" THEN
+      	
+      		// Adds the product
+      		MyList.ProductAdd("", 1, "", sCode)
+      	END
+      END
+      
+      // Close the sections
+      IF MyChildWindow..Name = "WIN_SECTIONS" THEN
+      	
+      	sSection is string = MyChildWindow..ReturnedValue
+      			
+      	// Position on the section
+      	MyList.SectionSeek(sSection)	
+      END
+      
+      // Close a product form or the order of sections
+      IF MyChildWindow..Name IN ("WIN_ITEM_FORM", "WIN_SORT_SECTIONS") THEN
+      	
+      	IF MyChildWindow..ReturnedValue THEN
+      		
+      		// Update
+      		MyList.TriggerUpdate()
+      	END
+      END
+     type : 177
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      
+      // End of observers
+      DeleteObserver(MyList.OnListUpdate, MyAlias)
+      DeleteObserver(MyList.OnListUpdated, MyAlias)
+      
+      // Closes the list
+      IF ListManager <> Null THEN
+      	DeleteObserver(ListManager.OnSearchEndRequest, MyAlias)
+      	ListManager.ListClose(ListID, MyAlias)
+      END
+     type : 2
+   -
+     code : |1-
+      
+      // End of Search
+      EndSearch()
+     type : 221
+   -
+     type : 238
+  procedures :
+   -
+     name : Refresh
+     procedure_id : 1798973251460645363
+     type_code : 14
+     starred : true
+     code : |1-
+      // Summary: Refreshes the data
+      // Syntax:
+      //Refreshed ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      PROCEDURE Refresh()
+      
+      	OPT_CLEAR_LIST..Visible 				= False
+      	OPT_SEND_EMAILSMS..Visible 				= False
+      	OPT_DELETE_PURCHASED..Visible 			= False	
+      	
+      	// In iOS, hides the advanced menu options
+      	// -> they will be accessible via the main menu
+      	<COMPILE IF IOS_MODE>
+      		
+      		OPT_DELETE_PURCHASED1..Visible 	= False
+      		OPT_CLEAR_LIST1..Visible 			= False
+      		OPT_SEND_EMAILSMS1..Visible 		= False				
+      		OPT_HISTORY1..Visible 			= False
+      		OPT_SECTION_ORDER1..Visible 			= False
+      		OPT_SECTION_ORDER..Visible 			= False
+      		OPT_FIND_ADD..Visible 		= False
+      		BTN_ADD_PRODUCT_IOS..Visible 	= True
+      		BTN_MY_LIST..Visible 				= True
+      		BTN_SCAN_IOS..Visible 				= True
+      		BTN_HISTORY_IOS..Visible 		= True
+      		IMG_NAVBAR_IOS..Visible				= True
+      		OPT_SCAN..Visible 					= False
+      		OPT_ADVANCED..Visible 				= False
+      	<ELSE>
+      		
+      		OPT_CLEAR_LIST1..Visible 			= OPT_CLEAR_LIST..Visible
+      		OPT_SEND_EMAILSMS1..Visible 		= OPT_SEND_EMAILSMS..Visible
+      		OPT_DELETE_PURCHASED1..Visible 	= OPT_DELETE_PURCHASED..Visible	
+      		
+      		BTN_ADD_PRODUCT_IOS..Visible 	= False
+      		BTN_MY_LIST..Visible 				= False
+      		BTN_SCAN_IOS..Visible 				= False
+      		BTN_HISTORY_IOS..Visible 		= False
+      		IMG_NAVBAR_IOS..Visible 			= False
+      		OPT_FIND_ADD..Visible 		= True
+      		OPT_SCAN..Visible 					= True
+      		OPT_HISTORY1..Visible 			= True
+      		OPT_SECTION_ORDER..Visible 			= True
+      		OPT_SECTION_ORDER1..Visible 			= True
+      		OPT_ADVANCED..Visible 				= False
+      	<END>
+     type : 458752
+   -
+     name : EndSearch
+     procedure_id : 1798973251460710899
+     type_code : 14
+     group : 2
+     code : |1-
+      PROCEDURE EndSearch(VOID <useful> = Null)
+      	
+      	// If the search is not enabled
+      	<COMPILE IF ANDROID_MODE>
+      		IF OPT_FIND_ADD..Visible THEN RETURN
+      	<ELSE>
+      		IF BTN_ADD_PRODUCT_IOS..State = Active THEN RETURN	
+      	<END>
+      	
+      	// Hides the search
+      	ActionBarSearchVisible(False)
+      	
+      	<COMPILE IF ANDROID_MODE>
+      		OPT_FIND_ADD..Visible = True
+      	<ELSE>
+      		BTN_ADD_PRODUCT_IOS..BackgroundColor = IMG_NAVBAR_IOS..BackgroundColor
+      		BTN_ADD_PRODUCT_IOS..Opacity = 100
+      		BTN_ADD_PRODUCT_IOS..State = Active
+      	<END>
+      	
+      	nPlane is int = IWC_ABZ_CONTENT..Note
+      	
+      	// If we are positioned on the list of products + history
+      	IF IWListPosition(IWC_ABZ_CONTENT) - nPlane = 1 THEN
+      		
+      		// Go to the content of the list
+      		IWListPrevious(IWC_ABZ_CONTENT)		
+      	ELSE
+      		
+      		IWListPosition(IWC_ABZ_CONTENT, nPlane)
+      	END
+      
+      	ModifyMenuIconAccordingToPlane()
+     type : 458752
+   -
+     name : IWBackToContent
+     procedure_id : 1798973251460776435
+     type_code : 14
+     code : |1-
+      PROCEDURE IWBackToContent()
+      
+      	IF IWListPosition(WIN_LIST.IWC_ABZ_CONTENT) > 2 THEN
+      		IWListPosition(WIN_LIST.IWC_ABZ_CONTENT, 1)
+      	ELSE IF IWListPosition(WIN_LIST.IWC_ABZ_CONTENT) <> 1 THEN
+      		IWListPrevious(WIN_LIST.IWC_ABZ_CONTENT)
+      	END
+     type : 458752
+   -
+     name : OnListUpdated
+     procedure_id : 1798973251460841971
+     type_code : 14
+     group : 4
+     code : |1-
+      PROCEDURE OnListUpdated(PARAMS is array of int = [0, -1])
+      
+      	IF PARAMS[1] IN (CShoppingList::lsmodAdd, CShoppingList::lsmodModify) THEN
+      		MyList.AddedModifiedItemID = PARAMS[2]
+      	END		
+      
+      	// End of Search
+      	EndSearch()			
+      	
+      	// Screen other than the list screen
+      	IF IWC_ABZ_CONTENT..SourceWindow <> "IW_LIST_CONTENT" THEN
+      					
+      		// Go back to the content of the list
+      		IWBackToContent()
+      	END
+      	
+      	// Restores the menu icon
+      	ModifyMenuIconAccordingToPlane()
+      		
+      	// Update
+      	Refresh()
+      	
+     type : 458752
+   -
+     name : OnListUpdate
+     procedure_id : 1798973251460907507
+     type_code : 14
+     group : 4
+     code : |1-
+      PROCEDURE OnListUpdate(VOID <useful> = Null)
+      	
+      	bAdvanced is boolean
+      	bProductsBought is boolean = (MyList.ProductsBoughtOccurrence > 0)
+      	bListNotEmpty is boolean = (MyList.ProductsOccurrence + MyList.ProductsBoughtOccurrence > 0)
+      	
+      	// Menus
+      	IF OPT_CLEAR_LIST..Visible <> bListNotEmpty 			THEN OPT_CLEAR_LIST..Visible 			= bListNotEmpty
+      	IF OPT_SEND_EMAILSMS..Visible <> bListNotEmpty 			THEN OPT_SEND_EMAILSMS..Visible		= bListNotEmpty
+      	IF OPT_DELETE_PURCHASED..Visible <> bProductsBought 	THEN OPT_DELETE_PURCHASED..Visible 	= bProductsBought
+      	
+      	bAdvanced = (bProductsBought _OR_ bListNotEmpty)
+      		
+      	// In iOS, hides the advanced menu options
+      	// -> they will be accessible via the main menu
+      	<COMPILE IF IOS_MODE>
+      		
+      		IF OPT_DELETE_PURCHASED1..Visible 	THEN OPT_DELETE_PURCHASED1..Visible = False
+      		IF OPT_CLEAR_LIST1..Visible 		THEN OPT_CLEAR_LIST1..Visible = False
+      		IF OPT_SEND_EMAILSMS1..Visible		THEN OPT_SEND_EMAILSMS1..Visible = False
+      		
+      		IF OPT_HISTORY1..Visible 		THEN OPT_HISTORY1..Visible = False
+      		IF OPT_SECTION_ORDER..Visible 		THEN OPT_SECTION_ORDER..Visible = False
+      		IF OPT_SECTION_ORDER1..Visible 		THEN OPT_SECTION_ORDER1..Visible = False
+      		IF OPT_ADVANCED..Visible <> bAdvanced	THEN OPT_ADVANCED..Visible = bAdvanced
+      	<ELSE>
+      		
+      		IF OPT_CLEAR_LIST1..Visible <> bListNotEmpty 			THEN OPT_CLEAR_LIST1..Visible 		= bListNotEmpty
+      		IF OPT_SEND_EMAILSMS1..Visible <> bListNotEmpty 		THEN OPT_SEND_EMAILSMS1..Visible 		= bListNotEmpty
+      		IF OPT_DELETE_PURCHASED1..Visible <> bListNotEmpty 	THEN OPT_DELETE_PURCHASED1..Visible 	= bProductsBought
+      		
+      		IF OPT_HISTORY1..Visible = False 		THEN OPT_HISTORY1..Visible = True
+      		IF OPT_SECTION_ORDER..Visible = False 		THEN OPT_SECTION_ORDER..Visible = True
+      		IF OPT_SECTION_ORDER1..Visible = False 	THEN OPT_SECTION_ORDER1..Visible = True
+      		IF OPT_ADVANCED..Visible 				THEN OPT_ADVANCED..Visible = False
+      	<END>
+      
+      	// Name of the list in window title
+      	sTitle is string = StringBuild("%1 (%2)", MyList.Name, MyList.ProductsTotalQuantity)
+      	IF WIN_LIST..Title <> sTitle THEN WIN_LIST..Title = sTitle
+      
+      	// Update
+      	ListManager.TriggerListsUpdated(False, True, (MyList.ListID))
+     type : 458752
+   -
+     name : ModifyMenuIconAccordingToPlane
+     internal_properties : CAAAAAgAAAAIYxRyaKQnMSamK2VKCgsu88D0PKLf2U5UvoDVNcAiP1LHYZyJ9pRVLGRmJbZ0oZp+jmYb/oTRo94akeaMWgy9NYaQ5DAMu44EjM6tlYJJMqc0lKKmi3APnTLtPXhlnfhks0T4Da6SzcHcipGYnK3U8bczxjzR1OvkqQhyEeW7qoJcHkZjcnHMsMUX1eiIMWgGskU46+A=
+     procedure_id : 1798973251460973043
+     type_code : 14
+     code : |1-
+      PROCEDURE ModifyMenuIconAccordingToPlane()
+      
+      	SWITCH IWListPosition(IWC_ABZ_CONTENT)
+      		
+      		// List content
+      		CASE 1
+      			
+      			<COMPILE IF ANDROID_MODE>
+      				
+      				IF ACTB_MAIN..Image <> IMG_MENU THEN
+      					ACTB_MAIN..Image = IMG_MENU				
+      				END
+      				
+      			<ELSE>
+      			
+      				// If the sliding menu is opened
+      				IF WinSlidingVisible(swLeft) THEN
+      					
+      					// Keep the menu image
+      					IF ACTB_MAIN..Image <> IMG_MENU THEN
+      						ACTB_MAIN..Image = IMG_MENU				
+      					END
+      				ELSE
+      					
+      					// Keep the return image
+      					IF ACTB_MAIN..Image <> IMG_BACK THEN
+      						ACTB_MAIN..Image = IMG_BACK
+      					END
+      				END
+      				
+      			<END>			
+      						
+      			// Name of the list in window title
+      			sTitle is string = StringBuild("%1 (%2)", MyList.Name, MyList.ProductsTotalQuantity)
+      			IF WIN_LIST..Title <> sTitle THEN WIN_LIST..Title = sTitle
+      			
+      			<COMPILE IF IOS_MODE>
+      				
+      				IF BTN_HISTORY_IOS..State = Inactive THEN
+      					BTN_HISTORY_IOS..BackgroundColor = IMG_NAVBAR_IOS..BackgroundColor
+      					BTN_HISTORY_IOS..Opacity = 100
+      					BTN_HISTORY_IOS..State = Active
+      				END
+      				
+      				BTN_MY_LIST..BackgroundColor = 0x101010
+      				BTN_MY_LIST..Opacity = 60
+      				BTN_MY_LIST..State = Inactive
+      			<END>
+      									
+      		// History
+      		CASE 2
+      			IF ACTB_MAIN..Image <> IMG_BACK THEN
+      				ACTB_MAIN..Image = IMG_BACK
+      			END
+      			
+      			<COMPILE IF IOS_MODE>
+      				BTN_HISTORY_IOS..BackgroundColor = 0x101010
+      				BTN_HISTORY_IOS..Opacity = 60
+      				BTN_HISTORY_IOS..State = Inactive
+      				
+      				IF BTN_MY_LIST..State = Inactive THEN
+      					BTN_MY_LIST..BackgroundColor = IMG_NAVBAR_IOS..BackgroundColor
+      					BTN_MY_LIST..Opacity = 100
+      					BTN_MY_LIST..State = Active
+      				END
+      				
+      				OPT_ADVANCED..Visible = False
+      			<END>
+      			
+      			WIN_LIST..Title = <§$0002§>
+      			
+      			
+      		// Search
+      		CASE 3	
+      			IF ACTB_MAIN..Image <> IMG_BACK THEN
+      				ACTB_MAIN..Image = IMG_BACK
+      			END
+      			
+      			<COMPILE IF IOS_MODE>
+      				IF BTN_HISTORY_IOS..State = Inactive THEN
+      					BTN_HISTORY_IOS..BackgroundColor = IMG_NAVBAR_IOS..BackgroundColor
+      					BTN_HISTORY_IOS..Opacity = 100
+      					BTN_HISTORY_IOS..State = Active
+      				END
+      				
+      				IF BTN_MY_LIST..State = Inactive THEN
+      					BTN_MY_LIST..BackgroundColor = IMG_NAVBAR_IOS..BackgroundColor
+      					BTN_MY_LIST..Opacity = 100
+      					BTN_MY_LIST..State = Active
+      				END
+      			<END>
+      			
+      			WIN_LIST..Title = <§$0003§>
+      	END
+     type : 458752
+   -
+     name : OnInputSearch
+     procedure_id : 1798973251461038579
+     type_code : 14
+     code : |1+
+      // Summary: When typing the search...
+      // Syntax:
+      // OnInputSearch ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      PROCEDURE OnInputSearch()
+      
+      	// If we are positioned on the history
+      	IF IWListPosition(IWC_ABZ_CONTENT) = 2 _AND_ NOT ACTB_MAIN..SearchValue ~= "" THEN
+      		
+      		// Keeps the screen
+      		IWC_ABZ_CONTENT..Note = IWListPosition(IWC_ABZ_CONTENT)
+      		
+      		// Go to the search	
+      		IWListNext(IWC_ABZ_CONTENT)	
+      		ActionBarSearchVisible(True)
+      		
+      	ELSE IF IWListPosition(IWC_ABZ_CONTENT) = 1 THEN
+      		
+      		// Keeps the screen
+      		IWC_ABZ_CONTENT..Note = IWListPosition(IWC_ABZ_CONTENT)
+      		
+      		// Search
+      		IWListPosition(IWC_ABZ_CONTENT, 3)	
+      		ActionBarSearchVisible(True)
+      	END
+      	
+      	// Performs the search
+      	ListManager.TriggerSearch(ACTB_MAIN..SearchValue)
+      	
+      	// No search?
+      	IF ACTB_MAIN..SearchValue ~= "" THEN
+      		
+      		// If we are positioned on the search plane
+      		IF IWListPosition(IWC_ABZ_CONTENT) = 3 THEN
+      			
+      			// History entries are found
+      			IF ListManager.NbHistory > 0 THEN
+      				
+      				// Go to the history
+      				IWListPosition(IWC_ABZ_CONTENT, 2)		
+      			ELSE
+      				
+      				// Go back to the previous screen
+      				IWListPosition(IWC_ABZ_CONTENT, Val(IWC_ABZ_CONTENT..Note))		
+      			END
+      			
+      			ActionBarSearchVisible(True)				
+      		END
+      	END
+     type : 458752
+   -
+     name : WinForceOrientation
+     internal_properties : CAAAAAgAAAD/tlI+9E0xMurp2nl8u4R9Z2TzQ0ecH0SnD4Jw2ylpm4e9PUntlFNe7gUI9Ls6ghTfsxuLR5dqCtt4FoF32rSpUjrnriW67AG0s6PTbLPy6boLU4PotFS0Y9+GtqUuM4Wn6xQ/OLj0Rsgq7DTzyegxUuh0
+     procedure_id : 1798973251461104115
+     type_code : 14
+     code : |1-
+      // Summary: Forces the orientation according to the device
+      // Syntax:
+      //WinForceOriention ([<bInitial> is boolean])
+      //
+      // Parameters:
+      //	bInitial (boolean - default value=0): True if it is the initial loading, False otherwise
+      // Return value:
+      // 	None
+      //
+      PROCEDURE WinForceOrientation(bInitial is boolean <useful> = False)
+      
+      	<COMPILE IF ANDROID_MODE>
+      
+      	// In phone mode, forces the portrait orientation
+      	// In tablet, forces the landscape orientation
+      	IF NOT TABLET_MODE THEN
+      		WinOrientation(winOrientationPortrait)	
+      	END	
+      	
+      	<END>
+     type : 458752
+  templates :
+   -
+     name : WIN_LIST
+     identifier : 0x1557a45307a57551
+     code_elements :
+      internal_properties : CAAAAAgAAAALs2r8WhEnUPfxG7ClZxAy1DDL5ZmcdserQKcSKmE+2xtJGdcwFMIpH6/a6nIa2Qw5Rq0lVWTrO5k8DfOEPdu84Wly7TjDHDV3L160OTd+Y4WIS9hma+uXilw6X5c+
+      type_code : 1
+      p_codes :
+       -
+         code : |1-
+          
+          <COMPILE IF ANDROID_MODE>
+          
+          // Forces the orientation according to the device
+          WinForceOrientation(True)
+          
+          <END>
+       -
+         code : |1-
+          
+         type : 34
+       -
+         code : |1-
+          
+          <COMPILE IF ANDROID_MODE>
+          	
+          	// Forces the orientation according to the device
+          	WinForceOrientation()
+          	
+          <END>
+         type : 165
+       -
+         type : 180
+         enabled : false
+       -
+         type : 230
+         enabled : false
+      templates :
+       -
+         name : WIN_LIST
+         identifier : 0x1557a45307a67551
+         code_elements :
+          internal_properties : CAAAAAgAAAAdlDhBcHsxSm+RwTDgCPqpKRPyp+gZVWExNq8cDI6+JIScd5BaKQDEt1y4jddtNAMA9gIMagXEv9MOGg==
+          type_code : 1
+          p_codes :
+           -
+             type : 180
+             enabled : false
+           -
+             type : 230
+             enabled : false
+           -
+             type : 11
+           -
+             type : 12
+           -
+             type : 17
+           -
+             type : 13
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACzaYSNHinRsuoB6JBsrn+AjSN2Y5E3I9oXoveHo9NV+ByxG96O74WGGNtbV3CmmHv1rr2faVZ4t3yYswBTMecb/CvH4LrdaHWvBB87Ub3I2v3ID63tIrvyXCW0aP/lMDtfskdzAOG0U/wnj1O9jEdtK8LlRzqmhOaPbH7cGA==
+  original_name : _11
+resources :
+ string_res :
+  identifier : 0x158d68250014f4cb
+  internal_properties : CAAAAAgAAADKK4J/oieVyEFJuCj/+BB9Sfd99nNItIHb3Dq288YGO3u/WsOCvxQKLRs2B8O2LUgCxgER+dYR
+  strings :
+   -
+     text :
+      en-GB : Bought products
+     index : 0
+   -
+     text :
+      en-GB : Other
+     index : 1
+   -
+     text :
+      en-GB : History
+     index : 2
+   -
+     text :
+      en-GB : Find
+     index : 3
+   -
+     text :
+      en-GB : All the products bought will be deleted from this list
+     index : 4
+   -
+     text :
+      en-GB : All the products will be deleted from this list and transferred into the history
+     index : 5
+   -
+     text :
+      en-GB : Add a product
+     index : 6
+   -
+     text :
+      en-GB : The products have been transferred into the history
+     index : 7
+   -
+     text :
+      en-GB : Adding...
+     index : 8
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

@@ -1,0 +1,1122 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WM Shopping
+ major_version : 28
+ minor_version : 0
+ type : 4097
+ description : ""
+ subtype : 0
+project :
+ identifier : 0x0
+ internal_properties : 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
+ configurations :
+  -
+    name : iOS application
+    internal_properties : CAAAAAgAAABvBchJ+quSpdJXg1BoOwRHIDW/nPutL4+vN5PZG2NWp2e6gvSmd1wewifEyXrojj61LAhggOVteJqNDdCWORRQddf82tlI0VIP0olZzpzJ+qo32azfM2/znGsQK6uxf1oFccSxtqEPegtgU5d8cDAFiTg1hr/4uTsTRPiInPesvwDTpa+eVFmvVmLKAzQv4m4W0lh0lyTAw+7pUq9RSKKqlhjlrVCX0LqgsZg9GrKqMmvRUBsYJdC+8pBfNQvT0jRPS1pq5aKHvk5lNCM1pRahYL2BZl3G9ETs0STEDqKwv6Xldlb2WamBc9b2+tO7GU3a2OrPJz4sLlLknpEgpCGir9UgRhI6UKrkz8e84dHdJhUA6cF23dhbGeGthi26WLySSkAavCK0RQgFh1wfq+TBjQd3/HmKZz90HYNXOu5WtMb8HP70+LrsdNpRQYTHvNJ4YeVnnWvIl+DxcV7d2zC/pdBT8hZj8r+k06ZzxGlOb93Zy8lpMlosM/3Thdcec5fkQ8G2iWULTv1IL999LEgOfwcbPUnUjm9KIrwqMsNqbmisznsrQNFU1LeI5GXPcFbi5Itr6aikJ7lYqjpFPw1NqBiEnz0FTq5wThIw7GhH7WhCXo5ibLtYhXzcevpWVfnLtH6OXnCITjJwlo+LHLsarGiEkKeo/EiiP4kELrTMy1Gm2PWqxbYuCu6dKSnUAI71fETW0JZwJaP4wz64+g6kHJlIVHKE/z+cfUxhi6bfnXOfnnPGRMbk1Vlutm+vlcxzmcMXTQDPuqws3Cpr+zws8SAD0rxdRnHdClWVSNOaKBtFE7Gs+lPg2vvojcb344LmSp7ObH5qabfRhRC7r8X/626zCZf0zVllf5KBGTLD4R05HcH0GNBjCxwD8puPhY3niH4Fp2X+pBwuPkxz4Q2DsbpegWT764blRCh1UOLP8GlfbdK8FlEW/YzQ6TkHxQ/Y9PvlSaWjnPubYppIJd5vMHBc0/GsBsQZvxcy5sc7vTXoQxOzuiiz/um1UuDnprYrvMMZdDXk0p2juS04ZCTgBBNJo9Yqh26eSbAz+FBogFXMTTCOGfvzeFPUL9f/8ZxhJslex7SPp37HeM2dY6doLzV44RXt7N9BsP1lNCYneZ5cz5lU6Gq9UaDZBQCX3EkDhT1UV/ewzaKAEauKxVWpPuQlrYdr76kZ2SETuko5OiFs6OUnCnn9RXI/iKQ4a/uOKWm25zsvurS+bhunqA/A2wshMhOnqbXzfuzi7U8hrcsnp8SQps8ielbXaEyF/RUaMKjh7HT+LrouNorb+I3Wm2F1UdQny15giCDOVuJ2l0zeULURhCbykqSvjR7sl35WQOTeYAiLf3E4V2WTIZDoQ+/E2PrkNRsIHaQBAkmHvvMYUz1vpszACuqK95Mc6Nb8Oi5XbXjf15gvjYH+6mpddirDTrgsAh4XM1BozKL91OHACsWHHQxw00FPPXqcESD4Ee3s06WcHsbxRm15vcm3Sdz4K8iHjCnxdwtq+u5mN3Otjs30wjB4QBUUWa/Hln3zcinEiuLzvc4usqxmY0ok+c2A+80aAImVw4e1/kULHZr1KOJsEQXr0jwDdyBmq8HbRAk8j+1koaKAdx3Ji5gRRw8aeOeAswppPxGM0DMqupR91tePXdBsG6YhV6632rcLV4KYdTWcxQ7XzQSe2eZp+KWKUGDYV/xNlIz3laHzIM/UEiOedAeQzszAtwwVGkuM2HgTnN4iCnz1raaQxDJ/nYoYVxixoXKO/hRg6w5ZsWvU8ip9WncybYuRiSf7NCMPMh+OvGB08FBfD/luB5LJNV1Y0ryyYVmVgr6YCOHTXfIaIp2yHHw0eZR8e0sIccCvU26oWrVLQZbk8pN1z/KedsYnMApk8Y4mZu+Fw8UCFaIXlaXp/ypUwv/9RRlsIxks250577uhi61XspUnS3DN/GHa4zrSAIVSEdcXY0ayyrkoTdux/aZ/uf3wGEv/F1FAs93rPo82dFto/Zq9q0gNlGj/4SvJ1C6cnTbq1k3YxjkGNwhzerFXOiDJAyQ5syXpm/fBfqYzqI+FX9vdDgkYYKnYwdUg9Whzn6/rCqhOAa9EJhyq5C99JiqMqn5iTJDTY/d36+A85s1yNDmIerewNMQkDD7Rblqk3wngF3HsxvJWktBE6F86aghAnOjKOm7jBTtD/QabR1br/WqTMxYy1ER/jInKj+zeb8VLH/nDPnKSxtD58aJqS+Zs0IvIJEyajyZTzXBiNqQbfrTxyUhh7Rs476BaA+5TPGNshAOH/EomBfFEBirPnEF0ExQGGhx5inl8/0FOI9+nkikpWS7n+CXvZdH46kS3+d07BJpS6mi+A5/5G+iFPlqh+8NAzafqZgoxYSivGybDD0liOucmEN3IZ/sX4Q+n4B48pdqvW8R6wTZwQBpLGt3V+Cfb3p+6fdq7XlucdYBbgUeMxoBQnGXe6QqZjlVcHyK039H5B3NcvxDDZQrsGCvnkI8oh1kHQc0Mt3wwMjA4FWLCn+9nJsNbZPuo/WzPS//Dkh8XRpBtzLFyDAxiBt8FW9bpoiedJDKqR8rLq1wqWVH4kxCJjyhZ+J/tAgSD+RQNy4wdhjmP28oKr1Pr7VF35pDIPfwqC12qBuOEB+6y770oOpGrC0X+WLO5ofMWWjIF2lc7ZK4QiJS81YMoAMyaW2jx7egE0JmmkXJk+itWrqOKe0fLn7VqlxlO6G6AQWz38nEsPxq5AebYVv4u2GL7LI0uCGwPdO6/ig/sOGMk0JiWXhU+yKalJoE1GfEI2F4O+dAtjEU0jut4rYjknHarKYSxjslTxKa5ULg/6UBtoYTLkmz/cerL9p3+2hHAHt6qi9127mequIh4WZOEJ4Hb0o1Gg1Fp2W4/WgcYzP5xnwgE+A9aZ45cOYAeyrBdcclLJxiVCkF6EyNzii88t5M0tJv4w8Jk8j4h45Y6UA3YxKkZSdS+7DRg5dW5U4h80CKXfdJsTc0Ow+eqabyK+SLqlvVYEM2BZvdaFUtqYKEzrUD//kdCo/guTwx1aEJlidP9qO0+Gfdw8uqVt876ocBmCUKebmFCn4Dh1exS2PVV+/fjXyxky+DWLZdW0eXdWc2/CsMDL5/CEqMuaEwMIomidTN6I6NY0Sg3OuSgrhnvVeJ8beRapA33g0x5u0Pz3YtlpL224y/dEzYuh+81/C5kE4geh4qMeYpn+q6Xt33/v90a19nGQKj0pW8yemlgDrDlYL6z6p1Z2RTSBRlYL6dUDpQkUVGjdJpT9mdvhxAqanFNrHtkbh7/NB1Vr9ReLvW9fKK8k3QZ49FT8sLuDXCCj80kxYdCm9+FJEOpKXrze3IuPSD3v5/JfHQEZMlGGrdzirjAuWVhH1holyA2VcxS3xYXHNy/yOBeIUIx4edvQ0/tphDQEqi/glpJv2/EGM756B/kJa+qmnVPcg65vGj7VsnVigYhsjsu9eKEzpHS6m4WXWlLb9dpwjCDtZWTAZtZ6OCfBoAitIjSZ7rAryYwlcuVLiNNoouEnwWZ0dCNqRQ87cgeGDYV8tL4fHHdWw1Q797/akt3reH4E3Jsv80MIeUhDsUFVt6cy1ASaDF2wNVj5I/lmfiu8Raz0TTSnOWFhKIFHh1JJ7jkgZq/FreAV1KwaWALEFg18Gni/E3QxvPIIdihFfSjEixTaSyyOJFTpvBiSXiVX5slmmzxIILACzuLzAp+z+BUCxayMC0+rs6frHZ7ozCsiYtaNidHXexqNX80uZ35hYcIF3QY266Cd+wWi7zncG3M48kZzYRGdgb0Ea0jE66Q95MWIgC2OIjm6aDex6g1470TZvzJyPsHZNkWY57EzdtXhu0jT31Ly6lv0iXgelliP0nGFuw8jJFQm80ac+zgFohCO4pyLd2AKyBZPjPBaq/bYkq3K8O/CyPGN5dnD6cZOBAgXHF4HLd/vmSa2ze9HVQY/16Uq1rgf/0f8OsE+WYMR+HXBzi6Ly2sqSMHO5qkba3Vrw5TOxBTBmZ8RU6cwDg/akzMd4k7Mu+SI2c5tlWawbW6FMaX5YvjbFhAIs2T3ub9R4ocSBFcIyHWMzzO0qY3PpFzZvDwaeDkzQ7ul2K7Si4szrz2WL6LRGI6VKZbvEEFQ62pubVHOjMB0D6wGI4E/9UXort0vz0tvjSQBb7nbnkV0VPqFkTDcO6DQ53lQHAYlLmlR/yA5++qGeBuiHocNdDZLEZWO2Fs1VZvxHvr/rcMHqjeXKTeCeW1TeIMyAK+IxhfycBFrH14M+QsUgx6EylqAWUKjfrXREXUgYQqLcXxqRL8PFpmVx2SqEAyrR8iavihAa+RcPfZwp10bo8NWHcY37GhZmxDzwJwzAOjzhgbU6tI7qxd9o9eILxGS2Q+vkEGEMfzZmQRji5Fb+GE2npQQ/QU41nrELrym+Ru1dFtBbwT2VAMuRTkJsS9LBWBFRvYbMh8k8XmMUbRboV/LvK2qc+RHgp4eCM2iuvjsSzGcNYiS45ZNh5eMMgMwXOjwZZ71b+5TDMSXRwCEuL794BgQsdQNrTpOrGIgcmMmsmLryK+Cq8RGAZCKUrJiplXDYHtJ3czFdeS8hzJgwz/BVOlyK6lgTPUbBhgFIsepTUwW2+LrZaqsQ9TDx6I99DZZ6u+xRWIX8OthLVnl1V7A2TalSzN7CLXrNpoFeB+3b2ZuXEKcJFe7UaSrHrSh8/L0Y+LwGF3ZvmENadK3PxBdx7KeUDrqO4spZ4nSNQuKfmjUwNLufWzOKROfBHhdZdfEgeqh9kbXYZ/X7dKCfD9EvOtLEXx9TQQaeYp6Wc+rCooOh1Cs/n0h4dve0jee0jr2b9HBnSIK4nfWjmjZZVNtYp8omWEhMIoQMBK9+qRZ8vXy/Pnf6nZ8MeWRUuT942JIJdLMGc8N0ARpM3djfdxsL9PlWR9o0A9ktLLWOQ=
+    configuration_id : 1364698253181209041
+    type : 18
+    generation_directory : .\Exe\iOS application
+    version : {}
+    language : 2
+  -
+    name : Android application
+    internal_properties : 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
+    configuration_id : 14511823181872351813
+    type : 15
+    generation_directory : .\Exe\Android Application
+    version : {}
+    language : 2
+ elements :
+  identifier : 0x4587c86900020253
+  elements :
+   -
+     name : WIN_LIST_CREATE
+     identifier : 0x458828f201de18c0
+     internal_properties : CAAAAAgAAACY9kBcaxAYw4l2fjTOphfNljlVBc9mqx5Oyyk/K/oSFjrAPNzxEPIC7lNNq2tlHZN9hQ==
+     physical_name : .\WIN_LIST_CREATE.wpw
+     type : 2
+   -
+     name : QRY_LIST_CONTENT
+     identifier : 0x458826ed004c3641
+     internal_properties : CAAAAAgAAAAYdsDc65CYQwn2/OfBaP1CrMlrM4JFNxyjdcJ6jxlzlbtnPojDBXiCbtPNK+vlnRP9BQ==
+     physical_name : .\QRY_LIST_CONTENT.WDR
+     type : 5
+   -
+     name : QRY_PRODUCTS
+     identifier : 0x45882607004ab0a5
+     internal_properties : CAAAAAgAAABr51O3dDF5oq5X3WLiBzoly+ry6muG3euhB1HrjAyOWpJCYV/4ANdjDzSuCopGMqZu9g==
+     physical_name : .\QRY_PRODUCTS.WDR
+     type : 5
+   -
+     name : QRY_CATEGORIES
+     identifier : 0x458826000048958b
+     internal_properties : CAAAAAgAAABv60dbaBUdzpqDSfceIS3tIUz4KBWQ7qGuJamTYCjqxnKeL2bTbUPPu2Bapm5iHpJ6+g==
+     physical_name : .\QRY_CATEGORIES.WDR
+     type : 5
+   -
+     name : QRY_LISTS_NBELEMENTS
+     identifier : 0x458824f1004674f7
+     internal_properties : CAAAAAgAAAABfXmtGkfvgEg1PWKUDSjdtYDsXAncVCtcpzEDQFgyphr24xEm0r9FLRKMdDy0TLwEDA==
+     physical_name : .\QRY_LISTS_NBELEMENTS.WDR
+     type : 5
+   -
+     name : QRY_LISTS
+     identifier : 0x45880f6f004470aa
+     internal_properties : CAAAAAgAAADEQiwIt+zE5/26ufl3hhPTvo/lPQiDNIiknRJiq/0X+ds7rzES7uHGoodxT9cJ8efRUQ==
+     physical_name : .\QRY_LISTS.WDR
+     type : 5
+   -
+     name : IW_MENU
+     identifier : 0x45880acb00425191
+     internal_properties : CAAAAAgAAACjrRn1xgP7cTj2Zm8DeLPuTP+4Z0B/xEFu/M8jsvuyuM2JI0x3TsJNOU6JNhnxTrWm
+     physical_name : .\IW_MENU.wdw
+     type : 8
+   -
+     name : QRY_SOURCES_LIST
+     identifier : 0x460bd623012de7a0
+     internal_properties : CAAAAAgAAAAjHxsPvOnB2ucQwwgdpG3I4dxIaOUAFhGa+OEb2LDiziqGFMN/QgGlxHxmUtIO6t4mLg==
+     physical_name : .\QRY_SOURCES_LIST.WDR
+     type : 5
+   -
+     name : COL_TOOLS
+     identifier : 0x4588329b0080d371
+     internal_properties : CAAAAAgAAADpZdE18q8HKDDtw0SgoxsXoY7ktASDOmyOe3qw+D3RN5l7NC9S7u29Vco0jBTMtCTsdA==
+     physical_name : .\COL_TOOLS.wdg
+     type : 7
+   -
+     name : COL_ANDROID
+     identifier : 0x4589576e00a5aa70
+     internal_properties : CAAAAAgAAAApJRF1su/H6PCuqjG+LubyW9RmhjrypHy2cfKlwCXpP/UrJ4MT7WH+lYp0TNQM9OQsNA==
+     physical_name : .\COL_ANDROID.wdg
+     type : 7
+     configurations :
+      -
+        configuration_id : 1364698253181209041
+        excluded : true
+   -
+     name : WIN_MY_LISTS
+     identifier : 0x458808f3002c1b8e
+     internal_properties : CAAAAAgAAADPSyd7yPW97vqjS8KqEYUandwkPJox9vyOV1fxBz7cZFxUNOcylj3vm4B6Rs4C/vLaWg==
+     physical_name : .\WIN_MY_LISTS.wpw
+     type : 2
+   -
+     name : IW_LIST_EDIT
+     identifier : 0x458aa2ab01f8901c
+     internal_properties : CAAAAAgAAADnY8/T0I2lRhINSRZneTCOlzpWjkDhk3WkJ7crY7JY2HyAutYjnk1RM+jSLvbqlgrycg==
+     physical_name : .\IW_LIST_EDIT.wdw
+     type : 8
+   -
+     name : WIN_LIST_RENAME
+     identifier : 0x458aa24b018b18ed
+     internal_properties : CAAAAAgAAABr51O3dDF5oq4pRaLzaCTbZcQ8pBK717RcCW9rP/YkLIR8s2Un0lldDzSuCopGMqZu9g==
+     physical_name : .\WIN_LIST_RENAME.wpw
+     type : 2
+   -
+     name : WIN_PARAMETERS
+     identifier : 0x458d1c3500e95222
+     internal_properties : CAAAAAgAAAD6UCJmRQIqNT/9Ihs/43lbArGJgadDiROyEs5OQdTAGCDCXGZyjhctYMU/uXl3A/XfZw==
+     physical_name : .\WIN_PARAMETERS.wpw
+     type : 2
+   -
+     name : WIN_ABOUT
+     identifier : 0x458d1c1200e4ca07
+     internal_properties : CAAAAAgAAADNT/uXYF1phqIirGMX4JPACr04Kqe4ozkbO4HyojQHZxheCOn+G+d2METzjLdT7NdI
+     physical_name : .\WIN_ABOUT.wpw
+     type : 2
+   -
+     name : WIN_LIST
+     identifier : 0x458d682500c5f4fa
+     internal_properties : CAAAAAgAAACV50PPCLVNHtNwOZ1OpAmkq50aePQD3/lXP0EH0OwZRStTJcCWa8zPRCDb5M8rlH+Q
+     physical_name : .\WIN_LIST.wpw
+     type : 2
+   -
+     name : WIN_CB_SCAN
+     identifier : 0x459104f000fc6bb0
+     internal_properties : CAAAAAgAAACtqYWZJhMbxJyi46vcqz/CK3oiqhjY3RxWjQAM4QQW0nr6tCfWYr4ywWZQqGiYYFC4uA==
+     physical_name : .\WIN_CB_SCAN.wpw
+     type : 2
+   -
+     name : QRY_SOURCE_CONTENTLIST
+     identifier : 0x45a8d2fa01e19231
+     internal_properties : CAAAAAgAAAC9mZWJNmNLVGwJb6elgBqPcS6URH8K9fZejwg839lF0y2nqOrw0enZUfbg2FiIcGCoqA==
+     physical_name : .\QRY_SOURCE_CONTENTLIST.WDR
+     type : 5
+   -
+     name : IW_LIST_CONTENT
+     identifier : 0x45adf7d702298e0e
+     internal_properties : CAAAAAgAAABEwqyIN2xEZ31fy+Nxc/M5FCWza2vfZ5SrIYZpskNJ7xExOdVXo6QLIgfxz1eJcWdR0Q==
+     physical_name : .\IW_LIST_CONTENT.wdw
+     type : 8
+   -
+     name : COL_DATA
+     identifier : 0x45fffbb30aeff5b9
+     internal_properties : CAAAAAgAAACtqYWZJhMbxJwADuZkNFc516oWjjAuWcGcfD/89x785MAcQ7JKwKO4wWZQqGiYYFC4uA==
+     physical_name : .\COL_DATA.wdg
+     type : 7
+   -
+     name : QRY_SEARCH
+     identifier : 0x45ae616606323f0c
+     internal_properties : CAAAAAgAAADJRTHV0o+nSBAjpi+UYxFoKaggOAGU74KoKZOpUkbMDMwU+sVq5BIbNerULPTslATMVA==
+     physical_name : .\QRY_SEARCH.WDR
+     type : 5
+   -
+     name : IW_SEARCH
+     identifier : 0x45ae5e32062ab9e8
+     internal_properties : CAAAAAgAAADKQDLW1ZKaRQ/ubmrR6BgJem15adPQ8AJYh+GFKxr69sII3N1M+thWcNXPKennkwXPVw==
+     physical_name : .\IW_SEARCH.wdw
+     type : 8
+   -
+     name : WIN_POP_SECTIONS
+     identifier : 0x45b20b9c037c1f8b
+     internal_properties : CAAAAAgAAAB/21dLeCWNnqqdmlNDH6E3C2qyKqhpXIquFH6VOewuOrIiDwB5SlKBCzCqFp5SLqJq6g==
+     physical_name : .\WIN_POP_SECTIONS.wpw
+     type : 2
+   -
+     name : QRY_LIST_CONTENT_DELETEALL
+     identifier : 0x45ddd4eb00f5c16b
+     internal_properties : CAAAAAgAAACloY2RLkvj/HS2k77U/H/vw0zeDiVYxSu0WRzYnwkVk2Gv/sMn0SrmGQ6IcDCgWEiwsA==
+     physical_name : .\QRY_LIST_CONTENT_DELETEALL.WDR
+     type : 5
+   -
+     name : IW_HISTORY_CONTENT
+     identifier : 0x45df389f031e46e6
+     internal_properties : CAAAAAgAAAAbd8PH5KEJEt4uJRy9o+BS0b4kpHSiivWqoT07BDFta1WfZdFaqfYCf6QemhrWohb+Bg==
+     physical_name : .\IW_HISTORY_CONTENT.wdw
+     type : 8
+   -
+     name : QRY_CONTENT_HISTORY
+     identifier : 0x45df395903262035
+     internal_properties : CAAAAAgAAACFge0xDqsDHNQoJNRJTxzD8f5ERO/a8guO/bhEVyF9W+UPxFzbaPEAea4okBDAuCiQkA==
+     physical_name : .\QRY_CONTENT_HISTORY.WDR
+     type : 5
+   -
+     name : CShoppingList
+     identifier : 0x45fa99e60389f1b4
+     internal_properties : CAAAAAgAAACX8/8jgP21tgJtQBWv2C9IDUgE1P5/TlqK2SxtPcjCRspWuLnNfqjxY9jCPsY6xjqCgg==
+     physical_name : .\CShoppingList.wdc
+     type : 4
+   -
+     name : WIN_ITEM_FORM
+     identifier : 0x45fbcc1c03bd13f8
+     internal_properties : CAAAAAgAAAB51aHlwr/3+ECg27/ruLWEfXgE1O6Qpa6OPIo6QcTWIt4SgIM/xDi4JRqEfAT8hHRc5A==
+     physical_name : .\WIN_ITEM_FORM.wpw
+     type : 2
+   -
+     name : QRY_UNITS
+     identifier : 0x45fbd2b003c8c4d0
+     internal_properties : CAAAAAgAAAD1Ud3B/lvTjESkNU9rcxaQKQTgcN3oZhOavNljgDha5sI+bNjt1jqsKR6YYCDQqBjgYA==
+     physical_name : .\QRY_UNITS.WDR
+     type : 5
+   -
+     name : QRY_FIND_CATEGORY
+     identifier : 0x46000f300dbf1507
+     internal_properties : CAAAAAgAAACY9kBcaxAYw47MUXauIzSwDE0LI64Bkl1Exoj09ZP5L8FRmvuzUp5161NNq2tlHZN9hQ==
+     physical_name : .\QRY_FIND_CATEGORY.WDR
+     type : 5
+   -
+     name : CListManager
+     identifier : 0x4601093400b7b275
+     internal_properties : CAAAAAgAAABxzan9Snc/cHm83O9QMur7TW4YWH0krAy2+Wfis3Mj7QvBsgCgWPzlGgL8xEyEfGxU3A==
+     physical_name : .\CListManager.wdc
+     type : 4
+   -
+     name : WIN_SORT_SECTIONS
+     identifier : 0x46015ad6039591ed
+     internal_properties : CAAAAAgAAADTLwsfrJmRSheGC+8nJElfYSC4YO++4jqnN4GRzFq4YJioR8rEf5fTNOzWIuIe2s42Pg==
+     physical_name : .\WIN_SORT_SECTIONS.wpw
+     type : 2
+   -
+     name : QRY_CATEGORY_LISTING
+     identifier : 0x4602d9e011408b2f
+     internal_properties : CAAAAAgAAACB/fktmsdvAMkNVtkVDz9pSRa8PIdKhYSpZCzIs+Wpr1HTGuFY+fcuqpIM9Lw0zDyEjA==
+     physical_name : .\QRY_CATEGORY_LISTING.WDR
+     type : 5
+   -
+     name : CObserver
+     identifier : 0x460ba2f20d4aef5d
+     internal_properties : CAAAAAgAAAD4ViB8y/C44+4XgspsnDgociF50eihRVG0oWs3UrTgGCAiH1DlIBKYy3NtS8sF/fPdZQ==
+     physical_name : .\CObserver.wdc
+     type : 4
+   -
+     name : COL_OBSERVERS
+     identifier : 0x460ba4000d4c10ad
+     internal_properties : CAAAAAgAAAABfXmtGkfvgEm2o8ML3YpVC7rSWokygzuI2G49XrjSBjbOPcN2Vym3KhKMdDy0TLwEDA==
+     physical_name : .\COL_OBSERVERS.wdg
+     type : 7
+   -
+     name : IW_OPTION_LIST
+     identifier : 0x4640cd5003733b76
+     internal_properties : CAAAAAgAAAAtKQUZppObRB3fYvl7trPkH7zqMgPhxMOKtaQhn3cn0WuFEyg013kIPubQKOgY4NA4OA==
+     physical_name : .\IW_OPTION_LIST.wdw
+     type : 8
+   -
+     name : COL_IOS
+     identifier : 0x46c30b8106310848
+     internal_properties : CAAAAAgAAAB716PnxIGpsr+wgArUSoweM7D+poeQQ+2NWels/xd/oaNNHfs3j5Jl3ES+Ovr2gnZe5g==
+     physical_name : .\COL_IOS.wdg
+     type : 7
+     configurations :
+      -
+        configuration_id : 14511823181872351813
+        excluded : true
+   -
+     name : WIN_LIST_EDIT
+     identifier : 0x46c30b8206330b94
+     internal_properties : CAAAAAgAAABg3lhEY9hQC9YHY+5vb+LJJmk1FZhp1Qauuco5CD7eGiY0fB8T6/fIc6sV46NdJZtl7Q==
+     physical_name : .\WIN_LIST_EDIT.wpw
+     type : 2
+   -
+     name : WIN_POP_LIST
+     identifier : 0x46c30b8706471d66
+     internal_properties : CAAAAAgAAADSKAoerZqSTRRZubV5nUTfXt+V3f7TbEqhm9HUMfWfcYOzk5q8Sj2ONe3XIeEf2803Pw==
+     physical_name : .\WIN_POP_LIST.wpw
+     type : 2
+   -
+     name : WIN_EDIT_SECTION
+     identifier : 0x46c30b87065b1f0c
+     internal_properties : CAAAAAgAAADsasTQ75ScTxoLV0eruxjHcDG/Z0BNdepBKJ1C3zddQ4Vto4zSfGu8Z9/ZJ+/hmQ/5eQ==
+     physical_name : .\WIN_EDIT_SECTION.wpw
+     type : 2
+   -
+     name : WIN_SECTIONS
+     identifier : 0x46c30b88066f20d1
+     internal_properties : CAAAAAgAAAC5leElgv+3uAE2Uk+ipmz//f64eN1GaZ9G4+Noz1e/YecV+qbadGS3YtrEPMQ8xDScpA==
+     physical_name : .\WIN_SECTIONS.wpw
+     type : 2
+   -
+     name : WINTPL_SHOPPING
+     identifier : 0x46c30b8a06832a76
+     internal_properties : CAAAAAgAAACD//svnMlhesfIKLtsbDguERAosJ9YBDSNBQN7LBp4QPgoKHIOMCr9pJwG8rIuyj6Gjg==
+     physical_name : .\WINTPL_SHOPPING.wdt
+     type : 18
+   -
+     name : IW_SECTION_OPTION
+     identifier : 0x46c30b8b06972cc8
+     internal_properties : CAAAAAgAAAA6EGKmBULq9fzxwdHRpWuVOrnxqRDVKLud3YRv/ggMLCzWFpbw1tUmnYV/eTm3Q7UfJw==
+     physical_name : .\IW_SECTION_OPTION.wdw
+     type : 8
+   -
+     name : QRY_PRODUCTS_LIST
+     identifier : 0x46c30b8b06ab2e6d
+     internal_properties : CAAAAAgAAABm7E5SUQ4myZDFJTXFzSliDF17497RLCNaq4i8rRvxd5mZkK78wrkKsWlTrXVrF4lz8w==
+     physical_name : .\QRY_PRODUCTS_LIST.WDR
+     type : 5
+   -
+     name : QRY_SECTIONS
+     identifier : 0x46c30b8c06ad3004
+     internal_properties : CAAAAAgAAABEwqyIN2xEZ3JzT1xTdatF2qsR+bRHME2ipfIKE2W3Ubsb6TdlWVOkHwfxz1eJcWdR0Q==
+     physical_name : .\QRY_SECTIONS.WDR
+     type : 5
+   -
+     name : QRY_SECTIONS_LISTING
+     identifier : 0x46c30b8c06af31d8
+     internal_properties : CAAAAAgAAAAZdcHF4l/X2OHW8mOChvWWB7DSsol8dEBbRHDUs8VRr12DV2o2iIRXwnpkXCTcpBT8BA==
+     physical_name : .\QRY_SECTIONS_LISTING.WDR
+     type : 5
+   -
+     name : QRY_SEARCH_SECTION
+     identifier : 0x46c30b8d06b1364d
+     internal_properties : CAAAAAgAAADFQS1xzuvD3JXaJjjOvNzda3pialuWrtSZlvkD9KR2clqasYU51bgLtm5oUNAA+OjQUA==
+     physical_name : .\QRY_SEARCH_SECTION.WDR
+     type : 5
+  other_elements :
+   -
+     physical_name : .\Exe\data\supplier.fic
+     configurations :
+      -
+        internal_properties : CAAAAAgAAAAz3SEk78lPftHHUZhlRo2CX5HwoQXnDS/l3jzY9UveE10OD9+t7o9vGQ==
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\supplier.ndx
+     configurations :
+      -
+        internal_properties : CAAAAAgAAAAz3SEk78lPftHHUZhlRo2CX5HwoQXnDS/l3jzY9UveE10OD9+t7o9vGQ==
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\supplier.mmo
+     configurations :
+      -
+        internal_properties : CAAAAAgAAAAz3SEk78lPftHHUZhlRo2CX5HwoQXnDS/l3jzY9UveE10OD9+t7o9vGQ==
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\unit.fic
+     configurations :
+      -
+        internal_properties : CAAAAAgAAAAz3SEk78lPftHHUZhlRo2CX5HwoQXnDS/l3jzY9UveE10OD9+t7o9vGQ==
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\unit.ndx
+     configurations :
+      -
+        internal_properties : CAAAAAgAAAAz3SEk78lPftHHUZhlRo2CX5HwoQXnDS/l3jzY9UveE10OD9+t7o9vGQ==
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\unit.mmo
+     configurations :
+      -
+        internal_properties : CAAAAAgAAAAz3SEk78lPftHHUZhlRo2CX5HwoQXnDS/l3jzY9UveE10OD9+t7o9vGQ==
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Bakery@dpi160.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Bakery@dpi240.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Bakery@dpi320.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Bakery@dpi480.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Bakery@dpi640.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Bookstore@dpi160.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Bookstore@dpi240.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Bookstore@dpi320.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Bookstore@dpi480.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Bookstore@dpi640.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Butchery@dpi160.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Butchery@dpi240.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Butchery@dpi320.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Butchery@dpi480.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Butchery@dpi640.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Clothing@dpi160.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Clothing@dpi240.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Clothing@dpi320.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Clothing@dpi480.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Clothing@dpi640.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Diy@dpi160.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Diy@dpi240.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Diy@dpi320.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Diy@dpi480.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Diy@dpi640.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Fishshop@dpi160.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Fishshop@dpi240.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Fishshop@dpi320.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Fishshop@dpi480.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Fishshop@dpi640.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Garden@dpi160.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Garden@dpi240.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Garden@dpi320.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Garden@dpi480.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Garden@dpi640.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Market@dpi160.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Market@dpi240.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Market@dpi320.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Market@dpi480.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Market@dpi640.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Pharmacy@dpi160.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Pharmacy@dpi240.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Pharmacy@dpi320.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Pharmacy@dpi480.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Pharmacy@dpi640.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\data.fic
+     configurations :
+      -
+        internal_properties : CAAAAAgAAAAz3SEk78lPftHHUZhlRo2CX5HwoQXnDS/l3jzY9UveE10OD9+t7o9vGQ==
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\data.mmo
+     configurations :
+      -
+        internal_properties : CAAAAAgAAAAz3SEk78lPftHHUZhlRo2CX5HwoQXnDS/l3jzY9UveE10OD9+t7o9vGQ==
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\data.ndx
+     configurations :
+      -
+        internal_properties : CAAAAAgAAAAz3SEk78lPftHHUZhlRo2CX5HwoQXnDS/l3jzY9UveE10OD9+t7o9vGQ==
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+  analysis : .\WM Shopping.ana\WM Shopping.wda
+  net_assemblies : []
+  uwp_api : []
+  external_components : []
+  internal_components :
+   -
+     physical_name : .\EANSource\EANSource.wci
+ report_and_queries_enabled : false
+ data_directory : <RepDonneesCommun>
+ languages :
+  - en-GB
+ url_rewriting :
+  internal_properties : CAAAAAgAAADkPzcUdUUS7wCiun+MCjqYH70RJdzkSv/nRvXZ3ENdikMa6bcHtsAH
+ code_elements :
+  internal_properties : CAAAAAgAAAD9ddaJR71UPovroYAmfA4uM9yhRKnnI4VeYEID7OpAqsNaxdKkYqR2Rs5R7MoRzlIOdOPa769WNWw8jidqjfTZ5AD3diFx1g==
+  type_code : 0
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAABPy1cbjYAw0TJD3DVu5uA/uv0/kdmKOel/US/BR4cPUjx5M2CNLE/2KtJypWLFrU+e9Pm1rGNGa8h1BYID+/Pcl+trD751k8WjnJ577wl787JvGwp6diNc1rsnfItVNFZQ4otES2kCvbcgzxqgfuuhmD+xD1mBraChRAnc7xDAQw==
+     code : |1+
+      
+      //
+      // WM Shopping
+      // Management of shopping lists
+      //
+      
+      // Structure representing a list element
+      ListElement is Structure
+      	ID is 8-byte int
+      	Bought is boolean
+      	Section is string
+      	GUIDSection is string ANSI
+      	Image is string
+      	Note is string
+      	Product is string
+      	ProductGUID is string
+      	Quantity is real
+      	VirtualQuantity is int
+      	UnitID is int
+      	UnitName is string
+      	UnitPluralName is string
+      	Subscript is int
+      	AdditionDate is datetime
+      END
+      
+      // Application Settings
+      Parameters is Structure
+      	InvertLeftRight is boolean	
+      	LockScreen is boolean
+      	AutoDeleteBoughtProducts is boolean
+      END
+      
+      // Section for the listing
+      STSection is Structure
+      	Name  		is string
+      	NameIndex		is string
+      	GUID 		is string	
+      	ParentGUID	is string	
+      	Level		is int
+      	Image		is string
+      	Path		is string
+      	Custom		is boolean
+      END
+      
+      // Result of the search
+      STResult is Structure
+      	ProductGUID 	is string
+      	ProductName		is string
+      	Section			is string
+      	Image			is string
+      	Score			is int
+      END
+      
+      // List
+      STList is Structure
+      	ListID			is 8-byte int
+      	SupplierID 	is 8-byte int
+      	Name  			is string
+      	Image			is string
+      	NbProducts		is int
+      END
+      
+      /////////////////////////////////////////////////
+      // Configuration constants
+      /////////////////////////////////////////////////
+      <COMPILE IF Configuration = "Android application">
+      	CONSTANT ANDROID_MODE = True
+      <ELSE>
+      	CONSTANT ANDROID_MODE = False
+      <END>
+      <COMPILE IF Configuration = "iOS application">
+      	CONSTANT IOS_MODE = True
+      <ELSE>
+      	CONSTANT IOS_MODE = False
+      <END>
+      
+      /////////////////////////////////////////////////
+      
+      
+      /////////////////////////////////////////////////
+      // General constants
+      /////////////////////////////////////////////////
+      CONSTANT
+      	// Source of image to retrieve
+      	imgURL		= 1
+      	imgBuffer 	= 2
+      	imgFile	= 3
+      	
+      	createFromScan				= 1
+      	createFromInput 			= 2
+      	
+      	// Names of the parameters
+      	APP_NAME					= "WM Shopping"	
+      	BASE_VERSION				= "Version"
+      	PARAM_SCREEN_LOCK		= "LockScreen"
+      	PARAM_INVERTED_CHECKBOX		= "RightToLeft"
+      	PARAM_AUTO_DELETE			= "EmptyAutomatic"
+      	PARAM_DATA_PATH				= "DataPath"
+      	PARAM_USER_GUID				= "USER_GUID"
+      	PARAM_USER_FAVORITES		= "Favorites"
+      	
+      	// Resettable parameters
+      	PARAM_FIRSTHELP_LIST		= "Help_NewList_Edit"
+      	
+      	
+      	// Default duplication
+      	DUPLICATE_NATIVE_PRODUCT		= True
+      END
+      /////////////////////////////////////////////////
+      
+      /////////////////////////////////////////////////
+      // Global
+      /////////////////////////////////////////////////
+      Startup				is boolean = True
+      Highlighting 			is array of int = [0x39DCCD, 0x57E1D4, 0x75E7DC, 0x9CEEE6, 0xC3F4F0, 0xE7FBF9, 0xFFFFFF]	// Highlighting colors
+      MySections 				is array of STSection
+      MyLists 				is array of STList
+      MyFavoriteProducts		is array of strings
+      PersonalData 			is data source
+      
+      // Directories 
+      DATA_PATH  				is string		// Database directory
+      DATA_CACHE				is string		// Cache (temporary files, ...)
+      DATA_IMAGE_SUPPLIER		is string		// Folders of "suppliers" images (store, ...)
+      DATA_IMAGE_PRODUCTS		is string		// Folders of product images
+      
+      // Various
+      DATABASE_VERSION			is real	= 3		// 1: initial ; 2+: initial product database
+      VERSION					is real
+      USER_GUID				is string
+      TABLET_MODE			is boolean = False
+      
+      <COMPILE IF ANDROID_MODE>
+      	
+      	IF NOT InSimulatorMode() THEN
+      		// Defines whether we are run on a wide screen ( > 7' ) or not
+      		TABLET_MODE = JAVA_GetScreenLayoutIsLarge()
+      	END
+      <ELSE>
+      	
+      	IF NOT InSimulatorMode() THEN
+      		// Tablet mode only on iPad
+      		TABLET_MODE = OBJC_SysIPADUI()
+      	END
+      <END>
+      
+      // Manager of lists
+      ListManager			is CListManager
+      USER_PARAMS				is Parameters	// User parameters
+      
+      // Define the parameters
+      NextTitle(<§@00000000000000000000§>)
+      InitializeParameters()
+      
+      // Define the storage folders and the HFSQL data folders
+      NextTitle(<§@15fffbb10ec1ed6c0002§>)
+      InitializeStorage()
+      InitializeData()
+      
+      // Reset
+      NextTitle("")
+      
+      // General exception
+      CASE EXCEPTION:
+      XLOG(ExceptionInfo(errFullDetails))
+      
+      <COMPILE IF ANDROID_MODE>
+      	EndProgram(<§@00000000000000000002§>)
+      <ELSE>
+      	Error(<§@00000000000000000003§>, ExceptionInfo(errMessage))
+      <END>	
+     type : 196608
+   -
+     code : |1-
+      
+      // In simulator
+      IF InSimulatorMode() THEN
+      	
+      	// Clears the cache directory
+      	fRemoveDir(DATA_CACHE, frRecursive + frReadOnly)
+      END
+     type : 196610
+   -
+     type : 196621
+   -
+     type : 196627
+     enabled : false
+  orphans :
+   -
+     name : iOS application
+     identifier : 0x458a7b1100d3df96
+     code_elements :
+      type_code : 159
+      p_codes : []
+   -
+     name : Android application
+     identifier : 0x4587c869000302a1
+     code_elements :
+      type_code : 159
+      p_codes : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+rad :
+ internal_properties : CAAAAAgAAABhIL0UXeZmxDJxY3Xy0Q==
+project_explorer :
+ explorer_type : project
+ children :
+  -
+    explorer_type : windows
+    children :
+     -
+       name : Managing lists
+       explorer_type : custom_folder
+       children :
+        -
+          name : WIN_LIST_CREATE
+          explorer_type : element
+          type : 2
+        -
+          name : WIN_LIST_RENAME
+          explorer_type : element
+          type : 2
+        -
+          name : IW_LIST_EDIT
+          explorer_type : element
+          type : 8
+        -
+          name : IW_LIST_CONTENT
+          explorer_type : element
+          type : 8
+        -
+          name : IW_SEARCH
+          explorer_type : element
+          type : 8
+        -
+          name : WIN_POP_SECTIONS
+          explorer_type : element
+          type : 2
+        -
+          name : IW_HISTORY_CONTENT
+          explorer_type : element
+          type : 8
+        -
+          name : WIN_ITEM_FORM
+          explorer_type : element
+          type : 2
+        -
+          name : WIN_SORT_SECTIONS
+          explorer_type : element
+          type : 2
+        -
+          name : IW_OPTION_LIST
+          explorer_type : element
+          type : 8
+     -
+       name : System
+       explorer_type : custom_folder
+       children :
+        -
+          name : WIN_ABOUT
+          explorer_type : element
+          type : 2
+        -
+          name : WIN_PARAMETERS
+          explorer_type : element
+          type : 2
+        -
+          name : WIN_CB_SCAN
+          explorer_type : element
+          type : 2
+resources :
+ string_res :
+  identifier : 0x0
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      en-GB : Initialize the parameters...
+     index : 0
+   -
+     text :
+      en-GB : Initializing the storage...
+     index : 1
+   -
+     text :
+      en-GB : A fatal error occurred. The application will be ended now...
+     index : 2
+   -
+     text :
+      en-GB : A fatal error occurred.
+     index : 3
+custom_note :
+ internal_properties : CAAAAAgAAAAd98VSJfHHqE3P0QHwrwdhn7ig8dWBR6valpUTgnAMTVXiDg==

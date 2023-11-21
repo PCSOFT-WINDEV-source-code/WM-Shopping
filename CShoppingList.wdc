@@ -1,0 +1,898 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : CShoppingList
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x18f73cc10ea93137
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      // CShoppingList class
+      // - Contains the "dialog" elements to manage the shopping list
+      CShoppingList is class
+      
+      	PUBLIC
+      		AddedModifiedItemID			is 8-byte int
+      		
+      	PUBLIC CONSTANT
+      		ListID 					is 8-byte int
+      		Alias						is string
+      		Name 						is string
+      		SectionOrder	 				is array of strings
+      		Sections	   	 				is array of strings
+      		ProductsBoughtOccurrence	is int
+      		ProductsOccurrence			is int		
+      		ProductsTotalQuantity		is int		
+      		
+      	PUBLIC
+      		OnListUpdated			is array of CObserver dynamic
+      		OnListUpdate			is array of CObserver dynamic
+      		OnHistoryUpdated		is array of CObserver dynamic
+      		OnEmailExport				is array of CObserver dynamic
+      		OnSectionPositionRequest		is array of CObserver dynamic
+      		OnInfoContentIDRequest		is array of CObserver dynamic		
+      		
+      END
+      
+      CONSTANT
+      	lsmodAdd			= 0x1	// Add products
+      	lsmodModify	= 0x2	// Modify products (purchase, ...)
+      	lsmodDelete	= 0x4	// Delete products
+      END
+     type : 131072
+  procedures :
+   -
+     name : Constructor
+     procedure_id : 1798973376030191927
+     type_code : 27
+     code : |1-
+      PROCEDURE PRIVATE Constructor(nListID is 8-byte int, sAlias is string)
+      	
+      	// Finds the list
+      	HReadSeekFirst(List, ListID, nListID)
+      	
+      	// Copies the name and the ID
+      	ListID = nListID
+      	Name = List.Name
+      	Alias = sAlias
+     type : 589824
+   -
+     name : Destructor
+     procedure_id : 1798973376030257463
+     type_code : 28
+     code : |1-
+      PROCEDURE Destructor()
+     type : 655360
+   -
+     name : __OnListModified
+     internal_properties : CAAAAAgAAABKXJr3hwZfWJb/lCQ0dH6zNGgVvM/1keQRBH6rG+UApNDxjVbmBdPP95lLTFGebHY1zFwZX9hB4/KM26bJnHw2a/n1lQDZLG11ujDEFsW1O51PRnbF7Ng0b0ClEkmQnYto6oLYTJUQfGkwJbWYUuYymr3CpTrb47nHoI3a0T57C7OCoRklKCXP8eKePug5jo5q0wLbaw==
+     procedure_id : 1798973376030322999
+     type_code : 12
+     code : |1-
+      PROCEDURE PRIVATE __OnListModified(ACTION is int, nItemID is 8-byte int = -1)
+      
+      	arrParams is array of int = [ACTION, nItemID]
+      
+      	// Triggers the listeners
+      	TriggerObservers(OnListUpdated, arrParams)	
+     type : 458752
+   -
+     name : ProductAdd
+     internal_properties : CAAAAAgAAACIP9ah9XQ0dPAX52u7m2yNtm7GFdDlkc0jAu+u5jl19ZnWWS1QXpzE3KU8ov7jS6Rm6t+w5EaikpawgJytuvwMIgp1+qqYkPHDf18W/z1Tc4QKuhFyyTlkW6TXNYqSVoOhSNvnGO2S+1VQmJWx+2lKw04AhJHgZ60Ey1mDv0YR4W+bQdMncY8spkpp5e941V/CAVfuD8AgGe+tuba2sqBITtORI7KFeYyEBzNop76g6eZlVfHwLW96LEGHUfqCpWPcG3Rr2TOiLp2jJ4EpbEfE
+     procedure_id : 1798973376030388535
+     type_code : 12
+     code : |1+
+      // Summary: Adds a product into the list
+      // Syntax:
+      //ProductAdd (<sGUID> is string, <rQuantity> is real [, <sName> is string [, <sCode> is string [, <nUnitID> is int]]])
+      //
+      // Parameters:
+      //	sGUID (UNICODE string): GUID of the project to add
+      //	rQuantity (real): Quantity to add
+      //	sName (UNICODE string - default value=""): Name of the product to add
+      //	sCode (UNICODE string - default value=""): Bar code of the product to add
+      //	nUnitID (integer - default value=0): Product unit
+      // Return value:
+      // 	None
+      //
+      PROCEDURE ProductAdd(LOCAL sGUID is string, LOCAL rQuantity is real, LOCAL sName is string = "", LOCAL sCode is string = "", LOCAL nUnitID is int = 0)
+      
+      	sParentGUID is string
+      	nReturn is 8-byte int
+      	nAction is int = lsmodAdd
+      	bAdditionNeeded is boolean = True
+      	
+      	// Saves the product information
+      	IF ProductSave(sGUID, sParentGUID, sName, sCode, object) <> Null THEN
+      		RETURN
+      	END
+      			
+      	// Checks whether the product is already found in the list (and whether it is not flagged as 'Purchased')
+      	HReadSeekFirst(ListContent, ProductList, [ListID, sGUID])
+      	IF HFound(ListContent) THEN
+      		
+      		bAdditionNeeded = False
+      		
+      		// If the item is flagged as purchased
+      		IF ListContent.Bought THEN
+      			
+      			// Finds another occurrence
+      			WHILE HFound(ListContent) _AND_ ListContent.Bought
+      				HReadNext(ListContent)
+      			END
+      			
+      			// All the occurrences are flagged as purchased or the end of the list was reached
+      			IF NOT HFound(ListContent) OR HOut(ListContent) THEN
+      				// Re-create an entry
+      				bAdditionNeeded = True
+      			END			
+      		END
+      		
+      		// Null quantity for "add"
+      		IF rQuantity = 0 THEN
+      			
+      			// Correct
+      			rQuantity = 1
+      		END
+      	END
+      	
+      	IF NOT bAdditionNeeded THEN
+      		
+      		// Increases the quantity
+      		ListContent.Quantity 			+= rQuantity
+      		ListContent.ModificationDate 	= SysDateTime
+      		ListContent.ModificationID 	= USERID		
+      		
+      		// Informs with a toast
+      		ToastDisplay(sName + [CR] + <§$0001§> + QuantityUnit((ListContent.Quantity), (ListContent.UnitID)), toastShort, vaMiddle, haCenter)
+      		
+      		nAction = lsmodModify
+      	ELSE
+      		
+      		HReset(ListContent)
+      		ListContent.ProductGUID		= sGUID
+      		ListContent.CategoryGUID		= ParentSection(sParentGUID)
+      		ListContent.ListID 			= ListID
+      		ListContent.UnitID 			= nUnitID
+      		ListContent.Quantity	 		= rQuantity
+      		ListContent.CreationDate		= SysDateTime
+      		ListContent.ModificationDate	= ListContent.CreationDate
+      		ListContent.PurchaseDate			= ""
+      		ListContent.CreationID			= USERID
+      		ListContent.ModificationID		= USERID
+      		ListContent.PurshaseID			= ""		
+      	END
+      	
+      	// If the quantity is sufficient
+      	IF ListContent.Quantity > 1 THEN
+      		// If no unit was specified
+      		IF ListContent.UnitID <= 0 THEN
+      			// Forces the base unit
+      			ListContent.UnitID = DEFAULTUNIT
+      		END
+      		
+      	// Quantity not null
+      	ELSE IF ListContent.Quantity = 0 THEN
+      		ListContent.Quantity = 1
+      	END
+      	
+      	// "Virtual" quantity for the count
+      	ListContent.VirtualQuantity = (ListContent.UnitID IN (0, DEFAULTUNIT()) ? ListContent.Quantity ELSE 1)
+      	
+      	// Add to the list?
+      	IF ListContent..NewRecord THEN
+      		
+      		// Re-uses the last mark associated with the product
+      		HReadSeekFirst(Note, GUID, sGUID)
+      		IF HFound(Note) THEN
+      			ListContent.Note = Note.Note
+      		END
+      	END
+      	
+      	// Saves the content of the list
+      	HSave(ListContent)
+      	
+      	// 
+      	nReturn = ListContent.ListContentID
+      
+      RETURN
+      
+      END:
+      	IF nReturn > 0 THEN
+      		// Update the listeners
+      		__OnListModified(nAction, nReturn)
+      	END
+     type : 458752
+   -
+     name : SetProductsOccurrence
+     internal_properties : CAAAAAgAAACylEJ4Gk4UboRLgGJe+EK/ngBHZO3LxUonKFrJbWGE0G5Va+IcN6uRXU2TuptCMCrHpBKlWe5V3ZCApzCXjIxmtakvpeI7tA/LfknpEQT8/t6W1afse2lFfD2Cn/wH7Ab1AVmdrwj9eWqhpqqrSempE7TRbqlKZDZYAWoHBO3K1ty9XBboa9IA/k9f57/sXGSn6yojEw==
+     procedure_id : 1798973376030454071
+     type_code : 12
+     code : |1-
+      // Summary: Defines the number of products found in the list
+      // Syntax:
+      // SetProductsOccurrence (<nProductOccurrence> is int [, <nProductsBoughtOccurence> is int])
+      //
+      // Parameters:
+      //	nProductOccurrence (integer): Total number of products
+      // 	nProductsBoughtOccurence (integer - default value=0): Number of products bought
+      // Return value:
+      // 	None
+      //
+      PROCEDURE SetProductsOccurrence(nProductsOccurrence is int, nProductsBoughtOccurence is int = 0, nTotalQuantity is int = 0)
+      
+      	// Update
+      	ProductsBoughtOccurrence = nProductsBoughtOccurence
+      	ProductsOccurrence = nProductsOccurrence
+      	ProductsTotalQuantity = nTotalQuantity
+      	
+      	// Update the listeners
+      	TriggerListUpdate()
+     type : 458752
+   -
+     name : SetSections
+     procedure_id : 1798973376030519607
+     type_code : 12
+     code : |1-
+      // Summary: Defines the sections of the list
+      // Syntax:
+      // SetSections (<arrSections> is array)
+      //
+      // Parameters:
+      //	arrSections (array): List of section names
+      // Return value:
+      // 	None
+      //
+      PROCEDURE SetSections(arrSections is array of strings)
+      
+      	// Update
+      	Sections = arrSections
+     type : 458752
+   -
+     name : TriggerListUpdate
+     internal_properties : CAAAAAgAAAASNOKPPwZ5oOJ3GMjoKHKPYKDtqLsVfZwtbBqHL7F8YKyhvXpSdcf/++lvaAXqyBLZRLTd21C1U4Zcj1qN4KiaZ2nlIdRhCK2pIprSMM+jmRvN5LTnZu4+bd4nsMsyO7EOEHj+Tq+mjmfed7O6lGSQaIPQU6RV6UNdhucAO9jhaXFAx6+nivMhx2h4jBr7vsYiC8qDsw==
+     procedure_id : 1798973376030585143
+     type_code : 12
+     code : |1+
+      PROCEDURE PRIVATE TriggerListUpdate()
+      
+      	// Triggers the listeners
+      	TriggerObservers(OnListUpdate, Null)
+     type : 458752
+   -
+     name : FlagAsPurchased
+     internal_properties : CAAAAAgAAABIqzw48kXGUdMl01ELUISrglB37EWmTzTAi1keQBBc1I1UJ/mms1zUGMB6T5OENWSqNIbwToLSPBINZ7digJNIzKmcdVJ2TkS9JxafhlvYt53JVxirTeNjMNqTdfgIL6boukH1nD0R6iYGxOOoBDpcuzmrcsbXYzjg1TUujwv1XHa+jNYjxjllpcYGbdaV4tSFMx8b1V9H76IrBTl22GMh1q15wL0cVZ294g0EiuiiijEcXg8Eii6g0FuoTdfc6Dl49qYGIz92QWMHFi2rfvh1EGKVawVewLSge5MO
+     procedure_id : 1798973376030650679
+     type_code : 12
+     code : |1-
+      // Summary: Flags a product as 'Purchased'
+      // Syntax:
+      // FlagAsPurchased (<ID>, <bPurchased> is boolean)
+      //
+      // Parameters:
+      // 	ID: ID of the item in the list
+      //	bPurchased (boolean): Purchased flag
+      // Return value:
+      // 	None
+      //
+      PROCEDURE FlagAsPurchased(LOCAL ID, LOCAL bBought is boolean)
+      
+      	HReadSeekFirst(ListContent, ListContentID, ID)
+      	IF HFound(ListContent) THEN
+      		
+      		// Changes the status
+      		ListContent.Bought 	= bBought
+      		ListContent.PurshaseID	= USERID()
+      		ListContent.PurchaseDate	= SysDateTime
+      		
+      		// Saves
+      		HModify(ListContent)
+      		
+      		IF ListContent.Bought THEN
+      			// Transfer into the history
+      			TransferHistory((ListContent.ProductGUID), (ListContent.Quantity))
+      		ELSE
+      			// Cancel the transfer
+      			TransferHistory((ListContent.ProductGUID), -(ListContent.Quantity))
+      		END
+      		
+      		// Uncheck a product
+      		IF bBought = False THEN
+      			
+      			sGUID is string = ListContent.ProductGUID
+      			rQuantity is real = ListContent.Quantity
+      			sNote is string = ListContent.Note
+      			nUnitID is int  = ListContent.UnitID
+      			bModify is boolean = False
+      			
+      			// Null quantity = 1
+      			IF rQuantity = 0 THEN
+      				rQuantity = 1
+      			END
+      			
+      			// Checks whether the product already exists in not purchased
+      			HReadSeekFirst(ListContent, ProductList, [ListID, sGUID])
+      			WHILE HFound(ListContent)
+      				
+      				// Item not purchased and different from the modified item
+      				IF ListContent.Bought = False _AND_ ListContent.ListContentID <> ID THEN
+      					
+      					// If the item has a mark
+      					IF ListContent.Note <> "" THEN
+      						// and if it is different
+      						IF ListContent.Note <> sNote THEN
+      							// Store this item
+      							// (we may want to buy XX elements 'like this' and YY elements of this same product but 'like that')
+      							HReadNext(ListContent)
+      							CONTINUE
+      						END
+      					END
+      					
+      					// If a type of unit was specified
+      					IF ListContent.UnitID <> 0 THEN
+      						
+      						// If no type of unit was specified
+      						IF nUnitID = 0 THEN							
+      						
+      							// Retrieve this type of unit
+      							nUnitID = ListContent.UnitID
+      						END
+      					END
+      					
+      					// Retrieves the quantity
+      					rQuantity += ListContent.Quantity
+      					
+      					// Deletes the item from the list
+      					HDelete(ListContent)
+      					bModify = True
+      				END
+      				
+      				// Next product
+      				HReadNext(ListContent)
+      			END
+      			
+      			// The values of the current item have been modified
+      			IF bModify THEN
+      				
+      				// Default unit if the quantities changed
+      				IF rQuantity > 1 _AND_ nUnitID = 0 THEN
+      					nUnitID = DEFAULTUNIT()
+      				END
+      				
+      				// Go back to the item
+      				HReadSeekFirst(ListContent, ListContentID, ID)
+      				
+      				// Updates the quantity
+      				ListContent.Quantity = rQuantity
+      				ListContent.UnitID = nUnitID
+      				
+      				// "Virtual" quantity for the count
+      				ListContent.VirtualQuantity = (ListContent.UnitID IN (0, DEFAULTUNIT()) ? ListContent.Quantity ELSE 1)
+      				
+      				HModify(ListContent)
+      			END
+      		END
+      		
+      		// Update the listeners
+      		__OnListModified(lsmodModify)
+      	END
+     type : 458752
+   -
+     name : ProductIsBought
+     internal_properties : CAAAAAgAAAC4QdWiZiGDrOAqnEGszTafvdCzWCFKssS4bZ3yYDURiXuLakmT9PW7smP6HFftu2SDYTkug3FHMEC7tw==
+     procedure_id : 1798973376030716215
+     type_code : 12
+     code : |1-
+      PROCEDURE ProductIsBought(LOCAL sGUID is string) : boolean
+      
+      	HSeekFirst(ListContent, ProductList, [ListID, sGUID])
+      	IF HFound(ListContent) THEN
+      		
+      		// The product is found in the list
+      		RESULT True	
+      	END
+      	
+      RESULT False
+     type : 458752
+   -
+     name : ProductDelete
+     internal_properties : CAAAAAgAAADrAXfoF6CUI3BqDy5s4DuakxFdJV3VZBRdGPGeGckGJzjfkff1ERweHH3cc7+FcWig2cEzxeTxWHsExtNUJ7ALANKcsj8VJb3cTLjRVWLQG31nQQwSjQ==
+     procedure_id : 1798973376030781751
+     type_code : 12
+     code : |1-
+      // Summary: Deletes a product from the list
+      // Syntax:
+      //ProductDelete (<sGUID> is string [, <rQuantity> is real [, <bPermanent> is boolean [, <nItemID> is 8-byte int [, <bWithoutNotification> is boolean]]]])
+      //
+      // Parameters:
+      //	sGUID (UNICODE string): GUID of the product
+      //	rQuantity (real - default value=-1): Quantity to delete
+      //	bPermanent (boolean - default value=0): True if the product must be permanently deleted
+      //	nItemID (8-byte integer - default value=0): ID of the item
+      //	bWithoutNotification (boolean - default value=0): True if the notifications must be ignored
+      // Return value:
+      // 	None
+      //
+      PROCEDURE ProductDelete(LOCAL sGUID is string, LOCAL rQuantity is real = -1, LOCAL bDefinitive is boolean = False, LOCAL nItemID is 8-byte int = 0, LOCAL bNoNotification is boolean = False)
+      			
+      	// Checks whether the product is already found in the list
+      	HReadSeekFirst(ListContent, ProductList, [ListID, sGUID])
+      	IF HFound(ListContent) THEN
+      		
+      		IF bDefinitive _OR_ rQuantity <= 0 THEN
+      			
+      			IF bDefinitive THEN
+      				
+      				// Finds the user product
+      				HReadSeekFirst(Personal, GUID, sGUID)
+      				IF HFound(Personal) THEN
+      					
+      					// If an image was specified
+      					IF Personal.Image <> "" THEN
+      						
+      						// Deletes the associated image
+      						fDelete(DATA_IMAGE_PRODUCTS + [fSep] + Personal.Image, frReadOnly)
+      					END
+      					
+      					// Delete it
+      					HDelete(Personal)
+      				END				
+      				
+      				// Delete it from the history as well
+      				HReadSeekFirst(History, ProductGUID, sGUID)
+      				IF HFound(History) THEN
+      					
+      					// Deletion
+      					HDelete(History)
+      				END
+      				
+      				// Delete the attached marks as well
+      				HReadSeekFirst(Note, GUID, sGUID)
+      				IF HFound(Note) THEN
+      					
+      					// Deletion
+      					HDelete(Note)
+      				END
+      			END
+      			
+      			// An item was supplied
+      			IF nItemID <> 0 THEN
+      				WHILE HFound(ListContent) _AND_ ListContent.ListContentID <> nItemID
+      					HReadNext(ListContent)
+      				END				
+      			END
+      			
+      			// Deletes the item
+      			IF HFound(ListContent) THEN
+      			
+      				// Delete the product
+      				HDelete(ListContent)
+      				IF NOT bNoNotification THEN __OnListModified(lsmodDelete)
+      			END
+      			
+      		ELSE
+      			
+      			// Increases the quantity
+      			ListContent.Quantity -= rQuantity
+      					
+      			// If the quantity is sufficient
+      			IF ListContent.Quantity >= 1 THEN
+      				// If no unit was specified
+      				IF ListContent.UnitID <= 0 THEN
+      					// Forces the base unit
+      					ListContent.UnitID = DEFAULTUNIT
+      				END
+      				
+      				ListContent.ModificationDate 	= SysDateTime
+      				ListContent.ModificationID 	= USERID	
+      				
+      				// "Virtual" quantity for the count
+      				ListContent.VirtualQuantity = (ListContent.UnitID IN (0, DEFAULTUNIT()) ? ListContent.Quantity ELSE 1)				
+      				
+      				// Saves the content of the list
+      				HSave(ListContent)
+      				IF NOT bNoNotification THEN __OnListModified(lsmodModify)
+      			ELSE
+      			
+      				// Delete the product
+      				HDelete(ListContent)
+      				IF NOT bNoNotification THEN __OnListModified(lsmodDelete)
+      			END
+      		END		
+      	END		
+     type : 458752
+   -
+     name : TransferHistory
+     internal_properties : CAAAAAgAAADm51mC5ryloR3hSV4wZhvqzOtt1OeYUPp0BH8lpsgjPjvADvl3DEDvZYkcTNVurXpY+nIKHY0AtYtR6L8GDjo30P1t8UnihA4IScq1g/3WByIhpqvNOT4pBOw=
+     procedure_id : 1798973376030847287
+     type_code : 12
+     code : |1-
+      PROCEDURE TransferHistory(LOCAL sProductGUID is string, LOCAL rQuantity is real, LOCAL bWithUPD is boolean = True) : boolean
+      
+      	bTransferred is boolean
+      	
+      	// Checks whether the product is already found in the history
+      	HReadSeekFirst(History, ProductGUID, sProductGUID)
+      	IF NOT HFound(History) THEN
+      		
+      		// Negative quantity (deletion)
+      		IF rQuantity <= 0 THEN
+      			RESULT False
+      		END
+      		
+      		HReset(History)
+      		History.ProductGUID = sProductGUID
+      	
+      	END
+      	
+      	// Update the counter
+      	History.Counter += rQuantity
+      	
+      	// We cannot have 0 on the counter
+      	IF History.Counter <= 0 THEN
+      		History.Counter = 1
+      	END
+      	
+      	// Record
+      	bTransferred = HSave(History)
+      	IF NOT bTransferred THEN XLOG("[CShoppingList.TransferHistory] HBackup(History) failed: " + HErrorInfo)
+      	
+      	// Number of history entries
+      	IF bTransferred _AND_ History..NewRecord
+      		ListManager.NbHistory ++
+      	END
+      	
+      	IF bTransferred _AND_ bWithUPD THEN
+      		
+      		// Update the history
+      		__OnHistoryModified()		
+      	END
+      		
+      RESULT bTransferred
+     type : 458752
+   -
+     name : __OnHistoryModified
+     internal_properties : CAAAAAgAAAASNOKPPwZ5oOJ3GMjoKHKPYKDtqLsVfZwtbBqHL7F8YKyhvXpSdcf/++lvaAXqyBLZRLTd21C1U4Zcj1qN4KiaZ2nlIdRhCK2pIprSMM+jmRvN5LTnZu4+bd4nsMsyO7EOEHj+Tq+mjmfed7O6lGSQaIPQU6RV6UNdhucAO9jhaXFAx6+nivMhx2h4jBr7vsYiC8qDsw==
+     procedure_id : 1798973376030912823
+     type_code : 12
+     code : |1-
+      PROCEDURE PRIVATE __OnHistoryModified()
+      
+      	// Triggers the listeners of <OnHistoryUpdated>
+      	TriggerObservers(OnHistoryUpdated, Null)
+     type : 458752
+   -
+     name : TriggerEmailExport
+     internal_properties : CAAAAAgAAAASNOKPPwZ5oOJ3GMjoKHKPYKDtqLsVfZwtbBqHL7F8YKyhvXpSdcf/++lvaAXqyBLZRLTd21C1U4Zcj1qN4KiaZ2nlIdRhCK2pIprSMM+jmRvN5LTnZu4+bd4nsMsyO7EOEHj+Tq+mjmfed7O6lGSQaIPQU6RV6UNdhucAO9jhaXFAx6+nivMhx2h4jBr7vsYiC8qDsw==
+     procedure_id : 1798973376030978359
+     type_code : 12
+     code : |1-
+      PROCEDURE TriggerEmailExport()
+      
+      	// Triggers the listeners of <OnEmailExport>
+      	TriggerObservers(OnEmailExport, Null)
+     type : 458752
+   -
+     name : DeleteAllProducts
+     internal_properties : CAAAAAgAAACStGKYOu50voTroAIeOKLfHoCnBO0rxapnCHoprWEksO7Vy4Kc16vxHa0zmlvC0IqHZPJFWY6V/dCgB5AXzGwGNamPRWKb9C/Lntn5QdSszi7mhXe8S7kVDC2S72yXXFaFkcltfxiNiTqRtnpbmRn5I0RB/rmaNAZoMboXdP06JqwNDOY4++IQDv+vN+/MfATHi0oDMw==
+     procedure_id : 1798973376031043895
+     type_code : 12
+     code : |1-
+      PROCEDURE DeleteAllProducts(bPurchasedOnly is boolean = False)
+      
+      	// Enumerates the products of the list
+      	HReadSeekFirst(ListContent, ListID, ListID)
+      	WHILE NOT HOut(ListContent)
+      	
+      		IF bPurchasedOnly _OR_ ListContent.Bought THEN
+      			
+      			// Transfer into the history
+      			TransferHistory((ListContent.ProductGUID), (ListContent.Quantity), False)
+      		END
+      		
+      		HReadNext(ListContent)
+      	END
+      
+      	// Runs the deletion query
+      	QRY_LIST_CONTENT_DELETEALL.pListID = ListID
+      	QRY_LIST_CONTENT_DELETEALL.pPurchased = (bPurchasedOnly ? True ELSE Null)	
+      	IF NOT HExecuteQuery(QRY_LIST_CONTENT_DELETEALL) THEN
+      		XLOG("[CShoppingList.DeleteAllProducts] (QRY_LIST_CONTENT_DELETEALL) Error: " + HErrorInfo)
+      	END
+      	
+      	// Update the listeners
+      	__OnListModified(lsmodDelete)
+     type : 458752
+   -
+     name : SetSectionsOrder
+     procedure_id : 1798973376031109431
+     type_code : 12
+     code : |1-
+      // Summary: Defines the order of sections in the list
+      // Syntax:
+      // SetSections (<arrSections> is array)
+      //
+      // Parameters:
+      //	arrSections (array): Subscript of section names
+      // Return value:
+      // 	None
+      //
+      PROCEDURE SetSectionsOrder(arrSectionsOrder is array of strings, LOCAL bHFUpdate is boolean = False)
+      
+      	// Update
+      	SectionOrder = arrSectionsOrder
+      	
+      	IF bHFUpdate THEN
+      		HReadSeekFirst(List, ListID, ListID)
+      		IF HFound(List) THEN	
+      			
+      			// Update		
+      			List.SectionsOrder = ArrayToString(SectionOrder, ",")
+      			HSave(List)
+      		END
+      	END
+     type : 458752
+   -
+     name : TriggerUpdate
+     procedure_id : 1798973376031174967
+     type_code : 12
+     code : |1-
+      PROCEDURE TriggerUpdate()
+      
+      	// Triggers the refresh
+      	__OnListModified(lsmodAdd)
+     type : 458752
+   -
+     name : TriggerHistoryUpdate
+     procedure_id : 1798973376031240503
+     type_code : 12
+     code : |1-
+      PROCEDURE TriggerHistoryUpdate()
+      
+      	// Triggers the refresh
+      	__OnHistoryModified()
+     type : 458752
+   -
+     name : SectionSeek
+     internal_properties : CAAAAAgAAADtssx4JqnA3iljTm6d1dB97KA6mdH8WB9ACV5exZQEEL5VH2kDiGkuxuGvOjj5sXPSrhzohhLvviThb0+To2HsJ7dXro6MidnXPD9gXsf7Cz7MyEThM0jZJDGzAPJ5UYIY1qwx20biDtz7KDHBEVUFyLsf8yiKqQ3mF83bV6QQRN29k1qi/DolVFNAxikUEsyRKJGW9rKfraEVX4ojNW4HLZ1f0MX4ZYD5UL2lMmgtNkMAzYMcJHXK+C6Hh5Ap1kBG87y8M8Zk5Q==
+     procedure_id : 1798973376031306039
+     type_code : 12
+     code : |1-
+      PROCEDURE SectionSeek(LOCAL sOneSection is string)
+      
+      	// Triggers the listeners
+      	TriggerObservers(OnSectionPositionRequest, sOneSection)
+     type : 458752
+   -
+     name : ProductCreated
+     internal_properties : CAAAAAgAAAAPqvRorca/ULoiLwOM3Rq5VZgH6bNOiRtaNgApaWvW24OUimKs2LLFQWrkS3X04t8g9n7SWt4xQw+bYebmZZGuKQhpooX/qx5VGRzcsY4mtICDcwSW6UfUsS9xT9NYef2m25bVcHPOafR9vfMrJ9+vvW1BySE+wUCgVC1QNqpisaACCg==
+     procedure_id : 1798973376031371575
+     type_code : 12
+     code : |1-
+      // Automatic procedure:
+      // The procedure is run manually, during a call in the code, with a time-out set to 5 hundredths of a second
+      // 
+      PROCEDURE ProductCreated(pclProduct is EANProduct dynamic, sParentGUID is string)
+      
+      	// Open the creation window
+      	OpenMobileWindow(WIN_ITEM_FORM, object, GetGUID(guidRough), True, pclProduct, sParentGUID)
+     type : 458752
+   -
+     name : ListContentID
+     internal_properties : CAAAAAgAAACrjg2kFnUU7SWUDG8bHRky36VnC88EHEsnSBWFN90EiIwStjI7v0ZM4TioBRQLVvwqbC9bFIbM91jpMsqyLi7PiopjsuN5B4dOYEAGWZCDUtOzJ5veBICpCTWXKYjwknsqdNE/66GE7Ukn7fy/xJeysAF76ge5tZw1C7fBng7A7EjjY3mnxZhPRvrB7EqxGmsidIzLb/3OBCoD1znissPXXpo=
+     procedure_id : 1798973376031437111
+     type_code : 12
+     code : |1-
+      // Summary: Returns the GUID of the list item from its subscript (useful for the internal windows of the looper)
+      // Syntax:
+      //[ <Result> = ] ListContentID (<nSubscript> is int)
+      //
+      // Parameters:
+      //	nSubscript (integer): Subscript
+      // Return value:
+      // 	UNICODE string: GUID of the list item or 0 if an error occurred
+      //
+      PROCEDURE ListContentID(nSubscript is int) : string
+      
+      	// Call the listeners 
+      	RESULT TriggerYieldObservers(OnInfoContentIDRequest, nSubscript)
+     type : 458752
+   -
+     name : ProductSave
+     procedure_id : 1798973376031502647
+     type_code : 12
+     code : |1-
+      // Summary: <specify the action of the procedure>
+      // Syntax:
+      //[ <Result> = ] ProductSave (<sGUID> is string, <sParentGUID> is string [, <sName> is string [, <sCode> is string [, <pclList> is CShoppingList dynamic]]])
+      //
+      // Parameters:
+      //	sGUID (UNICODE string): <specify the role of sGUID>
+      //	sParentGUID (UNICODE string): <specify the role of sCode>
+      //	sName (UNICODE string - default value=""): <specify the role of sCode>
+      //	sCode (UNICODE string - default value=""): <specify the role of sCode>
+      //	pclList (CShoppingList dynamic - default value = 0): <specify the role of pclList>
+      // Return value:
+      // 	Undefined type: // 	None
+      //
+      PROCEDURE PUBLIC GLOBAL ProductSave(sGUID is string, sParentGUID is string, sName is string = "", sCode is string = "", pclListbox is CShoppingList dynamic = Null)
+      
+      	IF sCode <> "" THEN
+      				
+      		// Checks whether we know this code
+      		HReadSeekFirst(QRY_PRODUCTS, BarCode, sCode)
+      		IF HFound(QRY_PRODUCTS) THEN
+      			
+      			sGUID = QRY_PRODUCTS.GUID
+      			sParentGUID = QRY_PRODUCTS.ParentGUID
+      			sName = QRY_PRODUCTS.Name
+      			
+      		ELSE
+      			
+      			clProduct is EANProduct
+      			
+      			// Search on OpenFoodFacts
+      			clProduct = OpenFoodFacts.Get(sCode)
+      			IF clProduct.Code <> sCode THEN
+      				
+      				// Search on OutPan
+      				clProduct = Outpan.Get(sCode)			
+      			END
+      			
+      			// Ignore the "0" at the beginning of string
+      			IF NoLeftCharacter(clProduct.Code, "0") = NoLeftCharacter(sCode, "0") THEN
+      				
+      				// Retrieves the categories assigned to the product
+      				arrCategories is array of strings
+      				sSection is string
+      				StringToArray(clProduct.Categories, arrCategories, ",")
+      				
+      				// Normalizes the names of categories for the search
+      				FOR EACH sSection of arrCategories
+      					sSection = "'" + StringToIndex(sSection) + "'"
+      				END
+      				
+      				QRY_SEARCH_SECTION.pNames = ArrayToString(arrCategories, ";")
+      				IF HExecuteQuery(QRY_SEARCH_SECTION) THEN
+      					HReadFirst(QRY_SEARCH_SECTION)
+      					IF NOT HOut(QRY_SEARCH_SECTION) THEN
+      						sParentGUID = QRY_SEARCH_SECTION.GUID
+      					ELSE
+      						sParentGUID = ""
+      					END
+      				ELSE
+      					XLOG("[CShoppingList.ProductAdd] (QRY_FIND_SECTION) Error = " + HErrorInfo)
+      				END	
+      			ELSE
+      				sParentGUID = ""
+      			END
+      			
+      			// The product is unknown	
+      			IF NoLeftCharacter(clProduct.Code, "0") <> NoLeftCharacter(sCode, "0") _OR_ clProduct.Name = "" THEN
+      				
+      				// Creating a product
+      				clProduct.Code = sCode
+      				
+      				IF pclListbox <> Null THEN
+      					pclListbox.ProductCreated(clProduct, sParentGUID)
+      					
+      					// Displays a toast to inform that the product is unknown
+      					ToastDisplay(<§$0000§>, toastShort, vaMiddle, haCenter) 				
+      				END
+      				
+      				RESULT clProduct
+      			ELSE
+      				
+      				// Creates an entry
+      				Personal.GUID 		= GetGUID(guidRough)
+      				Personal.ParentGUID= (sParentGUID)
+      				Personal.Product 	= True
+      				Personal.Name		= clProduct.Name
+      				Personal.NameIndex	= StringToIndex(Personal.Name)
+      				Personal.Language	= Nation
+      				Personal.Code		= sCode
+      				Personal.Image		= ""
+      				
+      				// If an image is supplied
+      				IF clProduct.Image <> "" THEN
+      					
+      					// Calculates the local path for the image backup
+      					sLocalImage is string = StringToIndex(Personal.GUID)
+      					
+      					// Downloads the image locally
+      					HTTPDestination(DATA_IMAGE_PRODUCTS + [fSep] + sLocalImage)
+      					IF HTTPRequest(clProduct.Image) THEN
+      						
+      						// Stores the relative path
+      						Personal.Image = sLocalImage						
+      					END
+      				END
+      				
+      				// Saves the product
+      				HAdd(Personal)
+      				
+      				sGUID = Personal.GUID
+      				sName = Personal.Name
+      				
+      				// Update the data sources
+      				SourceRefresh(False)
+      			END				
+      		END
+      		
+      	ELSE
+      		
+      		IF sGUID = "" THEN
+      			
+      			// Creating a product
+      			clProduct is EANProduct
+      			clProduct.Name = sName		
+      			clProduct.Code = sCode	
+      			
+      			IF pclListbox <> Null THEN
+      				pclListbox.ProductCreated(clProduct, sParentGUID)
+      			END
+      			
+      			RESULT clProduct
+      		ELSE
+      			
+      			// Checks whether we know this code
+      			HReadSeekFirst(QRY_PRODUCTS, GUID, sGUID)
+      			IF HFound(QRY_PRODUCTS) THEN
+      				
+      				sParentGUID = QRY_PRODUCTS.ParentGUID
+      				sName = QRY_PRODUCTS.Name
+      			END
+      		END		
+      	END
+      	
+      RESULT Null
+     type : 458752
+   -
+     name : Load
+     procedure_id : 1798973376031568183
+     type_code : 12
+     code : |1-
+      // Summary: <specify the action of the procedure>
+      // Syntax:
+      //[ <Result> = ] Load (<nListID> is 8-byte int, <sAlias> is string)
+      //
+      // Parameters:
+      //	nListID (8-byte integer): List ID
+      //	sAlias (UNICODE string): Alias of the list
+      // Return value:
+      // 	CShoppingList: List
+      //
+      PROCEDURE GLOBAL Load(nListID is 8-byte int, sAlias is string) : CShoppingList
+      	
+      	pclListbox is CShoppingList dynamic = new CShoppingList(nListID, sAlias)
+      	
+      RESULT pclListbox
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : Classe1
+resources :
+ string_res :
+  identifier : 0x15fa99e504faeddb
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      en-GB : Unknown product
+     index : 0
+   -
+     text :
+      en-GB : "Quantity modified: "
+     index : 1
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

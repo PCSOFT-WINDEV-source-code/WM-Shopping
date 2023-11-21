@@ -1,0 +1,456 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : COL_TOOLS
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x18f73cc30ee937b0
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  internal_properties : CAAAAAgAAAAYnE360QvdzfINVS7sL5rvhcUpL0MyD+u6z7BPoRm3oRajIaAvBp++onBolr0KJi3SAMfk3a0wyMVvmBWLZ84JHJQxAWBAdppw
+  type_code : 31
+  p_codes :
+   -
+     code : |1-
+      
+     type : 720896
+  procedures :
+   -
+     name : USERID
+     procedure_id : 1798973384624322480
+     type_code : 15
+     code : |1-
+      // Summary: Returns the identifier of the user or the identifier of the device owner
+      // Syntax:
+      // [ <Result> = ] USERID ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	UNICODE string: User identifier
+      //
+      PROCEDURE USERID() : string
+      
+      	// In simulation
+      	IF InSimulatorMode THEN
+      		RESULT "PC"
+      	END
+      
+      RESULT ""
+     type : 458752
+   -
+     name : DEFAULTUNIT
+     procedure_id : 1798973384624388016
+     type_code : 15
+     code : |1-
+      // Summary: Returns the default unit
+      // Syntax:
+      // [ <Result> = ] DEFAULTUNIT ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	integer: ID of default unit
+      //
+      PROCEDURE DEFAULTUNIT() : int
+      
+      	SWITCH Nation
+      		CASE nationFrench
+      			RESULT 1
+      		OTHER CASE
+      			RESULT 1
+      	END
+     type : 458752
+   -
+     name : QuantityUnit
+     procedure_id : 1798973384624453552
+     type_code : 15
+     code : |1-
+      // Summary: Returns a quantity expressed in natural language
+      // Syntax:
+      // [ <Result> = ] QuantityUnit (<rQuantity> is real, <nUnitID> is int)
+      //
+      // Parameters:
+      //	rQuantity (real): Numeric quantity
+      //	nUnitID (integer): Unit identifier
+      // Return value:
+      // 	UNICODE string: Quantity expressed in natural language
+      //
+      PROCEDURE QuantityUnit(rQuantity is real, LOCAL nUnitID is int = DEFAULTUNIT()) : string
+      	
+      	// Default unit
+      	IF nUnitID <= 0 THEN
+      		nUnitID = DEFAULTUNIT()
+      	END
+      	
+      	// Formats the numeric quantity
+      	sQuantity is string = NumToString(rQuantity, "fS")
+      	
+      	// Deletes the 0 on the right (and the . or , at the end of string)
+      	sQuantity = NoRightCharacter(sQuantity, "0,.")
+      	
+      	// Adds the name of the unit
+      	HReadSeekFirst(Unit, UnitID, nUnitID)
+      	IF HFound(Unit) THEN
+      		sQuantity += [" "] + (rQuantity > 1 ? Unit.PluralName ELSE Unit.Name)
+      	END
+      
+      RESULT sQuantity
+     type : 458752
+   -
+     name : XLOG
+     procedure_id : 1798973384624519088
+     type_code : 15
+     code : |1+
+      // Summary: Saves a trace
+      // Syntax:
+      // XLOG (<TraceMessage>)
+      //
+      // Parameters:
+      // 	TraceMessage: Message to log
+      // Return value:
+      // 	None
+      //
+      PROCEDURE XLOG(TraceMessage)
+      
+      	Trace(SysDateTime + " - " + TraceMessage)	
+      
+     type : 458752
+   -
+     name : FavoriteAdd
+     procedure_id : 1798973384624584624
+     type_code : 15
+     code : |1-
+      // Summary: Adds a product
+      // Syntax:
+      //[ <Result> = ] FavoriteAdd (<sProductGUID> is string)
+      //
+      // Parameters:
+      //	sProductGUID (UNICODE string): GUID of the product
+      // Return value:
+      // 	boolean: True if the favorite was saved, False otherwise
+      //
+      PROCEDURE FavoriteAdd(sProductGUID is string) : boolean
+      
+      	// It's a product
+      	IF sProductGUID <> "" THEN
+      		
+      		// Checks whether the product is already found in the favorites
+      		IF NOT FavoriteExists(sProductGUID) THEN
+      			
+      			// Saves the favorite
+      			Add(MyFavoriteProducts, sProductGUID)
+      			SaveParameter(PARAM_USER_FAVORITES, ArrayToString(MyFavoriteProducts, ";"))
+      		END		
+      		
+      		RESULT True
+      	END
+      	
+      RESULT False
+     type : 458752
+   -
+     name : FavoriteDelete
+     procedure_id : 1798973384624650160
+     type_code : 15
+     code : |1-
+      // Summary: Deletes a favorite
+      // Syntax:
+      //[ <Result> = ] FavoriteDelete (<sProductGUID> is string)
+      //
+      // Parameters:
+      //	sProductGUID (UNICODE string): GUID of the product
+      // Return value:
+      // 	boolean: True if the favorite was deleted, False otherwise
+      //
+      PROCEDURE FavoriteDelete(sProductGUID is string)
+      
+      	// It's a product
+      	IF sProductGUID <> "" THEN
+      		
+      		// Checks whether the product is found in the favorites
+      		nSubscript is int = Seek(MyFavoriteProducts, asLinear, sProductGUID)
+      		IF nSubscript > 0 THEN
+      			
+      			// Deletes the favorite		
+      			Delete(MyFavoriteProducts, nSubscript)						
+      		END		
+      		
+      		RESULT True
+      	END
+      	
+      RESULT False
+     type : 458752
+   -
+     name : FavoriteExists
+     procedure_id : 1798973384624715696
+     type_code : 15
+     code : |1-
+      // Summary: Checks whether a favorite exists
+      // Syntax:
+      //[ <Result> = ] FavoriteExist (<sProductGUID> is string)
+      //
+      // Parameters:
+      //	sProductGUID (UNICODE string): GUID of the product
+      // Return value:
+      // 	boolean: True if the product is found in the favorites, False otherwise
+      //
+      PROCEDURE FavoriteExists(sProductGUID is string)
+      
+      	// It's a product
+      	IF sProductGUID <> "" THEN
+      		
+      		// Checks whether the product is found in the favorites
+      		RESULT (Seek(MyFavoriteProducts, asLinear, sProductGUID) > 0)		
+      	END
+      	
+      RESULT False
+     type : 458752
+   -
+     name : SysPackageName
+     internal_properties : CAAAAAgAAACZZMJmxfhQAuWMzKSGjO1BgTGwGfMfpwOyRMC2R2u+EFCrmEnfCpsdGjmddTUTZc9HEbEIicnHmAxeYxcOi3Nn7k/fmD1wjbRIAELMbCsb4mDElSHiFiKQO/qghqAjaaQfaexJhxibBx9yEfQnl6pRvR+c0jcTxgNYSF1q+8D3kVRiR84JQr6ca97zChjfWWqzQ/Vod0IjlAa+uUljxyRYnawZ1Sn6m5Dsa94IiTfB35kalrP4wqnfYUPfjUJV7NCVSKgfTfFantBwF0wbQNoZX5jGhi56J7vum3pQtQ918XHAz6+f5iiFgxnMc8W9JcvHOMmd4geHfXFozzTZel5rBcKcAZhGzSvMXL3GxF0kd+EyqQt7wVBaX6sLq9OD7pEoG/iHWnE=
+     procedure_id : 1798973384624781232
+     type_code : 15
+     code : |1-
+      // Summary: Returns the name of the application package
+      // Syntax:
+      // [ <Result> = ] SysPackageName ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      //	UNICODE string: Name the application package
+      //
+      PROCEDURE SysPackageName() : string
+      
+      	<COMPILE IF ANDROID_MODE>
+      		RESULT JAVA_GetPackageName()
+      	<ELSE>
+      		RESULT ProjectInfo(piEXEName)
+      	<END>
+     type : 458752
+   -
+     name : StringToIndex
+     internal_properties : CAAAAAgAAADuX8E5LxLsAV4C/1hfWXv+eDHGhQpnGTyVS1qE8IHQ15YTcbFH+4EUGRb7uQhA5tm8e9VQutRVZPOTIEpjIq0wVQNHcDSaQ+aDzHK9/9I7UNeEHyLZnGswchwpapfKK+pPHLZ9HpOi2Z5iytE1
+     procedure_id : 1798973384624846768
+     type_code : 15
+     code : |1-
+      // Summary: Returns a string that can be indexed for the search
+      // Syntax:
+      //[ <Result> = ] StringToIndex (<sString> is string)
+      //
+      // Parameters:
+      //	sString (UNICODE string): String to index
+      // Return value:
+      // 	UNICODE string: Indexable string
+      //
+      PROCEDURE StringToIndex(LOCAL sString is string) : string
+      RESULT Replace(StringFormat(Replace(sString, " ", Charact(0)), ccIgnorePunctuationAndSpace + ccLowCase + ccIgnoreAccent), Charact(0), " ")
+     type : 458752
+   -
+     name : SysFlashlightIsPresent
+     procedure_id : 1798973384624912304
+     type_code : 15
+     code : |1-
+      // Summary: If the flash is found on the device
+      // Syntax:
+      //[ <Result> = ] SysFlashIsFound ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	boolean: True if the flash is found, False otherwise
+      //
+      PROCEDURE SysFlashlightIsPresent() : boolean
+      
+      	<COMPILE IF ANDROID_MODE>
+      		RESULT (VideoListParameter(vipFlash) <> "")
+      	<ELSE>
+      		RESULT False	
+      	<END>	
+     type : 458752
+   -
+     name : SysFlashlightActive
+     procedure_id : 1798973384624977840
+     type_code : 15
+     code : |1-
+      // Summary: Enables/Disables the flash
+      // Syntax:
+      //[ <Result> = ] SysFlashEnable (<bEnable> is boolean)
+      //
+      // Parameters:
+      //	bEnable (boolean): True if the flash must be enabled, False otherwise
+      // Return value:
+      // 	boolean: True if the flash was enabled/disabled, False otherwise
+      //
+      PROCEDURE SysFlashlightActive(bEnabled is boolean <useful>) : boolean
+      
+      	<COMPILE IF ANDROID_MODE>
+      		IF bEnabled THEN
+      			RESULT VideoParameter(vipFlash, vipFlashTorch)
+      		ELSE
+      			RESULT VideoParameter(vipFlash, vipFlashOff)
+      		END
+      	<ELSE>
+      		RESULT False
+      	<END>
+     type : 458752
+   -
+     name : gAlignmentEx
+     internal_properties : CAAAAAgAAADGNgNTybWJUwgL+LLzVE+Y3TjXTu7xFdcIaJZ+XR/EAZpqbg6XxpZqvrxf3OjXWbtcPedqD4njnouuyC7KpvhiQ690MYLJ7yuYZ4c7pedZoeCT3HUBROn2sMVQ9rFSjPED0mn7AINXEBINeNvaPGMGoff7lnCJbBPaByYsS9NxnP8hwXMAncajXzR2vvOXzos79dF8e3tJ8eDPtdWy8em/wVB46Dih
+     procedure_id : 1798973384625043376
+     type_code : 15
+     code : |1+
+      // Summary: Aligns a text or an image in an element 
+      // Syntax:
+      //[ <Result> = ] gAlignmentEx (<sAlignment> is string, <sString> is string)
+      //
+      // Parameters:
+      //	sAlignment (UNICODE string): Alignment (see the help about gAlignment)
+      //	sString (UNICODE string): String to align
+      // Return value:
+      // 	UNICODE string: String compatible with gAlignment
+      //
+      PROCEDURE gAlignmentEx(LOCAL sAlignment is string <useful>, LOCAL sString is string) : string
+      
+      	sAlignedString is string
+      	
+      	// Off Android
+      	<COMPILE IF ConfigurationType <> android>
+      		
+      		// Builds a compatible string with the WLanguage gAlignment function
+      		sAlignedString = StringBuild(ESC + "S" + sAlignment + "(" + Charact(30) + sString + Charact(30) + ")")
+      	<ELSE>
+      		
+      		// No alignment is possible in Android
+      		sAlignedString = sString
+      	<END>
+      
+      RESULT sAlignedString
+     type : 458752
+   -
+     name : Homothety
+     internal_properties : CAAAAAgAAABFHJs9ItsJLWPRPme+EaAV7lysHskvE1RAdUszOw36br2gSLUPDkFOC/a5cc3ruhOLUFvMg8eFDTEaVGflqlg2TsBeEttyT4rwIY3sHsolC8UCk/1/A0yFD8n/BhZhxLxoHfgjR4ABz5M8ypWuIAn9MkCCxukBJSD/DKAlkoU3CBqOkJlCUf7xiyxNIcDfaqk=
+     procedure_id : 1798973384625108912
+     type_code : 15
+     code : |1+
+      // Summary: Calculate the homothety of an image
+      // Syntax:
+      //[ <Result> = ] Homothety (<rIniWidth> is int, <rIniHeight> is int, <rWidth> is real, <rHeight> is real [, <bExtended> is boolean [, <bWithoutEnlarging> is boolean]])
+      //
+      // Parameters:
+      //	rIniWidth (integer): Initial width, will contain the new width
+      //	rIniHeight (integer): Initial height, will contain the new height
+      //	rWidth (real): Maximum width
+      //	rHeight (real): Maximum height
+      //	bExtended (boolean - default value=0): Extended mode
+      //	bWithoutEnlarging (boolean - default value=0): True if the calculation of the homothety must not exceed the initial dimensions, False otherwise
+      // Return value:
+      // 	4-byte real: Ratio of the image
+      //
+      PROCEDURE Homothety(rIniWidth is int, rIniHeight is int, LOCAL rWidth is real, LOCAL rHeight is real, LOCAL bExtended is boolean = False, LOCAL bWithoutResizing is boolean = False) : 4-byte real
+      	
+      	rRatio		is real
+      	rScaleX	 	is real = rWidth / rIniWidth
+      	rScaleY		is real = rHeight / rIniHeight
+      	rMinScale	is real = (bExtended ? ((rScaleX < rScaleY) ? rScaleY ELSE rScaleX) ELSE ((rScaleX < rScaleY) ? rScaleX ELSE rScaleY))
+      	                       
+      	rDispWidth is real
+      	rDispHeight is real
+      	
+      	// Target
+      	IF (bWithoutResizing _AND_ rIniWidth > rWidth OR rIniHeight > rHeight) OR NOT bWithoutResizing THEN
+      		rDispWidth = rIniWidth * rMinScale
+      		rDispHeight = rIniHeight * rMinScale
+      	ELSE
+      		rDispWidth = rIniWidth
+      		rDispHeight = rIniHeight
+      	END
+      	
+      	rIniWidth = rDispWidth
+      	rIniHeight = rDispHeight
+      	
+      	// Calculates the ratio
+      	IF rDispWidth > rDispHeight THEN
+      		rRatio = rDispHeight / rDispWidth
+      	ELSE
+      		rRatio = rDispWidth / rDispHeight		
+      	END
+      
+      RESULT rRatio
+     type : 458752
+   -
+     name : AutomaticResize
+     internal_properties : CAAAAAgAAABe73Hpxxj+cbaq50BnsRM26AGmNbonoaSFi8rkcHGgR84b2ZnvA6HkgY5jIaBIPnHsW0XgOkQBgP9nDK6/ppEEQder9MhWDyL/wA7xa4aPJPP4s3adyGes7oCFHgN+/85bIKpxEl+sYQ4SemGF
+     procedure_id : 1798973384625174448
+     type_code : 15
+     code : |1-
+      // Summary: Performs an automatic resize operation of the specified image
+      // Syntax:
+      //[ <Result> = ] AutomaticResize (<sImagePath> is string)
+      //
+      // Parameters:
+      //	sImagePath (UNICODE string): Path of the image to process
+      // Return value:
+      // 	boolean: True if the image was modified, False otherwise
+      //
+      PROCEDURE AutomaticResize(LOCAL sImagePath is string) : boolean
+      
+      	// Automatic centering/rotation
+      	oImage is an Image = sImagePath
+      	nWidth, nHeight are int
+      	
+      	nWidth = oImage..Width
+      	nHeight = oImage..Height
+      	
+      	// Calculates the homothety of the image
+      	Homothety(nWidth, nHeight, 720, 720, True, True)
+      	
+      	// If the image dimensions have been recalculated
+      	IF nWidth <> oImage..Width _OR_ nHeight <> oImage..Height THEN
+      		
+      		// Resizes the image
+      		dResize(oImage, nWidth, nHeight, drStretched)
+      		
+      		// Re-saves the image
+      		RESULT dSaveImagePNG(oImage, sImagePath)
+      	END
+      	
+      RESULT False
+     type : 458752
+   -
+     name : APPTitle
+     procedure_id : 1798973384625239984
+     type_code : 15
+     code : |1-
+      // Summary: Returns the stylized title of the application
+      // Syntax:
+      //[ <Result> = ] APPTitle ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	UNICODE style: Stylized title of the application
+      //
+      PROCEDURE APPTitle() : string
+      RESULT APP_NAME
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_SansNom1
+resources :
+ string_res :
+  identifier : 0x158832990050ccf8
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      en-GB : Other
+     index : 0
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

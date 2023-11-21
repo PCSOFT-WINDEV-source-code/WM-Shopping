@@ -1,0 +1,127 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : OpenFoodFacts
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x1587d75a00445ee0
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      OpenFoodFacts is class, abstract
+      
+      	PRIVATE
+      		CONSTANT
+      			API_ENDPOINT	= "http://en.openfoodfacts.org/api/v0/product/"
+      		END
+      END
+      
+      OFFProduct is Structure
+      	generic_name	is string
+      	product_name	is string
+      	image_small_url	is string
+      	code			is string
+      	lang			is string
+      	quantity		is string
+      	categories		is string
+      	brands			is string
+      	brands_tags		is array of string
+      	Complete		is boolean
+      END
+      
+      OFFResponse is Structure
+      	status_verbose	is string
+      	status_			is int
+      	product			is OFFProduct
+      	code			is string	
+      END
+     type : 131072
+  procedures :
+   -
+     name : Constructor
+     procedure_id : 1551445378203999968
+     type_code : 27
+     code : |1-
+      PROCEDURE PRIVATE Constructor()
+     type : 589824
+   -
+     name : Destructor
+     procedure_id : 1551445378204065504
+     type_code : 28
+     code : |1-
+      PROCEDURE PRIVATE Destructor()
+     type : 655360
+   -
+     name : Get
+     internal_properties : CAAAAAgAAAA1f9BbZ9BHgmV2A1wo05YvLac2AJ77L1/dPCdqTJGJEdcaCNytVuVt9nVzigi228RN+FiYhr5jt0MSmcqbtVExOIyVwLztddflj/sxeT8LlzZ85eTFoN/eFZ3WwSLGdl18pJgGwR3ogHZYidI=
+     procedure_id : 1551447512802915229
+     type_code : 12
+     code : |1-
+      // Summary: Retrieves the product data from its bar code
+      // Syntax:
+      //[ <Result> = ] Get (<sBarCode> is string)
+      //
+      // Parameters:
+      //	sBarCode (UNICODE string): Bar code of product
+      // Return value:
+      // 	ProductEAN: Product read
+      //
+      PROCEDURE PUBLIC GLOBAL Get(LOCAL sBarCode is string) : EANProduct
+      	
+      	sURL is string ANSI = API_ENDPOINT + ["/"] + sBarCode + ".jqm.json"
+      	stResponse is OFFResponse
+      	clProduct is EANProduct
+      
+      	// Source
+      	clProduct.Source = "OpenFoodFacts"
+      	
+      	// 2s maximum
+      	HTTPTimeOut(2000)
+      	
+      	// Starts the query
+      	IF HTTPRequest(sURL, "WMOFFComponent/1.0", "", "", "", "") THEN
+      		
+      		// Read the result
+      		bufJSON is buffer = HTTPGetResult(httpResult)
+      		
+      		WHEN EXCEPTION IN
+      			
+      			// Deserializes the data
+      			Deserialize(stResponse, bufJSON, psdJSON)
+      		DO
+      			VariableReset(stResponse)
+      		END
+      	END
+      	
+      	// Incomplete product
+      	IF stResponse.product.complete = 0 THEN
+      		VariableReset(stResponse)
+      	END
+      	
+      	// Attribution
+      	clProduct.Code 			= stResponse.product.code
+      	clProduct.Name  			= stResponse.product.product_name + [" - "] + (Position(stResponse.product.product_name, stResponse.product.brands) < 1 ? stResponse.product.brands ELSE "")  + [" - "] + stResponse.product.quantity
+      	clProduct.Description  	= stResponse.product.generic_name
+      	clProduct.Image			= stResponse.product.image_small_url
+      	clProduct.Categories	= stResponse.product.categories
+      
+      RESULT clProduct
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : Classe1
+resources :
+ string_res :
+  identifier : 0x1587d75a00415ee0
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

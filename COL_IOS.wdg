@@ -1,0 +1,68 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : COL_IOS
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x16bb550a2f73a04e
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes : []
+  procedures :
+   -
+     name : OBJC_SysIPADUI
+     procedure_id : 1637996434663196369
+     type_code : 15
+     code : |1-
+      #import <UIKit/UIKit.h>
+      
+      BOOL OBJC_SysIPADUI()
+      {
+      	return (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad);
+      }
+     language : ObjC
+     type : 458752
+   -
+     name : OBJC_ForceOrientationLandscape
+     procedure_id : 1637997499815399297
+     type_code : 15
+     code : |1-
+      #import <UIKit/UIKit.h>
+      
+      void OBJC_ForceOrientationLandscape()
+      {
+      	NSNumber *value = [NSNumber numberWithInt:UIInterfaceOrientationLandscapeLeft];
+      	[[UIDevice currentDevice] setValue:value forKey:@"orientation"];
+      }
+     language : ObjC
+     type : 458752
+   -
+     name : OBJC_ForceOrientationPortrait
+     procedure_id : 1637997761808465525
+     type_code : 15
+     code : |1-
+      #import <UIKit/UIKit.h>
+      
+      void OBJC_ForceOrientationPortrait()
+      {
+      	NSNumber *value = [NSNumber numberWithInt:UIInterfaceOrientationPortrait];
+      	[[UIDevice currentDevice] setValue:value forKey:@"orientation"];
+      }
+     language : ObjC
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_SansNom1
+resources :
+ string_res :
+  identifier : 0x16bb550a2f72a03e
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ
